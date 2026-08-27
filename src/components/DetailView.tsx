@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   ChevronLeft,
@@ -19,9 +19,12 @@ import {
   Activity,
   Monitor,
   User,
+  Library,
+  Zap,
 } from 'lucide-react';
 import { BRANDS } from '../constants';
-import { Brand, BrandDetail } from '../types';
+import { Brand, BrandDetail, KnowledgeItem } from '../types';
+import { findLibraryMatches } from '../lib/searchLibrary';
 
 const IconMap: Record<string, any> = {
   Camera,
@@ -47,6 +50,7 @@ export function DetailView({
   onAnalyze,
   onResetAnalysis,
   onClearResult,
+  onUseLibrarySolution,
 }: {
   currentBrand: BrandDetail | undefined;
   activeTab: Brand;
@@ -61,7 +65,13 @@ export function DetailView({
   onAnalyze: () => void;
   onResetAnalysis: () => void;
   onClearResult: () => void;
+  onUseLibrarySolution: (item: KnowledgeItem) => void;
 }) {
+  const librarySuggestions = useMemo(
+    () => findLibraryMatches(errorDescription, currentBrand?.library || [], 2),
+    [errorDescription, currentBrand]
+  );
+
   return (
     <motion.div
       key="detail"
@@ -147,6 +157,37 @@ export function DetailView({
                     />
                   </div>
 
+                  <AnimatePresence>
+                    {librarySuggestions.length > 0 && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="space-y-2"
+                      >
+                        <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 uppercase tracking-widest">
+                          <Zap size={12} />
+                          Gợi ý tức thì từ thư viện (không cần AI)
+                        </div>
+                        {librarySuggestions.map((item) => (
+                          <button
+                            key={item.id}
+                            onClick={() => onUseLibrarySolution(item)}
+                            className="w-full text-left p-3 rounded-lg border border-emerald-500/20 bg-emerald-500/5 hover:bg-emerald-500/10 transition-all group"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Library size={14} className="text-emerald-400 shrink-0" />
+                              <span className="text-sm font-bold text-slate-200 group-hover:text-emerald-300 transition-colors">
+                                {item.symptom}
+                              </span>
+                            </div>
+                            <p className="text-xs text-slate-500 mt-1 line-clamp-1 pl-6">{item.solution}</p>
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   <div className="flex gap-3">
                     <button
                       onClick={onAnalyze}
@@ -165,7 +206,7 @@ export function DetailView({
                       ) : (
                         <>
                           <Send size={18} />
-                          Phân tích ngay
+                          {librarySuggestions.length > 0 ? 'Không đúng, phân tích bằng AI' : 'Phân tích ngay'}
                         </>
                       )}
                     </button>

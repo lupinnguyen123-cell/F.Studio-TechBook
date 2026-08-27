@@ -50,10 +50,21 @@ export async function analyzeWithGemini(apiKey: string, brandId: unknown, errorD
     return { ok: true, result: resultText };
   } catch (error: any) {
     console.error('AI Analysis Error:', error);
-    let errorMessage = 'Đã có lỗi xảy ra trong quá trình phân tích. Vui lòng thử lại sau.';
-    if (error?.message?.includes('SAFETY')) {
-      errorMessage = 'Nội dung bị chặn do quy tắc an toàn. Vui lòng điều chỉnh mô tả lỗi.';
+    const message = String(error?.message || '');
+
+    if (message.includes('SAFETY')) {
+      return { ok: false, status: 500, error: 'Nội dung bị chặn do quy tắc an toàn. Vui lòng điều chỉnh mô tả lỗi.' };
     }
-    return { ok: false, status: 500, error: errorMessage };
+    if (message.includes('RESOURCE_EXHAUSTED') || message.includes('429')) {
+      return { ok: false, status: 429, error: 'Đã đạt giới hạn số lượt gọi AI (rate limit). Vui lòng đợi một chút rồi thử lại.' };
+    }
+    if (message.includes('API_KEY_INVALID') || message.includes('PERMISSION_DENIED') || message.includes('401') || message.includes('403')) {
+      return { ok: false, status: 401, error: 'API Key không hợp lệ hoặc đã bị thu hồi. Vui lòng kiểm tra lại cấu hình.' };
+    }
+    if (message.includes('UNAVAILABLE') || message.includes('503') || message.includes('DEADLINE_EXCEEDED')) {
+      return { ok: false, status: 503, error: 'Dịch vụ Gemini đang quá tải hoặc phản hồi chậm. Vui lòng thử lại sau ít phút.' };
+    }
+
+    return { ok: false, status: 500, error: 'Đã có lỗi xảy ra trong quá trình phân tích. Vui lòng thử lại sau.' };
   }
 }

@@ -90,7 +90,7 @@ export function LibraryView({
                 </div>
                 <div className="p-3 bg-blue-500/5 rounded-xl border border-blue-500/10">
                   <span className="font-bold text-blue-500/80 uppercase text-[9px] tracking-widest block mb-1">Giải pháp nhanh:</span>
-                  <p className="text-xs text-blue-200/90 leading-relaxed font-medium">{item.solution}</p>
+                  <p className="text-xs text-blue-200/90 leading-relaxed font-medium line-clamp-3">{item.solution}</p>
                 </div>
               </div>
               <button

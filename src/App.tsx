@@ -130,6 +130,11 @@ export default function App() {
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.symptom }));
   };
 
+  const handleUseLibrarySolution = (item: { solution: string }) => {
+    if (!currentBrand) return;
+    setAnalysisResults((prev) => ({ ...prev, [currentBrand.id]: item.solution }));
+  };
+
   const handleOpenHistoryItem = (item: HistoryItem) => {
     setCurrentBrandId(item.brandId);
     setActiveTab(item.brandId);
@@ -183,6 +188,7 @@ export default function App() {
                   onAnalyze={handleAnalyze}
                   onResetAnalysis={resetAnalysis}
                   onClearResult={() => setAnalysisResults((prev) => ({ ...prev, [currentBrand?.id || '']: null }))}
+                  onUseLibrarySolution={handleUseLibrarySolution}
                 />
               )
             ) : view === 'library' ? (
