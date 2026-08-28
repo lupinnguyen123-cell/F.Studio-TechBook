@@ -1,7 +1,12 @@
 import { GoogleGenAI } from '@google/genai';
 import { BRANDS } from '../constants';
 
-export const GEMINI_MODEL = 'gemini-3-flash-preview';
+// Model ổn định hiện hành (thay cho bản preview cũ) — kiểm tra lại tại
+// ai.google.dev/gemini-api/docs/models nếu sau này lại gặp lỗi model không tồn tại.
+// Lưu ý: bản mới nhất "gemini-3.7-flash" tại thời điểm sửa đang bị Google báo quá tải
+// (503 UNAVAILABLE) khi test trực tiếp — dùng "gemini-3.6-flash" (bản liền trước, đã
+// xác nhận hoạt động ổn định) thay vì mù quáng lấy bản mới nhất theo docs.
+export const GEMINI_MODEL = 'gemini-3.6-flash';
 export const MAX_ERROR_DESCRIPTION_LENGTH = 4000;
 
 export type AnalyzeResult = { ok: true; result: string } | { ok: false; status: number; error: string };
@@ -49,7 +54,13 @@ export async function analyzeWithGemini(apiKey: string, brandId: unknown, errorD
     const resultText = response.text || 'Không thể phân tích lỗi vào lúc này.';
     return { ok: true, result: resultText };
   } catch (error: any) {
-    console.error('AI Analysis Error:', error);
+    console.error('AI Analysis Error - full detail:', {
+      message: error?.message,
+      status: error?.status ?? error?.code,
+      name: error?.name,
+      cause: error?.cause,
+      raw: JSON.stringify(error, Object.getOwnPropertyNames(error)).slice(0, 2000),
+    });
     const message = String(error?.message || '');
 
     if (message.includes('SAFETY')) {
