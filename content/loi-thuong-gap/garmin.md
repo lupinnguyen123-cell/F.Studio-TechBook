@@ -7,6 +7,7 @@
 
 ### Lỗi đồng bộ app Garmin Connect
 - **ID:** lib-g1
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Xung đột kết nối Bluetooth hoặc phiên bản app đã cũ.
 - **Từ khóa:** đồng bộ, connect, bluetooth
 
@@ -29,6 +30,7 @@
 
 ### Đồng hồ Garmin hao pin đột ngột
 - **ID:** lib-g2
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Thường do bật các tính năng đo liên tục như Pulse Ox hoặc mặt đồng hồ bên thứ 3.
 - **Từ khóa:** pin, hao pin, sụt nguồn
 
@@ -50,6 +52,7 @@
 
 ### Garmin không lên nguồn, màn hình đen hoàn toàn
 - **ID:** lib-g3
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Pin cạn sâu cần thời gian sạc nạp trước khi hiển thị, hoặc lỗi mạch nguồn.
 - **Từ khóa:** không lên nguồn, màn hình đen, mất nguồn
 
@@ -71,6 +74,7 @@
 
 ### Garmin đo nhịp tim không chính xác hoặc không đo được
 - **ID:** lib-g4
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Đeo lỏng, cảm biến bám bẩn/mồ hôi khô, hoặc hình xăm/lông tay cản quang học.
 - **Từ khóa:** nhịp tim, đo sai, cảm biến
 
@@ -92,6 +96,7 @@
 
 ### Garmin bị treo logo khi khởi động, không vào được giao diện chính
 - **ID:** lib-g5
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Lỗi phần mềm hệ thống hoặc xung đột sau khi cập nhật dở dang.
 - **Từ khóa:** treo logo, không khởi động được, đơ máy
 
@@ -113,6 +118,7 @@
 
 ### Garmin không bắt được GPS hoặc định vị sai vị trí ngoài trời
 - **ID:** lib-g6
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Dữ liệu vệ tinh (EPO/CPE) đã cũ, hoặc đang ở khu vực nhiều vật cản tín hiệu.
 - **Từ khóa:** gps, định vị sai, không bắt sóng, vệ tinh
 
@@ -134,6 +140,7 @@
 
 ### Màn hình cảm ứng Garmin không nhạy hoặc không phản hồi
 - **ID:** lib-g7
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Màn hình dính nước/mồ hôi, đang ở chế độ khóa cảm ứng, hoặc lỗi phần mềm.
 - **Từ khóa:** cảm ứng, không nhạy, màn hình, không phản hồi
 
@@ -155,6 +162,7 @@
 
 ### Garmin Edge (định vị xe đạp) không gắn được vào gá đỡ hoặc mất kết nối cảm biến tốc độ/cadence
 - **ID:** lib-g8
+- **Thiết bị:** Edge (xe đạp)
 - **Chẩn đoán ngắn:** Gá đỡ (mount) lệch khớp, hoặc cảm biến ANT+/Bluetooth ngoài (tốc độ, nhịp tim) bị mất ghép đôi.
 - **Từ khóa:** edge, gá đỡ, mount, cảm biến, xe đạp
 
@@ -176,6 +184,7 @@
 
 ### Garmin bị vào nước, có hơi nước đọng dưới mặt kính
 - **ID:** lib-g9
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Gioăng cao su chống nước bị lão hóa/hở, hoặc máy vượt quá độ sâu/áp suất chịu nước cho phép.
 - **Từ khóa:** vào nước, hơi nước, đọng nước, chống nước
 
@@ -198,6 +207,7 @@
 
 ### Dây đeo (band/strap) Garmin bị đứt, nứt hoặc khóa dây lỏng
 - **ID:** lib-g10
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Dây cao su/silicone lão hóa theo thời gian, hoặc chốt khóa quick-release bị mòn.
 - **Từ khóa:** dây đeo, đứt dây, quai đồng hồ, strap
 
@@ -219,6 +229,7 @@
 
 ### Garmin báo lỗi hoặc treo giữa chừng khi cập nhật firmware
 - **ID:** lib-g11
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Mất kết nối mạng/Bluetooth giữa chừng khi tải bản cập nhật, hoặc dung lượng trống không đủ.
 - **Từ khóa:** cập nhật, firmware, update, treo
 
@@ -241,6 +252,7 @@
 
 ### Đồng hồ Garmin bị đơ giữa chừng khi đang dùng (không phải lúc khởi động)
 - **ID:** lib-g12
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Phân biệt với lib-g5 (treo ở logo lúc khởi động) — đây là trường hợp máy đang chạy bình thường rồi đơ đột ngột, màn hình không phản hồi nút bấm.
 - **Từ khóa:** đơ máy, treo giữa chừng, không phản hồi, force restart
 
@@ -263,6 +275,7 @@
 
 ### Garmin Pay không thanh toán được / báo lỗi khi chạm thanh toán
 - **ID:** lib-g13
+- **Thiết bị:** Đồng hồ (Fenix/Forerunner)
 - **Chẩn đoán ngắn:** Thẻ chưa kích hoạt đúng cách trong Garmin Connect, phần mềm đồng hồ/app cũ, hoặc ngân hàng/loại thẻ chưa hỗ trợ Garmin Pay tại Việt Nam.
 - **Từ khóa:** garmin pay, thanh toán, không quẹt được, chạm thanh toán
 

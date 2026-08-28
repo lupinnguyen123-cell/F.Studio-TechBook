@@ -4,7 +4,7 @@
  */
 
 import { useState, useMemo, useEffect } from 'react';
-import { AlertCircle, Home, Library, History as HistoryIcon } from 'lucide-react';
+import { AlertCircle, Home, Library, History as HistoryIcon, Sun, Moon } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import { BRANDS } from './constants';
 import { Brand, LibraryEntry } from './types';
@@ -30,6 +30,15 @@ export default function App() {
   const [historySearchTerm, setHistorySearchTerm] = useState('');
   const [docSearchTerm, setDocSearchTerm] = useState('');
   const [librarySearchTerm, setLibrarySearchTerm] = useState('');
+  const [aiFocusSignal, setAiFocusSignal] = useState(0);
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      return saved === 'dark' ? 'dark' : 'light';
+    } catch {
+      return 'light';
+    }
+  });
 
   const { presence, globalOnline, isConnected } = usePresence(currentBrandId);
   const { history, addHistoryItem, removeHistoryItem, clearHistory } = useHistory();
@@ -39,6 +48,18 @@ export default function App() {
       .then((data) => setAiConfigured(data.aiConfigured))
       .catch(() => setAiConfigured(false));
   }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // localStorage không khả dụng (chế độ ẩn danh, đã tắt) — theme vẫn hoạt động,
+      // chỉ không nhớ được lựa chọn cho lần sau.
+    }
+  }, [theme]);
+
+  const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
 
   const filteredHistory = useMemo(() => {
     if (!historySearchTerm.trim()) return history;
@@ -135,6 +156,12 @@ export default function App() {
     setAnalysisResults((prev) => ({ ...prev, [currentBrand.id]: item.solution }));
   };
 
+  const handleAskAI = () => {
+    setCurrentBrandId(activeTab);
+    setView('docs');
+    setAiFocusSignal((n) => n + 1);
+  };
+
   const handleOpenHistoryItem = (item: HistoryItem) => {
     setCurrentBrandId(item.brandId);
     setActiveTab(item.brandId);
@@ -144,8 +171,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0f14] text-slate-100 font-sans selection:bg-blue-500/30">
-      <div className="max-w-6xl mx-auto min-h-screen flex flex-col relative border-x border-slate-800 shadow-2xl bg-[#101922]">
+    <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#0a0f14] text-[#1d1d1f] dark:text-slate-100 font-sans selection:bg-blue-500/30">
+      <div className="max-w-6xl mx-auto min-h-screen flex flex-col relative border-x border-[#d2d2d7] dark:border-slate-800 shadow-2xl bg-white dark:bg-[#101922]">
         <main className="flex-1 overflow-y-auto pb-24">
           {aiConfigured === false && (
             <div className="bg-amber-500/10 border-b border-amber-500/20 px-4 py-2 flex items-center gap-2">
@@ -155,7 +182,12 @@ export default function App() {
               </span>
             </div>
           )}
-          <AnimatePresence mode="wait">
+          {/* mode="wait" cố tình bỏ: nó chờ animation thoát của trang cũ chạy xong mới
+              mount trang mới — nếu animation đó bị trì hoãn (tab nền, máy yếu), người
+              dùng sẽ kẹt nhìn thấy trang cũ dù đã điều hướng sang trang khác (đã gặp
+              đúng lỗi này ở DemoGuideSection). Không mode nghĩa là 2 trang animate song
+              song, trang mới luôn xuất hiện ngay không phụ thuộc animation trang cũ. */}
+          <AnimatePresence>
             {view === 'docs' ? (
               !currentBrandId ? (
                 <HomeView
@@ -182,13 +214,19 @@ export default function App() {
                     setActiveTab(brandId);
                     setCurrentBrandId(brandId);
                   }}
-                  onErrorDescriptionChange={(value) =>
-                    setErrorDescriptions((prev) => ({ ...prev, [currentBrand?.id || '']: value }))
-                  }
+                  onErrorDescriptionChange={(value) => {
+                    const bid = currentBrand?.id || '';
+                    setErrorDescriptions((prev) => ({ ...prev, [bid]: value }));
+                    // Người dùng đang sửa lại mô tả lỗi — kết quả AI cũ (ứng với mô tả
+                    // trước đó) không còn khớp nữa, xóa để tránh nhân viên đọc nhầm
+                    // hướng xử lý của lỗi cũ áp cho lỗi mới đang gõ.
+                    setAnalysisResults((prev) => (prev[bid] ? { ...prev, [bid]: null } : prev));
+                  }}
                   onAnalyze={handleAnalyze}
                   onResetAnalysis={resetAnalysis}
                   onClearResult={() => setAnalysisResults((prev) => ({ ...prev, [currentBrand?.id || '']: null }))}
                   onUseLibrarySolution={handleUseLibrarySolution}
+                  focusSignal={aiFocusSignal}
                 />
               )
             ) : view === 'library' ? (
@@ -198,6 +236,7 @@ export default function App() {
                 onLibrarySearchChange={setLibrarySearchTerm}
                 onBack={() => setView('docs')}
                 onOpenEntry={handleOpenLibraryEntry}
+                onAskAI={handleAskAI}
               />
             ) : (
               <HistoryView
@@ -215,10 +254,16 @@ export default function App() {
         </main>
 
         {/* Bottom Navigation */}
-        <nav className="fixed bottom-0 left-0 right-0 max-w-6xl mx-auto z-50 bg-[#101922]/90 backdrop-blur-xl border-t border-slate-800 pb-6 pt-2 px-4 flex justify-around items-center">
+        <nav className="fixed bottom-0 left-0 right-0 max-w-6xl mx-auto z-50 bg-white/90 dark:bg-[#101922]/90 backdrop-blur-xl border-t border-[#d2d2d7] dark:border-slate-800 pb-6 pt-2 px-4 flex justify-around items-center">
           <NavItem icon={<Home size={24} />} label="Trang chủ" active={view === 'docs'} onClick={() => setView('docs')} />
           <NavItem icon={<Library size={24} />} label="Thư viện" active={view === 'library'} onClick={() => setView('library')} />
           <NavItem icon={<HistoryIcon size={24} />} label="Lịch sử" active={view === 'history'} onClick={() => setView('history')} />
+          <NavItem
+            icon={theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+            label={theme === 'dark' ? 'Sáng' : 'Tối'}
+            active={false}
+            onClick={toggleTheme}
+          />
         </nav>
       </div>
     </div>

@@ -6,7 +6,13 @@
 - `garmin.md` — Fenix, Forerunner, Edge
 - `android.md` — Samsung, Xiaomi, Oppo, Vivo, Pixel...
 
-Đã xuất sẵn toàn bộ 47 mục hiện có trong app vào 3 file trên. Bạn chỉnh sửa nội dung sai, thêm mục mới ngay trong các file này — không cần đụng vào code. Khi xong (hoặc xong từng phần), báo Claude để đồng bộ vào app.
+App hiển thị Thư viện theo dạng danh mục: **Hãng → Thiết bị**, mỗi thiết bị kèm số đếm để dễ quan sát đang thiếu/thừa lỗi ở đâu. Vì vậy mỗi mục **bắt buộc phải gắn đúng 1 thiết bị** trong danh sách chuẩn dưới đây — dùng đúng tên (kể cả dấu câu) để lỗi được xếp đúng nhóm, không tạo nhóm mới tùy ý:
+
+- **Apple:** `iPhone` · `iPad` · `Mac` · `Apple Watch` · `AirPods`
+- **Garmin:** `Đồng hồ (Fenix/Forerunner)` · `Edge (xe đạp)`
+- **Android:** `Samsung` · `Xiaomi` · `Oppo` · `Vivo` · `Pixel` · `Chung (mọi hãng)` (dùng khi lỗi không đặc thù hãng nào)
+
+Bạn chỉnh sửa nội dung sai, thêm mục mới ngay trong các file này — không cần đụng vào code. Khi xong (hoặc xong từng phần), báo Claude để đồng bộ vào app.
 
 ## Cách thêm 1 mục lỗi mới
 
@@ -15,6 +21,7 @@ Copy đúng khối này, dán vào cuối file `.md` tương ứng, rồi điề
 ```markdown
 ### <Tên triệu chứng — khách/nhân viên mô tả thế nào thì viết vậy>
 - **ID:** <để trống — Claude sẽ tự sinh khi đồng bộ>
+- **Thiết bị:** <chọn đúng 1 tên trong danh sách chuẩn ở trên>
 - **Chẩn đoán ngắn:** <nguyên nhân cốt lõi, 1 câu>
 - **Từ khóa:** <3-5 từ khóa cách nhau bằng dấu phẩy, dùng để tìm kiếm>
 
@@ -36,6 +43,7 @@ Copy đúng khối này, dán vào cuối file `.md` tương ứng, rồi điề
 
 ## Quy tắc
 
+- **Thiết bị** quyết định lỗi này hiện ở nhóm nào trong Thư viện — chỉ dùng đúng tên trong danh sách chuẩn ở trên, không tự đặt tên mới (ví dụ đừng ghi "iPhone 13" hay "Realme", ghi đúng "iPhone" hoặc dùng "Chung (mọi hãng)" nếu không đặc thù hãng).
 - **Từ khóa** quan trọng nhất cho việc tìm kiếm — nghĩ như khách/nhân viên sẽ gõ gì (ví dụ: "sạc", "không lên nguồn", chứ không chỉ thuật ngữ kỹ thuật).
 - **Hướng dẫn xử lý** viết thành các bước đánh số theo đúng thứ tự thao tác thực tế, không viết dồn thành 1 đoạn văn dài — nhân viên mới vào nghề cũng làm theo được.
 - **Tuyệt đối không được làm** là mục bắt buộc phải có nội dung cho mọi mục lỗi (không để trống) — kể cả lỗi ít rủi ro cũng nên có ít nhất 1 lưu ý (ví dụ: không tự ý cam kết thời gian sửa chữa, không xóa dữ liệu khách chưa xác nhận).

@@ -44,7 +44,7 @@ export function HomeView({
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h2 className="text-2xl font-bold">Sửa chữa Thiết bị</h2>
-          <p className="text-slate-400 text-sm font-medium">Chọn thương hiệu để xem tài liệu hướng dẫn</p>
+          <p className="text-[#6e6e73] dark:text-slate-400 text-sm font-medium">Chọn thương hiệu để xem tài liệu hướng dẫn</p>
         </div>
         <div className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
           <div className={`size-1.5 rounded-full ${isConnected ? 'bg-emerald-500 animate-pulse' : 'bg-red-500'}`} />
@@ -56,18 +56,18 @@ export function HomeView({
 
       <div className="space-y-4">
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={18} />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500" size={18} />
           <input
             type="text"
             value={docSearchTerm}
             onChange={(e) => onDocSearchChange(e.target.value)}
             placeholder="Tìm kiếm thương hiệu hoặc tài liệu..."
-            className="w-full bg-slate-900/50 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-slate-200 placeholder:text-slate-500 focus:ring-2 focus:ring-[#137fec]/50 focus:border-transparent transition-all"
+            className="w-full bg-[#f5f5f7] dark:bg-slate-900/50 border border-[#d2d2d7] dark:border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:ring-[#137fec]/50 focus:border-transparent transition-all"
           />
           {docSearchTerm && (
             <button
               onClick={() => onDocSearchChange('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
             >
               <X size={16} />
             </button>
@@ -96,7 +96,7 @@ export function HomeView({
               <button
                 key={item.id}
                 onClick={() => onQuickAccess(item)}
-                className="text-left bg-slate-900/40 border border-slate-800 rounded-xl p-4 hover:border-blue-500/50 transition-all group"
+                className="text-left bg-white dark:bg-slate-900/40 border border-[#d2d2d7] dark:border-slate-800 rounded-xl p-4 shadow-sm dark:shadow-none hover:border-blue-500/50 transition-all group"
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span
@@ -106,8 +106,8 @@ export function HomeView({
                     {item.brandName}
                   </span>
                 </div>
-                <h4 className="text-sm font-bold text-slate-200 line-clamp-1 group-hover:text-blue-400 transition-colors">{item.symptom}</h4>
-                <p className="text-xs text-slate-500 mt-1 line-clamp-2">{item.diagnosis}</p>
+                <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200 line-clamp-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{item.symptom}</h4>
+                <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1 line-clamp-2">{item.diagnosis}</p>
               </button>
             ))}
           </div>

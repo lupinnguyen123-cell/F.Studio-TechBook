@@ -1,7 +1,22 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Dùng cho vài chỗ tô màu qua inline style (JS) thay vì class Tailwind — ví dụ màu
+   phụ thuộc dữ liệu (brand.accentColor) trộn với nền trung tính — nơi không thể gắn
+   `dark:` trực tiếp. Đổi theo `.dark` giống các class Tailwind khác trong app. */
+:root {
+  --neutral-card-bg: rgba(15, 23, 42, 0.04);
+  --neutral-border: #d2d2d7;
+  --neutral-text-secondary: #6e6e73;
+}
+.dark {
+  --neutral-card-bg: rgba(15, 23, 42, 0.5);
+  --neutral-border: rgb(30, 41, 59);
+  --neutral-text-secondary: rgb(100, 116, 139);
 }
 
 @layer utilities {
@@ -15,5 +30,5 @@
 }
 
 body {
-  @apply bg-[#101922] antialiased;
+  @apply bg-[#f5f5f7] dark:bg-[#101922] antialiased;
 }

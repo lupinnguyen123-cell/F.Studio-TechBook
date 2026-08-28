@@ -16,6 +16,7 @@ export interface ProcessItem {
 
 export interface KnowledgeItem {
   id: string;
+  device: string;
   symptom: string;
   diagnosis: string;
   solution: string;

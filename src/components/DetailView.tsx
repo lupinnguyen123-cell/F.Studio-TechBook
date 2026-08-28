@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import React, { useEffect, useMemo, useRef } from 'react';
+import { motion } from 'motion/react';
 import {
   ChevronLeft,
   MessageSquare,
@@ -9,7 +9,6 @@ import {
   ShieldCheck,
   Sparkles,
   Loader2,
-  Send,
   RotateCcw,
   X,
   AlertTriangle,
@@ -52,6 +51,7 @@ export function DetailView({
   onResetAnalysis,
   onClearResult,
   onUseLibrarySolution,
+  focusSignal,
 }: {
   currentBrand: BrandDetail | undefined;
   activeTab: Brand;
@@ -67,11 +67,22 @@ export function DetailView({
   onResetAnalysis: () => void;
   onClearResult: () => void;
   onUseLibrarySolution: (item: KnowledgeItem) => void;
+  focusSignal?: number;
 }) {
   const librarySuggestions = useMemo(
     () => findLibraryMatches(errorDescription, currentBrand?.library || [], 2),
     [errorDescription, currentBrand]
   );
+
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  // Bấm "Hỏi AI" từ trang Thư viện điều hướng vào đây — cuộn tới và focus sẵn ô nhập
+  // để nhân viên gõ mô tả ngay, không cần tự tìm lại khối AI trên trang.
+  useEffect(() => {
+    if (!focusSignal) return;
+    textareaRef.current?.scrollIntoView({ block: 'center' });
+    textareaRef.current?.focus();
+  }, [focusSignal]);
 
   return (
     <motion.div
@@ -82,10 +93,10 @@ export function DetailView({
       className="flex flex-col"
     >
       {/* Tabs with Back Button */}
-      <div className="flex items-center border-b border-slate-800 bg-[#101922] sticky top-0 z-50">
+      <div className="flex items-center border-b border-[#d2d2d7] dark:border-slate-800 bg-white dark:bg-[#101922] sticky top-0 z-50">
         <button
           onClick={onBack}
-          className="px-4 py-3.5 text-slate-500 hover:text-slate-100 transition-colors border-r border-slate-800 hover:bg-slate-800/50"
+          className="px-4 py-3.5 text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-100 transition-colors border-r border-[#d2d2d7] dark:border-slate-800 hover:bg-[#f5f5f7] dark:hover:bg-slate-800/50"
           title="Quay lại Trang chủ"
         >
           <ChevronLeft size={20} />
@@ -96,7 +107,7 @@ export function DetailView({
               key={brand.id}
               onClick={() => onSelectTab(brand.id)}
               className={`pb-3 pt-4 shrink-0 text-sm font-semibold tracking-wide border-b-2 transition-all flex items-center gap-2 ${
-                activeTab === brand.id ? 'text-slate-100' : 'border-transparent text-slate-500 hover:text-slate-300'
+                activeTab === brand.id ? 'text-[#1d1d1f] dark:text-slate-100' : 'border-transparent text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300'
               }`}
               style={{
                 borderBottomColor: activeTab === brand.id ? brand.accentColor : 'transparent',
@@ -145,25 +156,24 @@ export function DetailView({
               <section className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Sparkles size={20} style={{ color: currentBrand?.accentColor }} />
-                  <h3 className="text-xl font-bold tracking-tight">AI Chẩn đoán lỗi</h3>
+                  <h3 className="text-xl font-bold tracking-tight">Tra lỗi &amp; Hỏi AI</h3>
                 </div>
-                <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 space-y-4 shadow-inner">
+                <div className="bg-white dark:bg-slate-900/50 border border-[#d2d2d7] dark:border-slate-800 rounded-xl p-5 space-y-4 shadow-sm dark:shadow-inner">
                   <div className="space-y-3">
                     <textarea
+                      ref={textareaRef}
                       value={errorDescription}
                       onChange={(e) => onErrorDescriptionChange(e.target.value)}
                       placeholder="Mô tả tình trạng lỗi của thiết bị (ví dụ: iPhone 13 bị sọc màn hình sau khi rơi...)"
-                      className="w-full bg-slate-800/50 border border-slate-700 rounded-lg p-4 text-sm text-slate-200 placeholder:text-slate-500 focus:ring-2 focus:border-transparent transition-all resize-none min-h-[120px]"
+                      className="w-full bg-[#f5f5f7] dark:bg-slate-800/50 border border-[#d2d2d7] dark:border-slate-700 rounded-lg p-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:border-transparent transition-all resize-none min-h-[120px]"
                       style={{ '--tw-ring-color': `${currentBrand?.accentColor}80` } as React.CSSProperties}
                     />
                   </div>
 
-                  <AnimatePresence>
-                    {librarySuggestions.length > 0 && (
+                  {librarySuggestions.length > 0 && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
                         className="space-y-2"
                       >
                         <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 uppercase tracking-widest">
@@ -178,16 +188,15 @@ export function DetailView({
                           >
                             <div className="flex items-center gap-2">
                               <Library size={14} className="text-emerald-400 shrink-0" />
-                              <span className="text-sm font-bold text-slate-200 group-hover:text-emerald-300 transition-colors">
+                              <span className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200 group-hover:text-emerald-700 dark:group-hover:text-emerald-300 transition-colors">
                                 {item.symptom}
                               </span>
                             </div>
-                            <p className="text-xs text-slate-500 mt-1 line-clamp-1 pl-6">{item.solution}</p>
+                            <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1 line-clamp-1 pl-6">{item.solution}</p>
                           </button>
                         ))}
                       </motion.div>
-                    )}
-                  </AnimatePresence>
+                  )}
 
                   <div className="flex gap-3">
                     <button
@@ -195,19 +204,19 @@ export function DetailView({
                       disabled={isAnalyzing || !errorDescription.trim()}
                       className="flex-1 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-all shadow-lg active:scale-[0.98]"
                       style={{
-                        backgroundColor: currentBrand?.accentColor,
-                        boxShadow: `0 10px 20px -5px ${currentBrand?.accentColor}66`,
+                        background: 'linear-gradient(135deg, #8b5cf6, #6366f1)',
+                        boxShadow: '0 10px 20px -8px #8b5cf699',
                       }}
                     >
                       {isAnalyzing ? (
                         <>
                           <Loader2 size={18} className="animate-spin" />
-                          Đang phân tích...
+                          Đang hỏi AI...
                         </>
                       ) : (
                         <>
-                          <Send size={18} />
-                          {librarySuggestions.length > 0 ? 'Không đúng, phân tích bằng AI' : 'Phân tích ngay'}
+                          <Sparkles size={18} />
+                          Hỏi AI
                         </>
                       )}
                     </button>
@@ -215,20 +224,21 @@ export function DetailView({
                     <button
                       onClick={onResetAnalysis}
                       disabled={isAnalyzing || (!errorDescription.trim() && !analysisResult)}
-                      className="px-5 bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-slate-400 hover:text-slate-200 rounded-xl transition-all border border-slate-700 flex items-center justify-center active:scale-[0.98]"
+                      className="px-5 bg-[#f5f5f7] dark:bg-slate-800 hover:bg-[#e8e8ed] dark:hover:bg-slate-700 disabled:opacity-50 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-200 rounded-xl transition-all border border-[#d2d2d7] dark:border-slate-700 flex items-center justify-center active:scale-[0.98]"
                       title="Làm mới nội dung"
                     >
                       <RotateCcw size={18} />
                     </button>
                   </div>
 
-                  <AnimatePresence>
-                    {analysisResult && (
+                  {/* Không dùng AnimatePresence: exit animation phụ thuộc requestAnimationFrame,
+                      nếu bị trì hoãn (tab nền, máy yếu) kết quả cũ sẽ còn hiển thị dù state đã
+                      xóa — dễ khiến nhân viên đọc nhầm hướng xử lý của lỗi trước áp cho lỗi mới. */}
+                  {analysisResult && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="pt-4 border-t border-slate-800"
+                        className="pt-4 border-t border-[#d2d2d7] dark:border-slate-800"
                       >
                         <div
                           className="border rounded-xl p-5"
@@ -250,27 +260,26 @@ export function DetailView({
                             <div className="ml-auto flex items-center gap-1">
                               <button
                                 onClick={onResetAnalysis}
-                                className="p-1.5 hover:bg-slate-800 rounded-md transition-colors text-slate-500 hover:text-slate-300"
+                                className="p-1.5 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
                                 title="Làm mới tất cả"
                               >
                                 <RotateCcw size={14} />
                               </button>
                               <button
                                 onClick={onClearResult}
-                                className="p-1.5 hover:bg-slate-800 rounded-md transition-colors text-slate-500 hover:text-slate-300"
+                                className="p-1.5 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
                                 title="Xóa kết quả"
                               >
                                 <X size={14} />
                               </button>
                             </div>
                           </div>
-                          <div className="text-sm text-slate-300 leading-relaxed whitespace-pre-wrap prose prose-invert prose-sm max-w-none">
+                          <div className="text-sm text-[#1d1d1f] dark:text-slate-300 leading-relaxed whitespace-pre-wrap prose prose-invert prose-sm max-w-none">
                             {analysisResult}
                           </div>
                         </div>
                       </motion.div>
-                    )}
-                  </AnimatePresence>
+                  )}
                 </div>
               </section>
             </div>
@@ -281,28 +290,28 @@ export function DetailView({
               <section>
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold tracking-tight">Kịch bản tư vấn</h3>
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Tự nhiên • Gần gũi</span>
+                  <span className="text-[10px] text-[#6e6e73] dark:text-slate-500 font-bold uppercase tracking-widest">Tự nhiên • Gần gũi</span>
                 </div>
                 <div className="grid gap-3">
                   {currentBrand?.scripts.map((script) => (
                     <div
                       key={script.id}
-                      className="p-4 rounded-xl border group hover:border-slate-600 transition-all"
+                      className="p-4 rounded-xl border group hover:border-[#c7c7cc] dark:hover:border-slate-600 transition-all"
                       style={{
-                        backgroundColor: script.type === 'premium' ? `${currentBrand?.accentColor}1a` : 'rgba(15, 23, 42, 0.5)',
-                        borderColor: script.type === 'premium' ? `${currentBrand?.accentColor}33` : 'rgb(30, 41, 59)',
+                        backgroundColor: script.type === 'premium' ? `${currentBrand?.accentColor}1a` : 'var(--neutral-card-bg)',
+                        borderColor: script.type === 'premium' ? `${currentBrand?.accentColor}33` : 'var(--neutral-border)',
                       }}
                     >
                       <div className="flex items-center gap-2 mb-2">
-                        <MessageSquare size={14} style={{ color: script.type === 'premium' ? currentBrand?.accentColor : 'rgb(100, 116, 139)' }} />
+                        <MessageSquare size={14} style={{ color: script.type === 'premium' ? currentBrand?.accentColor : 'var(--neutral-text-secondary)' }} />
                         <span
                           className="text-[11px] font-bold uppercase tracking-widest"
-                          style={{ color: script.type === 'premium' ? currentBrand?.accentColor : 'rgb(100, 116, 139)' }}
+                          style={{ color: script.type === 'premium' ? currentBrand?.accentColor : 'var(--neutral-text-secondary)' }}
                         >
                           {script.label}
                         </span>
                       </div>
-                      <p className={`text-sm leading-relaxed ${script.type === 'premium' ? 'italic text-slate-300' : 'text-slate-400'}`}>
+                      <p className={`text-sm leading-relaxed ${script.type === 'premium' ? 'italic text-[#1d1d1f] dark:text-slate-300' : 'text-[#6e6e73] dark:text-slate-400'}`}>
                         {script.text}
                       </p>
                     </div>
@@ -317,21 +326,21 @@ export function DetailView({
                   <span className="text-[10px] text-red-500 font-bold uppercase tracking-widest">Lưu ý quan trọng</span>
                 </div>
                 <div className="space-y-3">
-                  {/* Dynamic Warnings */}
-                  <AnimatePresence>
-                    {dynamicWarnings.length > 0 && (
+                  {/* Dynamic Warnings — không dùng AnimatePresence: cảnh báo phải biến mất
+                      NGAY khi mô tả lỗi không còn khớp từ khóa nữa, không được phép còn sót
+                      lại một cảnh báo (nhất là an toàn) của mô tả lỗi trước đó. */}
+                  {dynamicWarnings.length > 0 && (
                       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mb-2">
                         <span className="text-[10px] font-bold text-red-400 uppercase tracking-widest bg-red-500/10 px-2 py-0.5 rounded border border-red-500/20">
                           Lưu ý dựa trên mô tả lỗi
                         </span>
                       </motion.div>
-                    )}
-                    {dynamicWarnings.map((warning, idx) => (
+                  )}
+                  {dynamicWarnings.map((warning, idx) => (
                       <motion.div
                         key={`dyn-warn-${idx}`}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 20 }}
                         className="p-4 rounded-xl border border-red-500/30 bg-red-500/10 shadow-lg shadow-red-500/5"
                       >
                         <div className="flex items-start gap-3">
@@ -339,22 +348,21 @@ export function DetailView({
                           <p className="text-sm font-bold text-red-400 leading-relaxed">{warning.message}</p>
                         </div>
                       </motion.div>
-                    ))}
-                  </AnimatePresence>
+                  ))}
 
                   {currentBrand?.processes.map((process) => {
                     const Icon = IconMap[process.icon] || FileText;
                     return (
                       <div
                         key={process.id}
-                        className="flex items-start gap-4 p-4 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800 transition-all group"
+                        className="flex items-start gap-4 p-4 rounded-xl border border-[#d2d2d7] dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm dark:shadow-none hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-all group"
                       >
-                        <div className="size-12 rounded-lg bg-slate-800 group-hover:bg-slate-700 flex items-center justify-center shrink-0 transition-colors">
+                        <div className="size-12 rounded-lg bg-[#f5f5f7] dark:bg-slate-800 group-hover:bg-[#e8e8ed] dark:group-hover:bg-slate-700 flex items-center justify-center shrink-0 transition-colors">
                           <Icon size={24} style={{ color: currentBrand?.accentColor }} />
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-sm font-bold text-slate-200">{process.title}</h4>
-                          <p className="text-xs text-slate-500 mt-1 leading-relaxed">{process.description}</p>
+                          <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200">{process.title}</h4>
+                          <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1 leading-relaxed">{process.description}</p>
                         </div>
                       </div>
                     );

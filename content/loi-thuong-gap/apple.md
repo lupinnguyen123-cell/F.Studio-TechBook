@@ -7,6 +7,7 @@
 
 ### Quên mật khẩu Macbook
 - **ID:** lib-a1
+- **Thiết bị:** Mac
 - **Chẩn đoán ngắn:** Người dùng không nhớ mật khẩu đăng nhập hoặc mật khẩu Firmware.
 - **Từ khóa:** macbook, mật khẩu, pass
 
@@ -28,6 +29,7 @@
 
 ### Quên mật khẩu iCloud (Activation Lock)
 - **ID:** lib-a2
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Thiết bị bị khóa kích hoạt do không nhớ ID/Pass iCloud.
 - **Từ khóa:** icloud, khóa, activation
 
@@ -49,6 +51,7 @@
 
 ### iPhone hao pin, nóng máy nhanh
 - **ID:** lib-a3
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Pin bị chai hoặc có ứng dụng chạy ngầm gây xung đột hệ thống.
 - **Từ khóa:** pin, hao pin, nóng máy
 
@@ -71,6 +74,7 @@
 
 ### iPhone không sạc được, cắm sạc không lên nguồn
 - **ID:** lib-a4
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Cổng sạc bám bụi/oxi hóa, cáp sạc lỗi, hoặc IC nguồn có vấn đề.
 - **Từ khóa:** sạc, không lên nguồn, cổng sạc, không sạc được
 
@@ -93,6 +97,7 @@
 
 ### Loa iPhone rè, nghe gọi rột rẹt hoặc nhỏ tiếng
 - **ID:** lib-a5
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Màng loa dính bụi/nước, hoặc có thể do cấu hình âm thanh bị lỗi sau cập nhật.
 - **Từ khóa:** loa, rè, nhỏ tiếng, nghe gọi
 
@@ -114,6 +119,7 @@
 
 ### Face ID không nhận diện khuôn mặt
 - **ID:** lib-a6
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Cảm biến TrueDepth bị che khuất, kính cường lực dày, hoặc lỗi phần mềm Face ID.
 - **Từ khóa:** face id, không nhận diện, khuôn mặt
 
@@ -136,6 +142,7 @@
 
 ### iPhone bị vô hiệu hóa (iPhone Unavailable) do nhập sai mật khẩu
 - **ID:** lib-a7
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Nhập sai passcode quá số lần cho phép, máy tự khóa theo thời gian tăng dần.
 - **Từ khóa:** vô hiệu hóa, unavailable, sai mật khẩu, khóa máy
 
@@ -158,6 +165,7 @@
 
 ### MacBook không lên nguồn, đèn sạc không sáng
 - **ID:** lib-a8
+- **Thiết bị:** Mac
 - **Chẩn đoán ngắn:** Sạc/cáp lỗi, pin cạn sâu, hoặc lỗi mạch nguồn logic board.
 - **Từ khóa:** macbook, không lên nguồn, không sạc, đèn sạc
 
@@ -179,6 +187,7 @@
 
 ### MacBook chạy chậm, quạt kêu to liên tục
 - **ID:** lib-a9
+- **Thiết bị:** Mac
 - **Chẩn đoán ngắn:** Bộ nhớ đầy, quá nhiều ứng dụng chạy nền, hoặc quạt tản nhiệt bám bụi.
 - **Từ khóa:** macbook, chạy chậm, quạt kêu to, nóng máy
 
@@ -201,6 +210,7 @@
 
 ### iPad không nhận sạc hoặc sạc rất chậm
 - **ID:** lib-a10
+- **Thiết bị:** iPad
 - **Chẩn đoán ngắn:** Củ sạc công suất thấp, cáp lỗi, hoặc cổng sạc bám bụi.
 - **Từ khóa:** ipad, không nhận sạc, sạc chậm
 
@@ -222,6 +232,7 @@
 
 ### Wifi hoặc Bluetooth chập chờn, tự ngắt kết nối
 - **ID:** lib-a11
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Xung đột phần mềm sau cập nhật iOS, hoặc lỗi anten/IC sóng.
 - **Từ khóa:** wifi, bluetooth, mất kết nối, chập chờn
 
@@ -243,6 +254,7 @@
 
 ### iPhone bị vào nước, có dấu hiệu ẩm (LCI đỏ)
 - **ID:** lib-a12
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Chỉ báo tiếp xúc chất lỏng (Liquid Contact Indicator) đã chuyển đỏ, nước có thể đã vào bo mạch.
 - **Từ khóa:** vào nước, ẩm, lci, rơi nước
 
@@ -265,6 +277,7 @@
 
 ### Màn hình iPhone bị vỡ kính nhưng cảm ứng vẫn dùng được
 - **ID:** lib-a13
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Kính cường lực bên ngoài nứt/vỡ nhưng lớp cảm ứng và hiển thị bên trong chưa bị ảnh hưởng.
 - **Từ khóa:** màn hình vỡ, vỡ kính, nứt màn hình
 
@@ -286,6 +299,7 @@
 
 ### iPhone báo đầy bộ nhớ dù đã xóa bớt ứng dụng/ảnh
 - **ID:** lib-a14
+- **Thiết bị:** iPhone
 - **Chẩn đoán ngắn:** Dữ liệu cache hệ thống, tin nhắn/video đính kèm, hoặc ảnh chưa đồng bộ xong iCloud vẫn chiếm dung lượng.
 - **Từ khóa:** đầy bộ nhớ, hết dung lượng, bộ nhớ
 
@@ -307,6 +321,7 @@
 
 ### Apple Watch không lên nguồn hoặc không sạc được
 - **ID:** lib-a15
+- **Thiết bị:** Apple Watch
 - **Chẩn đoán ngắn:** Đế sạc từ tính không áp sát, cạn pin sâu, hoặc lỗi mạch nguồn.
 - **Từ khóa:** apple watch, không sạc, không lên nguồn
 
@@ -329,6 +344,7 @@
 
 ### Apple Watch báo lỗi khi ghép đôi với iPhone
 - **ID:** lib-a16
+- **Thiết bị:** Apple Watch
 - **Chẩn đoán ngắn:** Xung đột dữ liệu ghép đôi cũ, sai phiên bản watchOS/iOS tương thích, hoặc Bluetooth lỗi.
 - **Từ khóa:** apple watch, ghép đôi, pairing, kết nối
 
@@ -351,6 +367,7 @@
 
 ### Kính Apple Watch bị nứt hoặc trầy nặng
 - **ID:** lib-a17
+- **Thiết bị:** Apple Watch
 - **Chẩn đoán ngắn:** Va đập mạnh làm nứt kính Ion-X/Sapphire, chưa chắc ảnh hưởng màn hình cảm ứng bên trong.
 - **Từ khóa:** apple watch, kính nứt, vỡ kính, trầy
 
@@ -372,6 +389,7 @@
 
 ### AirPods chỉ một bên có tiếng hoặc mất kết nối một bên
 - **ID:** lib-a18
+- **Thiết bị:** AirPods
 - **Chẩn đoán ngắn:** Lệch pin giữa 2 bên tai, bám bụi ở lưới loa, hoặc lỗi đồng bộ cặp đôi.
 - **Từ khóa:** airpods, một bên, mất kết nối, mất tiếng
 
@@ -393,6 +411,7 @@
 
 ### Hộp sạc AirPods không sạc được hoặc đèn báo không sáng
 - **ID:** lib-a19
+- **Thiết bị:** AirPods
 - **Chẩn đoán ngắn:** Cổng sạc/tiếp điểm hộp bám bẩn, cáp/đế sạc lỗi, hoặc pin hộp đã chai.
 - **Từ khóa:** airpods, hộp sạc, không sạc, đèn không sáng
 
@@ -414,6 +433,7 @@
 
 ### AirPods bị rè hoặc âm thanh rột rẹt khi nghe
 - **ID:** lib-a20
+- **Thiết bị:** AirPods
 - **Chẩn đoán ngắn:** Lưới loa bám bụi/ráy tai, xung đột Bluetooth, hoặc màng loa ẩm.
 - **Từ khóa:** airpods, rè, rột rẹt, âm thanh
 
@@ -435,6 +455,7 @@
 
 ### iPhone/iPad bị treo ở màn hình táo (kèm thanh tiến trình) khi đang cập nhật phần mềm
 - **ID:** lib-a21
+- **Thiết bị:** iPad
 - **Chẩn đoán ngắn:** Quá trình cài đặt bản cập nhật iOS/iPadOS bị gián đoạn hoặc kéo dài bất thường.
 - **Từ khóa:** treo táo, treo logo, cập nhật, thanh tiến trình, đứng máy khi update
 
@@ -457,6 +478,7 @@
 
 ### AirPods Pro mất/giảm tính năng khử tiếng ồn (Active Noise Cancellation)
 - **ID:** lib-a22
+- **Thiết bị:** AirPods
 - **Chẩn đoán ngắn:** Sai lệch cài đặt, đầu tai không kín (fit) hoặc bám bẩn khiến khử ồn hoạt động không hiệu quả.
 - **Từ khóa:** airpods, khử ồn, chống ồn, anc, noise cancellation
 

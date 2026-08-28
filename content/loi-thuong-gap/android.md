@@ -7,6 +7,7 @@
 
 ### Máy bị treo logo, không vào được màn hình chính
 - **ID:** lib-an1
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Xung đột phần mềm hệ thống hoặc lỗi phân vùng dữ liệu.
 - **Từ khóa:** treo logo, không vào được, phần mềm
 
@@ -29,6 +30,7 @@
 
 ### Cổng sạc lỏng, sạc lúc được lúc không
 - **ID:** lib-an2
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Cổng sạc bị mòn hoặc đóng bụi bẩn.
 - **Từ khóa:** sạc, lỏng, không nhận
 
@@ -50,6 +52,7 @@
 
 ### Pin điện thoại Android bị phồng
 - **ID:** lib-an3
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Pin lão hóa hoặc sạc sai chuẩn công suất trong thời gian dài gây phồng rộp.
 - **Từ khóa:** pin phồng, phồng pin, nguy hiểm
 
@@ -72,6 +75,7 @@
 
 ### Máy Android nóng bất thường khi sạc hoặc dùng nhẹ
 - **ID:** lib-an4
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Sạc không chính hãng, chạy nhiều ứng dụng nền, hoặc pin/IC sạc có vấn đề.
 - **Từ khóa:** nóng máy, nóng khi sạc, quá nhiệt
 
@@ -94,6 +98,7 @@
 
 ### Samsung báo lỗi Knox hoặc mất bảo hành sau khi flash/root
 - **ID:** lib-an5
+- **Thiết bị:** Samsung
 - **Chẩn đoán ngắn:** Knox Warranty Void bị kích hoạt vĩnh viễn khi mở khóa bootloader hoặc root máy.
 - **Từ khóa:** knox, root, mất bảo hành, flash
 
@@ -115,6 +120,7 @@
 
 ### Loa ngoài Android rè hoặc mất tiếng khi nghe gọi
 - **ID:** lib-an6
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Màng loa bám bụi/ẩm, hoặc cấu hình âm thanh bị lỗi.
 - **Từ khóa:** loa, rè, mất tiếng, nghe gọi
 
@@ -136,6 +142,7 @@
 
 ### Màn hình cảm ứng Android đơ, loạn cảm ứng (ghost touch)
 - **ID:** lib-an7
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Miếng dán màn hình lỗi, xung đột phần mềm, hoặc lớp cảm ứng bị chập.
 - **Từ khóa:** cảm ứng, loạn cảm ứng, đơ máy, ghost touch
 
@@ -157,6 +164,7 @@
 
 ### Máy Android bị bootloop, khởi động lặp lại liên tục
 - **ID:** lib-an8
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Lỗi phân vùng hệ thống sau cập nhật, hoặc xung đột ứng dụng vừa cài.
 - **Từ khóa:** bootloop, khởi động lại liên tục, treo logo
 
@@ -179,6 +187,7 @@
 
 ### Điện thoại không nhận SIM hoặc mất sóng liên tục
 - **ID:** lib-an9
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Khay SIM lỏng/bẩn, SIM lỗi, hoặc lỗi IC sóng sau va đập/vào nước.
 - **Từ khóa:** không nhận sim, mất sóng, sim
 
@@ -201,6 +210,7 @@
 
 ### Máy bị khóa FRP (Factory Reset Protection) sau khi khôi phục cài đặt gốc
 - **ID:** lib-an10
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Máy đã đăng nhập tài khoản Google trước đó nhưng chưa thoát tài khoản trước khi Reset, kích hoạt khóa bảo mật chống trộm.
 - **Từ khóa:** frp, khóa máy, reset, tài khoản google
 
@@ -222,6 +232,7 @@
 
 ### Xiaomi báo khóa Mi Account (Mi Cloud lock), không dùng được máy
 - **ID:** lib-an11
+- **Thiết bị:** Xiaomi
 - **Chẩn đoán ngắn:** Máy còn liên kết tài khoản Mi của chủ cũ, tương tự Activation Lock của Apple hoặc FRP của Google.
 - **Từ khóa:** mi account, mi cloud, xiaomi, khóa tài khoản
 
@@ -243,6 +254,7 @@
 
 ### Màn hình Android bị vỡ kính nhưng cảm ứng vẫn dùng được
 - **ID:** lib-an12
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Kính bảo vệ ngoài nứt/vỡ do va đập, lớp cảm ứng và hiển thị bên trong có thể chưa bị ảnh hưởng.
 - **Từ khóa:** màn hình vỡ, vỡ kính, nứt màn hình
 
@@ -264,6 +276,7 @@
 
 ### Cảm biến vân tay không nhận diện được
 - **ID:** lib-an13
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Tay/màn hình ẩm bẩn, miếng dán màn hình sai chuẩn che cảm biến, hoặc dữ liệu vân tay lỗi.
 - **Từ khóa:** vân tay, không nhận diện, cảm biến vân tay
 
@@ -285,6 +298,7 @@
 
 ### Máy báo đầy bộ nhớ, không cài được ứng dụng hoặc cập nhật
 - **ID:** lib-an14
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Cache hệ thống, file tải về, hoặc ảnh/video chưa sao lưu chiếm phần lớn dung lượng.
 - **Từ khóa:** đầy bộ nhớ, hết dung lượng, bộ nhớ
 
@@ -306,6 +320,7 @@
 
 ### Máy bị treo hoặc lỗi sau khi cập nhật giao diện (MIUI/ColorOS/FuntouchOS)
 - **ID:** lib-an15
+- **Thiết bị:** Xiaomi
 - **Chẩn đoán ngắn:** Bản cập nhật giao diện hãng (Xiaomi MIUI/HyperOS, Oppo ColorOS, Vivo FuntouchOS/OriginOS) bị lỗi tải hoặc xung đột với dữ liệu cũ.
 - **Từ khóa:** miui, coloros, funtouchos, xiaomi, oppo, vivo, cập nhật giao diện, treo sau cập nhật
 
@@ -327,6 +342,7 @@
 
 ### Camera Android bị mờ, lấy nét chậm hoặc không lấy nét được
 - **ID:** lib-an16
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Ống kính bám bụi/dấu vân tay, ốp lưng che cảm biến lấy nét laser, hoặc lỗi phần mềm camera.
 - **Từ khóa:** camera mờ, lấy nét, camera
 
@@ -348,6 +364,7 @@
 
 ### Điện thoại Android bị vào nước, ẩm ở cổng sạc/khay SIM
 - **ID:** lib-an17
+- **Thiết bị:** Chung (mọi hãng)
 - **Chẩn đoán ngắn:** Chỉ báo tiếp xúc chất lỏng (liquid damage indicator) trong khay SIM hoặc cổng sạc đã đổi màu, nước có thể đã vào bên trong máy.
 - **Từ khóa:** vào nước, ẩm, ướt máy, liquid damage, không sạc được sau khi vào nước
 
@@ -370,6 +387,7 @@
 
 ### Wifi/Bluetooth Samsung tự tắt hoặc chập chờn liên tục
 - **ID:** lib-an18
+- **Thiết bị:** Samsung
 - **Chẩn đoán ngắn:** Xung đột tính năng tiết kiệm pin/Wifi thông minh (Smart Wi-Fi toggle) hoặc lỗi phần mềm sau cập nhật One UI.
 - **Từ khóa:** wifi tự tắt, bluetooth tự tắt, mất kết nối, chập chờn, samsung
 
