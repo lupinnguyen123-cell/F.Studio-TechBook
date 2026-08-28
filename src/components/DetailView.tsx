@@ -25,6 +25,7 @@ import {
 import { BRANDS } from '../constants';
 import { Brand, BrandDetail, KnowledgeItem } from '../types';
 import { findLibraryMatches } from '../lib/searchLibrary';
+import { DemoGuideSection } from './DemoGuideSection';
 
 const IconMap: Record<string, any> = {
   Camera,
@@ -362,6 +363,11 @@ export function DetailView({
               </section>
             </div>
           </div>
+
+          {/* Hướng dẫn cài demo (chỉ hiện khi thương hiệu có dữ liệu demoGuide) */}
+          {currentBrand?.demoGuide && currentBrand.demoGuide.length > 0 && (
+            <DemoGuideSection devices={currentBrand.demoGuide} accentColor={currentBrand.accentColor} />
+          )}
         </div>
       </div>
     </motion.div>

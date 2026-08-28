@@ -28,6 +28,35 @@ export interface LibraryEntry extends KnowledgeItem {
   brandColor: string;
 }
 
+// Hướng dẫn cài demo — quy trình thao tác nhiều bước (khác thư viện lỗi:
+// không có "chẩn đoán"/"kịch bản tư vấn", chỉ có bước thao tác theo thứ tự).
+export interface DemoGuideStepGroup {
+  label?: string;
+  items: string[];
+}
+
+export interface DemoGuideCase {
+  situation: string;
+  items: string[];
+}
+
+export interface DemoGuideSection {
+  id: string;
+  kind: 'install' | 'remove' | 'troubleshoot';
+  title: string;
+  requirements?: string[];
+  stepGroups?: DemoGuideStepGroup[];
+  cases?: DemoGuideCase[];
+  doNots?: string[];
+  note?: string;
+}
+
+export interface DemoGuideDevice {
+  id: string;
+  name: string;
+  sections: DemoGuideSection[];
+}
+
 export interface BrandDetail {
   id: Brand;
   name: string;
@@ -39,4 +68,5 @@ export interface BrandDetail {
   processes: ProcessItem[];
   dynamicWarnings?: { keywords: string[], message: string }[];
   library?: KnowledgeItem[];
+  demoGuide?: DemoGuideDevice[];
 }
