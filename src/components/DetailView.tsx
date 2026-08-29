@@ -22,11 +22,13 @@ import {
   Library,
   Zap,
   ListChecks,
+  Trash2,
 } from 'lucide-react';
 import { BRANDS } from '../constants';
-import { Brand, BrandDetail, KnowledgeItem } from '../types';
+import { Brand, BrandDetail, KnowledgeItem, ResultSource } from '../types';
 import { findLibraryMatches } from '../lib/searchLibrary';
 import { DemoGuideSection } from './DemoGuideSection';
+import { ScrollToTopButton } from './ScrollToTopButton';
 
 const IconMap: Record<string, any> = {
   Camera,
@@ -36,6 +38,29 @@ const IconMap: Record<string, any> = {
   Activity,
   Monitor,
   User,
+};
+
+// Tiêu đề Hero Banner theo hãng. Trước đây là ternary chỉ loại trừ Garmin — cùng dạng
+// với lỗi ASP bên dưới, nên gom về map cho dễ rà soát khi thêm hãng mới.
+const BRAND_HEADLINE: Partial<Record<Brand, string>> = {
+  Garmin: 'Bộ Fenix & Epix',
+};
+
+// Dòng phụ dưới tên hãng ở Hero Banner. Tách theo từng hãng thay vì ternary chỉ loại
+// trừ Garmin: "ASP" (Apple Service Provider) là khái niệm riêng của Apple, để Android
+// hiện dòng đó là sai. Hãng mới thêm sau này rơi vào giá trị mặc định trung tính.
+const BRAND_SUBLINE: Record<Brand, string> = {
+  Apple: 'TIÊU CHUẨN DỊCH VỤ ASP',
+  Garmin: 'v4.2.0 • PHẦN CỨNG REV. B',
+  Android: 'TIÊU CHUẨN BẢO HÀNH CHÍNH HÃNG',
+};
+
+// Ví dụ trong ô nhập mô tả lỗi cũng phải theo hãng đang xem — trước đây hardcode ví dụ
+// iPhone cho cả tab Garmin lẫn Android.
+const BRAND_ERROR_PLACEHOLDER: Record<Brand, string> = {
+  Apple: 'Mô tả tình trạng lỗi của thiết bị (ví dụ: iPhone 13 bị sọc màn hình sau khi rơi...)',
+  Garmin: 'Mô tả tình trạng lỗi của thiết bị (ví dụ: Đồng hồ Fenix 7 báo lỗi không sạc được pin...)',
+  Android: 'Mô tả tình trạng lỗi của thiết bị (ví dụ: Samsung Galaxy S23 bị treo logo sau khi cập nhật...)',
 };
 
 export function DetailView({
@@ -54,6 +79,10 @@ export function DetailView({
   onClearResult,
   onUseLibrarySolution,
   focusSignal,
+  resultSource,
+  isResultModalOpen,
+  onOpenResultModal,
+  onCloseResultModal,
 }: {
   currentBrand: BrandDetail | undefined;
   activeTab: Brand;
@@ -70,6 +99,10 @@ export function DetailView({
   onClearResult: () => void;
   onUseLibrarySolution: (item: KnowledgeItem) => void;
   focusSignal?: number;
+  resultSource: ResultSource;
+  isResultModalOpen: boolean;
+  onOpenResultModal: () => void;
+  onCloseResultModal: () => void;
 }) {
   const librarySuggestions = useMemo(
     () => findLibraryMatches(errorDescription, currentBrand?.library || [], 5),
@@ -77,6 +110,8 @@ export function DetailView({
   );
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const suggestionsRef = useRef<HTMLDivElement>(null);
+  const prevSuggestionCount = useRef(0);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   // Bấm "Hỏi AI" từ trang Thư viện điều hướng vào đây — cuộn tới và focus sẵn ô nhập
@@ -86,6 +121,23 @@ export function DetailView({
     textareaRef.current?.scrollIntoView({ block: 'center' });
     textareaRef.current?.focus();
   }, [focusSignal]);
+
+  // Khi gõ mô tả và thư viện bắt đầu có gợi ý (0 → >0), kéo khối gợi ý vào tầm nhìn
+  // để nhân viên thấy ngay là "đã có sẵn đáp án, không cần hỏi AI". Chỉ chạy đúng lúc
+  // chuyển trạng thái, không chạy mỗi lần số gợi ý thay đổi để tránh giật khi đang gõ.
+  useEffect(() => {
+    const prev = prevSuggestionCount.current;
+    prevSuggestionCount.current = librarySuggestions.length;
+    if (prev === 0 && librarySuggestions.length > 0) {
+      suggestionsRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }, [librarySuggestions.length]);
+
+  const isLibraryResult = resultSource === 'library';
+  const resultAccent = isLibraryResult ? '#10b981' : '#8b5cf6';
+  const ResultIcon = isLibraryResult ? Library : Sparkles;
+  const resultTitle = isLibraryResult ? 'Kết quả từ Thư viện' : 'Kết quả từ AI';
+  const resultNote = isLibraryResult ? 'Đã kiểm duyệt' : 'Tham khảo thêm';
 
   return (
     <motion.div
@@ -140,10 +192,10 @@ export function DetailView({
                 </span>
               </div>
               <h2 className={`text-3xl font-black ${currentBrand?.textColor} tracking-tight`}>
-                {currentBrand?.id === 'Garmin' ? 'Bộ Fenix & Epix' : `Hỗ trợ ${currentBrand?.name}`}
+                {(currentBrand && BRAND_HEADLINE[currentBrand.id]) || `Hỗ trợ ${currentBrand?.name}`}
               </h2>
               <p className={`text-xs mt-2 uppercase tracking-widest font-bold opacity-70 ${currentBrand?.textColor}`}>
-                {currentBrand?.id === 'Garmin' ? 'v4.2.0 • PHẦN CỨNG REV. B' : 'TIÊU CHUẨN DỊCH VỤ ASP'}
+                {(currentBrand && BRAND_SUBLINE[currentBrand.id]) || 'TIÊU CHUẨN BẢO HÀNH CHÍNH HÃNG'}
               </p>
             </div>
             <div className="absolute right-0 top-0 h-full w-1/2 opacity-20 flex items-center justify-end pr-10">
@@ -168,8 +220,10 @@ export function DetailView({
               </div>
               <div className="flex-1">
                 <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200">Hướng dẫn cài đặt Demo</h4>
+                {/* Danh sách thiết bị lấy từ chính dữ liệu demoGuide, không hardcode tên
+                    thiết bị Apple — nếu sau này hãng khác có demoGuide sẽ tự hiện đúng. */}
                 <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1">
-                  Xem quy trình cài đặt / xóa / xử lý sự cố demo cho iPhone, iPad, Mac, Apple Watch
+                  Xem quy trình cài đặt / xóa / xử lý sự cố demo cho {currentBrand.demoGuide.map((d) => d.name).join(', ')}
                 </p>
               </div>
               <ChevronRight size={18} className="text-[#6e6e73] dark:text-slate-500 group-hover:translate-x-0.5 transition-transform shrink-0" />
@@ -190,7 +244,10 @@ export function DetailView({
                       ref={textareaRef}
                       value={errorDescription}
                       onChange={(e) => onErrorDescriptionChange(e.target.value)}
-                      placeholder="Mô tả tình trạng lỗi của thiết bị (ví dụ: iPhone 13 bị sọc màn hình sau khi rơi...)"
+                      placeholder={
+                        (currentBrand && BRAND_ERROR_PLACEHOLDER[currentBrand.id]) ||
+                        'Mô tả tình trạng lỗi của thiết bị...'
+                      }
                       className="w-full bg-[#f5f5f7] dark:bg-slate-800/50 border border-[#d2d2d7] dark:border-slate-700 rounded-lg p-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:border-transparent transition-all resize-none min-h-[120px]"
                       style={{ '--tw-ring-color': `${currentBrand?.accentColor}80` } as React.CSSProperties}
                     />
@@ -202,6 +259,7 @@ export function DetailView({
                       đúng. Từng gặp đúng lỗi này khi test — sửa luôn tại đây. */}
                   {librarySuggestions.length > 0 && (
                       <motion.div
+                        ref={suggestionsRef}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         className="space-y-2 max-h-64 overflow-y-auto pr-1"
@@ -261,54 +319,40 @@ export function DetailView({
                     </button>
                   </div>
 
-                  {/* Không dùng AnimatePresence (exit dễ kẹt nội dung cũ khi animation bị
-                      trì hoãn) và không animate height: 'auto' (cần đo kích thước qua rAF,
-                      nếu bị trì hoãn thì kẹt ở height:0 = kết quả AI mới không hiện ra dù
-                      đã có — nặng hơn cả việc hiện kết quả cũ). Chỉ animate opacity. */}
-                  {analysisResult && (
+                  {/* Nội dung kết quả đầy đủ nay hiển thị trong modal (không phải inline
+                      như trước) — chỗ này chỉ còn 1 thẻ tóm tắt để mở lại modal sau khi
+                      đã đóng, vì đóng modal KHÔNG xóa kết quả. Không có thẻ này thì kết
+                      quả vẫn nằm trong state nhưng người dùng không còn đường mở lại. */}
+                  {analysisResult && !isResultModalOpen && (
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         className="pt-4 border-t border-[#d2d2d7] dark:border-slate-800"
                       >
-                        <div
-                          className="border rounded-xl p-5"
-                          style={{
-                            backgroundColor: `${currentBrand?.accentColor}0d`,
-                            borderColor: `${currentBrand?.accentColor}33`,
-                          }}
+                        <button
+                          onClick={onOpenResultModal}
+                          className="w-full flex items-center gap-3 p-4 rounded-xl border transition-all text-left group"
+                          style={{ backgroundColor: `${resultAccent}0d`, borderColor: `${resultAccent}33` }}
                         >
-                          <div className="flex items-center gap-2 mb-4">
-                            <div
-                              className="size-7 rounded-full flex items-center justify-center"
-                              style={{ backgroundColor: currentBrand?.accentColor }}
-                            >
-                              <Sparkles size={14} className="text-white" />
-                            </div>
-                            <span className="text-xs font-bold uppercase tracking-widest" style={{ color: currentBrand?.accentColor }}>
-                              Giải pháp từ AI
+                          <div
+                            className="size-8 rounded-full flex items-center justify-center shrink-0"
+                            style={{ backgroundColor: resultAccent }}
+                          >
+                            <ResultIcon size={16} className="text-white" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <span className="text-xs font-bold uppercase tracking-widest block" style={{ color: resultAccent }}>
+                              {resultTitle}
                             </span>
-                            <div className="ml-auto flex items-center gap-1">
-                              <button
-                                onClick={onResetAnalysis}
-                                className="p-1.5 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
-                                title="Làm mới tất cả"
-                              >
-                                <RotateCcw size={14} />
-                              </button>
-                              <button
-                                onClick={onClearResult}
-                                className="p-1.5 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
-                                title="Xóa kết quả"
-                              >
-                                <X size={14} />
-                              </button>
-                            </div>
+                            <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-0.5 line-clamp-1">
+                              {analysisResult}
+                            </p>
                           </div>
-                          <div className="text-sm text-[#1d1d1f] dark:text-slate-300 leading-relaxed whitespace-pre-wrap prose prose-invert prose-sm max-w-none">
-                            {analysisResult}
-                          </div>
-                        </div>
+                          <span className="text-[10px] font-bold uppercase tracking-widest shrink-0" style={{ color: resultAccent }}>
+                            Xem lại
+                          </span>
+                          <ChevronRight size={16} className="shrink-0 group-hover:translate-x-0.5 transition-transform" style={{ color: resultAccent }} />
+                        </button>
                       </motion.div>
                   )}
                 </div>
@@ -438,6 +482,75 @@ export function DetailView({
           </motion.div>
         </div>
       )}
+
+      {/* Modal kết quả (gợi ý thư viện đã chọn / câu trả lời AI) — cùng pattern với modal
+          Hướng dẫn cài demo ở trên: chỉ animate lúc mở, đóng tức thời. State tách riêng
+          (isDemoModalOpen vs isResultModalOpen) để 2 modal không xung đột nhau. */}
+      {isResultModalOpen && analysisResult && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4"
+          onClick={onCloseResultModal}
+        >
+          <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.15 }}
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full sm:max-w-3xl max-h-[85vh] rounded-2xl bg-white dark:bg-[#101922] border border-[#d2d2d7] dark:border-slate-800 shadow-2xl overflow-hidden flex flex-col"
+          >
+            <div
+              className="flex items-center gap-2 p-4 border-b shrink-0"
+              style={{ backgroundColor: `${resultAccent}0d`, borderColor: `${resultAccent}33` }}
+            >
+              <div
+                className="size-8 rounded-full flex items-center justify-center shrink-0"
+                style={{ backgroundColor: resultAccent }}
+              >
+                <ResultIcon size={16} className="text-white" />
+              </div>
+              <div className="min-w-0">
+                <span className="text-xs font-bold uppercase tracking-widest block" style={{ color: resultAccent }}>
+                  {resultTitle}
+                </span>
+                <span className="text-[10px] text-[#6e6e73] dark:text-slate-500 uppercase tracking-widest font-bold">
+                  {resultNote}
+                </span>
+              </div>
+              <div className="ml-auto flex items-center gap-1 shrink-0">
+                <button
+                  onClick={onResetAnalysis}
+                  className="p-2 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
+                  title="Làm mới tất cả"
+                >
+                  <RotateCcw size={16} />
+                </button>
+                <button
+                  onClick={onClearResult}
+                  className="p-2 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
+                  title="Xóa kết quả"
+                >
+                  <Trash2 size={16} />
+                </button>
+                <button
+                  onClick={onCloseResultModal}
+                  className="p-2 rounded-full hover:bg-[#f5f5f7] dark:hover:bg-slate-800 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-200 transition-colors"
+                  title="Đóng"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+            </div>
+            <div className="overflow-y-auto p-5">
+              <div className="text-sm text-[#1d1d1f] dark:text-slate-300 leading-relaxed whitespace-pre-wrap prose prose-invert prose-sm max-w-none">
+                {analysisResult}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }

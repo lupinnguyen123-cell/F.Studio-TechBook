@@ -7,7 +7,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { AlertCircle, Home, Library, History as HistoryIcon, Sun, Moon } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import { BRANDS } from './constants';
-import { Brand, LibraryEntry } from './types';
+import { Brand, LibraryEntry, ResultSource } from './types';
 import { analyzeError, getHealth } from './api/client';
 import { usePresence } from './hooks/usePresence';
 import { useHistory, HistoryItem } from './hooks/useHistory';
@@ -16,6 +16,7 @@ import { HomeView } from './components/HomeView';
 import { DetailView } from './components/DetailView';
 import { LibraryView } from './components/LibraryView';
 import { HistoryView } from './components/HistoryView';
+import { MAIN_SCROLL_CONTAINER_ID } from './lib/scrollContainer';
 
 export default function App() {
   const [currentBrandId, setCurrentBrandId] = useState<Brand | null>(null);
@@ -31,6 +32,13 @@ export default function App() {
   const [docSearchTerm, setDocSearchTerm] = useState('');
   const [librarySearchTerm, setLibrarySearchTerm] = useState('');
   const [aiFocusSignal, setAiFocusSignal] = useState(0);
+  // Nguồn của kết quả đang hiển thị theo từng hãng — dùng để ghi đúng nhãn
+  // "Kết quả từ Thư viện" (đã kiểm duyệt) vs "Kết quả từ AI" (tham khảo thêm).
+  const [resultSources, setResultSources] = useState<Record<string, ResultSource>>({});
+  // Modal kết quả để ở App (không phải signal + state trong DetailView) vì kết quả có
+  // thể được mở từ 4 nơi, 3 trong số đó nằm ngoài DetailView. Xem ghi chú ở
+  // handleQuickAccess về lý do chọn state điều khiển thay vì tín hiệu tăng dần.
+  const [isResultModalOpen, setIsResultModalOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     try {
       const saved = localStorage.getItem('theme');
@@ -95,6 +103,7 @@ export default function App() {
   const errorDescription = errorDescriptions[currentBrand?.id || ''] || '';
   const analysisResult = analysisResults[currentBrand?.id || ''] || null;
   const isAnalyzing = isAnalyzingMap[currentBrand?.id || ''] || false;
+  const resultSource = resultSources[currentBrand?.id || ''] || 'ai';
 
   const dynamicWarnings = useMemo(() => {
     if (!currentBrand || !currentBrand.dynamicWarnings || !errorDescription) return [];
@@ -109,12 +118,29 @@ export default function App() {
 
   const handleBack = () => setCurrentBrandId(null);
 
+  // Nút "Trang chủ" ở thanh dưới: phải reset cả currentBrandId, không chỉ view —
+  // nếu đang xem chi tiết 1 hãng thì view đã là 'docs' rồi, chỉ setView sẽ không
+  // làm gì cả và người dùng kẹt lại ở trang chi tiết.
+  const handleGoHome = () => {
+    setView('docs');
+    setCurrentBrandId(null);
+  };
+
   const resetAnalysis = () => {
     if (!currentBrand) return;
     const bid = currentBrand.id;
     setErrorDescriptions((prev) => ({ ...prev, [bid]: '' }));
     setAnalysisResults((prev) => ({ ...prev, [bid]: null }));
     setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
+    setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+    setIsResultModalOpen(false);
+  };
+
+  const handleClearResult = () => {
+    const bid = currentBrand?.id || '';
+    setAnalysisResults((prev) => ({ ...prev, [bid]: null }));
+    setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+    setIsResultModalOpen(false);
   };
 
   const handleAnalyze = async () => {
@@ -127,10 +153,14 @@ export default function App() {
     try {
       const resultText = await analyzeError(bid, errorDescription);
       setAnalysisResults((prev) => ({ ...prev, [bid]: resultText }));
+      setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+      setIsResultModalOpen(true);
       addHistoryItem({ brandId: bid, description: errorDescription, result: resultText });
     } catch (error: any) {
       console.error('AI Analysis Error:', error);
       setAnalysisResults((prev) => ({ ...prev, [bid]: error?.message || 'Đã có lỗi xảy ra trong quá trình phân tích. Vui lòng thử lại sau.' }));
+      setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+      setIsResultModalOpen(true);
     } finally {
       setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
     }
@@ -140,8 +170,10 @@ export default function App() {
     setCurrentBrandId(item.brandId);
     setActiveTab(item.brandId);
     setAnalysisResults((prev) => ({ ...prev, [item.brandId]: item.solution }));
+    setResultSources((prev) => ({ ...prev, [item.brandId]: 'library' }));
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.symptom }));
     setView('docs');
+    setIsResultModalOpen(true);
   };
 
   const handleOpenLibraryEntry = (item: LibraryEntry) => {
@@ -154,6 +186,8 @@ export default function App() {
   const handleUseLibrarySolution = (item: { solution: string }) => {
     if (!currentBrand) return;
     setAnalysisResults((prev) => ({ ...prev, [currentBrand.id]: item.solution }));
+    setResultSources((prev) => ({ ...prev, [currentBrand.id]: 'library' }));
+    setIsResultModalOpen(true);
   };
 
   const handleAskAI = () => {
@@ -166,14 +200,23 @@ export default function App() {
     setCurrentBrandId(item.brandId);
     setActiveTab(item.brandId);
     setAnalysisResults((prev) => ({ ...prev, [item.brandId]: item.result }));
+    // Lịch sử chỉ lưu kết quả AI (chỉ handleAnalyze mới gọi addHistoryItem).
+    setResultSources((prev) => ({ ...prev, [item.brandId]: 'ai' }));
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.description }));
     setView('docs');
+    setIsResultModalOpen(true);
   };
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#0a0f14] text-[#1d1d1f] dark:text-slate-100 font-sans selection:bg-blue-500/30">
       <div className="max-w-6xl mx-auto min-h-screen flex flex-col relative border-x border-[#d2d2d7] dark:border-slate-800 shadow-2xl bg-white dark:bg-[#101922]">
-        <main className="flex-1 overflow-y-auto pb-24">
+        {/* Đã bỏ `overflow-y-auto` ở đây (trước có nhưng vô tác dụng): khung bọc dùng
+            `min-h-screen` nên <main> tự giãn theo nội dung, clientHeight luôn = scrollHeight
+            và main không bao giờ cuộn — window mới là thứ cuộn. Tệ hơn: `overflow-y-auto`
+            vẫn biến main thành containing block của `position: sticky`, khiến MỌI header
+            sticky bên trong (DetailView/LibraryView/HistoryView) bị cuộn trôi mất thay vì
+            dính lại. Bỏ nó đi thì sticky bám đúng vào viewport. */}
+        <main id={MAIN_SCROLL_CONTAINER_ID} className="flex-1 pb-24">
           {aiConfigured === false && (
             <div className="bg-amber-500/10 border-b border-amber-500/20 px-4 py-2 flex items-center gap-2">
               <AlertCircle size={14} className="text-amber-500" />
@@ -217,16 +260,20 @@ export default function App() {
                   onErrorDescriptionChange={(value) => {
                     const bid = currentBrand?.id || '';
                     setErrorDescriptions((prev) => ({ ...prev, [bid]: value }));
-                    // Người dùng đang sửa lại mô tả lỗi — kết quả AI cũ (ứng với mô tả
+                    // Người dùng đang sửa lại mô tả lỗi — kết quả cũ (ứng với mô tả
                     // trước đó) không còn khớp nữa, xóa để tránh nhân viên đọc nhầm
                     // hướng xử lý của lỗi cũ áp cho lỗi mới đang gõ.
                     setAnalysisResults((prev) => (prev[bid] ? { ...prev, [bid]: null } : prev));
                   }}
                   onAnalyze={handleAnalyze}
                   onResetAnalysis={resetAnalysis}
-                  onClearResult={() => setAnalysisResults((prev) => ({ ...prev, [currentBrand?.id || '']: null }))}
+                  onClearResult={handleClearResult}
                   onUseLibrarySolution={handleUseLibrarySolution}
                   focusSignal={aiFocusSignal}
+                  resultSource={resultSource}
+                  isResultModalOpen={isResultModalOpen}
+                  onOpenResultModal={() => setIsResultModalOpen(true)}
+                  onCloseResultModal={() => setIsResultModalOpen(false)}
                 />
               )
             ) : view === 'library' ? (
@@ -255,7 +302,7 @@ export default function App() {
 
         {/* Bottom Navigation */}
         <nav className="fixed bottom-0 left-0 right-0 max-w-6xl mx-auto z-50 bg-white/90 dark:bg-[#101922]/90 backdrop-blur-xl border-t border-[#d2d2d7] dark:border-slate-800 pb-6 pt-2 px-4 flex justify-around items-center">
-          <NavItem icon={<Home size={24} />} label="Trang chủ" active={view === 'docs'} onClick={() => setView('docs')} />
+          <NavItem icon={<Home size={24} />} label="Trang chủ" active={view === 'docs' && !currentBrandId} onClick={handleGoHome} />
           <NavItem icon={<Library size={24} />} label="Thư viện" active={view === 'library'} onClick={() => setView('library')} />
           <NavItem icon={<HistoryIcon size={24} />} label="Lịch sử" active={view === 'history'} onClick={() => setView('history')} />
           <NavItem

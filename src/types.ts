@@ -23,6 +23,10 @@ export interface KnowledgeItem {
   keywords: string[];
 }
 
+// Nguồn của kết quả hiển thị cho nhân viên: 'library' = lấy nguyên từ thư viện tĩnh
+// đã kiểm duyệt, 'ai' = do Gemini sinh ra (chỉ nên dùng tham khảo).
+export type ResultSource = 'library' | 'ai';
+
 export interface LibraryEntry extends KnowledgeItem {
   brandId: Brand;
   brandName: string;

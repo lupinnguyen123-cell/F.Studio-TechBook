@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ChevronLeft, Database, Search, X, Info, ExternalLink, ChevronDown, Sparkles } from 'lucide-react';
 import { Brand, LibraryEntry } from '../types';
 import { BRANDS } from '../constants';
+import { ScrollToTopButton } from './ScrollToTopButton';
 
 // Thứ tự hiển thị thiết bị mong muốn trong mỗi hãng — thiết bị không nằm trong danh
 // sách này (ví dụ do dữ liệu mới thêm) sẽ tự động xếp cuối theo bảng chữ cái.
@@ -57,8 +58,11 @@ export function LibraryView({
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
-      className="p-4 pb-24 space-y-6"
+      className="pb-24"
     >
+      {/* Header dính trên cùng khi cuộn danh sách dài — dùng đúng bộ class như header
+          của DetailView để đồng bộ phong cách giữa các trang. */}
+      <div className="sticky top-0 z-50 bg-white dark:bg-[#101922] border-b border-[#d2d2d7] dark:border-slate-800 px-4 pt-4 pb-3 space-y-3">
       <div className="flex items-center gap-4">
         <button onClick={onBack} className="p-2 -ml-2 rounded-full hover:bg-[#f5f5f7] dark:hover:bg-slate-800 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-100 transition-colors">
           <ChevronLeft size={24} />
@@ -102,7 +106,9 @@ export function LibraryView({
           Không thấy? Hỏi AI
         </button>
       </div>
+      </div>
 
+      <div className="p-4 space-y-6">
       {grouped.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-[#6e6e73] dark:text-slate-600 space-y-4 text-center">
           <Info size={48} strokeWidth={1} />
@@ -196,6 +202,9 @@ export function LibraryView({
           })}
         </div>
       )}
+      </div>
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }

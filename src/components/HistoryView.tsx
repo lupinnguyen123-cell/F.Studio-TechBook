@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ChevronLeft, Trash2, History as HistoryIcon, Search, AlertCircle, Sparkles, ExternalLink, X } from 'lucide-react';
 import { BRANDS } from '../constants';
 import { HistoryItem } from '../hooks/useHistory';
+import { ScrollToTopButton } from './ScrollToTopButton';
 
 export function HistoryView({
   history,
@@ -28,8 +29,10 @@ export function HistoryView({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
-      className="p-4 pb-24 space-y-6"
+      className="pb-24"
     >
+      {/* Header dính trên cùng khi cuộn — cùng bộ class với DetailView/LibraryView. */}
+      <div className="sticky top-0 z-50 bg-white dark:bg-[#101922] border-b border-[#d2d2d7] dark:border-slate-800 px-4 pt-4 pb-3">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button onClick={onBack} className="p-2 -ml-2 rounded-full hover:bg-[#f5f5f7] dark:hover:bg-slate-800 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-100 transition-colors">
@@ -55,6 +58,30 @@ export function HistoryView({
         )}
       </div>
 
+      {/* Ô tìm kiếm nằm trong header sticky để vẫn thao tác được khi đã cuộn sâu. */}
+      {history.length > 0 && (
+        <div className="relative mt-3">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500" size={18} />
+          <input
+            type="text"
+            value={historySearchTerm}
+            onChange={(e) => onHistorySearchChange(e.target.value)}
+            placeholder="Tìm kiếm trong lịch sử..."
+            className="w-full bg-[#f5f5f7] dark:bg-slate-900/50 border border-[#d2d2d7] dark:border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:ring-[#137fec]/50 focus:border-transparent transition-all"
+          />
+          {historySearchTerm && (
+            <button
+              onClick={() => onHistorySearchChange('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
+            >
+              <X size={16} />
+            </button>
+          )}
+        </div>
+      )}
+      </div>
+
+      <div className="p-4 space-y-6">
       {history.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-[#6e6e73] dark:text-slate-600 space-y-4">
           <HistoryIcon size={48} strokeWidth={1} />
@@ -62,25 +89,6 @@ export function HistoryView({
         </div>
       ) : (
         <div className="space-y-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500" size={18} />
-            <input
-              type="text"
-              value={historySearchTerm}
-              onChange={(e) => onHistorySearchChange(e.target.value)}
-              placeholder="Tìm kiếm trong lịch sử..."
-              className="w-full bg-[#f5f5f7] dark:bg-slate-900/50 border border-[#d2d2d7] dark:border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:ring-[#137fec]/50 focus:border-transparent transition-all"
-            />
-            {historySearchTerm && (
-              <button
-                onClick={() => onHistorySearchChange('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
-              >
-                <X size={16} />
-              </button>
-            )}
-          </div>
-
           {filteredHistory.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-10 text-[#6e6e73] dark:text-slate-600 space-y-2">
               <Search size={32} strokeWidth={1} />
@@ -147,6 +155,9 @@ export function HistoryView({
           )}
         </div>
       )}
+      </div>
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }
