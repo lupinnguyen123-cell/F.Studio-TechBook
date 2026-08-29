@@ -1,4 +1,4 @@
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import { BRANDS } from '../constants';
 
 // Model ổn định hiện hành (thay cho bản preview cũ) — kiểm tra lại tại
@@ -47,8 +47,21 @@ export async function analyzeWithGemini(apiKey: string, brandId: unknown, errorD
     const genAI = new GoogleGenAI({ apiKey });
     const response = await genAI.models.generateContent({
       model: GEMINI_MODEL,
-      contents: { parts: [{ text: errorDescription }] },
-      config: { systemInstruction: buildSystemInstruction(brand.name) },
+      // API hiện bắt buộc phải có `role` dù kiểu khai báo của SDK ghi là optional —
+      // thiếu role gây lỗi 400 "Please use a valid role: user, model" (đã xác nhận
+      // qua Netlify Function logs, đây chính là nguyên nhân gốc gây lỗi "Hỏi AI").
+      contents: { role: 'user', parts: [{ text: errorDescription }] },
+      config: {
+        systemInstruction: buildSystemInstruction(brand.name),
+        // Giảm mức "thinking" xuống MINIMAL (mặc định model tự quyết định thời gian
+        // suy luận trước khi trả lời) — task này chỉ cần bám sát 1 instruction rõ
+        // ràng có sẵn, không cần suy luận nhiều bước. Đã đo qua /api/analyze thật:
+        // mặc định mất 17-25s/lượt, MINIMAL còn 8-10s, nội dung không đổi. Lưu ý:
+        // `thinkingBudget: 0` (tắt hẳn) bị model này từ chối với lỗi 400
+        // INVALID_ARGUMENT — đã test và xác nhận MINIMAL là mức thấp nhất dùng được.
+        thinkingConfig: { thinkingLevel: ThinkingLevel.MINIMAL },
+        maxOutputTokens: 2048,
+      },
     });
 
     const resultText = response.text || 'Không thể phân tích lỗi vào lúc này.';
