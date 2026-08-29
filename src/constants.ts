@@ -417,6 +417,438 @@ export const BRANDS: BrandDetail[] = [
         diagnosis: "Mac không hiển thị hình ảnh lên màn hình rời/máy chiếu dù đã kết nối cáp.",
         solution: "🔍 CHẨN ĐOÁN: Xác định màn hình ngoài có nhận điện (đèn nguồn sáng) nhưng không nhận tín hiệu từ Mac, hay hoàn toàn không phản hồi gì. Hỏi khách đang dùng cổng/adapter chuyển đổi nào.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt hệ thống > Màn hình, giữ phím Option và bấm \"Phát hiện màn hình\".\n2. Rút cáp màn hình ra khỏi Mac rồi cắm lại, đảm bảo cắm chắc đúng cổng.\n3. Kiểm tra đang dùng đúng loại cáp và đúng adapter chuyển đổi nếu cần.\n4. Cho Mac vào chế độ ngủ rồi đánh thức lại để máy dò lại thiết bị hiển thị.\n5. Với màn hình/máy chiếu bên thứ 3: kiểm tra tài liệu hướng dẫn đi kèm (một số máy chiếu cần bật nguồn trước khi cắm cáp).\n6. Thử cáp/adapter khác hoặc thử màn hình khác để xác định lỗi do cáp/màn hình hay do máy.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không kết luận cổng xuất hình trên Mac hỏng khi chưa thử cáp/adapter/màn hình khác; không tháo máy khi chưa loại trừ hết nguyên nhân phụ kiện kết nối.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ mình thử đổi cáp/adapter và bấm dò lại màn hình trước ạ, phần lớn trường hợp không nhận màn hình ngoài là do cáp/adapter chứ không phải do máy.\"\n\n📦 LƯU Ý TTBH: Đã thử nhiều cáp/adapter/màn hình khác nhau mà Mac vẫn không xuất được hình ảnh ra bất kỳ màn hình ngoài nào — gửi TTBH kiểm tra cổng xuất hình/card đồ họa.",
         keywords: ["mac không nhận màn hình ngoài", "không xuất hình máy chiếu", "external display"]
+      },
+      {
+        id: "lib-a50",
+        device: "iPhone",
+        symptom: "Màn hình iPhone loạn cảm ứng, tự chạm không do người dùng (ghost touch)",
+        diagnosis: "Do lớp cảm ứng (digitizer) bị hỏng, dây cáp màn hình lỏng, hoặc màn hình từng bị va đập/ép kính không đúng chuẩn.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát máy có tự bấm/mở ứng dụng ngẫu nhiên ngay cả khi không chạm vào màn hình không, kiểm tra máy có từng bị rơi, ép kính hoặc dán miếng dán cường lực dày/sai kích thước không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tháo miếng dán màn hình và ốp lưng (nếu có) rồi quan sát lại — nhiều trường hợp do miếng dán kém chất lượng gây nhiễu cảm ứng.\n2. Khởi động lại máy (tắt nguồn rồi bật lại) để loại trừ lỗi phần mềm tạm thời.\n3. Vào Cài đặt > Cài đặt chung > Chuyển hoặc Đặt lại iPhone > Đặt lại > Đặt lại tất cả cài đặt để loại trừ xung đột phần mềm (không mất dữ liệu).\n4. Nếu vẫn còn hiện tượng, kiểm tra lịch sử máy: từng rơi rớt, ép kính ở nơi khác, hoặc vào nước gần đây không.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý tháo màn hình kiểm tra dây cáp nếu không được đào tạo phần cứng; không khẳng định \"chắc chắn do phần mềm\" khi máy từng có va đập hoặc ép kính bên ngoài.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và loại trừ được nguyên nhân phần mềm/miếng dán rồi ạ, nếu máy vẫn còn hiện tượng chạm ảo thì khả năng cao là màn hình hoặc cáp kết nối có vấn đề, em cần kiểm tra sâu hơn.\"\n\n📦 LƯU Ý TTBH: Sau khi loại trừ phần mềm/miếng dán vẫn còn ghost touch, đặc biệt trên máy chưa từng ép kính lại: đề xuất khách nhận bảo hành; gửi TTBH kiểm tra màn hình/cáp kết nối. Nếu máy từng ép kính không chính hãng, thông báo khách có thể mất bảo hành phần này.",
+        keywords: ["ghost touch", "cảm ứng loạn", "tự chạm", "màn hình"]
+      },
+      {
+        id: "lib-a51",
+        device: "iPhone",
+        symptom: "Pin iPhone bị phồng, đội mặt lưng hoặc màn hình",
+        diagnosis: "Pin lithium-ion bị chai/hỏng hóa học sinh khí bên trong, thường sau thời gian sử dụng dài hoặc sạc kém chất lượng.",
+        solution: "🔍 CHẨN ĐOÁN: Đây là tình huống AN TOÀN CẦN ƯU TIÊN — kiểm tra ngay dấu hiệu phồng bằng mắt (màn hình/lưng bị đội lên, hở khe) và hỏi khách máy có nóng bất thường, có mùi lạ không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Yêu cầu khách NGỪNG SỬ DỤNG và ngừng sạc máy ngay lập tức.\n2. Không được ép, đè hoặc cố gắng tháo pin phồng bằng lực — nguy cơ pin phát nổ hoặc bốc cháy.\n3. Đặt máy ở nơi thoáng, tránh xa vật dễ cháy, không để trong túi quần/túi xách khi di chuyển đến cửa hàng.\n4. Tiếp nhận máy trong hộp/túi chống cháy nếu có, bàn giao ngay cho bộ phận kỹ thuật xử lý bằng quy trình pin lỗi (tháo pin đúng chuẩn an toàn).\n5. Thông báo ngay cho quản lý ca trực nếu pin phồng nặng, biến dạng rõ hoặc rò rỉ dịch.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Tuyệt đối không dùng vật nhọn/kim loại chọc vào khu vực pin phồng; không sạc lại máy để \"kiểm tra thử\"; không để máy gần nguồn nhiệt hoặc trong ngăn kéo kín; không cố gắng bẻ thẳng lại mặt lưng/màn hình bị đội phồng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ. Anh/chị vui lòng không sạc hay dùng máy nữa, em sẽ ưu tiên xử lý thay pin mới cho mình ngay hôm nay.\"\n\n📦 LƯU Ý TTBH: Pin phồng luôn cần thay thế, không sửa/ép lại được — nếu máy còn bảo hành pin chính hãng và không có dấu hiệu tác động ngoại lực, gửi TTBH xử lý theo chính sách bảo hành pin; nếu hết bảo hành, tư vấn thay pin chính hãng tại cửa hàng càng sớm càng tốt.",
+        keywords: ["pin phồng", "phồng pin", "an toàn", "cháy nổ"]
+      },
+      {
+        id: "lib-a52",
+        device: "iPhone",
+        symptom: "Nút nguồn hoặc nút âm lượng bị liệt, kẹt",
+        diagnosis: "Nút vật lý bị kẹt bụi bẩn, oxi hóa tiếp điểm, hoặc dây flex nút bị đứt/lỏng do va đập/vào nước.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định nút nào bị lỗi (nguồn/tăng âm/giảm âm/Action Button), kiểm tra máy có từng rơi, vào nước, hoặc dùng ốp lưng dày gây kẹt nút vật lý không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tháo ốp lưng đang dùng, kiểm tra ốp có che/đè vào nút gây kẹt không.\n2. Dùng khí nén hoặc bàn chải mềm vệ sinh nhẹ quanh khe nút để loại bỏ bụi bẩn.\n3. Thử bấm giữ nút và quan sát độ nảy (nút liệt thường mất độ nảy, bấm chìm hẳn hoặc không phản hồi).\n4. Kiểm tra tính năng thay thế: dùng AssistiveTouch (Cài đặt > Trợ năng > Cảm ứng > AssistiveTouch) để tạm mô phỏng nút nguồn/âm lượng trong lúc chờ sửa.\n5. Hỏi khách máy có từng vào nước hoặc rơi mạnh gần đây không để xác định hướng xử lý.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng lực mạnh cạy nút để \"thử\" vì có thể làm gãy chân nút hoặc hỏng dây flex bên trong; không khẳng định thay được ngay tại chỗ khi chưa mở máy kiểm tra.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra bên ngoài, nút này khả năng cao bị lỗi cơ hoặc dây kết nối bên trong ạ, em cần mở máy kiểm tra kỹ hơn để báo chính xác chi phí và thời gian sửa cho mình.\"\n\n📦 LƯU Ý TTBH: Nút liệt không do vào nước/rơi vỡ và máy còn bảo hành: gửi TTBH kiểm tra dây flex/cụm nút. Nếu có dấu hiệu vào nước/va đập, tư vấn sửa chữa trả phí tại cửa hàng.",
+        keywords: ["nút nguồn", "nút âm lượng", "liệt nút", "kẹt nút"]
+      },
+      {
+        id: "lib-a53",
+        device: "iPhone",
+        symptom: "Taptic Engine (rung) không hoạt động hoặc rung yếu bất thường",
+        diagnosis: "Motor rung (Taptic Engine) bị lỏng kết nối, hỏng, hoặc do cài đặt rung bị tắt/xung đột phần mềm.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt > Âm thanh & Xúc giác xem đã bật \"Rung khi Đổ chuông\"/\"Rung khi Im lặng\" chưa; thử bấm bàn phím xem có haptic feedback khi gõ không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra công tắc gạt Chuông/Im lặng ở cạnh máy đang ở chế độ nào, và cài đặt rung tương ứng trong Cài đặt > Âm thanh & Xúc giác.\n2. Vào Cài đặt > Trợ năng > Cảm ứng > Phản hồi Rung, đảm bảo đang bật.\n3. Thử gọi thử vào máy hoặc đặt hẹn giờ để kiểm tra rung thực tế thay vì chỉ xem cài đặt.\n4. Khởi động lại máy để loại trừ lỗi phần mềm tạm thời.\n5. Nếu vẫn không rung dù cài đặt đúng, khả năng cao do phần cứng (motor Taptic Engine).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định ngay là hỏng phần cứng khi chưa kiểm tra hết các cài đặt phần mềm liên quan; không tháo máy kiểm tra nếu không được đào tạo phần cứng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra cài đặt rung của mình rồi ạ, nếu vẫn không rung thì khả năng cao do motor rung bên trong bị lỗi, em cần mở máy kiểm tra thêm.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ nguyên nhân cài đặt/phần mềm, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra Taptic Engine.",
+        keywords: ["rung", "taptic engine", "không rung", "haptic"]
+      },
+      {
+        id: "lib-a54",
+        device: "iPhone",
+        symptom: "Cổng sạc/khay SIM bị gỉ sét, ăn mòn do từng vào nước",
+        diagnosis: "Nước/hơi ẩm đọng lại lâu ngày trong cổng sạc hoặc khay SIM gây oxi hóa, ăn mòn tiếp điểm kim loại.",
+        solution: "🔍 CHẨN ĐOÁN: Soi đèn pin quan sát màu sắc chân tiếp điểm cổng sạc/khay SIM (gỉ thường có màu trắng/xanh lá dạng bột hoặc đóng cặn), kiểm tra chỉ báo tiếp xúc chất lỏng (LCI) trong khay SIM.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Hỏi khách máy có từng vào nước, để nơi ẩm ướt, hoặc dùng khi ra mồ hôi nhiều không và từ bao lâu.\n2. Soi đèn pin kiểm tra tình trạng gỉ sét ở cổng sạc và khay SIM.\n3. Không cắm sạc/SIM vào khi đang thấy rõ gỉ sét — có nguy cơ chập mạch.\n4. Đề xuất vệ sinh chuyên sâu bằng dung dịch chuyên dụng và máy hút ẩm chân không tại xưởng kỹ thuật (không tự vệ sinh bằng vật dụng tại quầy).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cắm sạc vào cổng đang gỉ sét rõ để \"thử xem còn sạc được không\"; không dùng cồn/nước rửa tay thông thường để vệ sinh gỉ sét; không cạy gỉ bằng vật kim loại sắc nhọn.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ cổng sạc của mình đang bị oxi hóa do từng tiếp xúc nước/ẩm ạ, em cần đưa vào xưởng vệ sinh chuyên sâu, không nên tự cắm sạc lúc này vì có thể ảnh hưởng thêm đến máy.\"\n\n📦 LƯU Ý TTBH: Gỉ sét do vào nước không thuộc diện bảo hành lỗi nhà sản xuất — tư vấn dịch vụ vệ sinh/sửa chữa trả phí tại cửa hàng, không gửi TTBH.",
+        keywords: ["gỉ sét", "ăn mòn", "cổng sạc", "khay sim", "oxi hóa"]
+      },
+      {
+        id: "lib-a55",
+        device: "iPhone",
+        symptom: "Màn hình ám vàng/ám xanh, mất True Tone sau khi ép kính",
+        diagnosis: "Màn hình thay thế không chính hãng hoặc chưa cấy IC màn hình đúng chuẩn khiến mất cảm biến True Tone/hiển thị sai màu.",
+        solution: "🔍 CHẨN ĐOÁN: Vào Cài đặt > Màn hình & Độ sáng, kiểm tra mục True Tone còn hiển thị tùy chọn để bật/tắt không (nếu mất hẳn dòng này là dấu hiệu rõ màn hình thay thế chưa cấy đúng chip). Hỏi khách máy có từng thay màn hình ở đâu khác không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra Cài đặt > Cài đặt chung > Giới thiệu, xem có dòng cảnh báo \"Không xác định được đây có phải màn hình Apple chính hãng\" không.\n2. So sánh màu hiển thị với một máy cùng dòng còn màn hình zin để xác nhận chênh lệch màu.\n3. Giải thích cho khách nguyên nhân do màn hình thay thế trước đó không phải chính hãng hoặc thợ chưa cấy đúng IC.\n4. Tư vấn phương án: chấp nhận màu hiện tại, hoặc thay lại màn hình chính hãng/zin bóc máy để khôi phục True Tone.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cam kết \"cấy lại IC là hết ám màu 100%\" nếu chưa kiểm tra thực tế; không đổ lỗi hoàn toàn cho khách khi chưa xác nhận rõ lịch sử sửa chữa của máy.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình từng thay màn hình rồi nên bị mất tính năng tự cân màu ạ, nếu muốn khôi phục đẹp như ban đầu thì cần thay lại màn hình chính hãng, em tư vấn chi tiết chi phí cho mình nhé.\"\n\n📦 LƯU Ý TTBH: Màn hình đã từng thay ngoài không phải lỗi bảo hành của Apple — không gửi TTBH cho lỗi này; tư vấn thay màn hình chính hãng trả phí tại cửa hàng nếu khách có nhu cầu.",
+        keywords: ["true tone", "ám vàng", "ám xanh", "màn hình ép", "mất true tone"]
+      },
+      {
+        id: "lib-a56",
+        device: "iPhone",
+        symptom: "Không gửi/nhận được iMessage, tin nhắn hiện màu xanh lá thay vì xanh dương",
+        diagnosis: "iMessage chưa được kích hoạt, mất kết nối mạng/Apple ID, hoặc máy nhận đang tắt iMessage/không có dữ liệu di động.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt > Tin nhắn xem iMessage đã bật chưa, kiểm tra kết nối Wi-Fi/dữ liệu di động và trạng thái đăng nhập Apple ID.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt > Tin nhắn, kiểm tra công tắc iMessage đã bật (màu xanh) chưa.\n2. Nếu đã bật, tắt đi rồi bật lại, chờ 1-2 phút để máy đăng ký lại số điện thoại/Apple ID với hệ thống iMessage.\n3. Kiểm tra kết nối mạng ổn định (Wi-Fi hoặc dữ liệu di động), vì iMessage cần Internet để hoạt động.\n4. Vào Cài đặt > [Tên người dùng] > kiểm tra đã đăng nhập đúng Apple ID chưa; đăng xuất và đăng nhập lại nếu cần.\n5. Kiểm tra ngày giờ máy đã đúng tự động chưa (Cài đặt > Cài đặt chung > Ngày & Giờ > Tự động).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không đăng xuất Apple ID của khách khi chưa xác nhận khách nhớ mật khẩu để đăng nhập lại; không khẳng định lỗi này luôn là do máy người nhận khi chưa kiểm tra máy người gửi.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ tin nhắn xanh lá là gửi qua SMS thường, còn xanh dương là iMessage qua Internet ạ. Em đã kiểm tra và kích hoạt lại iMessage cho máy mình rồi, mình thử nhắn lại xem đã lên xanh dương chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi cấu hình phần mềm/tài khoản, không liên quan phần cứng — không cần gửi TTBH, xử lý ngay tại cửa hàng.",
+        keywords: ["imessage", "tin nhắn xanh lá", "tin nhắn xanh dương", "không gửi được tin nhắn"]
+      },
+      {
+        id: "lib-a57",
+        device: "iPhone",
+        symptom: "Không khôi phục được từ bản sao lưu iCloud/máy tính khi thiết lập máy mới",
+        diagnosis: "Kết nối mạng không ổn định, dung lượng iCloud không đủ so với bản sao lưu, hoặc bản sao lưu bị lỗi/không tương thích phiên bản iOS.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định khôi phục qua iCloud (cần Wi-Fi) hay qua máy tính (cần cáp + Finder/iTunes), kiểm tra dung lượng bản sao lưu và mốc thời gian sao lưu gần nhất.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Nếu khôi phục qua iCloud: đảm bảo máy đang kết nối Wi-Fi ổn định và cắm sạc trong suốt quá trình, không tắt màn hình khóa máy giữa chừng.\n2. Kiểm tra dung lượng iCloud của khách còn đủ chứa bản sao lưu muốn khôi phục không (Cài đặt > Apple ID > iCloud).\n3. Nếu khôi phục qua máy tính: kiểm tra cáp kết nối, cập nhật Finder/iTunes lên bản mới nhất, thử đổi cổng USB khác.\n4. Nếu báo lỗi cụ thể, ghi lại mã lỗi để tra cứu hướng xử lý tương ứng (một số lỗi cần cập nhật iOS lên phiên bản mới hơn bản sao lưu).\n5. Kiên nhẫn chờ đủ thời gian ước tính hiển thị trên máy, không rút sạc/ngắt kết nối giữa chừng vì có thể làm hỏng dữ liệu khôi phục dở dang.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không rút cáp, tắt Wi-Fi hoặc tắt nguồn máy khi đang trong quá trình khôi phục; không xóa bản sao lưu gốc trên iCloud/máy tính khi khôi phục chưa hoàn tất và chưa xác nhận thành công.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ quá trình khôi phục dữ liệu cần thời gian và mạng ổn định ạ, mình vui lòng để máy yên và cắm sạc, em sẽ theo dõi cùng mình đến khi hoàn tất.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/tài khoản, không liên quan phần cứng — không gửi TTBH; nếu nghi ngờ bản sao lưu bị hỏng, hướng dẫn khách liên hệ Apple Support qua kênh chính thức để được hỗ trợ khôi phục dữ liệu.",
+        keywords: ["khôi phục", "restore", "sao lưu", "icloud backup", "thiết lập máy mới"]
+      },
+      {
+        id: "lib-a58",
+        device: "iPhone",
+        symptom: "Bàn phím ảo gõ lag, tự sửa sai hoặc nhảy chữ liên tục",
+        diagnosis: "Bộ nhớ đệm bàn phím bị lỗi, từ điển gõ tắt (Text Replacement) xung đột, hoặc máy thiếu bộ nhớ trống khiến hệ thống xử lý chậm.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra hiện tượng xảy ra ở mọi ứng dụng hay chỉ riêng 1 app cụ thể (Zalo, Facebook...), kiểm tra dung lượng trống còn lại của máy.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Khởi động lại máy để làm mới bộ nhớ đệm hệ thống.\n2. Vào Cài đặt > Cài đặt chung > Bàn phím, kiểm tra và tắt thử tính năng \"Sửa lỗi chính tả\"/\"Dự đoán\" nếu nghi ngờ xung đột.\n3. Vào Cài đặt > Cài đặt chung > Chuyển hoặc Đặt lại iPhone > Đặt lại > Đặt lại Từ điển Bàn phím để xóa các từ gõ tắt lỗi.\n4. Kiểm tra dung lượng trống của máy (Cài đặt > Cài đặt chung > Dung lượng iPhone) — máy gần đầy bộ nhớ thường gõ giật/lag.\n5. Nếu chỉ xảy ra ở 1 ứng dụng cụ thể, gỡ và cài lại ứng dụng đó để loại trừ lỗi riêng của app.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không xóa toàn bộ dữ liệu máy (Erase All Content) chỉ để xử lý lỗi gõ phím khi chưa thử các bước nhẹ hơn; không tự ý xóa ứng dụng của khách mà chưa hỏi ý kiến.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã khắc phục lỗi bàn phím cho mình bằng cách làm mới lại từ điển gõ và bộ nhớ đệm rồi ạ, mình thử gõ lại xem còn bị giật/nhảy chữ không nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm thông thường, không cần gửi TTBH; nếu vẫn còn sau khi thử hết các bước, đề xuất khách sao lưu dữ liệu và cập nhật/cài lại iOS.",
+        keywords: ["bàn phím lag", "gõ chữ lag", "tự sửa sai", "nhảy chữ"]
+      },
+      {
+        id: "lib-a59",
+        device: "iPhone",
+        symptom: "Camera trước (Face ID/selfie) bị mờ do bụi bẩn hoặc trầy cảm biến TrueDepth",
+        diagnosis: "Cụm cảm biến TrueDepth (camera trước) bị bám bụi/dấu vân tay, hoặc kính bảo vệ/miếng dán che khuất vùng cảm biến.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát vùng Dynamic Island/tai thỏ có miếng dán cường lực che phủ không đúng khu vực khoét lỗ cảm biến; kiểm tra vệ sinh cụm camera trước bằng mắt.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Dùng khăn microfiber khô lau nhẹ khu vực camera trước/cảm biến TrueDepth.\n2. Kiểm tra miếng dán màn hình có che đúng vị trí khoét camera/cảm biến không, gỡ dán lại nếu cần.\n3. Mở ứng dụng Camera, chuyển sang chế độ chụp trước, so sánh độ nét trước và sau khi vệ sinh.\n4. Nếu vẫn mờ, kiểm tra Face ID có báo lỗi kèm theo không để xác định cụm cảm biến có vấn đề sâu hơn hay chỉ do bụi bẩn ngoài kính.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng vật cứng/sắc nhọn cạy hoặc chọc vào cụm cảm biến TrueDepth; không dùng dung dịch tẩy rửa mạnh lau lên khu vực camera.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã vệ sinh camera trước cho mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng cao là cụm cảm biến bên trong bị trầy hoặc hỏng, cần kiểm tra kỹ hơn.\"\n\n📦 LƯU Ý TTBH: Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera trước/TrueDepth.",
+        keywords: ["camera trước mờ", "selfie mờ", "truedepth", "face id mờ"]
+      },
+      {
+        id: "lib-a60",
+        device: "iPhone",
+        symptom: "iPhone tự khởi động lại liên tục khi đang sử dụng bình thường",
+        diagnosis: "Xung đột phần mềm/ứng dụng, lỗi hệ điều hành sau cập nhật, hoặc phần cứng (pin/main) không ổn định gây sập nguồn đột ngột.",
+        solution: "🔍 CHẨN ĐOÁN: Hỏi khách hiện tượng xảy ra khi dùng ứng dụng cụ thể hay ngẫu nhiên, tần suất bao nhiêu lần/ngày, có kèm nóng máy hoặc hao pin bất thường không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra phiên bản iOS hiện tại và xem có bản cập nhật mới hơn để sửa lỗi đã biết không (Cài đặt > Cài đặt chung > Cập nhật phần mềm).\n2. Kiểm tra dung lượng trống, gỡ bớt ứng dụng nặng/ít dùng nếu máy gần đầy bộ nhớ.\n3. Xác định ứng dụng nào đang mở lúc máy tự khởi động lại (nếu khách nhớ được) — có thể là ứng dụng lỗi cần cập nhật/gỡ cài lại.\n4. Kiểm tra tình trạng pin (Cài đặt > Pin > Tình trạng pin & Sạc) — pin chai nặng có thể gây sập nguồn đột ngột khi cần dòng điện cao (chơi game, chụp ảnh).\n5. Nếu vẫn tiếp diễn sau khi cập nhật/dọn máy, cần kiểm tra phần cứng (main, pin).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định chắc chắn là lỗi phần mềm hay phần cứng khi chưa kiểm tra tình trạng pin và log sử dụng; không xóa dữ liệu máy khi khách chưa đồng ý và chưa sao lưu.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ hiện tượng này có thể do phần mềm hoặc pin yếu ạ, em đã kiểm tra tình trạng pin và cập nhật hệ điều hành cho mình, mình theo dõi thêm vài ngày xem còn tự khởi động lại không nhé.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ nguyên nhân phần mềm/pin chai, hiện tượng vẫn tiếp diễn và máy còn bảo hành: gửi TTBH kiểm tra bo mạch chủ (main).",
+        keywords: ["tự khởi động lại", "random reboot", "tự tắt nguồn", "khởi động lại liên tục"]
+      },
+      {
+        id: "lib-a61",
+        device: "iPhone",
+        symptom: "Touch ID (iPhone SE/8 trở về trước) không nhận diện vân tay",
+        diagnosis: "Cảm biến vân tay ở nút Home bị bẩn/ẩm, vân tay lưu chưa rõ nét, hoặc dây cáp cảm biến bị lỗi sau sửa chữa nút Home.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra tay khách có bị ướt/nhiều mồ hôi/kem dưỡng khi đặt vân tay không, xác nhận máy có từng thay nút Home/màn hình gần đây không (Touch ID gắn liền với IC bảo mật của từng máy, thay nút Home không đúng chuẩn sẽ mất Touch ID vĩnh viễn).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Lau khô, sạch ngón tay và mặt cảm biến nút Home trước khi thử lại.\n2. Vào Cài đặt > Touch ID & Mã khóa, xóa vân tay cũ và đặt lại vân tay mới, đặt nhiều góc ngón tay khi quét.\n3. Khởi động lại máy để làm mới cảm biến.\n4. Hỏi khách máy có từng sửa/thay nút Home hoặc màn hình ở nơi khác gần đây không.\n5. Nếu chưa từng sửa chữa gì mà vẫn không nhận: khả năng cao lỗi cảm biến/dây cáp bên trong.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý thay hoặc hoán đổi nút Home giữa 2 máy khác nhau — Touch ID không thể hoạt động lại nếu đổi nút Home khác máy do liên kết phần cứng bảo mật; không cam kết khôi phục Touch ID nếu máy đã từng thay nút Home không chính hãng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ Touch ID được mã hóa riêng cho từng máy nên nếu từng thay nút Home ở nơi khác thì sẽ không dùng lại được đâu ạ, mình có thể dùng mật khẩu thường thay thế hoặc thay lại đúng nút Home chính hãng của máy.\"\n\n📦 LƯU Ý TTBH: Máy chưa từng sửa chữa nút Home/màn hình, còn bảo hành: gửi TTBH kiểm tra cảm biến Touch ID. Máy từng thay nút Home không chính hãng: không thể khôi phục Touch ID, tư vấn khách chuyển sang dùng mật khẩu.",
+        keywords: ["touch id", "vân tay", "không nhận vân tay", "nút home"]
+      },
+      {
+        id: "lib-a62",
+        device: "iPhone",
+        symptom: "Cảnh báo \"Không thể xác minh phụ kiện này/Pin không xác định\" sau khi thay pin/màn hình",
+        diagnosis: "Pin hoặc màn hình thay thế không phải chính hãng Apple, hoặc chính hãng nhưng chưa được cấy/ghép nối IC đúng chuẩn qua phần mềm hiệu chỉnh của Apple.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt > Pin (hoặc Cài đặt > Màn hình & Độ sáng) xem có dòng cảnh báo màu vàng cam không; hỏi khách linh kiện được thay ở đâu, có phải chính hãng không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Giải thích rõ cho khách đây là cơ chế cảnh báo bảo mật của Apple, không phải máy bị lỗi hay hư hỏng — máy vẫn dùng bình thường.\n2. Thông báo các tính năng có thể bị ảnh hưởng: mất Tình trạng pin chính xác (%), mất True Tone, hoặc một số cảnh báo trên màn hình khóa.\n3. Với linh kiện chính hãng nhưng thay ngoài: tư vấn khách có thể mang máy đến nơi có thiết bị hiệu chỉnh (calibration) chính hãng để cấy lại, nếu cửa hàng có hỗ trợ dịch vụ này.\n4. Với linh kiện không chính hãng: tư vấn khách cân nhắc thay lại linh kiện chính hãng nếu muốn khôi phục đầy đủ tính năng và độ an toàn.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định cảnh báo này có thể \"xóa vĩnh viễn bằng phần mềm bên thứ 3\"; không nói cảnh báo này đồng nghĩa máy sắp hỏng để gây hoang mang không cần thiết cho khách.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ đây là cảnh báo bảo mật vì linh kiện thay thế chưa được hệ thống Apple xác minh chính hãng, máy vẫn dùng được bình thường ạ, chỉ mất một số tính năng đo lường/tự động thôi.\"\n\n📦 LƯU Ý TTBH: Máy đã can thiệp linh kiện ngoài sẽ không đủ điều kiện bảo hành chính hãng cho phần đó — không gửi TTBH; tư vấn dịch vụ thay lại linh kiện chính hãng tại cửa hàng nếu khách có nhu cầu.",
+        keywords: ["không xác minh phụ kiện", "pin không xác định", "linh kiện không chính hãng", "unable to verify"]
+      },
+      {
+        id: "lib-a63",
+        device: "iPhone",
+        symptom: "Mất tiếng micro khi gọi FaceTime/Zalo dù loa ngoài vẫn nghe nhạc bình thường",
+        diagnosis: "Ứng dụng chưa được cấp quyền truy cập Microphone, lỗ micro bị bít bụi/nước, hoặc xung đột phần mềm khi gọi qua ứng dụng bên thứ 3.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định lỗi xảy ra khi gọi điện thoại thường hay chỉ riêng ứng dụng gọi video (FaceTime/Zalo/Messenger); kiểm tra quyền Microphone của ứng dụng đó.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt > [Tên ứng dụng, ví dụ Zalo], kiểm tra quyền Microphone đã được bật chưa.\n2. Thử ghi âm giọng nói bằng ứng dụng Ghi âm giọng nói (Voice Memos) để kiểm tra micro chính có hoạt động không.\n3. Nếu micro hoạt động ở ứng dụng khác nhưng không ở app gọi video cụ thể: gỡ và cài lại ứng dụng đó.\n4. Soi đèn pin kiểm tra các lỗ micro (cạnh dưới máy, gần camera sau) có bị bít bụi bẩn không.\n5. Kiểm tra ốp lưng/miếng dán có che lỗ micro không.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý dùng vật nhọn chọc vào lỗ micro để \"thông\"; không cấp quyền Microphone cho ứng dụng lạ không rõ nguồn gốc khi hỗ trợ khách kiểm tra.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và cấp lại quyền micro cho ứng dụng của mình rồi ạ, mình thử gọi lại xem đối phương đã nghe được tiếng chưa nhé.\"\n\n📦 LƯU Ý TTBH: Nếu micro chính (ghi âm bằng Voice Memos) cũng không hoạt động ở mọi ứng dụng, không do quyền/phần mềm: gửi TTBH kiểm tra cụm micro phần cứng.",
+        keywords: ["mất tiếng micro", "facetime không nghe", "mic không hoạt động", "gọi video không tiếng"]
+      },
+      {
+        id: "lib-a64",
+        device: "iPhone",
+        symptom: "Không cập nhật được iOS qua OTA, báo thiếu dung lượng hoặc tải xuống bị treo",
+        diagnosis: "Máy không đủ dung lượng trống tạm thời cho gói cập nhật, kết nối mạng không ổn định, hoặc máy chủ Apple đang quá tải vào thời điểm phát hành bản mới.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra dung lượng trống hiện tại của máy và dung lượng bản cập nhật yêu cầu; kiểm tra mạng Wi-Fi đang dùng có ổn định không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt > Cài đặt chung > Dung lượng iPhone, kiểm tra dung lượng trống — cần trống nhiều hơn dung lượng bản cập nhật yêu cầu.\n2. Nếu thiếu dung lượng: gỡ tạm vài ứng dụng ít dùng hoặc video/ảnh nặng (đã sao lưu) để giải phóng chỗ trống, cài lại sau khi cập nhật xong.\n3. Đảm bảo máy kết nối Wi-Fi ổn định (không dùng dữ liệu di động cho bản cập nhật lớn) và cắm sạc trong suốt quá trình.\n4. Nếu tải bị treo: vào Cài đặt > Cài đặt chung > Cập nhật phần mềm, xóa bản tải dở rồi tải lại.\n5. Nếu vẫn lỗi, thử cập nhật qua máy tính bằng Finder/iTunes thay vì OTA.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không rút sạc hoặc tắt máy khi thanh tiến trình cập nhật đang chạy dở; không xóa dữ liệu quan trọng của khách mà chưa xác nhận đã sao lưu.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình cần thêm dung lượng trống để tải bản cập nhật ạ, em hỗ trợ dọn bớt và cập nhật lại cho mình, dữ liệu quan trọng mình yên tâm không bị mất.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/dung lượng thông thường, không cần gửi TTBH.",
+        keywords: ["cập nhật ios", "ota", "thiếu dung lượng", "tải cập nhật treo"]
+      },
+      {
+        id: "lib-a65",
+        device: "iPhone",
+        symptom: "Định vị GPS sai vị trí hoặc la bàn chỉ sai hướng",
+        diagnosis: "Nhiễu từ trường do ốp lưng có nam châm/kim loại, chưa hiệu chuẩn la bàn, hoặc tín hiệu GPS yếu do ở trong nhà/tòa nhà cao tầng.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra khách đang ở trong nhà/hầm hay ngoài trời thoáng khi gặp lỗi định vị; kiểm tra ốp lưng/phụ kiện có gắn nam châm (ví, MagSafe...) không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Ra khu vực thoáng, ngoài trời để có tín hiệu GPS/vệ tinh tốt hơn, tránh nhà cao tầng, hầm, gần thiết bị điện từ mạnh.\n2. Tháo thử ốp lưng, ví đựng thẻ từ hoặc phụ kiện có nam châm rồi kiểm tra lại la bàn.\n3. Mở ứng dụng La bàn, thực hiện thao tác hiệu chuẩn bằng cách xoay máy theo hình số 8 khi có yêu cầu trên màn hình.\n4. Kiểm tra Cài đặt > Quyền riêng tư & Bảo mật > Dịch vụ định vị đã bật cho ứng dụng Bản đồ/La bàn chưa.\n5. Khởi động lại máy nếu đã thử các bước trên mà vẫn sai lệch.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định máy lỗi phần cứng ngay khi khách đang dùng ốp có nam châm hoặc đang ở khu vực tín hiệu yếu; không tắt vĩnh viễn Dịch vụ định vị của khách mà không hỏi ý kiến.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã hướng dẫn mình hiệu chuẩn lại la bàn và kiểm tra phụ kiện gây nhiễu rồi ạ, mình thử lại ở khu vực thoáng xem định vị đã chính xác chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ nguyên nhân môi trường/phụ kiện nhiễu từ mà vẫn sai lệch liên tục: gửi TTBH kiểm tra cảm biến la bàn/GPS.",
+        keywords: ["gps sai", "định vị sai", "la bàn sai hướng", "compass"]
+      },
+      {
+        id: "lib-a66",
+        device: "iPhone",
+        symptom: "Không thanh toán được bằng Apple Pay dù đã thêm thẻ (chạm NFC không phản hồi)",
+        diagnosis: "Antenna NFC bị lỗi/che khuất bởi ốp lưng dày, máy POS không hỗ trợ đúng chuẩn, hoặc chưa đặt đúng thẻ mặc định/xác thực Face ID-Touch ID khi thanh toán.",
+        solution: "🔍 CHẨN ĐOÁN: Xác nhận máy POS của cửa hàng khác có hỗ trợ thanh toán không chạm (contactless) không; kiểm tra khách có đang dùng ốp lưng dày/có tấm chắn kim loại không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tháo ốp lưng, thử chạm lại khu vực gần camera sau (vị trí ăng-ten NFC) vào máy POS.\n2. Xác nhận đã bấm đúp nút nguồn (hoặc nút Home với máy có Touch ID) để mở màn hình thanh toán Apple Pay trước khi chạm, không chỉ đơn thuần mở Ví.\n3. Xác thực bằng Face ID/Touch ID khi có yêu cầu, giữ máy chạm ổn định 1-2 giây, không đưa quá xa hoặc quá gần cảm biến POS.\n4. Kiểm tra thẻ trong Ví (Wallet) chưa hết hạn/còn hoạt động qua ứng dụng ngân hàng.\n5. Thử tại một máy POS khác để loại trừ do đầu đọc thẻ tại điểm đó.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không yêu cầu khách cung cấp thông tin thẻ, mã OTP ngân hàng qua điện thoại/tin nhắn để \"hỗ trợ kiểm tra\"; không tự ý thao tác trên ứng dụng ngân hàng của khách.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ mình thử tháo ốp và mở đúng màn hình thanh toán Apple Pay trước khi chạm nhé, đa số trường hợp là do ốp dày che ăng-ten hoặc chưa mở đúng màn hình thanh toán thôi ạ.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ ốp/quy trình thao tác mà vẫn không chạm được ở nhiều máy POS khác nhau: gửi TTBH kiểm tra ăng-ten NFC.",
+        keywords: ["apple pay", "thanh toán không chạm", "nfc không hoạt động", "chạm thanh toán"]
+      },
+      {
+        id: "lib-a67",
+        device: "iPhone",
+        symptom: "Khung viền/khung máy bị móp cong do rơi, nắp lưng/màn hình lắp không khít",
+        diagnosis: "Va đập mạnh làm biến dạng khung nhôm/thép bên trong, ảnh hưởng độ kín khít và khả năng chống nước của máy.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát bằng mắt vị trí móp, kiểm tra độ hở giữa màn hình/nắp lưng với khung viền, hỏi khách thời điểm và độ cao rơi máy.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Quan sát và chụp ảnh lại vị trí móp cong, mức độ hở giữa các khe ghép để lưu hồ sơ tình trạng máy trước khi sửa.\n2. Thông báo ngay cho khách: khung đã móp gần như chắc chắn làm mất khả năng chống nước/bụi nguyên bản của máy dù có ép khít lại.\n3. Kiểm tra các chức năng khác có bị ảnh hưởng theo không (nút bấm gần khu vực móp có bị kẹt không, màn hình có xuất hiện ám/sọc không).\n4. Tư vấn phương án: nắn/ép lại khung (thẩm mỹ tạm thời, không đảm bảo phục hồi 100% và không phục hồi chống nước) hoặc thay khung mới (chi phí cao hơn nhưng đảm bảo hơn).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cam kết ép/nắn khung sẽ khôi phục 100% khả năng chống nước như máy mới; không dùng lực mạnh cố nắn thẳng khung khi máy còn gắn màn hình/pin bên trong nếu chưa tháo đúng quy trình.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ khung máy mình bị móp do va đập rồi ạ, em có thể hỗ trợ ép/nắn lại cho khít hơn nhưng sẽ không đảm bảo chống nước như ban đầu, mình cân nhắc phương án thay khung nếu muốn chắc chắn hơn nhé.\"\n\n📦 LƯU Ý TTBH: Móp méo do rơi/va đập là lỗi ngoại lực, không thuộc diện bảo hành — không gửi TTBH; tư vấn dịch vụ sửa chữa trả phí tại cửa hàng.",
+        keywords: ["móp khung", "cong khung", "rơi vỡ", "lắp không khít", "khung viền"]
+      },
+      {
+        id: "lib-a68",
+        device: "Mac",
+        symptom: "Bàn phím MacBook dính phím, gõ nhảy hoặc lặp ký tự sau khi đổ nước/cà phê",
+        diagnosis: "Chất lỏng (nước, cà phê, trà sữa...) đổ vào bàn phím làm dính cơ chế phím bấm hoặc gây chập mạch tạm thời.",
+        solution: "🔍 CHẨN ĐOÁN: Hỏi khách thời điểm đổ chất lỏng, loại chất lỏng (nước lọc ít rủi ro hơn nước ngọt/cà phê có đường dễ dính), và máy đã tắt nguồn ngay hay vẫn dùng tiếp sau khi đổ.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Nếu khách vừa đổ chất lỏng, hướng dẫn tắt nguồn máy ngay lập tức, không gõ thử để kiểm tra.\n2. Dựng máy hình chữ V ngược (như mái nhà) để chất lỏng chảy ra ngoài, không lật ngửa lại.\n3. Không sấy nóng trực tiếp, để máy khô tự nhiên tối thiểu 24-48 giờ ở nơi thoáng trước khi bật lại.\n4. Nếu máy đã bật lại và bị dính/nhảy phím, ghi nhận các phím cụ thể bị ảnh hưởng để báo kỹ thuật kiểm tra.\n5. Với chất lỏng có đường (cà phê, nước ngọt): luôn cần vệ sinh sâu vì đường sẽ kết tinh gây dính về sau dù hiện tại có vẻ bình thường.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng máy sấy tóc/nhiệt cao sấy trực tiếp; không cố gõ liên tục để \"thử xem còn dính không\" khi máy vừa bị đổ chất lỏng; không cắm sạc khi máy còn ẩm.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ trường hợp đổ chất lỏng vào bàn phím cần vệ sinh sâu bên trong để tránh dính/ăn mòn về sau ạ, em sẽ kiểm tra và báo lại tình trạng cụ thể cho mình.\"\n\n📦 LƯU Ý TTBH: Đổ chất lỏng là lỗi ngoại lực, không thuộc diện bảo hành — tư vấn dịch vụ vệ sinh/sửa chữa trả phí tại cửa hàng, không gửi TTBH.",
+        keywords: ["bàn phím dính", "đổ nước", "đổ cà phê", "nhảy phím", "macbook"]
+      },
+      {
+        id: "lib-a69",
+        device: "Mac",
+        symptom: "Loa MacBook rè hoặc mất tiếng một bên",
+        diagnosis: "Loa bị lỗi phần cứng, hoặc cài đặt âm thanh/cân bằng loa (balance) bị lệch.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt Hệ thống > Âm thanh > Đầu ra, xem thanh cân bằng (Balance) có bị lệch hẳn về 1 bên không; thử phát nhạc/video để xác nhận bên nào bị rè/mất tiếng.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt Hệ thống > Âm thanh > Đầu ra, kiểm tra thanh trượt Cân bằng đang ở giữa hay lệch.\n2. Kiểm tra không có thiết bị Bluetooth/AirPlay nào đang kết nối gây chuyển hướng âm thanh nhầm.\n3. Khởi động lại máy để làm mới driver âm thanh.\n4. Vào Launchpad > Other > Audio MIDI Setup, kiểm tra cấu hình thiết bị âm thanh mặc định có đúng loa trong máy không.\n5. Nếu đã kiểm tra hết cài đặt mà vẫn rè/mất tiếng 1 bên, khả năng lỗi phần cứng loa.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định hỏng loa ngay khi chưa kiểm tra thanh cân bằng âm thanh; không tháo máy kiểm tra loa nếu không được đào tạo phần cứng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra cài đặt âm thanh của máy mình rồi ạ, nếu vẫn còn rè/mất tiếng một bên thì khả năng cao là lỗi loa vật lý, em cần kiểm tra sâu hơn.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ nguyên nhân cài đặt, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra cụm loa.",
+        keywords: ["loa rè", "mất tiếng", "loa macbook", "âm thanh lệch"]
+      },
+      {
+        id: "lib-a70",
+        device: "Mac",
+        symptom: "Webcam MacBook không hoạt động hoặc hình ảnh mờ/nhiễu xanh",
+        diagnosis: "Ứng dụng chưa được cấp quyền Camera, xung đột phần mềm gọi video, hoặc cảm biến camera bị lỗi/bám bụi.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra đèn báo camera (đèn xanh cạnh webcam) có sáng khi mở ứng dụng gọi video không; xác định lỗi xảy ra ở mọi ứng dụng hay chỉ riêng 1 app.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt Hệ thống > Quyền riêng tư & Bảo mật > Camera, kiểm tra ứng dụng đang dùng đã được cấp quyền chưa.\n2. Mở ứng dụng Photo Booth có sẵn trên máy để kiểm tra camera hoạt động độc lập với app khác không.\n3. Đóng hoàn toàn các ứng dụng khác có thể đang chiếm quyền dùng camera (chỉ 1 ứng dụng dùng được camera tại một thời điểm).\n4. Lau nhẹ vùng camera bằng khăn microfiber khô nếu hình ảnh bị mờ/bụi bẩn.\n5. Khởi động lại máy để làm mới driver camera.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cấp quyền Camera cho ứng dụng lạ không rõ nguồn gốc; không tháo/cạy viền màn hình để kiểm tra camera nếu không được đào tạo phần cứng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra quyền camera và thử qua Photo Booth cho mình rồi ạ, nếu vẫn còn lỗi thì khả năng cao do phần cứng camera, em cần kiểm tra thêm.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ quyền/phần mềm mà camera vẫn không hoạt động hoặc mờ nặng, máy còn bảo hành: gửi TTBH kiểm tra cụm camera.",
+        keywords: ["webcam lỗi", "camera mac không hoạt động", "hình mờ", "facetime camera"]
+      },
+      {
+        id: "lib-a71",
+        device: "Mac",
+        symptom: "Micro MacBook không thu được âm thanh khi gọi Zoom/FaceTime/Teams",
+        diagnosis: "Ứng dụng chưa được cấp quyền Microphone, sai thiết bị micro mặc định trong cài đặt, hoặc lỗ micro bị bụi bẩn che khuất.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt Hệ thống > Quyền riêng tư & Bảo mật > Microphone đã cấp quyền cho ứng dụng đang dùng chưa; xác định lỗi ở 1 ứng dụng hay toàn bộ.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt Hệ thống > Âm thanh > Đầu vào, kiểm tra đã chọn đúng \"Microphone\" tích hợp (không phải micro ngoài không cắm hoặc tai nghe Bluetooth chưa kết nối) chưa.\n2. Cấp quyền Microphone cho ứng dụng gọi video trong Cài đặt Hệ thống > Quyền riêng tư & Bảo mật > Microphone.\n3. Test thử bằng ứng dụng Voice Memos (Ghi âm giọng nói) có sẵn để xác nhận micro phần cứng còn hoạt động.\n4. Gỡ và cài lại ứng dụng gọi video nếu chỉ lỗi riêng ứng dụng đó.\n5. Kiểm tra lỗ micro (thường ở cạnh trên bàn phím hoặc gần loa) có bị bụi/vật che khuất không.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý chọc vật vào lỗ micro để \"thông\"; không cấp quyền Microphone cho ứng dụng lạ không rõ nguồn gốc.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và cấp lại quyền micro, chọn đúng thiết bị đầu vào cho máy mình rồi ạ, mình thử gọi lại xem đối phương nghe được chưa nhé.\"\n\n📦 LƯU Ý TTBH: Micro không hoạt động ở cả Voice Memos (test độc lập), đã loại trừ quyền/cài đặt, máy còn bảo hành: gửi TTBH kiểm tra cụm micro.",
+        keywords: ["mất tiếng micro mac", "micro không hoạt động", "zoom không nghe", "teams"]
+      },
+      {
+        id: "lib-a72",
+        device: "Mac",
+        symptom: "MacBook không kết nối được Wi-Fi hoặc mạng chập chờn liên tục",
+        diagnosis: "Xung đột cấu hình mạng, vị trí router yếu sóng, hoặc lỗi driver Wi-Fi sau cập nhật macOS.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra các thiết bị khác cùng mạng Wi-Fi đó có bị chập chờn không (loại trừ do router), và xem biểu tượng Wi-Fi trên máy có hiện dấu chấm than không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tắt Wi-Fi rồi bật lại trên máy, thử quên mạng (Forget This Network) và kết nối lại từ đầu.\n2. Khởi động lại router/modem nếu các thiết bị khác cũng bị chập chờn.\n3. Vào Cài đặt Hệ thống > Wi-Fi > chi tiết (i), kiểm tra địa chỉ IP có nhận được không (DHCP lease failed là dấu hiệu lỗi xin IP).\n4. Đặt lại cài đặt mạng: xóa và tạo lại vị trí mạng mới trong Cài đặt Hệ thống > Mạng.\n5. Kiểm tra bản cập nhật macOS mới nhất — Apple thường vá lỗi Wi-Fi qua các bản cập nhật.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định lỗi phần cứng Wi-Fi khi chưa loại trừ nguyên nhân từ router/mạng; không thay đổi cấu hình mạng công ty/khách sạn khi chưa được phép.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã thử kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé để mình xác định rõ nguyên nhân.\"\n\n📦 LƯU Ý TTBH: Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm/cấu hình, máy còn bảo hành: gửi TTBH kiểm tra card Wi-Fi/anten.",
+        keywords: ["wifi chập chờn", "mất kết nối mạng", "macbook không vào wifi"]
+      },
+      {
+        id: "lib-a73",
+        device: "Mac",
+        symptom: "Mac báo \"Đĩa khởi động gần đầy\" dù dữ liệu người dùng không nhiều",
+        diagnosis: "Bộ nhớ cache hệ thống, file tạm, hoặc dữ liệu \"Khác\" (ảnh iCloud, thư mục ẩn) chiếm dung lượng lớn dù file người dùng thấy được không nhiều.",
+        solution: "🔍 CHẨN ĐOÁN: Vào Apple Menu > Giới thiệu về máy Mac này > Lưu trữ, xem biểu đồ phân loại dung lượng đang chiếm nhiều nhất ở mục nào (Ứng dụng, Tài liệu, Hệ thống, Khác...).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Xem chi tiết biểu đồ Lưu trữ để biết mục nào (Hệ thống/Khác/iCloud) đang chiếm dung lượng bất thường.\n2. Dọn thùng rác (Trash) — file xóa vẫn chiếm dung lượng cho đến khi dọn sạch thùng rác.\n3. Kiểm tra và dọn bớt ảnh/video trong thư viện Photos nếu đang lưu trữ toàn bộ nội dung gốc trên máy thay vì tối ưu iCloud.\n4. Sử dụng gợi ý tối ưu hóa lưu trữ có sẵn của macOS (mục \"Đề xuất\" trong màn hình Lưu trữ) như dọn tự động file tải về cũ.\n5. Khởi động lại máy sau khi dọn dẹp để hệ thống cập nhật lại dung lượng hiển thị chính xác.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không xóa các thư mục hệ thống ẩn (Library, System) mà không rõ tác dụng; không xóa dữ liệu người dùng khi chưa xác nhận đã sao lưu.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình báo đầy do một số dữ liệu hệ thống/ảnh chiếm dung lượng chứ không phải hỏng ổ cứng ạ, em hỗ trợ dọn bớt giúp mình nhé.\"\n\n📦 LƯU Ý TTBH: Đây là vấn đề dung lượng lưu trữ thông thường, không cần gửi TTBH.",
+        keywords: ["đĩa khởi động đầy", "hết dung lượng mac", "storage almost full"]
+      },
+      {
+        id: "lib-a74",
+        device: "Mac",
+        symptom: "Time Machine sao lưu lỗi hoặc không nhận diện ổ đĩa sao lưu",
+        diagnosis: "Ổ đĩa sao lưu bị ngắt kết nối/lỗi định dạng, cấu hình Time Machine bị lỗi, hoặc ổ đĩa mạng (NAS) mất kết nối.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định ổ sao lưu là ổ cứng ngoài cắm trực tiếp hay ổ mạng (NAS/Time Capsule); kiểm tra ổ đĩa còn được máy nhận diện trong Finder không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra cáp/kết nối ổ cứng ngoài, thử cổng USB khác hoặc cáp khác.\n2. Vào Cài đặt Hệ thống > Chung > Time Machine, kiểm tra đã chọn đúng ổ đĩa sao lưu chưa.\n3. Nếu là ổ mạng, kiểm tra máy và ổ NAS có cùng mạng Wi-Fi/LAN không, thử kết nối lại thủ công qua Finder > Go > Connect to Server.\n4. Kiểm tra định dạng ổ đĩa có tương thích (Mac OS Extended hoặc APFS) không — ổ định dạng cho Windows (NTFS) sẽ không dùng được cho Time Machine.\n5. Nếu báo lỗi bản sao lưu bị hỏng, có thể cần bắt đầu sao lưu mới (mất lịch sử sao lưu cũ nhưng đảm bảo sao lưu tiếp tục hoạt động).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không định dạng lại (format/xóa) ổ đĩa sao lưu khi chưa xác nhận với khách là được phép, vì sẽ mất toàn bộ lịch sử sao lưu cũ; không rút ổ đĩa giữa lúc đang sao lưu.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra kết nối và cấu hình Time Machine cho máy mình rồi ạ, nếu ổ sao lưu cũ có vấn đề thì mình cân nhắc dùng ổ mới để đảm bảo dữ liệu được sao lưu an toàn.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/ổ đĩa ngoài, không thuộc diện bảo hành máy Mac — không gửi TTBH.",
+        keywords: ["time machine lỗi", "sao lưu không hoạt động", "ổ đĩa sao lưu"]
+      },
+      {
+        id: "lib-a75",
+        device: "Mac",
+        symptom: "Touch ID trên MacBook không nhận diện vân tay",
+        diagnosis: "Cảm biến Touch ID bị bẩn/ẩm, vân tay lưu chưa rõ nét, hoặc lỗi phần mềm bảo mật (Secure Enclave) cần khởi động lại.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra tay khách có ướt/nhiều kem dưỡng khi đặt vân tay không; xác định máy có từng sửa chữa bàn phím/Touch ID gần đây không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Lau khô, sạch ngón tay và mặt cảm biến Touch ID trước khi thử lại.\n2. Vào Cài đặt Hệ thống > Touch ID & Mật khẩu, xóa vân tay cũ và đặt lại vân tay mới với nhiều góc ngón tay.\n3. Khởi động lại máy để làm mới Secure Enclave.\n4. Hỏi khách máy có từng sửa/thay bàn phím (nơi tích hợp Touch ID) ở nơi khác không.\n5. Nếu chưa từng sửa chữa mà vẫn không nhận: khả năng lỗi cảm biến/phần cứng.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý thay bàn phím tích hợp Touch ID giữa 2 máy khác nhau — tương tự iPhone, Touch ID gắn với Secure Enclave riêng của từng máy.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã đặt lại vân tay và khởi động lại máy cho mình rồi ạ, mình thử lại xem đã nhận diện được chưa nhé.\"\n\n📦 LƯU Ý TTBH: Máy chưa từng sửa chữa bàn phím/Touch ID, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay bàn phím không chính hãng: khó khôi phục, tư vấn dùng mật khẩu thay thế.",
+        keywords: ["touch id mac không nhận", "vân tay macbook", "touch id lỗi"]
+      },
+      {
+        id: "lib-a76",
+        device: "Mac",
+        symptom: "MacBook cắm sạc nhưng không tăng phần trăm pin (đèn cáp vẫn sáng)",
+        diagnosis: "Cáp/củ sạc lỗi, cổng sạc bám bụi/hỏng, hoặc IC quản lý sạc (SMC) gặp lỗi tạm thời.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra đèn báo trên cáp MagSafe/đầu sạc USB-C (nếu có) có sáng khi cắm không; xem % pin có tăng dù rất chậm hay đứng yên hoàn toàn.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Thử cáp và củ sạc chính hãng khác để loại trừ lỗi phụ kiện.\n2. Soi đèn pin kiểm tra cổng sạc có bụi bẩn/dị vật không, vệ sinh nhẹ nếu cần.\n3. Reset SMC (System Management Controller) theo hướng dẫn tương ứng với dòng máy (quy trình khác nhau giữa máy có chip Apple Silicon và Intel).\n4. Kiểm tra Cài đặt Hệ thống > Pin, xem có cảnh báo \"Dịch vụ pin\" (Service Battery) hay thông báo bất thường nào không.\n5. Theo dõi thêm 15-20 phút để loại trừ trường hợp máy đang sạc rất chậm do vừa dùng hết pin sâu.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý tháo pin/khui máy nếu không được đào tạo phần cứng; không khẳng định hỏng pin ngay khi chưa thử cáp/củ sạc khác.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã thử sạc bằng phụ kiện khác và reset lại hệ thống quản lý nguồn cho máy mình rồi ạ, nếu vẫn không lên pin thì em cần kiểm tra sâu hơn về mạch sạc.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ cáp/củ sạc/SMC mà vẫn không sạc được, máy còn bảo hành: gửi TTBH kiểm tra mạch sạc/pin.",
+        keywords: ["không sạc được macbook", "cắm sạc không lên pin", "sạc macbook lỗi"]
+      },
+      {
+        id: "lib-a77",
+        device: "Mac",
+        symptom: "Ứng dụng trên Mac bị treo, hiện \"Không phản hồi\" (Not Responding) liên tục",
+        diagnosis: "Ứng dụng gặp xung đột bộ nhớ, phiên bản ứng dụng lỗi thời không tương thích macOS, hoặc file dữ liệu ứng dụng bị hỏng.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định 1 ứng dụng cụ thể hay nhiều ứng dụng đều bị treo; kiểm tra ứng dụng đã cập nhật phiên bản mới nhất chưa.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Nhấn Cmd+Option+Esc để mở Buộc thoát ứng dụng (Force Quit), chọn ứng dụng đang treo và thoát.\n2. Mở lại ứng dụng, kiểm tra và cập nhật lên phiên bản mới nhất qua App Store hoặc trang chủ nhà phát triển.\n3. Nếu treo liên tục, gỡ cài đặt và cài lại ứng dụng đó.\n4. Kiểm tra dung lượng ổ đĩa còn trống và bộ nhớ RAM đang sử dụng qua Activity Monitor (Giám sát hoạt động).\n5. Khởi động lại máy để làm mới toàn bộ tiến trình hệ thống.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không ép tắt nguồn bằng cách giữ nút nguồn khi ứng dụng chỉ đơn thuần treo (ưu tiên Force Quit trước) để tránh mất dữ liệu chưa lưu của các ứng dụng khác.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã buộc thoát và cập nhật lại ứng dụng cho máy mình rồi ạ, mình dùng thử lại xem còn bị treo không nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm ứng dụng thông thường, không cần gửi TTBH.",
+        keywords: ["ứng dụng treo mac", "not responding", "app đơ macbook"]
+      },
+      {
+        id: "lib-a78",
+        device: "Mac",
+        symptom: "Cập nhật macOS bị treo hoặc báo lỗi khi cài đặt",
+        diagnosis: "Dung lượng trống không đủ, kết nối mạng gián đoạn giữa chừng, hoặc file cập nhật tải về bị lỗi.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra dung lượng trống hiện tại và dung lượng bản cập nhật yêu cầu; xác định máy đang treo ở bước tải xuống hay bước cài đặt/khởi động lại.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra Apple Menu > Giới thiệu về máy Mac này > Lưu trữ, đảm bảo đủ dung lượng trống (thường cần vài chục GB tùy phiên bản).\n2. Đảm bảo máy kết nối mạng ổn định và cắm sạc trong suốt quá trình cập nhật.\n3. Nếu treo lâu ở màn hình thanh tiến trình, chờ tối thiểu 30-60 phút trước khi can thiệp (cập nhật lớn có thể mất nhiều thời gian).\n4. Nếu thực sự treo cứng, khởi động vào Chế độ khôi phục (Recovery Mode: giữ nguồn hoặc Cmd+R tùy dòng máy) để cài đặt lại macOS.\n5. Kiểm tra và xóa bản cập nhật tải dở trong Cài đặt Hệ thống > Cập nhật phần mềm rồi tải lại.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không ngắt nguồn hoặc rút sạc khi thanh tiến trình cập nhật đang chạy, kể cả khi có vẻ như đứng yên lâu; không tự ý cài đặt lại macOS khi chưa xác nhận khách đã sao lưu dữ liệu.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ quá trình cập nhật lớn có thể mất thời gian ạ, mình vui lòng để máy yên và cắm sạc, nếu quá lâu không lên được thì em sẽ hỗ trợ cài đặt lại qua chế độ khôi phục.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/cập nhật thông thường, không cần gửi TTBH.",
+        keywords: ["cập nhật macos lỗi", "macos treo cập nhật", "update macos treo"]
+      },
+      {
+        id: "lib-a79",
+        device: "Mac",
+        symptom: "Vỏ máy/bản lề MacBook bị nứt, hở ốc sau thời gian sử dụng dài",
+        diagnosis: "Hao mòn tự nhiên qua thời gian, va đập nhẹ tích lũy, hoặc ốc vít bị lỏng dần do đóng mở máy nhiều.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát vị trí nứt/hở ốc, kiểm tra có ảnh hưởng đến độ chắc chắn khi cầm/gõ máy không, hỏi khách máy dùng bao lâu và tần suất mang đi lại.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Chụp ảnh lưu lại tình trạng nứt/hở ốc hiện tại trước khi thao tác thêm.\n2. Kiểm tra các ốc vít xung quanh khu vực nứt có bị lỏng/thiếu ốc không.\n3. Đánh giá mức độ ảnh hưởng: chỉ thẩm mỹ hay đã ảnh hưởng đến độ chắc chắn/an toàn khi sử dụng.\n4. Tư vấn phương án: siết lại ốc, dán/ép lại vỏ (thẩm mỹ tạm thời), hoặc thay vỏ máy mới tùy mức độ.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý siết chặt quá lực các ốc vít gần bo mạch/pin vì có thể làm hỏng linh kiện bên trong; không cam kết vỏ nứt có thể phục hồi nguyên bản 100%.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ vỏ máy mình bị hao mòn theo thời gian sử dụng ạ, em tư vấn phương án khắc phục phù hợp, mình cân nhắc thay vỏ mới nếu muốn chắc chắn và thẩm mỹ hơn.\"\n\n📦 LƯU Ý TTBH: Hao mòn tự nhiên theo thời gian thường không thuộc diện bảo hành lỗi nhà sản xuất — tư vấn dịch vụ sửa chữa trả phí; nếu nứt bất thường sớm và máy còn bảo hành, có thể đề xuất khách liên hệ TTBH để đánh giá thêm.",
+        keywords: ["vỏ máy nứt", "hở ốc", "vỏ macbook", "bản lề nứt"]
+      },
+      {
+        id: "lib-a80",
+        device: "Mac",
+        symptom: "Quạt tản nhiệt MacBook kêu to bất thường dù không chạy tác vụ nặng, hoặc có mùi khét",
+        diagnosis: "Quạt bám bụi lâu ngày gây mất cân bằng khi quay, keo tản nhiệt khô, hoặc có dấu hiệu chập linh kiện (mùi khét).",
+        solution: "🔍 CHẨN ĐOÁN: Đây là tình huống cần ưu tiên nếu có MÙI KHÉT — hỏi khách rõ có ngửi thấy mùi khét/nhựa cháy không, quạt kêu to xảy ra khi nào (mở máy lên ngay hay sau khi dùng lâu).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Nếu khách báo có MÙI KHÉT: yêu cầu tắt máy ngay lập tức, không sử dụng tiếp, chuyển bộ phận kỹ thuật kiểm tra khẩn.\n2. Nếu chỉ quạt kêu to không mùi lạ: mở Activity Monitor kiểm tra có ứng dụng nào đang chiếm CPU cao bất thường không.\n3. Kiểm tra khe thông gió có bị che (đặt trên gối, chăn) hoặc bám nhiều bụi không.\n4. Đề xuất vệ sinh quạt tản nhiệt chuyên sâu tại xưởng kỹ thuật nếu máy dùng lâu chưa vệ sinh lần nào.\n5. Theo dõi nhiệt độ máy qua ứng dụng giám sát nếu nghi ngờ quá nhiệt.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tiếp tục dùng hoặc sạc máy khi đã phát hiện mùi khét; không tự ý xịt bất kỳ dung dịch nào vào khe tản nhiệt.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ nếu máy có mùi khét thì mình cần ngừng sử dụng ngay ạ để đảm bảo an toàn, em sẽ ưu tiên kiểm tra ngay cho mình. Còn nếu chỉ quạt kêu to bình thường thì khả năng do bám bụi, em vệ sinh lại giúp mình.\"\n\n📦 LƯU Ý TTBH: Có mùi khét/dấu hiệu chập linh kiện: gửi TTBH khẩn ngay, không thao tác thêm tại cửa hàng. Chỉ bám bụi thông thường: vệ sinh trả phí tại cửa hàng.",
+        keywords: ["quạt kêu to", "mùi khét", "quá nhiệt", "macbook nóng"]
+      },
+      {
+        id: "lib-a81",
+        device: "Mac",
+        symptom: "Trackpad MacBook bị rơ, click đúp không ăn hoặc phát tiếng lạch cạch khi nhấn",
+        diagnosis: "Cơ chế Force Touch/Taptic Engine của trackpad bị lỏng, hoặc cài đặt độ nhạy click chưa phù hợp.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra máy dùng trackpad có Force Touch (không lún vật lý, dùng cảm biến áp lực + rung phản hồi) hay trackpad cơ học đời cũ; xác định click đúp lỗi ở toàn màn hình hay chỉ 1 khu vực trackpad.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt Hệ thống > Trackpad, kiểm tra và điều chỉnh độ nhạy Click (Click Pressure: Light/Medium/Firm).\n2. Kiểm tra tính năng Force Click & Haptic Feedback đã bật đúng mức mong muốn chưa.\n3. Vệ sinh bề mặt trackpad bằng khăn microfiber khô, kiểm tra có dị vật kẹt dưới viền trackpad không.\n4. Khởi động lại máy để làm mới driver trackpad.\n5. Nếu chỉ 1 khu vực trackpad phản hồi kém/kêu lạch cạch bất thường, ghi nhận vị trí cụ thể để báo kỹ thuật.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không ấn mạnh nhiều lần liên tục để \"test\" khi nghi ngờ trackpad lỗi cơ, có thể làm nặng thêm tình trạng lỏng; không tháo trackpad nếu không được đào tạo phần cứng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và điều chỉnh lại độ nhạy trackpad cho máy mình rồi ạ, nếu vẫn còn tiếng kêu lạ hoặc rơ thì khả năng cao do cơ cấu bên trong, em cần kiểm tra thêm.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ cài đặt, trackpad vẫn rơ/kêu lạch cạch bất thường, máy còn bảo hành: gửi TTBH kiểm tra cụm trackpad.",
+        keywords: ["trackpad rơ", "trackpad kêu", "click đúp không ăn", "force touch"]
+      },
+      {
+        id: "lib-a82",
+        device: "Mac",
+        symptom: "Bản lề MacBook để lại vết lõm/cấn trên màn hình khi đóng nắp",
+        diagnosis: "Bụi/dị vật kẹt giữa bàn phím và màn hình khi đóng máy, hoặc áp lực đóng nắp không đều lâu ngày để lại vết hằn.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát vị trí vết cấn có trùng với hàng phím hoặc viền bàn phím không (dấu hiệu điển hình của việc đóng máy khi còn dị vật/bụi trên phím).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vệ sinh sạch bàn phím và màn hình trước khi đánh giá, dùng khăn microfiber lau nhẹ vùng bị cấn.\n2. Xác định vết cấn là tạm thời (mờ dần sau vài giờ/ngày) hay vĩnh viễn (đã ăn vào lớp phủ màn hình).\n3. Nhắc khách luôn vệ sinh bàn phím sạch bụi trước khi đóng nắp máy để tránh tái diễn.\n4. Nếu vết cấn nhẹ và mới xuất hiện, có thể cải thiện phần nào theo thời gian, không cần can thiệp ngay.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng hóa chất tẩy rửa mạnh chà lên vết cấn màn hình; không cố ấn/miết mạnh vào vết cấn để \"làm phẳng lại\".\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ vết cấn này thường do bụi/dị vật kẹt lúc đóng máy ạ, mình lưu ý vệ sinh bàn phím sạch trước khi đóng nắp để tránh bị thêm nhé, em kiểm tra xem vết này có cải thiện được không.\"\n\n📦 LƯU Ý TTBH: Vết cấn do dị vật khi sử dụng là lỗi ngoại lực, không thuộc diện bảo hành — không gửi TTBH.",
+        keywords: ["vết cấn màn hình", "màn hình bị hằn", "bản lề cấn"]
+      },
+      {
+        id: "lib-a83",
+        device: "Mac",
+        symptom: "Mac bị treo với biểu tượng cầu vồng xoay liên tục (spinning beach ball), phải ép buộc khởi động lại",
+        diagnosis: "Ứng dụng/tiến trình chiếm dụng CPU hoặc bộ nhớ quá tải, ổ đĩa gần đầy khiến hệ thống xử lý chậm, hoặc xung đột phần mềm sau cập nhật.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định hiện tượng xảy ra khi dùng ứng dụng cụ thể hay ngẫu nhiên toàn hệ thống; kiểm tra dung lượng ổ đĩa còn trống.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Chờ 1-2 phút vì đôi khi hệ thống chỉ đang xử lý tác vụ nặng tạm thời rồi tự hết treo.\n2. Nếu treo lâu, mở Activity Monitor (nếu máy vẫn thao tác được) để xem tiến trình nào đang chiếm CPU/bộ nhớ cao nhất và buộc thoát tiến trình đó.\n3. Kiểm tra dung lượng ổ đĩa trống (Apple Menu > Giới thiệu về máy Mac này > Lưu trữ) — ổ gần đầy khiến máy dễ bị treo.\n4. Nếu máy treo cứng hoàn toàn không thao tác được, giữ nút nguồn 10 giây để ép buộc tắt máy, sau đó khởi động lại.\n5. Kiểm tra và cập nhật ứng dụng/macOS lên bản mới nhất nếu tình trạng lặp lại thường xuyên.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không ép tắt nguồn ngay lập tức khi máy chỉ mới treo vài giây (nên chờ và thử Activity Monitor trước); không xóa dữ liệu người dùng để \"giải phóng dung lượng\" khi chưa hỏi ý kiến.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình bị treo do xử lý tác vụ nặng hoặc gần đầy dung lượng ạ, em đã xử lý và dọn bớt giúp mình rồi, mình theo dõi thêm xem còn bị treo thường xuyên không nhé.\"\n\n📦 LƯU Ý TTBH: Tình trạng lặp lại thường xuyên dù đã dọn dung lượng và cập nhật phần mềm, nghi ngờ phần cứng (ổ SSD, RAM): gửi TTBH kiểm tra.",
+        keywords: ["spinning beach ball", "macbook treo", "cầu vồng xoay", "đơ máy"]
+      },
+      {
+        id: "lib-a84",
+        device: "Mac",
+        symptom: "AirDrop hoặc Handoff giữa Mac và iPhone không hoạt động",
+        diagnosis: "Wi-Fi/Bluetooth chưa bật đủ trên cả 2 máy, cài đặt AirDrop/Handoff bị giới hạn, hoặc 2 thiết bị chưa đăng nhập cùng Apple ID (với Handoff).",
+        solution: "🔍 CHẨN ĐOÁN: Xác định lỗi ở AirDrop (chia sẻ file) hay Handoff (chuyển tiếp thao tác giữa thiết bị); kiểm tra cả Mac và iPhone/iPad đã bật Wi-Fi và Bluetooth chưa.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Đảm bảo cả 2 thiết bị đã bật Wi-Fi và Bluetooth (AirDrop/Handoff cần cả 2 để hoạt động).\n2. Trên Mac, vào Finder > AirDrop, kiểm tra chế độ \"Cho phép tôi được phát hiện bởi\" đã chọn Mọi người hoặc Chỉ liên hệ phù hợp.\n3. Trên iPhone/iPad, vào Cài đặt > Chung > AirDrop, kiểm tra tương tự.\n4. Với Handoff: kiểm tra cả 2 thiết bị đã đăng nhập cùng Apple ID, bật Handoff trong Cài đặt Hệ thống > Chung > AirDrop & Handoff (Mac) và Cài đặt > Chung > AirPlay & Handoff (iPhone/iPad).\n5. Đưa 2 thiết bị lại gần nhau (trong phạm vi Bluetooth) và thử lại.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không đăng nhập Apple ID của khách lên thiết bị khác để \"test\" mà chưa được đồng ý rõ ràng; không tắt vĩnh viễn các tính năng bảo mật liên quan khi chưa hỏi ý kiến khách.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và bật lại đầy đủ cài đặt AirDrop/Handoff trên cả 2 thiết bị của mình rồi ạ, mình thử lại xem đã hoạt động chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi cấu hình phần mềm, không liên quan phần cứng — không gửi TTBH.",
+        keywords: ["airdrop không hoạt động", "handoff lỗi", "chia sẻ file mac iphone"]
+      },
+      {
+        id: "lib-a85",
+        device: "Mac",
+        symptom: "Bluetooth Mac không kết nối được hoặc chập chờn với chuột/bàn phím không dây",
+        diagnosis: "Xung đột danh sách thiết bị đã ghép đôi (paired), pin phụ kiện yếu, hoặc nhiễu sóng từ thiết bị điện tử khác gần đó.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra pin của chuột/bàn phím còn đủ không; xác định thiết bị từng kết nối tốt trước đây hay chưa từng ghép đôi thành công.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra và thay pin/sạc đầy cho chuột, bàn phím không dây.\n2. Vào Cài đặt Hệ thống > Bluetooth, xóa thiết bị (Remove/Forget) rồi ghép đôi lại từ đầu.\n3. Tắt Bluetooth trên Mac, chờ 10 giây rồi bật lại.\n4. Di chuyển ra xa các thiết bị phát sóng khác (router Wi-Fi, loa Bluetooth khác) có thể gây nhiễu.\n5. Khởi động lại máy để làm mới driver Bluetooth.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định hỏng module Bluetooth khi chưa thử thay pin và ghép đôi lại từ đầu; không xóa toàn bộ danh sách thiết bị Bluetooth khác của khách mà chưa hỏi ý kiến.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã ghép đôi lại thiết bị Bluetooth cho máy mình rồi ạ, mình thử dùng lại xem còn bị chập chờn không nhé.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ pin phụ kiện/ghép đôi lại mà vẫn chập chờn với nhiều thiết bị Bluetooth khác nhau, máy còn bảo hành: gửi TTBH kiểm tra module Bluetooth.",
+        keywords: ["bluetooth mac không kết nối", "chuột bluetooth chập chờn", "bàn phím không dây lỗi"]
+      },
+      {
+        id: "lib-a86",
+        device: "iPad",
+        symptom: "iPad không lên nguồn, màn hình đen dù đã sạc đầy",
+        diagnosis: "Lỗi phần mềm treo màn hình, pin cạn sâu cần thời gian sạc trước khi lên logo, hoặc lỗi phần cứng (IC nguồn/màn hình).",
+        solution: "🔍 CHẨN ĐOÁN: Cắm sạc bằng củ/cáp chính hãng, chờ tối thiểu 15-30 phút trước khi thử bật lại (pin cạn sâu cần thời gian nạp trước khi lên nguồn).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Cắm sạc bằng củ sạc và cáp chính hãng, để yên tối thiểu 15-30 phút.\n2. Thử ép buộc khởi động lại: nhấn giữ đồng thời nút Nguồn và nút Home (hoặc nút Tăng âm lượng với iPad không có nút Home) trong 10 giây đến khi thấy logo Apple.\n3. Thử cổng sạc và cáp khác để loại trừ lỗi phụ kiện.\n4. Kết nối với máy tính qua Finder/iTunes, kiểm tra máy tính có nhận diện được thiết bị không (dù màn hình đen).\n5. Nếu máy tính nhận diện được, có thể thử khôi phục qua chế độ DFU/Recovery.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không sạc bằng củ sạc công suất không rõ nguồn gốc; không tháo máy kiểm tra nếu không được đào tạo phần cứng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã thử sạc và ép khởi động lại cho máy mình rồi ạ, nếu vẫn không lên nguồn thì em cần kiểm tra sâu hơn về phần cứng.\"\n\n📦 LƯU Ý TTBH: Đã thử sạc đủ thời gian và ép khởi động lại không được, không có dấu hiệu vào nước/va đập, máy còn bảo hành: gửi TTBH kiểm tra.",
+        keywords: ["ipad không lên nguồn", "màn hình đen", "ipad không khởi động"]
+      },
+      {
+        id: "lib-a87",
+        device: "iPad",
+        symptom: "Loa iPad rè hoặc phát nhạc nhỏ tiếng bất thường",
+        diagnosis: "Loa bị bụi/dị vật che khuất, cài đặt âm lượng giới hạn (Volume Limit), hoặc lỗi phần cứng loa.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra Cài đặt > Âm nhạc > Giới hạn âm lượng có đang bật mức thấp không; kiểm tra âm lượng chuông/phương tiện riêng biệt.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra và tắt/tăng giới hạn âm lượng trong Cài đặt > Âm nhạc.\n2. Soi đèn pin kiểm tra lỗ loa (thường ở 1 hoặc 2 cạnh máy) có bị bụi/dị vật che không, vệ sinh nhẹ nếu cần.\n3. Kiểm tra không có ốp lưng/bao da nào che khuất lỗ loa.\n4. Phát thử nhạc ở nhiều mức âm lượng để xác định rè xảy ra ở mức nào (thường rè rõ ở âm lượng lớn nếu lỗi màng loa).\n5. Khởi động lại máy để loại trừ lỗi phần mềm tạm thời.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không chọc vật nhọn vào lỗ loa để vệ sinh; không khẳng định hỏng loa khi chưa kiểm tra cài đặt giới hạn âm lượng.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra cài đặt và vệ sinh loa cho máy mình rồi ạ, nếu vẫn còn rè ở âm lượng lớn thì khả năng do màng loa, em cần kiểm tra thêm.\"\n\n📦 LƯU Ý TTBH: Đã loại trừ cài đặt/bụi bẩn, loa vẫn rè rõ, máy còn bảo hành: gửi TTBH kiểm tra cụm loa.",
+        keywords: ["loa ipad rè", "loa nhỏ tiếng", "ipad mất tiếng"]
+      },
+      {
+        id: "lib-a88",
+        device: "iPad",
+        symptom: "Face ID trên iPad Pro không nhận diện khuôn mặt",
+        diagnosis: "Cảm biến TrueDepth bị che/bẩn, góc quét Face ID khác thói quen dùng iPhone theo chiều dọc (iPad Pro có Face ID hoạt động cả khi cầm ngang), hoặc cần đăng ký lại khuôn mặt.",
+        solution: "🔍 CHẨN ĐOÁN: Hỏi khách thường cầm máy theo chiều nào khi mở khóa (iPad Pro hỗ trợ Face ID đa hướng nhưng camera phải không bị che); kiểm tra có ốp/bao da che khuất cụm camera trước không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Lau sạch vùng camera trước bằng khăn microfiber khô.\n2. Kiểm tra ốp/bao da có che khuất cụm TrueDepth khi mở nắp không.\n3. Vào Cài đặt > Face ID & Mã khóa, xóa và đăng ký lại Face ID, quét đủ góc theo hướng dẫn trên màn hình.\n4. Đảm bảo đủ ánh sáng khi quét, tránh ngược sáng hoàn toàn.\n5. Khởi động lại máy nếu vẫn chưa cải thiện.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng vật cứng lau chùi camera; không đăng ký Face ID bằng khuôn mặt người khác để \"test hộ\" khách.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã vệ sinh camera và đăng ký lại Face ID cho máy mình rồi ạ, mình thử mở khóa lại xem đã nhận diện tốt hơn chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đã vệ sinh và đăng ký lại vẫn không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm TrueDepth.",
+        keywords: ["face id ipad không nhận", "face id ipad pro lỗi"]
+      },
+      {
+        id: "lib-a89",
+        device: "iPad",
+        symptom: "Touch ID ở nút nguồn iPad (Air/mini) không nhận diện vân tay",
+        diagnosis: "Cảm biến vân tay tích hợp trong nút nguồn bị bẩn/ẩm, hoặc vân tay lưu chưa đủ rõ nét.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra tay khách có ướt/nhiều mồ hôi khi đặt vân tay không; xác nhận máy có từng thay nút nguồn ở nơi khác không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Lau khô, sạch ngón tay và bề mặt nút nguồn trước khi thử lại.\n2. Vào Cài đặt > Touch ID & Mã khóa, xóa vân tay cũ và đặt lại, đặt trọn vẹn đầu ngón tay lên nút thay vì chỉ chạm nhẹ.\n3. Khởi động lại máy để làm mới cảm biến.\n4. Hỏi khách máy có từng sửa/thay nút nguồn ở nơi khác gần đây không.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không tự ý hoán đổi nút nguồn giữa 2 máy khác nhau — tương tự Touch ID trên iPhone/Mac, không thể hoạt động lại nếu đổi linh kiện khác máy.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã đặt lại vân tay cho máy mình rồi ạ, mình đặt trọn đầu ngón tay lên nút nguồn khi mở khóa để nhận diện tốt hơn nhé.\"\n\n📦 LƯU Ý TTBH: Máy chưa từng sửa chữa nút nguồn, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay nút nguồn không chính hãng: khó khôi phục, tư vấn dùng mật khẩu.",
+        keywords: ["touch id ipad không nhận", "vân tay ipad air", "nút nguồn touch id"]
+      },
+      {
+        id: "lib-a90",
+        device: "iPad",
+        symptom: "Camera iPad bị mờ hoặc không lấy nét được",
+        diagnosis: "Ống kính camera bị bám bụi/dấu vân tay, ốp lưng che một phần camera, hoặc lỗi phần cứng cụm camera.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra camera trước hay sau bị mờ, quan sát ống kính có vết bẩn/trầy xước bằng mắt không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Dùng khăn microfiber khô lau nhẹ ống kính camera.\n2. Kiểm tra ốp lưng có che một phần camera hoặc đèn flash gây lóa không.\n3. Mở ứng dụng Camera, thử chụp ở các điều kiện ánh sáng khác nhau để xác nhận mức độ mờ.\n4. Kiểm tra Cài đặt > Camera xem có tùy chọn Định dạng/Lưới nào ảnh hưởng không (loại trừ nguyên nhân do cài đặt).\n5. Nếu vệ sinh không cải thiện, kiểm tra ống kính có bị trầy xước vật lý rõ ràng không.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng vật cứng/sắc nhọn cạy vòng camera; không dùng dung dịch tẩy rửa mạnh lau ống kính.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã vệ sinh camera cho máy mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng do ống kính trầy hoặc cụm camera bên trong có vấn đề, em cần kiểm tra thêm.\"\n\n📦 LƯU Ý TTBH: Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera.",
+        keywords: ["camera ipad mờ", "ipad không lấy nét", "camera ipad lỗi"]
+      },
+      {
+        id: "lib-a91",
+        device: "iPad",
+        symptom: "iPad không nhận Wi-Fi hoặc bị ngắt kết nối liên tục",
+        diagnosis: "Xung đột cấu hình mạng đã lưu, vị trí yếu sóng, hoặc lỗi phần mềm sau cập nhật iPadOS.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra các thiết bị khác cùng mạng có bị chập chờn không; xác định lỗi xảy ra với mọi mạng Wi-Fi hay chỉ 1 mạng cụ thể.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt > Wi-Fi, chọn mạng đang dùng > Quên mạng này, sau đó kết nối lại và nhập mật khẩu từ đầu.\n2. Khởi động lại router nếu các thiết bị khác cùng mạng cũng chập chờn.\n3. Vào Cài đặt > Cài đặt chung > Chuyển hoặc Đặt lại iPad > Đặt lại > Đặt lại Cài đặt Mạng (sẽ mất mật khẩu Wi-Fi đã lưu, cần nhập lại).\n4. Kiểm tra bản cập nhật iPadOS mới nhất.\n5. Thử kết nối ở một mạng Wi-Fi khác để xác định lỗi do máy hay do mạng ban đầu.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định lỗi phần cứng Wi-Fi khi chưa loại trừ nguyên nhân từ mạng/router; không thay đổi cấu hình mạng công cộng khi chưa được phép.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé.\"\n\n📦 LƯU Ý TTBH: Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm, máy còn bảo hành: gửi TTBH kiểm tra ăng-ten Wi-Fi.",
+        keywords: ["ipad không nhận wifi", "ipad mất wifi", "wifi ipad chập chờn"]
+      },
+      {
+        id: "lib-a92",
+        device: "iPad",
+        symptom: "Chế độ đa nhiệm Split View/Slide Over trên iPad bị lỗi, không mở được 2 ứng dụng cùng lúc",
+        diagnosis: "Ứng dụng không hỗ trợ đa nhiệm, cài đặt đa nhiệm bị tắt, hoặc thao tác kéo thả chưa đúng cách.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra ứng dụng khách muốn dùng song song có hỗ trợ Split View không (không phải app nào cũng hỗ trợ); kiểm tra Cài đặt > Trang chủ & Dock > Đa nhiệm đã bật \"Cho phép nhiều ứng dụng\" chưa.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Cài đặt > Trang chủ & Dock > Đa nhiệm & Cử chỉ, đảm bảo \"Cho phép Nhiều Ứng dụng\" đang bật.\n2. Hướng dẫn thao tác đúng: mở app từ Dock, kéo thả sang mép màn hình để mở Split View, hoặc kéo vào giữa để mở Slide Over.\n3. Kiểm tra ứng dụng đích có hỗ trợ đa nhiệm không (một số ứng dụng chỉ chạy toàn màn hình).\n4. Cập nhật ứng dụng và iPadOS lên bản mới nhất.\n5. Khởi động lại máy nếu thao tác đúng mà vẫn không mở được.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định máy lỗi khi ứng dụng khách chọn vốn không hỗ trợ đa nhiệm; không thay đổi cài đặt trợ năng khác của khách khi không liên quan.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra và bật lại cài đặt đa nhiệm, hướng dẫn thao tác kéo thả cho mình rồi ạ, mình thử lại xem đã mở được 2 ứng dụng cùng lúc chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/thao tác, không cần gửi TTBH.",
+        keywords: ["split view lỗi", "slide over không hoạt động", "đa nhiệm ipad"]
+      },
+      {
+        id: "lib-a93",
+        device: "iPad",
+        symptom: "iPad không tải hoặc cài đặt được ứng dụng từ App Store, báo lỗi hoặc treo giữa chừng",
+        diagnosis: "Dung lượng trống không đủ, kết nối mạng không ổn định, tài khoản Apple ID có vấn đề thanh toán, hoặc cài đặt hạn chế nội dung (Screen Time) đang chặn.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra dung lượng trống, kết nối mạng, và Cài đặt > Thời gian sử dụng > Giới hạn Nội dung & Quyền riêng tư xem có đang chặn cài đặt ứng dụng không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra Cài đặt > Cài đặt chung > Dung lượng iPad còn đủ trống không.\n2. Đảm bảo kết nối Wi-Fi ổn định, thử tải qua mạng khác để loại trừ do mạng.\n3. Vào Cài đặt > [Tên người dùng] > Media & Mua hàng, kiểm tra đăng nhập đúng Apple ID và không có cảnh báo thanh toán.\n4. Kiểm tra Cài đặt > Thời gian sử dụng > Giới hạn Nội dung & Quyền riêng tư > Mua hàng trên iTunes & App Store xem có đang chặn Cài đặt ứng dụng không.\n5. Khởi động lại máy và thử tải lại.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không đăng nhập Apple ID khác vào máy khách để \"test\" khi chưa được đồng ý; không tắt Giới hạn Nội dung của khách (đặc biệt máy trẻ em) mà không hỏi ý kiến người quản lý thiết bị.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra dung lượng, mạng và cài đặt tài khoản cho máy mình rồi ạ, mình thử tải lại ứng dụng xem đã được chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/tài khoản, không cần gửi TTBH.",
+        keywords: ["app store lỗi", "không tải được ứng dụng", "cài đặt app treo"]
+      },
+      {
+        id: "lib-a94",
+        device: "iPad",
+        symptom: "iPad bị vào nước, có dấu hiệu ẩm (LCI đổi màu)",
+        diagnosis: "iPad tiếp xúc trực tiếp với nước/chất lỏng, không có chuẩn chống nước chính thức như iPhone nên rủi ro hư hỏng cao hơn.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra chỉ báo tiếp xúc chất lỏng (LCI) trong khay SIM (với bản có SIM) hoặc quan sát dấu hiệu ẩm ở cổng sạc/loa; hỏi khách thời điểm và mức độ vào nước.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tắt nguồn máy ngay lập tức, không cắm sạc hoặc bật lại khi còn ẩm.\n2. Lau khô bên ngoài bằng khăn mềm, dựng máy nghiêng để nước thoát ra khỏi các khe cổng.\n3. Không dùng máy sấy tóc/nhiệt để sấy khô — hơi nóng có thể đẩy hơi ẩm vào sâu hơn.\n4. Để máy ở nơi khô thoáng tối thiểu 24-48 giờ trước khi thử bật lại.\n5. Đề xuất mang vào xưởng kỹ thuật vệ sinh chuyên sâu, kiểm tra bo mạch sớm nhất có thể (nước để lâu dễ ăn mòn hơn).\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cắm sạc hoặc bật máy khi còn nghi ngờ ẩm bên trong; không lắc mạnh máy để \"dốc nước ra\" vì có thể đẩy nước vào sâu hơn các linh kiện khác.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình cần được kiểm tra và vệ sinh chuyên sâu sớm sau khi vào nước để tránh ăn mòn thêm ạ, mình không nên bật máy lúc này.\"\n\n📦 LƯU Ý TTBH: Vào nước là lỗi ngoại lực (iPad không có chuẩn chống nước như iPhone), không thuộc diện bảo hành — tư vấn dịch vụ vệ sinh/sửa chữa trả phí tại cửa hàng, không gửi TTBH.",
+        keywords: ["ipad vào nước", "ẩm ipad", "lci đổi màu"]
+      },
+      {
+        id: "lib-a95",
+        device: "iPad",
+        symptom: "iPad bị khóa Activation Lock do quên Apple ID",
+        diagnosis: "Tính năng Find My (Tìm iPad) vẫn bật khiến máy yêu cầu xác thực Apple ID cũ trước khi sử dụng được.",
+        solution: "🔍 CHẨN ĐOÁN: Xác nhận máy đang ở đúng màn hình Activation Lock (logo iCloud kèm dòng chữ khóa kích hoạt), hỏi khách còn giữ hóa đơn mua hàng hoặc nhớ Apple ID không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Hỏi khách còn nhớ Apple ID/mật khẩu đã đăng nhập trên máy trước đó không.\n2. Nếu còn nhớ: hướng dẫn khách truy cập iforgot.apple.com trên thiết bị khác để tự khôi phục mật khẩu rồi đăng nhập lại.\n3. Nếu không nhớ và có hóa đơn hợp lệ: hướng dẫn khách chuẩn bị hóa đơn mua hàng (ghi rõ số serial) để nộp cho Apple xác minh chủ sở hữu.\n4. Kiểm tra máy có phải iPad được mua lại/tặng lại từ người khác không — nếu vậy cần liên hệ đúng chủ Apple ID trước đó để họ gỡ khỏi tài khoản Find My.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng bất kỳ công cụ/phần mềm bên thứ 3 nào để \"bẻ khóa\" Activation Lock; không nhận xử lý nếu không xác minh được nguồn gốc máy hợp pháp.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ đây là tính năng bảo vệ máy khỏi mất cắp ạ, mình cung cấp hóa đơn mua hàng hoặc liên hệ chủ tài khoản trước đó để gỡ khóa giúp mình nhé.\"\n\n📦 LƯU Ý TTBH: Không có hóa đơn hợp lệ và khách không nhớ Apple ID: đề xuất khách nhận bảo hành kèm chứng từ mua hàng (nếu có); gửi TTBH để Apple kiểm tra và xử lý, không có cách bỏ qua khóa này tại cửa hàng.",
+        keywords: ["ipad activation lock", "khóa kích hoạt ipad", "quên apple id"]
+      },
+      {
+        id: "lib-a96",
+        device: "iPad",
+        symptom: "Stage Manager trên iPad Pro/Air bị lỗi hiển thị hoặc treo khi kéo thả cửa sổ",
+        diagnosis: "Xung đột phần mềm khi chuyển đổi giữa nhiều cửa sổ, hoặc thiết bị không đủ điều kiện phần cứng chạy đầy đủ tính năng Stage Manager (yêu cầu chip M1 trở lên).",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra dòng máy khách đang dùng có đủ điều kiện chạy Stage Manager không (cần chip M1 trở lên), xác định lỗi xảy ra khi thao tác cụ thể nào (kéo thả, thay đổi kích thước cửa sổ...).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Vào Trung tâm Điều khiển, kiểm tra Stage Manager đã bật đúng chưa, tắt rồi bật lại.\n2. Cập nhật iPadOS lên phiên bản mới nhất — Stage Manager được cải thiện qua nhiều bản cập nhật.\n3. Đóng bớt các ứng dụng đang mở trong Stage Manager nếu số lượng cửa sổ quá nhiều.\n4. Khởi động lại máy để làm mới giao diện.\n5. Nếu vẫn lỗi, hướng dẫn khách tạm quay lại chế độ đa nhiệm thông thường (tắt Stage Manager) trong lúc chờ bản cập nhật vá lỗi.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định máy lỗi phần cứng khi đây là vấn đề đã biết của tính năng phần mềm mới; không xóa dữ liệu ứng dụng của khách để \"sửa lỗi\" khi chưa cần thiết.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ Stage Manager là tính năng khá mới nên đôi khi còn lỗi vặt ạ, em đã cập nhật và khởi động lại cho máy mình rồi, mình dùng thử lại xem ổn định hơn chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm, không cần gửi TTBH.",
+        keywords: ["stage manager lỗi", "đa nhiệm ipad pro", "stage manager treo"]
+      },
+      {
+        id: "lib-a97",
+        device: "iPad",
+        symptom: "Màn hình iPad không tự xoay theo hướng cầm máy (Orientation Lock lỗi)",
+        diagnosis: "Tính năng Khóa Xoay Màn hình (Orientation Lock) đang bật trong Trung tâm Điều khiển, hoặc cảm biến gia tốc bị lỗi.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra biểu tượng khóa xoay (hình ổ khóa với mũi tên vòng) trong Trung tâm Điều khiển có đang bật (màu cam) không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Mở Trung tâm Điều khiển (vuốt từ góc trên bên phải), kiểm tra và tắt biểu tượng Khóa Xoay Màn hình nếu đang bật.\n2. Kiểm tra ứng dụng đang mở có hỗ trợ xoay ngang/dọc không (một số ứng dụng chỉ hỗ trợ 1 chiều cố định).\n3. Khởi động lại máy để làm mới cảm biến gia tốc.\n4. Thử xoay máy ở nhiều ứng dụng khác nhau (như Cài đặt, Safari) để xác định lỗi ở 1 app hay toàn hệ thống.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không khẳng định lỗi cảm biến phần cứng khi chưa kiểm tra khóa xoay màn hình trong Trung tâm Điều khiển.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ máy mình đang bật khóa xoay màn hình ạ, em đã tắt lại giúp mình rồi, mình thử xoay máy xem đã tự chuyển hướng chưa nhé.\"\n\n📦 LƯU Ý TTBH: Đã tắt khóa xoay mà vẫn không xoay được ở nhiều ứng dụng hỗ trợ xoay: gửi TTBH kiểm tra cảm biến gia tốc.",
+        keywords: ["ipad không xoay màn hình", "khóa xoay màn hình", "orientation lock"]
+      },
+      {
+        id: "lib-a98",
+        device: "iPad",
+        symptom: "Ứng dụng trên iPad bị crash liên tục hoặc không mở được",
+        diagnosis: "Ứng dụng lỗi phiên bản, xung đột dữ liệu cache, hoặc máy thiếu dung lượng/RAM xử lý.",
+        solution: "🔍 CHẨN ĐOÁN: Xác định 1 ứng dụng cụ thể hay nhiều ứng dụng đều crash; kiểm tra ứng dụng đã cập nhật phiên bản mới nhất chưa.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Đóng hoàn toàn ứng dụng (vuốt lên từ thanh Home và đóng lại từ danh sách đa nhiệm) rồi mở lại.\n2. Kiểm tra và cập nhật ứng dụng lên phiên bản mới nhất qua App Store.\n3. Gỡ cài đặt và cài lại ứng dụng nếu vẫn crash sau khi cập nhật.\n4. Kiểm tra dung lượng trống của máy, dọn bớt nếu gần đầy.\n5. Cập nhật iPadOS lên bản mới nhất nếu nhiều ứng dụng cùng gặp lỗi.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không xóa toàn bộ dữ liệu máy khi chỉ 1 ứng dụng cụ thể bị lỗi; không tự ý xóa dữ liệu/tài khoản trong ứng dụng của khách mà chưa hỏi ý kiến.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã cập nhật và cài lại ứng dụng cho máy mình rồi ạ, mình thử mở lại xem còn bị thoát đột ngột không nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm ứng dụng thông thường, không cần gửi TTBH.",
+        keywords: ["ứng dụng ipad crash", "app ipad không mở được", "ipad app đơ"]
+      },
+      {
+        id: "lib-a99",
+        device: "iPad",
+        symptom: "iPad không đồng bộ dữ liệu qua iCloud với các thiết bị khác",
+        diagnosis: "Kết nối mạng không ổn định, dung lượng iCloud đầy, hoặc cài đặt đồng bộ của ứng dụng cụ thể (Ảnh, Danh bạ, Ghi chú) đang tắt.",
+        solution: "🔍 CHẨN ĐOÁN: Kiểm tra dung lượng iCloud còn trống không (Cài đặt > Apple ID > iCloud); xác định loại dữ liệu nào không đồng bộ (ảnh, danh bạ, ghi chú...).\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Kiểm tra kết nối Wi-Fi ổn định, đăng nhập đúng Apple ID trên tất cả thiết bị cần đồng bộ.\n2. Vào Cài đặt > Apple ID > iCloud, kiểm tra đã bật đúng ứng dụng cần đồng bộ (Ảnh, Danh bạ, Ghi chú...) chưa.\n3. Kiểm tra dung lượng iCloud còn đủ trống không — hết dung lượng sẽ dừng đồng bộ mới.\n4. Đăng xuất rồi đăng nhập lại Apple ID nếu đã kiểm tra cài đặt mà vẫn không đồng bộ (lưu ý xác nhận khách nhớ mật khẩu trước).\n5. Khởi động lại máy sau khi kiểm tra cài đặt.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không đăng xuất Apple ID của khách khi chưa xác nhận khách nhớ mật khẩu; không xóa dữ liệu trên iCloud để \"giải phóng dung lượng\" khi chưa hỏi ý kiến khách.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ em đã kiểm tra cài đặt đồng bộ và dung lượng iCloud cho máy mình rồi ạ, mình đợi thêm chút để dữ liệu đồng bộ lại nhé.\"\n\n📦 LƯU Ý TTBH: Đây là lỗi phần mềm/tài khoản/dung lượng, không cần gửi TTBH.",
+        keywords: ["icloud không đồng bộ", "ipad đồng bộ dữ liệu", "mất đồng bộ icloud"]
+      },
+      {
+        id: "lib-a100",
+        device: "iPad",
+        symptom: "Cổng sạc hoặc loa iPad bị gỉ sét, ăn mòn do từng vào nước",
+        diagnosis: "Nước/hơi ẩm đọng lại lâu ngày gây oxi hóa, ăn mòn tiếp điểm kim loại ở cổng sạc hoặc lỗ loa.",
+        solution: "🔍 CHẨN ĐOÁN: Soi đèn pin quan sát màu sắc chân tiếp điểm cổng sạc/lỗ loa; hỏi khách máy có từng vào nước/để nơi ẩm ướt không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Hỏi khách máy có từng vào nước hoặc để nơi ẩm ướt lâu ngày không.\n2. Soi đèn pin kiểm tra tình trạng gỉ sét ở cổng sạc và các lỗ loa.\n3. Không cắm sạc vào khi đang thấy rõ gỉ sét — có nguy cơ chập mạch.\n4. Đề xuất vệ sinh chuyên sâu bằng dung dịch chuyên dụng tại xưởng kỹ thuật.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không cắm sạc vào cổng đang gỉ sét rõ để \"thử\"; không dùng vật kim loại sắc nhọn cạy gỉ.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ cổng sạc của mình đang bị oxi hóa do từng tiếp xúc nước/ẩm ạ, em cần đưa vào xưởng vệ sinh chuyên sâu, không nên tự cắm sạc lúc này.\"\n\n📦 LƯU Ý TTBH: Gỉ sét do vào nước không thuộc diện bảo hành — tư vấn dịch vụ vệ sinh/sửa chữa trả phí tại cửa hàng, không gửi TTBH.",
+        keywords: ["gỉ sét ipad", "cổng sạc ipad ăn mòn", "oxi hóa ipad"]
+      },
+      {
+        id: "lib-a101",
+        device: "iPad",
+        symptom: "Khung viền iPad bị cong/móp do rơi, đóng không khít với bàn phím rời",
+        diagnosis: "Va đập mạnh làm biến dạng khung nhôm, ảnh hưởng độ khít khi ghép nối với Magic Keyboard/Smart Keyboard hoặc bao case.",
+        solution: "🔍 CHẨN ĐOÁN: Quan sát vị trí móp cong, kiểm tra độ khít khi gắn bàn phím rời/case chính hãng, hỏi khách thời điểm và độ cao rơi máy.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Chụp ảnh lưu lại tình trạng móp cong hiện tại trước khi thao tác thêm.\n2. Kiểm tra chân kết nối nam châm/Smart Connector có bị ảnh hưởng bởi vết móp không (liên quan đến lỗi bàn phím rời không kết nối).\n3. Đánh giá mức độ ảnh hưởng đến khả năng sử dụng cùng phụ kiện chính hãng.\n4. Tư vấn phương án: chấp nhận thẩm mỹ hiện tại, hoặc thay khung/vỏ máy nếu ảnh hưởng nhiều đến trải nghiệm dùng phụ kiện.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng lực mạnh cố nắn thẳng khung khi máy còn nguyên linh kiện bên trong nếu chưa tháo đúng quy trình; không cam kết phục hồi độ khít 100% như máy mới.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ khung máy mình bị móp do va đập rồi ạ, điều này có thể ảnh hưởng đến việc gắn bàn phím rời, em tư vấn phương án khắc phục phù hợp cho mình nhé.\"\n\n📦 LƯU Ý TTBH: Móp méo do rơi/va đập là lỗi ngoại lực, không thuộc diện bảo hành — không gửi TTBH; tư vấn dịch vụ sửa chữa trả phí tại cửa hàng.",
+        keywords: ["khung ipad móp", "ipad cong", "bàn phím rời không khít"]
+      },
+      {
+        id: "lib-a102",
+        device: "iPad",
+        symptom: "Pin iPad bị phồng, đội màn hình lên",
+        diagnosis: "Pin lithium-ion bị chai/hỏng hóa học sinh khí bên trong sau thời gian sử dụng dài.",
+        solution: "🔍 CHẨN ĐOÁN: Đây là tình huống AN TOÀN CẦN ƯU TIÊN — kiểm tra dấu hiệu phồng bằng mắt (màn hình bị đội lên, hở khe viền), hỏi khách máy có nóng bất thường không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Yêu cầu khách NGỪNG SỬ DỤNG và ngừng sạc máy ngay lập tức.\n2. Không ép, đè hoặc cố tháo pin phồng bằng lực — nguy cơ cháy nổ.\n3. Đặt máy nơi thoáng, tránh xa vật dễ cháy.\n4. Bàn giao ngay cho bộ phận kỹ thuật xử lý theo quy trình pin lỗi.\n5. Báo ngay quản lý ca trực nếu pin phồng nặng hoặc rò rỉ dịch.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không dùng vật nhọn chọc vào khu vực pin phồng; không sạc lại để \"thử\"; không để gần nguồn nhiệt.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ, anh/chị vui lòng không sạc hay dùng máy nữa.\"\n\n📦 LƯU Ý TTBH: Pin phồng luôn cần thay thế — máy còn bảo hành và không có tác động ngoại lực: gửi TTBH; hết bảo hành: tư vấn thay pin chính hãng sớm nhất.",
+        keywords: ["pin ipad phồng", "ipad phồng pin", "an toàn cháy nổ"]
+      },
+      {
+        id: "lib-a103",
+        device: "iPad",
+        symptom: "Màn hình iPad bị lưu ảnh mờ (ghosting nhẹ) sau khi hiển thị lâu một nội dung tĩnh",
+        diagnosis: "Hiện tượng lưu ảnh tạm thời (image persistence) trên tấm nền LCD/OLED do hiển thị lâu 1 hình ảnh tĩnh ở độ sáng cao, thường tự hết sau một thời gian.",
+        solution: "🔍 CHẨN ĐOÁN: Hỏi khách trước đó có để máy hiển thị lâu 1 nội dung tĩnh (bản đồ, bảng tính, ứng dụng không tự tắt màn hình) ở độ sáng cao không; kiểm tra vết mờ có biến mất khi hiển thị nội dung khác không.\n\n🛠️ HƯỚNG DẪN XỬ LÝ:\n1. Tắt màn hình, để máy nghỉ vài giờ rồi kiểm tra lại.\n2. Phát một video/hình ảnh chuyển động nhiều màu sắc để giúp làm mới lại điểm ảnh.\n3. Giảm độ sáng màn hình và bật Tự động khóa ở thời gian ngắn hơn (Cài đặt > Màn hình & Độ sáng > Tự khóa) để tránh tái diễn.\n4. Nếu vết mờ không biến mất sau vài giờ đến 1 ngày, có thể đã chuyển thành lưu ảnh vĩnh viễn (burn-in) — hiếm gặp trên iPad nhưng vẫn có thể xảy ra.\n\n🚫 TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM: Không ấn mạnh lên màn hình để cố \"xóa\" vết lưu ảnh; không khẳng định ngay là lỗi phần cứng vĩnh viễn khi chưa chờ máy nghỉ đủ thời gian.\n\n💬 KỊCH BẢN TƯ VẤN: \"Dạ đây là hiện tượng lưu ảnh tạm thời do hiển thị lâu một nội dung ạ, mình để máy nghỉ vài tiếng là sẽ hết, em cũng hướng dẫn mình chỉnh cài đặt để tránh bị lại nhé.\"\n\n📦 LƯU Ý TTBH: Vết mờ không biến mất sau khi đã để máy nghỉ đủ lâu (dấu hiệu burn-in thật), máy còn bảo hành: gửi TTBH kiểm tra màn hình.",
+        keywords: ["ipad lưu ảnh", "ghosting màn hình", "burn-in ipad"]
       }
     ],
     demoGuide: [
