@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useRef } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import {
   ChevronLeft,
+  ChevronRight,
   MessageSquare,
   FileText,
   Watch,
@@ -20,6 +21,7 @@ import {
   User,
   Library,
   Zap,
+  ListChecks,
 } from 'lucide-react';
 import { BRANDS } from '../constants';
 import { Brand, BrandDetail, KnowledgeItem } from '../types';
@@ -70,11 +72,12 @@ export function DetailView({
   focusSignal?: number;
 }) {
   const librarySuggestions = useMemo(
-    () => findLibraryMatches(errorDescription, currentBrand?.library || [], 2),
+    () => findLibraryMatches(errorDescription, currentBrand?.library || [], 5),
     [errorDescription, currentBrand]
   );
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   // Bấm "Hỏi AI" từ trang Thư viện điều hướng vào đây — cuộn tới và focus sẵn ô nhập
   // để nhân viên gõ mô tả ngay, không cần tự tìm lại khối AI trên trang.
@@ -150,6 +153,29 @@ export function DetailView({
             </div>
           </div>
 
+          {/* Hướng dẫn cài đặt Demo — card tóm tắt, bấm vào mở modal (chỉ hiện khi
+              thương hiệu có dữ liệu demoGuide; hiện tại chỉ Apple có). */}
+          {currentBrand?.demoGuide && currentBrand.demoGuide.length > 0 && (
+            <button
+              onClick={() => setIsDemoModalOpen(true)}
+              className="w-full flex items-center gap-4 p-5 rounded-2xl border border-[#d2d2d7] dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm dark:shadow-none hover:border-[#c7c7cc] dark:hover:border-slate-600 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-all text-left group"
+            >
+              <div
+                className="size-12 rounded-xl flex items-center justify-center shrink-0"
+                style={{ backgroundColor: `${currentBrand.accentColor}1a`, color: currentBrand.accentColor }}
+              >
+                <ListChecks size={24} />
+              </div>
+              <div className="flex-1">
+                <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200">Hướng dẫn cài đặt Demo</h4>
+                <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1">
+                  Xem quy trình cài đặt / xóa / xử lý sự cố demo cho iPhone, iPad, Mac, Apple Watch
+                </p>
+              </div>
+              <ChevronRight size={18} className="text-[#6e6e73] dark:text-slate-500 group-hover:translate-x-0.5 transition-transform shrink-0" />
+            </button>
+          )}
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Column 1: AI Analysis */}
             <div className="space-y-8">
@@ -170,11 +196,15 @@ export function DetailView({
                     />
                   </div>
 
+                  {/* opacity-only, không animate height: 'auto' — animation đó cần JS đo
+                      kích thước qua requestAnimationFrame, nếu bị trì hoãn (tab nền, máy
+                      yếu) phần tử kẹt ở height:0 = ẩn hoàn toàn dù điều kiện render đã
+                      đúng. Từng gặp đúng lỗi này khi test — sửa luôn tại đây. */}
                   {librarySuggestions.length > 0 && (
                       <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        className="space-y-2"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="space-y-2 max-h-64 overflow-y-auto pr-1"
                       >
                         <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 uppercase tracking-widest">
                           <Zap size={12} />
@@ -231,13 +261,14 @@ export function DetailView({
                     </button>
                   </div>
 
-                  {/* Không dùng AnimatePresence: exit animation phụ thuộc requestAnimationFrame,
-                      nếu bị trì hoãn (tab nền, máy yếu) kết quả cũ sẽ còn hiển thị dù state đã
-                      xóa — dễ khiến nhân viên đọc nhầm hướng xử lý của lỗi trước áp cho lỗi mới. */}
+                  {/* Không dùng AnimatePresence (exit dễ kẹt nội dung cũ khi animation bị
+                      trì hoãn) và không animate height: 'auto' (cần đo kích thước qua rAF,
+                      nếu bị trì hoãn thì kẹt ở height:0 = kết quả AI mới không hiện ra dù
+                      đã có — nặng hơn cả việc hiện kết quả cũ). Chỉ animate opacity. */}
                   {analysisResult && (
                       <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         className="pt-4 border-t border-[#d2d2d7] dark:border-slate-800"
                       >
                         <div
@@ -371,13 +402,42 @@ export function DetailView({
               </section>
             </div>
           </div>
-
-          {/* Hướng dẫn cài demo (chỉ hiện khi thương hiệu có dữ liệu demoGuide) */}
-          {currentBrand?.demoGuide && currentBrand.demoGuide.length > 0 && (
-            <DemoGuideSection devices={currentBrand.demoGuide} accentColor={currentBrand.accentColor} />
-          )}
         </div>
       </div>
+
+      {/* Modal "Hướng dẫn cài đặt Demo" — không dùng AnimatePresence để đóng: nhất
+          quán với các chỗ khác trong app, đóng modal phải diễn ra NGAY khi bấm, không
+          phụ thuộc animation thoát hoàn tất (đã từng gặp animation bị trì hoãn ở tab
+          nền/máy yếu khiến nội dung/màn hình kẹt lại — với modal, hậu quả còn tệ hơn
+          vì sẽ khóa người dùng không thoát ra được). Chỉ animate lúc MỞ. */}
+      {isDemoModalOpen && currentBrand?.demoGuide && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4"
+          onClick={() => setIsDemoModalOpen(false)}
+        >
+          <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.15 }}
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full sm:max-w-3xl max-h-[85vh] rounded-2xl bg-white dark:bg-[#101922] border border-[#d2d2d7] dark:border-slate-800 shadow-2xl overflow-hidden flex flex-col"
+          >
+            <div className="flex justify-end p-2 border-b border-[#d2d2d7] dark:border-slate-800 shrink-0">
+              <button
+                onClick={() => setIsDemoModalOpen(false)}
+                className="p-2 rounded-full hover:bg-[#f5f5f7] dark:hover:bg-slate-800 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-200 transition-colors"
+                title="Đóng"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="overflow-y-auto p-5">
+              <DemoGuideSection devices={currentBrand.demoGuide} accentColor={currentBrand.accentColor} />
+            </div>
+          </motion.div>
+        </div>
+      )}
     </motion.div>
   );
 }
