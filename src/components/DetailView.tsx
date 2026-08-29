@@ -29,6 +29,7 @@ import { Brand, BrandDetail, KnowledgeItem, ResultSource } from '../types';
 import { findLibraryMatches } from '../lib/searchLibrary';
 import { DemoGuideSection } from './DemoGuideSection';
 import { ScrollToTopButton } from './ScrollToTopButton';
+import { SolutionDisplay } from './SolutionDisplay';
 
 const IconMap: Record<string, any> = {
   Camera,
@@ -542,9 +543,7 @@ export function DetailView({
               </div>
             </div>
             <div className="overflow-y-auto p-5">
-              <div className="text-sm text-[#1d1d1f] dark:text-slate-300 leading-relaxed whitespace-pre-wrap prose prose-invert prose-sm max-w-none">
-                {analysisResult}
-              </div>
+              <SolutionDisplay content={analysisResult} accentColor={currentBrand?.accentColor} />
             </div>
           </motion.div>
         </div>
