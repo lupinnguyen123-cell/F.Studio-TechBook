@@ -498,3 +498,627 @@
 **📦 Lưu ý TTBH:** Đã đổi đầu tai đúng size, vệ sinh và reset vẫn không cải thiện khử ồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra micro/cảm biến áp suất trên tai nghe.
 
 ---
+
+### iPhone/iPad báo "Không có SIM" hoặc "SIM không hợp lệ"
+- **ID:** lib-a23
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Máy không nhận diện được SIM vật lý hoặc eSIM, có thể do khay SIM lỏng, SIM lỗi, hoặc thiết bị bị khóa mạng.
+- **Từ khóa:** sim, không có sim, invalid sim, mất sóng
+
+**🔍 Chẩn đoán:** Kiểm tra Cài đặt > Cài đặt chung > Giới thiệu xem có dòng "Không giới hạn SIM" hay không (máy bị khóa mạng sẽ không có). Hỏi khách gần đây có làm rơi máy, thay SIM, hay đổi gói cước không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Khởi động lại máy.
+2. Nếu dùng SIM vật lý: tháo khay SIM ra, kiểm tra SIM không cong vênh/bẩn, lắp lại cho khay đóng khít hoàn toàn.
+3. Vào Cài đặt > Cài đặt chung > Giới thiệu, kiểm tra và cài bản Cập nhật SIM (Carrier Update) nếu có.
+4. Nếu dùng eSIM: hướng dẫn khách liên hệ nhà mạng để được hỗ trợ (do eSIM cần chuyển từ phía nhà mạng).
+5. Thử lắp SIM đó sang máy khác (hoặc SIM khác vào máy này) để xác định lỗi do SIM hay do máy.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý bẻ/cắt SIM hoặc dùng vật nhọn không đúng chuẩn để lấy khay SIM (dễ trầy khay, kẹt khay); không khẳng định máy lỗi phần cứng khi chưa thử SIM khác.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử SIM và khay SIM trước, đa phần trường hợp này do SIM tiếp xúc không tốt, xử lý được ngay ạ."
+
+**📦 Lưu ý TTBH:** Nếu đã thử SIM khác vẫn báo lỗi (loại trừ do SIM/nhà mạng) và máy có "Không giới hạn SIM" nhưng vẫn không nhận bất kỳ SIM nào — khả năng lỗi khay SIM hoặc IC sóng, cần gửi TTBH kiểm tra phần cứng.
+
+---
+
+### iPhone báo SOS hoặc "Không có dịch vụ" liên tục
+- **ID:** lib-a24
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Máy không bắt được sóng nhà mạng ổn định, hiển thị SOS/Không có dịch vụ dù ở khu vực có sóng.
+- **Từ khóa:** sos, không có dịch vụ, mất sóng, no service
+
+**🔍 Chẩn đoán:** Xác định lỗi xảy ra ở MỌI vị trí hay chỉ một khu vực cụ thể (khu vực cụ thể thường do sóng nhà mạng yếu, không phải lỗi máy). Hỏi khách sự cố xảy ra sau khi cập nhật iOS, đổi SIM, hay tự nhiên.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Bật Chế độ máy bay 15 giây rồi tắt lại để máy dò sóng lại từ đầu.
+2. Khởi động lại máy.
+3. Kiểm tra Cài đặt > Di động, cài Cập nhật SIM (Carrier Update) nếu có bản mới.
+4. Kiểm tra máy đã cập nhật iOS bản mới nhất chưa.
+5. Nếu máy 2 SIM: kiểm tra cả 2 đường truyền di động đã được bật đúng trong Cài đặt > Di động.
+6. Nếu khách đang ở nước ngoài: kiểm tra đã bật Chuyển vùng dữ liệu (Data Roaming) chưa.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận lỗi phần cứng (IC sóng, ăng-ten) ngay khi chưa loại trừ nguyên nhân sóng khu vực/nhà mạng; không yêu cầu khách đổi SIM khi chưa xác minh.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử vài bước phần mềm trước để loại trừ, nếu vẫn còn báo SOS ở khu vực sóng tốt thì mới cần kiểm tra sâu hơn ạ."
+
+**📦 Lưu ý TTBH:** Đã thử tất cả bước trên, đã xác nhận khu vực có sóng tốt (SIM khác/máy khác dùng bình thường) mà máy vẫn báo SOS/Không có dịch vụ — gửi TTBH kiểm tra IC sóng/ăng-ten.
+
+---
+
+### iPhone không lên nguồn, màn hình đen dù đã sạc
+- **ID:** lib-a25
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Máy không phản hồi khi bấm nguồn, màn hình tối đen, có thể do treo phần mềm hoặc hết pin sâu.
+- **Từ khóa:** không lên nguồn, màn hình đen, sạc không lên, chết máy
+
+**🔍 Chẩn đoán:** Phân biệt máy "không lên nguồn do hết pin sâu" (thường phục hồi sau khi sạc/force restart) với máy "không lên nguồn dù đã sạc lâu" (nghi ngờ phần cứng). Hỏi khách máy có bị rơi/vào nước trước đó không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Cắm sạc, chờ ít nhất 1 giờ trước khi thử tiếp (pin cạn sâu cần thời gian nạp lại trước khi máy phản hồi).
+2. Ép khởi động lại (Force Restart): bấm nhanh Volume Up → bấm nhanh Volume Down → giữ nút nguồn đến khi thấy logo Apple (máy Face ID); với máy có nút Home thì giữ đồng thời nút Home và nút nguồn khoảng 10 giây.
+3. Thử cáp sạc và củ sạc khác để loại trừ do phụ kiện.
+4. Quan sát khi cắm sạc có hiện biểu tượng pin yếu không — nếu không hiện gì cả sau nhiều lần thử, nghi ngờ phần cứng.
+
+**🚫 Tuyệt đối không được làm:** Không tháo máy kiểm tra pin/main khi chưa loại trừ hết các bước phần mềm; không khẳng định máy "chết nguồn" ngay khi khách vừa mang tới.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử sạc và ép khởi động lại trước, nhiều trường hợp máy hết pin sâu chỉ cần thời gian nạp lại là lên bình thường ạ."
+
+**📦 Lưu ý TTBH:** Đã sạc đủ 1 giờ, đã thử force restart và đổi cáp/củ sạc khác mà máy vẫn hoàn toàn không phản hồi (không rung, không nóng lên khi sạc) — gửi TTBH kiểm tra nguồn/main máy.
+
+---
+
+### iPhone/iPad báo lỗi khi cập nhật hoặc khôi phục qua máy tính (mã lỗi 4013, 9, 4014, 53...)
+- **ID:** lib-a26
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Quá trình update/restore qua Finder hoặc iTunes trên máy tính bị gián đoạn, hiện mã lỗi cụ thể.
+- **Từ khóa:** lỗi cập nhật, lỗi khôi phục, itunes, 4013, lỗi 53, restore
+
+**🔍 Chẩn đoán:** Ghi lại chính xác mã lỗi hiển thị (vd: 4013, 9, 4005, 4014, 53, 1015) vì mỗi mã có nguyên nhân khác nhau — phần lớn liên quan kết nối cáp/cổng USB hoặc phần mềm máy tính, không phải lỗi phần cứng iPhone/iPad.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Cập nhật máy tính (Mac/Windows) và ứng dụng Apple Devices/iTunes lên bản mới nhất.
+2. Cắm iPhone/iPad trực tiếp vào cổng USB trên máy tính, KHÔNG qua hub/bàn phím trung gian.
+3. Thử cáp Apple chính hãng khác và cổng USB khác.
+4. Khởi động lại cả máy tính và iPhone/iPad, thử lại quá trình cập nhật/khôi phục.
+5. Kiểm tra phần mềm diệt virus/tường lửa trên máy tính có đang chặn kết nối không, tạm tắt thử nếu nghi ngờ.
+6. Nếu vẫn lỗi, thử trên một máy tính khác/mạng khác để loại trừ do môi trường máy tính của khách.
+
+**🚫 Tuyệt đối không được làm:** Không vội kết luận lỗi phần cứng iPhone/iPad khi chưa thử đổi cáp/cổng/máy tính khác; không thực hiện khôi phục (restore) khi khách chưa xác nhận đã sao lưu dữ liệu.
+
+**💬 Kịch bản tư vấn:** "Dạ lỗi này thường do kết nối cáp hoặc phần mềm bên máy tính, chưa chắc do máy mình, em thử đổi cáp/cổng kết nối trước ạ."
+
+**📦 Lưu ý TTBH:** Đã đổi cáp, cổng, và thử trên máy tính khác vẫn báo cùng mã lỗi khi khôi phục (đặc biệt lỗi 53 thường liên quan Touch ID/Face ID hoặc bo mạch) — gửi TTBH kiểm tra phần cứng.
+
+---
+
+### Ứng dụng trên iPhone/iPad bị đứng, tự thoát hoặc không mở được
+- **ID:** lib-a27
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Một hoặc nhiều ứng dụng gặp lỗi khi mở, treo, hoặc tự đóng bất thường.
+- **Từ khóa:** treo app, ứng dụng lỗi, app crash, không mở được app
+
+**🔍 Chẩn đoán:** Xác định lỗi xảy ra ở MỘT ứng dụng cụ thể (thường do bản thân app lỗi/cần cập nhật) hay TẤT CẢ ứng dụng (nghi ngờ do hệ điều hành/bộ nhớ đầy).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Buộc đóng ứng dụng (vuốt lên từ dưới màn hình, giữ giữa màn hình rồi vuốt app lên trên) rồi mở lại.
+2. Khởi động lại máy.
+3. Kiểm tra và cập nhật ứng dụng trong App Store; nếu không có cập nhật app, kiểm tra cập nhật iOS/iPadOS.
+4. Kiểm tra dung lượng máy còn trống (Cài đặt > Cài đặt chung > Dung lượng iPhone) — máy quá đầy dễ gây treo app.
+5. Nếu vẫn lỗi: xóa ứng dụng và cài lại từ App Store (lưu ý báo khách có thể mất dữ liệu lưu cục bộ trong app).
+
+**🚫 Tuyệt đối không được làm:** Không xóa app hoặc reset máy khi khách chưa đồng ý (có thể mất dữ liệu chưa đồng bộ); không kết luận lỗi phần cứng khi vấn đề chỉ xảy ra ở phần mềm/ứng dụng.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử cập nhật và cài lại ứng dụng trước, đa phần lỗi treo app là do bản thân ứng dụng hoặc bộ nhớ máy đầy ạ."
+
+**📦 Lưu ý TTBH:** Trường hợp này thuộc lỗi phần mềm, thường không cần gửi TTBH — chỉ gửi TTBH nếu nghi ngờ chuyển sang lỗi phần cứng khác đi kèm (vd: máy nóng bất thường, tự khởi động lại liên tục).
+
+---
+
+### Mac khởi động lên màn hình trống/xám hoặc bị kernel panic
+- **ID:** lib-a28
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Máy có lên nguồn (quạt/đèn hoạt động) nhưng màn hình không hiển thị gì hoặc hiện thông báo khởi động lại do sự cố.
+- **Từ khóa:** màn hình trống, kernel panic, mac không khởi động, màn hình xám
+
+**🔍 Chẩn đoán:** Phân biệt với lỗi "không lên nguồn" (đèn/quạt không chạy) — trường hợp này máy CÓ hoạt động nhưng màn hình trống hoặc tự khởi động lại kèm thông báo lỗi. Hỏi khách sự cố xảy ra sau khi cài phần mềm/cập nhật macOS hay tự nhiên.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giữ nút nguồn khoảng 10 giây để tắt hẳn máy, sau đó khởi động lại bình thường.
+2. Nếu vẫn màn hình trống, thử khởi động vào chế độ Recovery (giữ nút nguồn đến khi thấy tùy chọn khởi động với máy Apple Silicon, hoặc giữ Cmd+R với máy Intel).
+3. Nếu vào được Recovery: mở Disk Utility, chạy First Aid trên ổ đĩa khởi động để sửa lỗi ổ đĩa, sau đó khởi động lại bình thường.
+4. Kiểm tra có màn hình rời/thiết bị ngoại vi nào gây xung đột không, thử rút hết ra và khởi động lại.
+5. Nếu vẫn lỗi và không vào được Recovery: cần công cụ chuyên dụng để khôi phục firmware (thuộc phạm vi TTBH).
+
+**🚫 Tuyệt đối không được làm:** Không tự ý chạy "Xóa và cài lại" (Erase) trong Disk Utility khi chưa xác nhận khách đã sao lưu dữ liệu; không tháo máy khi chưa loại trừ hết các bước phần mềm.
+
+**💬 Kịch bản tư vấn:** "Dạ máy có tín hiệu hoạt động nên khả năng cao là lỗi phần mềm khởi động, mình thử vào chế độ khôi phục để sửa trước ạ."
+
+**📦 Lưu ý TTBH:** Không vào được chế độ Recovery, hoặc đã chạy First Aid/cài lại macOS mà máy vẫn khởi động lên màn hình trống — gửi TTBH kiểm tra phần cứng (ổ đĩa/bo mạch).
+
+---
+
+### Bàn phím hoặc trackpad MacBook không phản hồi, bị đơ hoặc kẹt phím
+- **ID:** lib-a29
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Bàn phím/trackpad tích hợp gõ không ăn, phản hồi chậm, hoặc một số phím bị kẹt/không nhận.
+- **Từ khóa:** bàn phím lỗi, trackpad không phản hồi, kẹt phím, macbook keyboard
+
+**🔍 Chẩn đoán:** Xác định lỗi ở TOÀN BỘ bàn phím/trackpad (nghi phần mềm hoặc kết nối) hay CHỈ MỘT SỐ PHÍM cụ thể (nghi vật lý — dị vật, phím kẹt). Hỏi khách gần đây có làm đổ nước/thức ăn lên máy không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Khởi động lại máy.
+2. Kiểm tra Cài đặt hệ thống > Bàn phím / Trackpad xem có tùy chỉnh nào đang gây hiểu nhầm là "lỗi" không.
+3. Nếu dùng bàn phím/trackpad rời (Magic Keyboard/Trackpad): kiểm tra pin, tắt/bật lại Bluetooth, thử kết nối lại bằng cáp để sạc và ghép đôi lại.
+4. Với bàn phím tích hợp: dùng khí nén thổi nhẹ quanh các phím bị kẹt để loại bỏ bụi/dị vật (không xịt trực tiếp chất lỏng).
+5. Khởi động vào Safe Mode (giữ Shift khi khởi động) để kiểm tra có phải do phần mềm/tiện ích bên thứ ba gây xung đột không.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý tháo phím hoặc dùng vật nhọn cạy phím khi chưa được đào tạo (dễ gãy chân phím, hỏng bàn phím); không dùng chất lỏng vệ sinh trực tiếp lên bàn phím.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử có dị vật kẹt ở phím không và thử vài bước phần mềm trước, nếu vẫn còn lỗi thì mới cần kiểm tra sâu hơn ạ."
+
+**📦 Lưu ý TTBH:** Có tiền sử vào nước/chất lỏng, hoặc nhiều phím kẹt vật lý không xử lý được bằng khí nén, hoặc lỗi vẫn còn sau khi loại trừ nguyên nhân phần mềm — gửi TTBH kiểm tra/thay bàn phím.
+
+---
+
+### AirPods không kết nối được hoặc không hiện hộp thoại ghép đôi khi mở nắp gần iPhone
+- **ID:** lib-a30
+- **Thiết bị:** AirPods
+- **Chẩn đoán ngắn:** AirPods không xuất hiện popup ghép đôi hoặc không kết nối được với iPhone/iPad qua Bluetooth.
+- **Từ khóa:** airpods không kết nối, không ghép đôi được, airpods pairing, không hiện popup
+
+**🔍 Chẩn đoán:** Xác định đây là lần ghép đôi ĐẦU TIÊN hay AirPods đã từng kết nối được trước đó rồi mất kết nối. Kiểm tra đèn báo trên hộp sạc khi mở nắp (không sáng = có thể hết pin).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Cập nhật iOS/iPadOS trên thiết bị lên bản mới nhất.
+2. Đặt cả 2 tai nghe vào hộp sạc, sạc đầy để đảm bảo đủ pin.
+3. Bật Bluetooth trong Cài đặt trên iPhone/iPad.
+4. Mở Trung tâm Điều khiển, kiểm tra AirPods có xuất hiện trong danh sách thiết bị âm thanh không.
+5. Đóng nắp hộp, chờ 15 giây, mở lại nắp gần iPhone để kích hoạt lại popup ghép đôi.
+6. Nếu vẫn không hiện popup: nhấn giữ nút thiết lập (Setup) ở mặt sau hộp sạc đến khi đèn báo nhấp nháy trắng, sau đó đưa hộp lại gần iPhone.
+7. Nếu vẫn lỗi: vào Cài đặt > Bluetooth, chọn "Quên thiết bị" (nếu đã từng ghép) rồi lặp lại bước 6.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định AirPods lỗi phần cứng khi chưa thử sạc đầy và reset ghép đôi lại từ đầu; không tháo/mở hộp sạc để can thiệp phần cứng.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử sạc đầy và ghép đôi lại từ đầu trước, phần lớn trường hợp không hiện popup là do pin yếu hoặc cần reset kết nối ạ."
+
+**📦 Lưu ý TTBH:** Đã sạc đầy, đã thử reset ghép đôi (giữ nút Setup) trên nhiều thiết bị Apple khác nhau mà vẫn không nhận/không hiện popup — gửi TTBH kiểm tra AirPods hoặc hộp sạc.
+
+---
+
+### Apple Pencil không ghép đôi hoặc không sạc được với iPad
+- **ID:** lib-a31
+- **Thiết bị:** iPad
+- **Chẩn đoán ngắn:** Apple Pencil không nhận kết nối Bluetooth với iPad hoặc không nạp pin khi gắn/kết nối.
+- **Từ khóa:** apple pencil không ghép đôi, pencil không sạc, bút cảm ứng ipad
+
+**🔍 Chẩn đoán:** Xác định đời Apple Pencil (thế hệ 1 gắn cổng Lightning, thế hệ 2 hoặc USB-C gắn nam châm cạnh iPad) và kiểm tra có TƯƠNG THÍCH với model iPad của khách không (một nguyên nhân phổ biến là dùng sai đời Pencil cho iPad).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Apple Pencil đúng đời tương thích với iPad đang dùng.
+2. Gắn/kết nối Pencil đúng cách vào iPad và giữ nguyên trong lúc khởi động lại iPad.
+3. Kiểm tra Bluetooth trên iPad đang bật (Cài đặt > Bluetooth).
+4. Nếu đã từng ghép đôi trước đó: vào Cài đặt > Bluetooth, tìm Apple Pencil trong "Thiết bị của tôi", chọn biểu tượng thông tin rồi "Quên thiết bị này", sau đó gắn lại Pencil và chờ nút Ghép đôi xuất hiện.
+5. Nếu chưa hiện nút Ghép đôi: tháo Pencil ra, chờ khoảng 1 phút để Pencil được sạc, rồi gắn lại và thử tiếp.
+6. Với Pencil thế hệ 2/Pro: gỡ ốp lưng/bao da iPad ra trước khi thử kết nối (ốp dày có thể cản từ tính).
+
+**🚫 Tuyệt đối không được làm:** Không kết luận Pencil hỏng khi chưa xác nhận đúng đời tương thích với iPad; không cạy/tháo đầu ngòi Pencil khi không được hướng dẫn.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đời Pencil có đúng với iPad không và thử ghép đôi lại trước ạ, khá nhiều trường hợp là do sai đời Pencil hoặc cần sạc lại."
+
+**📦 Lưu ý TTBH:** Đã xác nhận đúng đời tương thích, đã thử quên thiết bị và ghép đôi lại, đã sạc đủ mà Pencil vẫn không được iPad nhận diện — gửi TTBH kiểm tra Pencil.
+
+---
+
+### Apple Watch đo nhịp tim không chính xác hoặc không hiển thị số đo
+- **ID:** lib-a32
+- **Thiết bị:** Apple Watch
+- **Chẩn đoán ngắn:** Cảm biến nhịp tim trên Apple Watch không cho kết quả đo hoặc kết quả không ổn định/không hợp lý.
+- **Từ khóa:** nhịp tim không đo được, cảm biến apple watch, heart rate lỗi
+
+**🔍 Chẩn đoán:** Hỏi khách vấn đề xảy ra lúc nào — trong lúc tập luyện (vận động mạnh, không đều như tennis/boxing dễ gây sai số) hay cả lúc bình thường/nghỉ ngơi. Kiểm tra khách có đeo đúng cách và có hình xăm ở vùng cổ tay đeo đồng hồ không (mực xăm có thể cản cảm biến ánh sáng).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra đồng hồ được đeo ĐÚNG CÁCH: ôm sát phía trên cổ tay, không quá lỏng, cảm biến tiếp xúc da tốt (đặc biệt khi tập luyện cần đeo chặt hơn bình thường một chút).
+2. Kiểm tra Cài đặt quyền riêng tư: mở app Watch trên iPhone > Quyền riêng tư & Bảo mật, xác nhận Nhịp tim đang được BẬT.
+3. Vệ sinh mặt sau đồng hồ và cổ tay (mồ hôi, kem chống nắng, bụi bẩn có thể cản cảm biến).
+4. Khởi động lại cả Apple Watch và iPhone đi kèm.
+5. Kiểm tra cập nhật watchOS mới nhất.
+6. Nếu khách vận động trong môi trường lạnh hoặc máu lưu thông kém ở cổ tay: gợi ý khởi động làm nóng cơ thể trước khi đo, hoặc dùng thêm đai đo nhịp tim Bluetooth ngoài nếu cần độ chính xác cao khi tập các môn vận động không đều.
+
+**🚫 Tuyệt đối không được làm:** Không đưa ra kết luận/tư vấn y tế về tình trạng sức khỏe của khách dựa trên số đo; không khẳng định lỗi phần cứng khi khách đeo sai cách hoặc chưa vệ sinh cảm biến.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại cách đeo và vệ sinh cảm biến trước ạ, nhiều trường hợp đo không chính xác là do đeo lỏng hoặc cảm biến bị cản chứ không phải lỗi máy."
+
+**📦 Lưu ý TTBH:** Đã đeo đúng cách, đã vệ sinh cảm biến, đã cập nhật watchOS mà nhịp tim vẫn không đo được hoặc sai lệch rõ rệt ngay cả lúc nghỉ ngơi bình thường — gửi TTBH kiểm tra cảm biến.
+
+---
+
+### MacBook pin hao nhanh dù đã sạc đầy
+- **ID:** lib-a33
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Pin bị chai (giảm dung lượng tối đa) hoặc có ứng dụng/tiến trình chạy ngầm tiêu hao nhiều năng lượng.
+- **Từ khóa:** pin macbook hao nhanh, chai pin, battery health, tình trạng pin
+
+**🔍 Chẩn đoán:** Kiểm tra tình trạng pin tại Cài đặt hệ thống > Pin > Tình trạng pin (xem % Dung lượng tối đa và Số chu kỳ sạc). Mở Activity Monitor (Màn hình hoạt động) > tab Năng lượng để xem ứng dụng nào đang tiêu hao pin bất thường.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra % Dung lượng tối đa của pin — dưới 80% là dấu hiệu pin đã chai theo thời gian sử dụng (không phải lỗi).
+2. Mở Activity Monitor > tab Năng lượng, sắp xếp theo "Tác động năng lượng" để tìm ứng dụng ngốn pin bất thường.
+3. Kiểm tra các tab trình duyệt mở nhiều, hoặc đồng bộ đám mây (iCloud, Dropbox...) chạy ngầm liên tục.
+4. Giảm độ sáng màn hình, bật "Tự động điều chỉnh độ sáng" nếu đang tắt.
+5. Cập nhật macOS lên bản mới nhất (Apple thường tối ưu quản lý năng lượng qua các bản cập nhật).
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định "pin hỏng cần thay" chỉ dựa vào cảm nhận của khách khi chưa kiểm tra % Dung lượng tối đa và Số chu kỳ sạc thực tế; không tháo pin khi chưa loại trừ nguyên nhân phần mềm.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra tình trạng pin thực tế xem còn bao nhiêu % dung lượng gốc, rồi xem thử có ứng dụng nào đang ngốn pin bất thường không nhé."
+
+**📦 Lưu ý TTBH:** % Dung lượng tối đa dưới 80% hoặc số chu kỳ sạc cao và khách còn trong hạn bảo hành/AppleCare — đề xuất khách nhận bảo hành kiểm tra thay pin; nếu hết bảo hành, tư vấn chi phí thay pin dịch vụ ngoài bảo hành.
+
+---
+
+### Màn hình MacBook có vệt sáng bất thường, mất đèn nền một phần hoặc ố màu
+- **ID:** lib-a34
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Dấu hiệu điển hình của lỗi cáp màn hình/đèn nền (thường gặp ở một số dòng MacBook Pro Touch Bar đời cũ — cộng đồng gọi là "Stage Light"/"Flexgate"), không phải do va đập hay vết bẩn thông thường.
+- **Từ khóa:** màn hình macbook ố màu, mất đèn nền, vệt sáng màn hình, stage light, flexgate
+
+**🔍 Chẩn đoán:** Quan sát vết ố/vệt sáng có CỐ ĐỊNH ở một vị trí (thường viền dưới màn hình) và rõ hơn khi mở màn hình quá một góc nhất định không — đây là đặc điểm điển hình của cáp màn hình bị mỏi do gập mở nhiều lần. Hỏi khách máy có từng rơi/va đập ở khu vực màn hình không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Lau thử màn hình bằng khăn khô mềm chuyên dụng để loại trừ khả năng chỉ là bụi/vết bẩn bên ngoài (không xịt dung dịch trực tiếp lên màn hình).
+2. Mở màn hình ở nhiều góc độ khác nhau, quan sát vệt sáng có thay đổi độ rõ theo góc mở không — nếu có, đây là dấu hiệu phần cứng, không xử lý được bằng phần mềm.
+3. Tra số serial trên trang hỗ trợ Apple hoặc hỏi TTBH xem máy có thuộc diện chương trình sửa chữa mở rộng cho lỗi màn hình không (Apple từng có chương trình này cho một số model/năm sản xuất cụ thể).
+
+**🚫 Tuyệt đối không được làm:** Không cố lau/ấn vào vùng có vệt sáng để "làm hết vết ố" — có thể làm hỏng thêm màn hình; không kết luận đây là lỗi do khách làm rơi/va đập khi chưa kiểm tra kỹ đặc điểm vệt sáng theo góc mở.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là dấu hiệu liên quan đến cáp màn hình bên trong, không phải vết bẩn nên mình không tự lau được ạ, em kiểm tra xem máy mình có thuộc diện được hỗ trợ đặc biệt từ Apple không nhé."
+
+**📦 Lưu ý TTBH:** Vệt sáng/mất đèn nền thay đổi theo góc mở màn hình là lỗi phần cứng — luôn cần gửi TTBH kiểm tra, không xử lý tại chỗ được; kiểm tra thêm serial xem có nằm trong chương trình sửa chữa mở rộng miễn phí không để tư vấn đúng chi phí cho khách.
+
+---
+
+### Bản lề MacBook lỏng, màn hình rung lắc hoặc phát ra tiếng kêu cọt kẹt khi mở/đóng
+- **ID:** lib-a35
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Bản lề bị lỏng ốc hoặc mòn theo thời gian sử dụng, khiến màn hình không giữ cố định ở góc mở mong muốn.
+- **Từ khóa:** bản lề macbook lỏng, màn hình rung lắc, kêu cọt kẹt, hinge
+
+**🔍 Chẩn đoán:** Xác định màn hình chỉ LỎNG/RUNG NHẸ khi di chuyển máy hay đã ĐỔ SẬP/không tự đứng được ở bất kỳ góc nào (mức độ nặng hơn). Hỏi khách máy đã dùng bao lâu, tần suất mở/đóng nắp.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Quan sát và mô tả mức độ lỏng: nhẹ (rung khi gõ phím/di chuyển) hay nặng (không giữ được góc mở, tự đóng/mở).
+2. Kiểm tra có tiếng kêu lạ (cọt kẹt, lạch cạch) khi mở/đóng không — dấu hiệu bản lề bị nứt/mòn cần thay thế.
+3. Hỏi khách có tự ý tháo hoặc từng mang đi sửa bên ngoài không (ảnh hưởng diện bảo hành).
+4. Ghi nhận tình trạng kèm hình ảnh/video (nếu có) để chuyển bộ phận kỹ thuật đánh giá — đây là lỗi cơ khí không xử lý được bằng phần mềm hay điều chỉnh bên ngoài.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý vặn/siết ốc bản lề hoặc tháo máy khi không thuộc phạm vi được đào tạo (dễ làm hỏng thêm cáp màn hình đi qua bản lề); không cố mở màn hình quá góc giới hạn khi đã phát hiện lỏng.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là lỗi cơ khí ở bản lề, em không tự điều chỉnh tại quầy được vì bên trong bản lề có cả dây cáp màn hình đi qua, cần bộ phận kỹ thuật kiểm tra kỹ hơn ạ."
+
+**📦 Lưu ý TTBH:** Bản lề lỏng/kêu là lỗi cơ khí, hầu như luôn cần gửi TTBH để kiểm tra và siết/thay bản lề đúng chuẩn, không tự xử lý tại quầy để tránh ảnh hưởng cáp màn hình bên trong.
+
+---
+
+### MacBook không nhận diện ổ cứng ngoài hoặc thiết bị qua cổng USB-C
+- **ID:** lib-a36
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** macOS không phát hiện thiết bị ngoại vi khi cắm qua cổng USB-C/Thunderbolt, có thể do cáp/hub hoặc cổng.
+- **Từ khóa:** macbook không nhận ổ cứng ngoài, usb-c không nhận, cổng usb lỗi
+
+**🔍 Chẩn đoán:** Xác định lỗi xảy ra với MỌI thiết bị cắm vào cổng đó (nghi cổng/macOS) hay CHỈ MỘT thiết bị/ổ cứng cụ thể (nghi cáp hoặc chính thiết bị đó). Hỏi khách có dùng hub/adapter chuyển đổi không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Thử cắm trực tiếp (không qua hub) vào cổng USB-C khác trên máy để loại trừ do cổng hỏng.
+2. Thử cáp/adapter khác, và thử chính thiết bị đó trên máy tính khác để xác định lỗi do đâu.
+3. Mở Tiện ích Ổ đĩa (Disk Utility), kiểm tra ổ cứng có hiện tên trong danh sách bên trái không — nếu có hiện nhưng không mount được, chọn ổ và bấm "Gắn kết".
+4. Kiểm tra Cài đặt hệ thống > Quyền riêng tư & Bảo mật xem có thông báo chặn phụ kiện cần cho phép thủ công không.
+5. Nếu dùng hub/adapter: kiểm tra hub có cần nguồn điện riêng không.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận cổng USB-C của máy hỏng khi chưa thử với cáp/thiết bị/hub khác; không format hoặc "Xóa" ổ cứng ngoài của khách khi chưa xác nhận đã sao lưu dữ liệu quan trọng.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp và cổng khác trước ạ, phần lớn trường hợp không nhận thiết bị ngoài là do cáp/hub chứ không phải do cổng trên máy."
+
+**📦 Lưu ý TTBH:** Đã thử nhiều cáp/thiết bị/cổng khác nhau mà một cổng cụ thể trên máy luôn không nhận bất kỳ thiết bị nào (trong khi cổng khác vẫn bình thường) — gửi TTBH kiểm tra cổng/bo mạch.
+
+---
+
+### Màn hình iPad chạm sai vị trí hoặc tự chạm không do người dùng (ghost touch)
+- **ID:** lib-a37
+- **Thiết bị:** iPad
+- **Chẩn đoán ngắn:** Màn hình cảm ứng ghi nhận chạm không chính xác hoặc tự phát sinh thao tác dù không ai chạm vào.
+- **Từ khóa:** ipad chạm sai, ghost touch, cảm ứng lỗi, tự chạm
+
+**🔍 Chẩn đoán:** Hỏi khách hiện tượng xảy ra ở TOÀN BỘ màn hình hay chỉ MỘT VÙNG cụ thể, và có xảy ra ngay cả khi tháo hết ốp lưng/dán màn hình không (ốp/dán kém chất lượng là nguyên nhân phổ biến). Hỏi máy gần đây có bị rơi hoặc dính nước không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Lau sạch màn hình bằng khăn khô mềm, đảm bảo không có bụi/ẩm trên bề mặt hoặc tay cầm máy.
+2. Tháo thử ốp lưng và miếng dán màn hình hiện tại (nếu có) — ốp/dán không đúng chuẩn có thể tạo áp lực không đều lên màn hình gây chạm sai.
+3. Khởi động lại máy, cập nhật iPadOS lên bản mới nhất.
+4. Vào Cài đặt > Trợ năng > Cảm ứng > Điều chỉnh cảm ứng, thử bật "Thời lượng giữ" để lọc bớt chạm ngoài ý muốn trong lúc chờ xác định nguyên nhân gốc.
+5. Nếu hiện tượng chỉ ở một vùng cố định dù đã thử hết các bước trên: khả năng cao là lỗi phần cứng ở khu vực cảm ứng (digitizer) đó.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định lỗi phần cứng ngay khi khách đang dùng ốp/dán màn hình không rõ nguồn gốc mà chưa thử tháo ra kiểm tra; không thực hiện khôi phục cài đặt gốc khi khách chưa xác nhận đã sao lưu dữ liệu.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử tháo ốp/dán màn hình hiện tại xem có phải nguyên nhân không trước ạ, khá nhiều trường hợp chạm sai là do phụ kiện gắn thêm chứ không phải máy."
+
+**📦 Lưu ý TTBH:** Đã tháo ốp/dán, lau màn hình, cập nhật phần mềm mà hiện tượng chạm sai vẫn xảy ra (đặc biệt nếu cố định ở một vùng màn hình hoặc sau khi máy từng rơi/vào nước) — gửi TTBH kiểm tra cảm ứng/digitizer.
+
+---
+
+### iPad không nhận diện phụ kiện hoặc ổ đĩa ngoài qua cổng USB-C
+- **ID:** lib-a38
+- **Thiết bị:** iPad
+- **Chẩn đoán ngắn:** iPadOS không phát hiện thiết bị lưu trữ/phụ kiện khi cắm qua cổng USB-C, có thể do cáp, định dạng ổ đĩa, hoặc quyền truy cập.
+- **Từ khóa:** ipad không nhận usb, ổ cứng ngoài không nhận, cổng usb-c ipad
+
+**🔍 Chẩn đoán:** Xác định thiết bị cắm vào là loại gì (ổ cứng/USB, máy ảnh, hub) và ổ đĩa định dạng theo chuẩn nào (iPadOS đọc tốt exFAT/FAT32, NTFS bị giới hạn). Hỏi khách đã mở ứng dụng Tệp (Files) để tìm thiết bị chưa.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Cắm trực tiếp (không qua hub) vào cổng USB-C của iPad, thử cáp/adapter khác.
+2. Mở ứng dụng Tệp (Files) > mục "Duyệt" > xem thiết bị có hiện trong danh sách vị trí không (thiết bị ngoài không tự hiện trên màn hình chính như trên Mac).
+3. Kiểm tra định dạng ổ đĩa — nếu định dạng NTFS, khuyến nghị khách đổi sang exFAT bằng máy tính trước khi dùng với iPad.
+4. Nếu dùng hub nhiều cổng: kiểm tra hub có cần cấp nguồn riêng không.
+5. Khởi động lại iPad và thử lại.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận cổng USB-C của iPad hỏng khi chưa thử cáp/thiết bị/hub khác; không định dạng lại ổ đĩa ngoài của khách khi chưa xác nhận đã sao lưu dữ liệu.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra định dạng ổ đĩa và thử đổi cáp trước ạ, iPad có một số giới hạn định dạng khác với máy tính nên đôi khi không phải lỗi máy."
+
+**📦 Lưu ý TTBH:** Đã thử nhiều thiết bị/cáp khác nhau và xác nhận đúng định dạng hỗ trợ mà cổng USB-C trên iPad vẫn không nhận bất kỳ thiết bị nào — gửi TTBH kiểm tra cổng kết nối.
+
+---
+
+### Bàn phím rời (Magic Keyboard/Smart Keyboard) không kết nối được với iPad
+- **ID:** lib-a39
+- **Thiết bị:** iPad
+- **Chẩn đoán ngắn:** iPad không nhận diện bàn phím gắn ngoài qua cổng Smart Connector hoặc Bluetooth.
+- **Từ khóa:** bàn phím ipad không kết nối, magic keyboard lỗi, smart keyboard không nhận
+
+**🔍 Chẩn đoán:** Xác định loại bàn phím (gắn qua Smart Connector — không cần Bluetooth/sạc riêng, hay bàn phím Bluetooth rời cần ghép đôi) và kiểm tra có đúng dòng iPad tương thích với bàn phím đó không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Với bàn phím Smart Connector: tháo ra lắp lại đảm bảo các chấu tiếp xúc sạch, không có dị vật; kiểm tra đúng chiều gắn.
+2. Khởi động lại iPad trong lúc vẫn gắn bàn phím.
+3. Với bàn phím Bluetooth rời: kiểm tra Bluetooth trên iPad đang bật, pin bàn phím còn đủ, vào Cài đặt > Bluetooth để ghép đôi lại nếu cần.
+4. Cập nhật iPadOS lên bản mới nhất.
+5. Vệ sinh nhẹ các chấu tiếp xúc Smart Connector bằng khăn khô mềm nếu nghi có bụi bẩn/oxi hóa.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận bàn phím hỏng khi chưa xác nhận đúng dòng iPad tương thích; không dùng vật kim loại/sắc nhọn cạy hoặc vệ sinh chấu tiếp xúc Smart Connector.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đúng loại bàn phím có tương thích với iPad mình không và vệ sinh thử chấu kết nối trước ạ."
+
+**📦 Lưu ý TTBH:** Đã xác nhận đúng tương thích, đã vệ sinh chấu kết nối/thử ghép đôi lại mà vẫn không nhận — gửi TTBH kiểm tra bàn phím hoặc cổng Smart Connector trên iPad.
+
+---
+
+### iPad hao pin nhanh bất thường dù ít sử dụng
+- **ID:** lib-a40
+- **Thiết bị:** iPad
+- **Chẩn đoán ngắn:** Pin sụt nhanh dù máy ở chế độ chờ hoặc ít thao tác, có thể do ứng dụng chạy ngầm hoặc pin đã chai.
+- **Từ khóa:** ipad hao pin nhanh, pin ipad chai, hao pin chế độ chờ
+
+**🔍 Chẩn đoán:** Hỏi khách pin hao nhanh khi ĐANG SỬ DỤNG (thường do ứng dụng/game nặng, độ sáng cao) hay cả khi Ở CHẾ ĐỘ CHỜ không dùng tới (đáng chú ý hơn, có thể do ứng dụng chạy ngầm hoặc lỗi đồng bộ).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Vào Cài đặt > Pin, xem biểu đồ mức sử dụng pin theo ứng dụng trong 24h/10 ngày qua để tìm ứng dụng tiêu hao bất thường.
+2. Kiểm tra độ sáng màn hình, tắt bớt nếu để quá cao; bật Tự động khóa ở thời gian ngắn hơn nếu đang để dài.
+3. Kiểm tra Dịch vụ vị trí và Làm mới ứng dụng nền trong Cài đặt > Cài đặt chung, tắt bớt cho ứng dụng không cần thiết.
+4. Cập nhật iPadOS lên bản mới nhất.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định "pin hỏng cần thay" ngay khi chưa kiểm tra mục sử dụng pin theo ứng dụng; không tự ý tắt hết các tính năng nền của khách mà không giải thích lý do.
+
+**💬 Kịch bản tư vấn:** "Dạ mình xem thử ứng dụng nào đang ngốn pin nhiều bất thường trước ạ, đa phần hao pin nhanh là do phần mềm chứ chưa chắc do pin yếu."
+
+**📦 Lưu ý TTBH:** Đã kiểm tra và loại trừ nguyên nhân ứng dụng/cài đặt, đã cập nhật phần mềm mà pin vẫn hao bất thường ở chế độ chờ, hoặc máy đã dùng lâu năm và khách nghi ngờ pin chai — đề xuất khách nhận bảo hành kiểm tra pin nếu còn trong hạn, hoặc tư vấn chi phí thay pin dịch vụ nếu đã hết bảo hành.
+
+---
+
+### Apple Watch pin hao nhanh bất thường
+- **ID:** lib-a41
+- **Thiết bị:** Apple Watch
+- **Chẩn đoán ngắn:** Pin sụt nhanh hơn bình thường, có thể do cài đặt hao pin, tính năng theo dõi liên tục, hoặc pin đã chai.
+- **Từ khóa:** apple watch hao pin, pin watch nhanh hết, watch battery drain
+
+**🔍 Chẩn đoán:** Hỏi khách pin hao nhanh khi tập luyện (bình thường nếu dùng GPS/đo nhịp tim liên tục) hay cả lúc đeo bình thường không tập. Kiểm tra Watch có đang mất kết nối liên tục với iPhone không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giữ Apple Watch trong phạm vi kết nối Bluetooth với iPhone càng nhiều càng tốt, ưu tiên Wifi hơn dữ liệu di động (bản LTE) khi ở xa iPhone.
+2. Tắt bớt tính năng Luôn hiển thị (Always On Display) nếu đang bật.
+3. Bật Chế độ Tiết kiệm pin (Low Power Mode) để kiểm tra xem có cải thiện rõ rệt không.
+4. Khi tập luyện: giảm tần suất lấy mẫu GPS/nhịp tim nếu không cần độ chính xác cao, dùng AirPods thay vì loa ngoài.
+5. Nếu hao pin bất thường ngay sau khi cập nhật watchOS: đợi vài ngày để hệ thống tối ưu lại rồi kiểm tra lại.
+6. Kiểm tra Cài đặt > Pin có thông báo "Pin cần được kiểm tra dịch vụ" không.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định pin hỏng ngay khi khách đang dùng nhiều tính năng theo dõi liên tục mà chưa kiểm tra cách sử dụng thực tế; không tháo pin khi chưa loại trừ nguyên nhân phần mềm.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử các tính năng đang bật có tiêu hao nhiều pin không trước ạ, một số tính năng theo dõi liên tục sẽ hao pin nhanh hơn bình thường."
+
+**📦 Lưu ý TTBH:** Cài đặt > Pin báo "Pin cần được kiểm tra dịch vụ", hoặc đã thử hết các bước tối ưu mà pin vẫn hao bất thường ngay cả khi dùng nhẹ — đề xuất khách nhận bảo hành kiểm tra pin.
+
+---
+
+### Apple Watch bị treo ở màn hình logo Apple, không vào được máy
+- **ID:** lib-a42
+- **Thiết bị:** Apple Watch
+- **Chẩn đoán ngắn:** Máy đứng ở màn hình logo Apple, không tiếp tục khởi động hoặc cập nhật được, thường xảy ra khi đang cập nhật watchOS.
+- **Từ khóa:** apple watch treo logo, watch không cập nhật được, treo màn hình táo
+
+**🔍 Chẩn đoán:** Xác nhận sự cố xảy ra trong lúc đang cập nhật watchOS hay tự nhiên xuất hiện. Kiểm tra Watch có đang gắn sạc và ở gần iPhone đã ghép đôi không (bắt buộc để hoàn tất cập nhật).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Đảm bảo Apple Watch đang được sạc và để gần iPhone đã ghép đôi (bắt buộc để hoàn tất cập nhật).
+2. Ép khởi động lại: giữ đồng thời nút Bên hông và Digital Crown đến khi màn hình tắt và logo Apple xuất hiện lại.
+3. Nếu vẫn treo: mở app Watch trên iPhone > Cài đặt chung > Cập nhật phần mềm, thử cài lại.
+4. Nếu vẫn không cải thiện: hủy ghép đôi (Unpair) qua app Watch, sau đó ghép đôi lại từ đầu (có thể khôi phục từ bản sao lưu gần nhất).
+
+**🚫 Tuyệt đối không được làm:** Không hủy ghép đôi khi khách chưa được thông báo rõ về việc cần thiết lập lại từ đầu; không rút sạc giữa chừng khi đang cập nhật.
+
+**💬 Kịch bản tư vấn:** "Dạ đồng hồ đang treo giữa chừng lúc cập nhật, em cắm sạc và để gần điện thoại để đồng hồ tự hoàn tất cập nhật, mình đợi em vài phút nhé."
+
+**📦 Lưu ý TTBH:** Đã sạc, để gần iPhone, ép khởi động lại và thử hủy ghép đôi/ghép đôi lại mà Watch vẫn treo ở logo Apple — gửi TTBH kiểm tra phần cứng.
+
+---
+
+### iCloud không đồng bộ ảnh, danh bạ hoặc dữ liệu giữa các thiết bị
+- **ID:** lib-a43
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Ảnh/Danh bạ/Lịch không cập nhật đồng thời trên các thiết bị dùng chung Apple ID, do cài đặt đồng bộ tắt hoặc gián đoạn kết nối.
+- **Từ khóa:** icloud không đồng bộ, ảnh không đồng bộ, danh bạ không đồng bộ
+
+**🔍 Chẩn đoán:** Xác nhận các thiết bị đang đăng nhập CÙNG một Apple ID. Mở ứng dụng Ảnh, xem thông báo trạng thái thư viện hiển thị lý do tạm dừng đồng bộ.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận tất cả thiết bị cần đồng bộ đang đăng nhập cùng một Apple ID.
+2. Kiểm tra Cài đặt > [tên tài khoản] > iCloud, xác nhận Ảnh/Danh bạ/Lịch đang BẬT trên từng thiết bị.
+3. Mở app Ảnh, đọc thông báo trạng thái thư viện — thường nêu lý do: Chế độ tiết kiệm dữ liệu/pin, pin yếu, máy nóng, hoặc bộ nhớ iCloud đầy.
+4. Kết nối vào nguồn điện và Wifi, để đồng bộ qua đêm không bị gián đoạn.
+5. Kiểm tra dung lượng iCloud còn trống — nếu đầy, cần khách nâng cấp gói hoặc xóa bớt dữ liệu cũ.
+6. Cập nhật iOS/iPadOS/macOS lên bản mới nhất trên tất cả thiết bị liên quan.
+
+**🚫 Tuyệt đối không được làm:** Không tắt/bật lại Ảnh iCloud khi khách chưa hiểu rõ có thể ảnh hưởng ảnh lưu cục bộ; không tự ý xóa dữ liệu trên iCloud của khách để "dọn chỗ" khi chưa xác nhận.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại các thiết bị có đang đăng nhập cùng một tài khoản Apple ID và cùng bật đồng bộ chưa trước ạ, đây là nguyên nhân phổ biến nhất."
+
+**📦 Lưu ý TTBH:** Đây là lỗi phần mềm/tài khoản, không thuộc phạm vi TTBH; nếu đã xác nhận đúng tài khoản, đủ dung lượng, đã thử đồng bộ qua đêm mà vẫn không được, hướng dẫn khách liên hệ Hỗ trợ Apple (Apple Support) để kiểm tra sâu hơn phía máy chủ iCloud.
+
+---
+
+### AirDrop không hoạt động giữa các thiết bị Apple
+- **ID:** lib-a44
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Không gửi/nhận được file qua AirDrop giữa 2 thiết bị Apple ở gần nhau.
+- **Từ khóa:** airdrop không hoạt động, airdrop không thấy máy, chia sẻ file iphone
+
+**🔍 Chẩn đoán:** Xác nhận cả 2 thiết bị đều bật Wifi VÀ Bluetooth (AirDrop cần cả 2), và không thiết bị nào đang bật Phát điểm truy cập cá nhân. Hỏi thiết bị nhận có phải người lạ/không có trong Danh bạ của người gửi không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Bật Wifi và Bluetooth trên cả 2 thiết bị.
+2. Tắt Phát điểm truy cập cá nhân (Personal Hotspot) trên cả 2 máy nếu đang bật.
+3. Trên thiết bị NHẬN: mở Trung tâm Điều khiển, nhấn giữ khối mạng, chọn AirDrop, đổi thành "Mọi người trong 10 phút" nếu người gửi không có trong Danh bạ.
+4. Đưa 2 thiết bị lại gần nhau hơn.
+5. Khởi động lại cả 2 thiết bị nếu vẫn không thấy nhau trong danh sách AirDrop.
+
+**🚫 Tuyệt đối không được làm:** Không hướng dẫn khách chuyển hẳn AirDrop sang "Mọi người" và quên đổi lại — nhắc khách đây chỉ là chế độ tạm 10 phút, tự động tắt sau đó vì lý do bảo mật.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại Wifi, Bluetooth trên cả 2 máy và chỉnh AirDrop nhận từ 'Mọi người' tạm thời nếu 2 máy chưa lưu danh bạ của nhau nhé."
+
+**📦 Lưu ý TTBH:** Đây là lỗi cài đặt/kết nối phần mềm thuần túy, không cần gửi TTBH; nếu đã kiểm tra đúng hết các bước trên mà vẫn không thấy thiết bị, khả năng do phần cứng Wifi/Bluetooth thì mới cần gửi TTBH kiểm tra.
+
+---
+
+### Find My không định vị được thiết bị (hiện "Không có vị trí")
+- **ID:** lib-a45
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Ứng dụng Tìm (Find My) không hiển thị vị trí hiện tại của thiết bị đang tìm, do thiết bị mất kết nối mạng hoặc tắt dịch vụ định vị.
+- **Từ khóa:** find my không định vị, tìm iphone không thấy, mất máy, không có vị trí
+
+**🔍 Chẩn đoán:** Xác định thiết bị đang tìm là của CHÍNH KHÁCH hay của người thân được chia sẻ vị trí — quyền và cách xử lý khác nhau. Hỏi thiết bị đó lần cuối online là khi nào.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Dịch vụ định vị và tính năng Tìm đang BẬT trên thiết bị cần tìm (nếu khách còn quyền truy cập thiết bị khác cùng Apple ID để kiểm tra).
+2. Nếu thiết bị mất kết nối mạng/hết pin: app Tìm sẽ hiển thị VỊ TRÍ CUỐI CÙNG được ghi nhận (không phải thời gian thực) — giải thích rõ điều này cho khách.
+3. Với thiết bị nghi bị mất/thất lạc: hướng dẫn khách bật Chế độ Mất (Lost Mode) để khóa từ xa và hiển thị thông tin liên hệ trên màn hình khóa.
+4. Kiểm tra thiết bị dùng để TÌM đã đăng nhập đúng Apple ID và có kết nối mạng ổn định không.
+5. Với AirTag/phụ kiện Tìm: nhắc rằng các thiết bị này cần mạng lưới Tìm từ thiết bị Apple khác ở gần để cập nhật vị trí, không có GPS riêng.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết chắc chắn định vị được/khôi phục được máy đã mất — Find My phụ thuộc vào việc thiết bị còn bật nguồn, còn kết nối mạng và chưa bị xóa cài đặt; không truy cập thông tin vị trí người khác khi chưa có sự đồng ý hợp lệ.
+
+**💬 Kịch bản tư vấn:** "Dạ vị trí hiện tại đang hiển thị là lần cuối máy còn online, có thể máy đang tắt nguồn hoặc mất mạng nên chưa cập nhật được vị trí mới ạ."
+
+**📦 Lưu ý TTBH:** Đây không phải lỗi phần cứng để gửi TTBH — nếu nghi ngờ thiết bị mất/bị đánh cắp, hướng dẫn khách các bước trong Find My (Đánh dấu là đã mất, khóa máy, trình báo cơ quan chức năng nếu cần) thay vì xử lý kỹ thuật tại cửa hàng.
+
+---
+
+### Không thể thêm thẻ vào Apple Pay / Ví (Wallet)
+- **ID:** lib-a46
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Hệ thống báo lỗi khi khách cố thêm thẻ ngân hàng vào ứng dụng Ví để thanh toán bằng Apple Pay.
+- **Từ khóa:** apple pay không thêm được thẻ, ví lỗi, wallet error, không thêm thẻ ngân hàng
+
+**🔍 Chẩn đoán:** Xác định lỗi cụ thể hiển thị (vd: "Không thể thêm thẻ", "Thẻ không hợp lệ", "Đã đạt giới hạn số thiết bị") — mỗi lỗi có nguyên nhân khác nhau, phần lớn liên quan phía ngân hàng phát hành thẻ chứ không phải lỗi máy.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận điều kiện cơ bản: ngân hàng có hỗ trợ Apple Pay không, máy đã cập nhật iOS mới nhất, đã cài Face ID/Touch ID hoặc mã khóa màn hình, đã bật xác thực hai yếu tố (2FA) cho Apple ID.
+2. Kiểm tra tình trạng dịch vụ Apple Pay có đang gặp sự cố không.
+3. Nếu báo "Không thể thêm thẻ"/"Thẻ không hợp lệ": hướng dẫn khách liên hệ trực tiếp ngân hàng để xác nhận thẻ đã kích hoạt Apple Pay phía ngân hàng (Apple không có quyền phê duyệt/từ chối thẻ).
+4. Nếu báo "Đã đạt giới hạn số thiết bị": thẻ đã thêm vào số lượng thiết bị tối đa, cần khách gỡ bớt thẻ khỏi thiết bị cũ qua ngân hàng.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý nhập/thao tác với thông tin thẻ ngân hàng của khách; không cam kết thay mặt xử lý lỗi phía ngân hàng vì nằm ngoài phạm vi kỹ thuật của cửa hàng.
+
+**💬 Kịch bản tư vấn:** "Dạ lỗi này phần lớn liên quan đến phía ngân hàng phát hành thẻ chứ không phải máy mình, anh/chị liên hệ tổng đài ngân hàng để xác nhận thẻ đã bật Apple Pay chưa nhé, mình chỉ hỗ trợ kiểm tra phần cài đặt trên máy thôi ạ."
+
+**📦 Lưu ý TTBH:** Đây là lỗi liên quan tài khoản/dịch vụ thanh toán, không thuộc phạm vi TTBH; chỉ khi đã loại trừ hết nguyên nhân phía ngân hàng/tài khoản mà nghi ngờ do phần cứng Face ID/Touch ID không xác thực được mới cần kiểm tra thêm phần cứng liên quan.
+
+---
+
+### Camera iPhone/iPad bị mờ hoặc không lấy nét được
+- **ID:** lib-a47
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Ảnh/video chụp ra bị mờ, nhòe hoặc camera không tự lấy nét được vào chủ thể.
+- **Từ khóa:** camera mờ, không lấy nét, camera iphone lỗi, ảnh nhòe
+
+**🔍 Chẩn đoán:** Xác định lỗi ở camera trước hay camera sau (hoặc cả 2), và có xảy ra với TẤT CẢ ứng dụng camera hay chỉ riêng app Camera mặc định. Kiểm tra ống kính vật lý có bẩn/trầy hoặc bị ốp lưng/dán che khuất một phần không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Lau ống kính camera bằng khăn khô mềm chuyên dụng — bụi bẩn/dấu vân tay là nguyên nhân phổ biến nhất.
+2. Kiểm tra ốp lưng/miếng dán có che khuất một phần ống kính không, tháo thử để so sánh.
+3. Mở app Camera, chạm vào màn hình để lấy nét thủ công vào chủ thể.
+4. Kiểm tra ứng dụng camera bên thứ 3 (nếu khách dùng) có bị mờ tương tự không — nếu chỉ app đó bị mờ, lỗi do ứng dụng chứ không phải phần cứng.
+5. Khởi động lại máy, cập nhật iOS/iPadOS lên bản mới nhất.
+6. Quan sát kỹ ống kính xem có vết nứt, hơi nước lọt vào bên trong không (dấu hiệu từng vào nước hoặc va đập).
+
+**🚫 Tuyệt đối không được làm:** Không dùng vật cứng/sắc nhọn cạy hoặc lau mạnh lên ống kính; không kết luận lỗi phần cứng khi chưa loại trừ nguyên nhân ốp/dán che khuất hoặc ứng dụng bên thứ 3.
+
+**💬 Kịch bản tư vấn:** "Dạ mình lau thử ống kính và kiểm tra ốp lưng trước ạ, phần lớn trường hợp mờ là do bụi bẩn hoặc ốp che khuất chứ không phải lỗi camera."
+
+**📦 Lưu ý TTBH:** Đã lau ống kính, tháo ốp/dán, thử app Camera mặc định vẫn mờ/không lấy nét được, hoặc quan sát thấy ống kính có hơi nước/nứt vỡ bên trong — gửi TTBH kiểm tra cụm camera.
+
+---
+
+### Mất quyền truy cập Apple ID do quên xác thực hai yếu tố (2FA), không còn thiết bị tin cậy
+- **ID:** lib-a48
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Khách không đăng nhập được Apple ID vì không nhận được mã xác minh (không còn thiết bị tin cậy nào hoạt động, đổi số điện thoại...).
+- **Từ khóa:** mất quyền truy cập apple id, quên 2fa, khôi phục apple id, xác thực hai yếu tố
+
+**🔍 Chẩn đoán:** Hỏi khách còn giữ BẤT KỲ thiết bị nào từng đăng nhập Apple ID này và vẫn hoạt động không (kể cả máy cũ), hoặc còn quyền truy cập số điện thoại/email khôi phục đã đăng ký không.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hỏi khách có thiết bị Apple nào khác (kể cả máy cũ) đang đăng nhập sẵn Apple ID này không — có thể đổi mật khẩu trực tiếp từ thiết bị đó.
+2. Nếu có người thân/bạn bè đã đặt làm "Người liên hệ khôi phục tài khoản": hướng dẫn khách nhờ người đó hỗ trợ khôi phục.
+3. Nếu không còn cách nào ở trên: hướng dẫn khách vào iforgot.apple.com, chọn "Đặt lại mật khẩu" và làm theo quy trình Khôi phục tài khoản.
+4. Giải thích rõ với khách: quy trình khôi phục có thể mất VÀI NGÀY (Apple xác nhận qua email trong 72 giờ báo thời gian dự kiến) — đây là chính sách bảo mật chung, cửa hàng và cả Apple Support đều không thể rút ngắn thời gian này.
+5. Trong lúc chờ: khuyên khách kiểm tra kỹ email/số điện thoại khôi phục đã đăng ký để không bỏ lỡ thông báo từ Apple.
+
+**🚫 Tuyệt đối không được làm:** Không hứa hẹn có thể "mở khóa nhanh" hoặc rút ngắn thời gian khôi phục tài khoản; không yêu cầu khách cung cấp mật khẩu Apple ID cho nhân viên dưới bất kỳ hình thức nào.
+
+**💬 Kịch bản tư vấn:** "Dạ trường hợp này Apple có quy trình khôi phục tài khoản riêng để bảo vệ an toàn cho mình, có thể mất vài ngày, cửa hàng không rút ngắn được thời gian này, mình theo dõi email/tin nhắn Apple gửi để làm tiếp nhé."
+
+**📦 Lưu ý TTBH:** Đây là vấn đề tài khoản/bảo mật phía Apple, không liên quan phần cứng — không gửi TTBH, chỉ hướng dẫn khách quy trình Khôi phục tài khoản chính thức qua iforgot.apple.com.
+
+---
+
+### Mac không nhận diện màn hình ngoài hoặc máy chiếu
+- **ID:** lib-a49
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Mac không hiển thị hình ảnh lên màn hình rời/máy chiếu dù đã kết nối cáp.
+- **Từ khóa:** mac không nhận màn hình ngoài, không xuất hình máy chiếu, external display
+
+**🔍 Chẩn đoán:** Xác định màn hình ngoài có nhận điện (đèn nguồn sáng) nhưng không nhận tín hiệu từ Mac, hay hoàn toàn không phản hồi gì. Hỏi khách đang dùng cổng/adapter chuyển đổi nào.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Vào Cài đặt hệ thống > Màn hình, giữ phím Option và bấm "Phát hiện màn hình".
+2. Rút cáp màn hình ra khỏi Mac rồi cắm lại, đảm bảo cắm chắc đúng cổng.
+3. Kiểm tra đang dùng đúng loại cáp và đúng adapter chuyển đổi nếu cần.
+4. Cho Mac vào chế độ ngủ rồi đánh thức lại để máy dò lại thiết bị hiển thị.
+5. Với màn hình/máy chiếu bên thứ 3: kiểm tra tài liệu hướng dẫn đi kèm (một số máy chiếu cần bật nguồn trước khi cắm cáp).
+6. Thử cáp/adapter khác hoặc thử màn hình khác để xác định lỗi do cáp/màn hình hay do máy.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận cổng xuất hình trên Mac hỏng khi chưa thử cáp/adapter/màn hình khác; không tháo máy khi chưa loại trừ hết nguyên nhân phụ kiện kết nối.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp/adapter và bấm dò lại màn hình trước ạ, phần lớn trường hợp không nhận màn hình ngoài là do cáp/adapter chứ không phải do máy."
+
+**📦 Lưu ý TTBH:** Đã thử nhiều cáp/adapter/màn hình khác nhau mà Mac vẫn không xuất được hình ảnh ra bất kỳ màn hình ngoài nào — gửi TTBH kiểm tra cổng xuất hình/card đồ họa.
+
+---
