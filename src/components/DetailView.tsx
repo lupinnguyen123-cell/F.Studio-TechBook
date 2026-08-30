@@ -112,13 +112,15 @@ export function DetailView({
   const suggestionsRef = useRef<HTMLDivElement>(null);
   const prevSuggestionCount = useRef(0);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
-  // Xóa kết quả là thao tác không hoàn tác được nên phải qua 1 bước xác nhận tại chỗ.
-  const [confirmingClear, setConfirmingClear] = useState(false);
+  // Cả "Xóa kết quả" lẫn "Làm mới tất cả" đều không hoàn tác được nên phải qua 1 bước
+  // xác nhận tại chỗ. Dùng CHUNG một state thay vì 2 boolean riêng để hai khối xác
+  // nhận không bao giờ hiện cùng lúc — hiện cùng lúc sẽ tràn header modal trên mobile.
+  const [confirming, setConfirming] = useState<'clear' | 'reset' | null>(null);
 
-  // Thoát trạng thái "Xóa?" mỗi khi modal đóng/mở lại hoặc khi kết quả đổi — tránh
+  // Thoát trạng thái xác nhận mỗi khi modal đóng/mở lại hoặc khi kết quả đổi — tránh
   // mở lại modal mà vẫn kẹt ở bước xác nhận còn sót từ lần trước.
   useEffect(() => {
-    setConfirmingClear(false);
+    setConfirming(null);
   }, [isResultModalOpen, analysisResult]);
 
   // Bấm "Hỏi AI" từ trang Thư viện điều hướng vào đây — cuộn tới và focus sẵn ô nhập
@@ -530,22 +532,53 @@ export function DetailView({
               {/* gap-2 (thay vì gap-1) để nút Xóa không nằm sát nút Đóng, giảm nguy cơ
                   bấm nhầm khi thao tác nhanh. */}
               <div className="ml-auto flex items-center gap-2 shrink-0">
-                <button
-                  onClick={onResetAnalysis}
-                  className="p-2 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
-                  title="Làm mới tất cả"
-                  aria-label="Làm mới tất cả"
-                >
-                  <RotateCcw size={16} />
-                </button>
+                {/* Làm mới tất cả — xóa CẢ mô tả lỗi lẫn kết quả nên cũng cần xác nhận,
+                    thậm chí mất nhiều dữ liệu hơn nút Xóa (chỉ xóa kết quả). Dùng tông
+                    hổ phách để phân biệt với xác nhận Xóa (đỏ): trên mobile nhãn chữ bị
+                    ẩn nên màu là thứ duy nhất cho biết đang xác nhận thao tác nào. */}
+                {confirming === 'reset' ? (
+                  <div className="flex items-center gap-1.5 pl-2 pr-1 py-1 rounded-md bg-amber-500/10 border border-amber-500/30">
+                    <span className="text-[10px] font-bold text-amber-600 dark:text-amber-500 uppercase tracking-widest hidden sm:inline">
+                      Làm mới?
+                    </span>
+                    <button
+                      onClick={() => {
+                        onResetAnalysis();
+                        setConfirming(null);
+                      }}
+                      className="px-2 py-1 rounded text-[10px] font-bold uppercase text-white bg-amber-500 hover:bg-amber-600 transition-colors"
+                      title="Xác nhận làm mới tất cả"
+                      aria-label="Xác nhận làm mới tất cả"
+                    >
+                      Làm mới
+                    </button>
+                    <button
+                      onClick={() => setConfirming(null)}
+                      className="px-2 py-1 rounded text-[10px] font-bold uppercase text-[#6e6e73] dark:text-slate-400 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-colors"
+                      title="Hủy làm mới"
+                      aria-label="Hủy làm mới"
+                    >
+                      Hủy
+                    </button>
+                  </div>
+                ) : confirming === null ? (
+                  <button
+                    onClick={() => setConfirming('reset')}
+                    className="p-2 hover:bg-amber-500/10 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-amber-500"
+                    title="Làm mới tất cả"
+                    aria-label="Làm mới tất cả"
+                  >
+                    <RotateCcw size={16} />
+                  </button>
+                ) : null}
 
-                {confirmingClear ? (
+                {confirming === 'clear' ? (
                   <div className="flex items-center gap-1.5 pl-2 pr-1 py-1 rounded-md bg-red-500/10 border border-red-500/30">
                     <span className="text-[10px] font-bold text-red-500 uppercase tracking-widest hidden sm:inline">Xóa?</span>
                     <button
                       onClick={() => {
                         onClearResult();
-                        setConfirmingClear(false);
+                        setConfirming(null);
                       }}
                       className="px-2 py-1 rounded text-[10px] font-bold uppercase text-white bg-red-500 hover:bg-red-600 transition-colors"
                       title="Xác nhận xóa kết quả"
@@ -554,7 +587,7 @@ export function DetailView({
                       Xóa
                     </button>
                     <button
-                      onClick={() => setConfirmingClear(false)}
+                      onClick={() => setConfirming(null)}
                       className="px-2 py-1 rounded text-[10px] font-bold uppercase text-[#6e6e73] dark:text-slate-400 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-colors"
                       title="Hủy xóa"
                       aria-label="Hủy xóa"
@@ -562,16 +595,16 @@ export function DetailView({
                       Hủy
                     </button>
                   </div>
-                ) : (
+                ) : confirming === null ? (
                   <button
-                    onClick={() => setConfirmingClear(true)}
+                    onClick={() => setConfirming('clear')}
                     className="p-2 hover:bg-red-500/10 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-red-500"
                     title="Xóa kết quả"
                     aria-label="Xóa kết quả"
                   >
                     <Trash2 size={16} />
                   </button>
-                )}
+                ) : null}
 
                 <button
                   onClick={onCloseResultModal}
