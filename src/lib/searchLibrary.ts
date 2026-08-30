@@ -11,7 +11,9 @@ const STOPWORDS = new Set([
   'cung', 'ca', 'nen', 'phai', 'roi', 'sau', 'truoc', 'tu', 'the', 'nao', 'ai',
 ]);
 
-function normalize(text: string): string {
+/** Chuẩn hóa để so khớp: bỏ hoa/thường và dấu tiếng Việt. Export để nơi khác
+ *  (vd: lọc theo tên hãng ở App.tsx) dùng chung đúng một quy tắc chuẩn hóa. */
+export function normalize(text: string): string {
   return text
     .toLowerCase()
     .replace(/đ/g, 'd') // đ is its own Unicode letter, not d + a combining mark, so NFD won't touch it

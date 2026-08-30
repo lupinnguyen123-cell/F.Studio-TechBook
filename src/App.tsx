@@ -16,6 +16,7 @@ import { DetailView } from './components/DetailView';
 import { LibraryView } from './components/LibraryView';
 import { HistoryView } from './components/HistoryView';
 import { MAIN_SCROLL_CONTAINER_ID } from './lib/scrollContainer';
+import { findLibraryMatches, normalize } from './lib/searchLibrary';
 
 export default function App() {
   const [currentBrandId, setCurrentBrandId] = useState<Brand | null>(null);
@@ -116,16 +117,24 @@ export default function App() {
     const allItems: LibraryEntry[] = BRANDS.flatMap((brand) =>
       (brand.library || []).map((item) => ({ ...item, brandName: brand.name, brandColor: brand.accentColor, brandId: brand.id }))
     );
-    if (!librarySearchTerm.trim()) return allItems;
-    const term = librarySearchTerm.toLowerCase();
-    return allItems.filter(
-      (item) =>
-        item.symptom.toLowerCase().includes(term) ||
-        item.diagnosis.toLowerCase().includes(term) ||
-        item.solution.toLowerCase().includes(term) ||
-        item.keywords.some((k) => k.toLowerCase().includes(term)) ||
-        item.brandName.toLowerCase().includes(term)
-    );
+    const term = librarySearchTerm.trim();
+    if (!term) return allItems;
+
+    // Gõ đúng tên hãng thì lọc theo hãng (giữ lại hành vi cũ). Phải xử lý riêng vì
+    // findLibraryMatches chỉ chấm điểm trên keywords/symptom/diagnosis+solution,
+    // KHÔNG có brandName trong phạm vi chấm điểm.
+    const normalizedTerm = normalize(term);
+    const matchedBrand = BRANDS.find((b) => normalize(b.name) === normalizedTerm);
+    if (matchedBrand) return allItems.filter((item) => item.brandId === matchedBrand.id);
+
+    // Dùng lại đúng cơ chế relevance-scoring đang chạy tốt ở khung "Gợi ý tức thì"
+    // (findLibraryMatches) để trang Thư viện nhất quán với khung gợi ý. Cách lọc cũ
+    // dùng .includes() thô trên cả `solution` — vốn là đoạn text dài 5 phần — nên gõ
+    // "pin" khớp cả những mục chỉ tình cờ nhắc tới chữ "pin" trong hướng dẫn xử lý
+    // (F2 trong audit 30/08/2026). findLibraryMatches có ngưỡng MIN_SCORE lọc nhiễu.
+    // limit = allItems.length vì đây là trang danh mục đầy đủ, không giới hạn 5 như
+    // khung gợi ý.
+    return findLibraryMatches(term, allItems, allItems.length);
   }, [librarySearchTerm]);
 
   const currentBrand = useMemo(() => BRANDS.find((b) => b.id === (currentBrandId || activeTab)), [currentBrandId, activeTab]);
