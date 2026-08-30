@@ -9,7 +9,6 @@ import { AnimatePresence } from 'motion/react';
 import { BRANDS } from './constants';
 import { Brand, LibraryEntry, ResultSource } from './types';
 import { analyzeError, getHealth } from './api/client';
-import { usePresence } from './hooks/usePresence';
 import { useHistory, HistoryItem } from './hooks/useHistory';
 import { NavItem } from './components/NavItem';
 import { HomeView } from './components/HomeView';
@@ -23,6 +22,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<Brand>('Apple');
   const [view, setView] = useState<'docs' | 'history' | 'library'>('docs');
   const [aiConfigured, setAiConfigured] = useState<boolean | null>(null);
+  const [isOnline, setIsOnline] = useState(true);
 
   // AI Analysis State (Brand-specific)
   const [errorDescriptions, setErrorDescriptions] = useState<Record<string, string>>({});
@@ -48,13 +48,43 @@ export default function App() {
     }
   });
 
-  const { presence, globalOnline, isConnected } = usePresence(currentBrandId);
   const { history, addHistoryItem, removeHistoryItem, clearHistory } = useHistory();
 
+  // Một lần gọi /api/health phục vụ cả 2 mục đích: biết máy chủ đã cấu hình
+  // GEMINI_API_KEY chưa, và làm nguồn cho badge kết nối ở trang chủ.
+  // (Trước đây badge dựa vào kết nối Socket.IO — đã gỡ vì production chạy trên
+  // Netlify Functions, không có server Socket.IO nào để kết nối tới.)
   useEffect(() => {
-    getHealth()
-      .then((data) => setAiConfigured(data.aiConfigured))
-      .catch(() => setAiConfigured(false));
+    let cancelled = false;
+
+    const check = () => {
+      getHealth()
+        .then((data) => {
+          if (cancelled) return;
+          setAiConfigured(data.aiConfigured);
+          setIsOnline(true);
+        })
+        .catch(() => {
+          if (cancelled) return;
+          // Cố tình KHÔNG đặt aiConfigured = false ở đây: gọi hỏng thường là do mất
+          // mạng, không phải do máy chủ thiếu key — đặt false sẽ hiện nhầm cảnh báo
+          // "Thiếu GEMINI_API_KEY". Trạng thái mạng đã được badge phản ánh riêng.
+          setIsOnline(false);
+        });
+    };
+
+    check();
+    const interval = setInterval(check, 30_000);
+    const goOffline = () => setIsOnline(false);
+    window.addEventListener('online', check);
+    window.addEventListener('offline', goOffline);
+
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+      window.removeEventListener('online', check);
+      window.removeEventListener('offline', goOffline);
+    };
   }, []);
 
   useEffect(() => {
@@ -234,9 +264,7 @@ export default function App() {
             {view === 'docs' ? (
               !currentBrandId ? (
                 <HomeView
-                  presence={presence}
-                  globalOnline={globalOnline}
-                  isConnected={isConnected}
+                  isConnected={isOnline}
                   docSearchTerm={docSearchTerm}
                   onDocSearchChange={setDocSearchTerm}
                   onOpenBrand={handleOpenBrand}
@@ -247,7 +275,6 @@ export default function App() {
                 <DetailView
                   currentBrand={currentBrand}
                   activeTab={activeTab}
-                  presence={presence}
                   errorDescription={errorDescription}
                   analysisResult={analysisResult}
                   isAnalyzing={isAnalyzing}

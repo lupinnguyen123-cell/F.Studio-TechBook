@@ -67,7 +67,6 @@ const BRAND_ERROR_PLACEHOLDER: Record<Brand, string> = {
 export function DetailView({
   currentBrand,
   activeTab,
-  presence,
   errorDescription,
   analysisResult,
   isAnalyzing,
@@ -87,7 +86,6 @@ export function DetailView({
 }: {
   currentBrand: BrandDetail | undefined;
   activeTab: Brand;
-  presence: Record<string, number>;
   errorDescription: string;
   analysisResult: string | null;
   isAnalyzing: boolean;
@@ -170,11 +168,6 @@ export function DetailView({
               }}
             >
               {brand.name}
-              {presence[brand.id] > 0 && (
-                <span className="size-4 rounded-full bg-emerald-500/20 text-emerald-500 text-[10px] flex items-center justify-center border border-emerald-500/30">
-                  {presence[brand.id]}
-                </span>
-              )}
             </button>
           ))}
         </div>
@@ -186,12 +179,9 @@ export function DetailView({
           {/* Hero Banner */}
           <div className={`relative h-40 w-full rounded-2xl overflow-hidden bg-gradient-to-br ${currentBrand?.gradient} flex items-center px-10 shadow-lg mb-4`}>
             <div className="z-10">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="size-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span className={`text-[10px] font-bold uppercase tracking-widest opacity-80 ${currentBrand?.textColor}`}>
-                  {presence[currentBrand?.id || ''] || 1} Kỹ thuật viên đang xem
-                </span>
-              </div>
+              {/* Đã bỏ dòng "N Kỹ thuật viên đang xem": số này đến từ Socket.IO presence
+                  vốn không chạy được trên Netlify, luôn rơi về giá trị mặc định 1 nên
+                  chỉ là con số giả, không phản ánh gì thật. */}
               <h2 className={`text-3xl font-black ${currentBrand?.textColor} tracking-tight`}>
                 {(currentBrand && BRAND_HEADLINE[currentBrand.id]) || `Hỗ trợ ${currentBrand?.name}`}
               </h2>

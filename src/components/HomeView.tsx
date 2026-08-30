@@ -16,8 +16,6 @@ function toLibraryEntries(pickPerBrand: (items: LibraryEntry[]) => LibraryEntry[
 }
 
 export function HomeView({
-  presence,
-  globalOnline,
   isConnected,
   docSearchTerm,
   onDocSearchChange,
@@ -25,8 +23,6 @@ export function HomeView({
   onShowLibrary,
   onQuickAccess,
 }: {
-  presence: Record<string, number>;
-  globalOnline: number;
   isConnected: boolean;
   docSearchTerm: string;
   onDocSearchChange: (value: string) => void;
@@ -74,10 +70,16 @@ export function HomeView({
           <h2 className="text-2xl font-bold">Sổ tay kỹ thuật</h2>
           <p className="text-[#6e6e73] dark:text-slate-400 text-sm font-medium">Chọn thương hiệu để xem tài liệu hướng dẫn</p>
         </div>
-        <div className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
+        {/* Nền/viền cũng phải đổi theo trạng thái: trước đây hardcode emerald nên khi
+            mất kết nối vẫn ra nền xanh kèm chữ đỏ, nhìn mâu thuẫn. */}
+        <div
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border ${
+            isConnected ? 'bg-emerald-500/10 border-emerald-500/20' : 'bg-red-500/10 border-red-500/20'
+          }`}
+        >
           <div className={`size-1.5 rounded-full ${isConnected ? 'bg-emerald-500 animate-pulse' : 'bg-red-500'}`} />
           <span className={`text-[10px] font-bold uppercase tracking-widest ${isConnected ? 'text-emerald-500' : 'text-red-500'}`}>
-            {isConnected ? `${globalOnline} Online` : 'Offline'}
+            {isConnected ? 'Đã kết nối máy chủ' : 'Mất kết nối'}
           </span>
         </div>
       </div>
@@ -121,7 +123,7 @@ export function HomeView({
             {filteredBrands.length > 0 && (
               <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {filteredBrands.map((brand) => (
-                  <BrandCard key={brand.id} brand={brand} onOpen={() => onOpenBrand(brand.id)} activeUsers={presence[brand.id] || 0} />
+                  <BrandCard key={brand.id} brand={brand} onOpen={() => onOpenBrand(brand.id)} />
                 ))}
               </div>
             )}

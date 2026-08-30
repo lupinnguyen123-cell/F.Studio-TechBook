@@ -4,11 +4,9 @@ import { BrandDetail } from '../types';
 export function BrandCard({
   brand,
   onOpen,
-  activeUsers,
 }: {
   brand: BrandDetail;
   onOpen: () => void;
-  activeUsers: number;
 }) {
   const isApple = brand.id === 'Apple';
   const isGarmin = brand.id === 'Garmin';
@@ -16,15 +14,6 @@ export function BrandCard({
 
   return (
     <section className={`rounded-2xl p-5 shadow-xl relative overflow-hidden border border-white/5 bg-gradient-to-br ${brand.gradient} group`}>
-      {/* Active Users Badge */}
-      {activeUsers > 0 && (
-        <div className="absolute top-3 right-3 z-20 flex items-center gap-1.5 px-2 py-1 rounded-full bg-black/20 backdrop-blur-md border border-white/10">
-          <div className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span className={`text-[9px] font-bold uppercase tracking-wider ${brand.textColor}`}>
-            {activeUsers} đang xem
-          </span>
-        </div>
-      )}
       {/* Decorative background icon */}
       <div className="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
         {isApple && <Smartphone size={160} />}
