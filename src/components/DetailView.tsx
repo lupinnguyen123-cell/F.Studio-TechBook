@@ -112,6 +112,14 @@ export function DetailView({
   const suggestionsRef = useRef<HTMLDivElement>(null);
   const prevSuggestionCount = useRef(0);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  // Xóa kết quả là thao tác không hoàn tác được nên phải qua 1 bước xác nhận tại chỗ.
+  const [confirmingClear, setConfirmingClear] = useState(false);
+
+  // Thoát trạng thái "Xóa?" mỗi khi modal đóng/mở lại hoặc khi kết quả đổi — tránh
+  // mở lại modal mà vẫn kẹt ở bước xác nhận còn sót từ lần trước.
+  useEffect(() => {
+    setConfirmingClear(false);
+  }, [isResultModalOpen, analysisResult]);
 
   // Bấm "Hỏi AI" từ trang Thư viện điều hướng vào đây — cuộn tới và focus sẵn ô nhập
   // để nhân viên gõ mô tả ngay, không cần tự tìm lại khối AI trên trang.
@@ -519,25 +527,57 @@ export function DetailView({
                   {resultNote}
                 </span>
               </div>
-              <div className="ml-auto flex items-center gap-1 shrink-0">
+              {/* gap-2 (thay vì gap-1) để nút Xóa không nằm sát nút Đóng, giảm nguy cơ
+                  bấm nhầm khi thao tác nhanh. */}
+              <div className="ml-auto flex items-center gap-2 shrink-0">
                 <button
                   onClick={onResetAnalysis}
                   className="p-2 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
                   title="Làm mới tất cả"
+                  aria-label="Làm mới tất cả"
                 >
                   <RotateCcw size={16} />
                 </button>
-                <button
-                  onClick={onClearResult}
-                  className="p-2 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-[#1d1d1f] dark:hover:text-slate-300"
-                  title="Xóa kết quả"
-                >
-                  <Trash2 size={16} />
-                </button>
+
+                {confirmingClear ? (
+                  <div className="flex items-center gap-1.5 pl-2 pr-1 py-1 rounded-md bg-red-500/10 border border-red-500/30">
+                    <span className="text-[10px] font-bold text-red-500 uppercase tracking-widest hidden sm:inline">Xóa?</span>
+                    <button
+                      onClick={() => {
+                        onClearResult();
+                        setConfirmingClear(false);
+                      }}
+                      className="px-2 py-1 rounded text-[10px] font-bold uppercase text-white bg-red-500 hover:bg-red-600 transition-colors"
+                      title="Xác nhận xóa kết quả"
+                      aria-label="Xác nhận xóa kết quả"
+                    >
+                      Xóa
+                    </button>
+                    <button
+                      onClick={() => setConfirmingClear(false)}
+                      className="px-2 py-1 rounded text-[10px] font-bold uppercase text-[#6e6e73] dark:text-slate-400 hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-colors"
+                      title="Hủy xóa"
+                      aria-label="Hủy xóa"
+                    >
+                      Hủy
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setConfirmingClear(true)}
+                    className="p-2 hover:bg-red-500/10 rounded-md transition-colors text-[#6e6e73] dark:text-slate-500 hover:text-red-500"
+                    title="Xóa kết quả"
+                    aria-label="Xóa kết quả"
+                  >
+                    <Trash2 size={16} />
+                  </button>
+                )}
+
                 <button
                   onClick={onCloseResultModal}
                   className="p-2 rounded-full hover:bg-[#f5f5f7] dark:hover:bg-slate-800 text-[#6e6e73] dark:text-slate-400 hover:text-[#1d1d1f] dark:hover:text-slate-200 transition-colors"
                   title="Đóng"
+                  aria-label="Đóng"
                 >
                   <X size={20} />
                 </button>
