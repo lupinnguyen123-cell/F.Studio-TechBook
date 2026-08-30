@@ -385,8 +385,15 @@ export function DetailView({
                 </div>
               </section>
 
-              {/* Process */}
-              <section>
+            </div>
+          </div>
+
+          {/* Process — đặt NGOÀI lưới 2 cột, chạy full-width bên dưới cả 2 cột.
+              Trước đây nằm trong Cột 2 (cùng với "Kịch bản tư vấn") khiến Cột 2 cao
+              hơn hẳn Cột 1; CSS Grid kéo dài cả 2 cột theo hàng cao nhất nhưng không
+              tự "chảy" nội dung dư sang cột kia, để lại khoảng trắng lớn dưới Cột 1.
+              Khoảng cách với lưới phía trên do `space-y-8` của thẻ cha lo, không cần mt. */}
+          <section>
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold tracking-tight">Quy trình & Cảnh báo</h3>
                   <span className="text-[10px] text-red-500 font-bold uppercase tracking-widest">Lưu ý quan trọng</span>
@@ -416,27 +423,31 @@ export function DetailView({
                       </motion.div>
                   ))}
 
-                  {currentBrand?.processes.map((process) => {
-                    const Icon = IconMap[process.icon] || FileText;
-                    return (
-                      <div
-                        key={process.id}
-                        className="flex items-start gap-4 p-4 rounded-xl border border-[#d2d2d7] dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm dark:shadow-none hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-all group"
-                      >
-                        <div className="size-12 rounded-lg bg-[#f5f5f7] dark:bg-slate-800 group-hover:bg-[#e8e8ed] dark:group-hover:bg-slate-700 flex items-center justify-center shrink-0 transition-colors">
-                          <Icon size={24} style={{ color: currentBrand?.accentColor }} />
+                  {/* Thẻ quy trình xếp 2 cột từ sm trở lên cho đỡ dài dọc khi đã
+                      full-width; mobile vẫn 1 cột. Cảnh báo động ở trên cố tình để
+                      full-width, không đưa vào lưới này — đó là cảnh báo an toàn,
+                      cần nổi bật hết chiều ngang. */}
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {currentBrand?.processes.map((process) => {
+                      const Icon = IconMap[process.icon] || FileText;
+                      return (
+                        <div
+                          key={process.id}
+                          className="flex items-start gap-4 p-4 rounded-xl border border-[#d2d2d7] dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm dark:shadow-none hover:bg-[#f5f5f7] dark:hover:bg-slate-800 transition-all group"
+                        >
+                          <div className="size-12 rounded-lg bg-[#f5f5f7] dark:bg-slate-800 group-hover:bg-[#e8e8ed] dark:group-hover:bg-slate-700 flex items-center justify-center shrink-0 transition-colors">
+                            <Icon size={24} style={{ color: currentBrand?.accentColor }} />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200">{process.title}</h4>
+                            <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1 leading-relaxed">{process.description}</p>
+                          </div>
                         </div>
-                        <div className="flex-1">
-                          <h4 className="text-sm font-bold text-[#1d1d1f] dark:text-slate-200">{process.title}</h4>
-                          <p className="text-xs text-[#6e6e73] dark:text-slate-500 mt-1 leading-relaxed">{process.description}</p>
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
-              </section>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
 
