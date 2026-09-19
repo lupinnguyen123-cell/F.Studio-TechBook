@@ -3051,9 +3051,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý tháo máy hoặc dùng lực siết/nắn phần bản lề, palmrest để "hết tiếng kêu" tại quầy. Không cam kết chắc chắn với khách rằng TTBH sẽ xử lý miễn phí — cần nói rõ đây thường được xem là vấn đề thẩm mỹ, kết quả xử lý tùy đánh giá của TTBH.
 
-**💬 Kịch bản tư vấn:** "Dạ tiếng kêu cọt kẹt nhẹ này không ảnh hưởng đến hoạt động của máy đâu ạ, đây là vấn đề khá phổ biến ở một số máy do sai lệch lắp ráp nhỏ. Nếu anh/chị khó chịu, mình có thể mang đến trung tâm bảo hành kiểm tra, nhưng thường trường hợp này được xem là vấn đề thẩm mỹ nên có thể không thuộc diện bảo hành miễn phí ạ."
+**💬 Kịch bản tư vấn:** "Dạ tiếng kêu cọt kẹt nhẹ này không ảnh hưởng đến hoạt động của máy đâu ạ, đây là vấn đề khá phổ biến ở một số máy do sai lệch lắp ráp nhỏ. Nếu anh/chị khó chịu, mình có thể mang đến trung tâm bảo hành kiểm tra, nhưng thường trường hợp này được xem là vấn đề thẩm mỹ nên có thể không thuộc diện bảo hành miễn phí ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Có thể gửi TTBH theo yêu cầu của khách để kiểm tra/đánh giá, nhưng cần nói rõ trước: Apple thường xem tiếng kêu cọt kẹt là vấn đề thẩm mỹ, không chắc chắn được bảo hành miễn phí.
+**📦 Lưu ý TTBH:** Có thể gửi TTBH theo yêu cầu của khách để kiểm tra/đánh giá, nhưng cần nói rõ trước: Apple thường xem tiếng kêu cọt kẹt là vấn đề thẩm mỹ, không chắc chắn được bảo hành miễn phí. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
