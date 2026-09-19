@@ -2767,3 +2767,314 @@
 **📦 Lưu ý TTBH:** KHÔNG gửi TTBH — hầu như luôn là vấn đề cài đặt, xử lý hoàn toàn được tại quầy.
 
 ---
+
+### Khách hỏi vì sao ảnh chụp trên iPhone 18 Pro/Pro Max lúc mờ hậu cảnh nhiều lúc lại rõ hết, hoặc không biết chỉnh khẩu độ camera chính ở đâu
+- **ID:** lib-a122
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** iPhone 18 Pro là dòng iPhone đầu tiên có camera chính khẩu độ vật lý thay đổi được (f/1.48-f/4.0), mặc định máy tự chọn khẩu độ theo cảnh chụp — không phải lỗi máy.
+- **Từ khóa:** khẩu độ thay đổi, variable aperture, camera 18 pro, chụp ảnh mờ hậu cảnh, f/1.48
+
+**🔍 Chẩn đoán:** iPhone 18 Pro/Pro Max là dòng iPhone đầu tiên có camera Fusion chính với khẩu độ vật lý thay đổi được giữa 4 mức: f/1.48, f/1.8, f/2.8, f/4.0 (trước đây khẩu độ camera iPhone luôn cố định). Ở chế độ chụp ảnh thông thường, máy TỰ ĐỘNG chọn khẩu độ phù hợp theo điều kiện ánh sáng và loại chủ thể — khẩu độ càng nhỏ (f/4.0) thì độ sâu trường ảnh càng lớn, hậu cảnh rõ nét hơn thay vì bị xóa phông. Khách có thể hiểu nhầm đây là lỗi lấy nét/chụp không đẹp.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giải thích cho khách đây là tính năng mới của camera 48MP, không phải lỗi lấy nét.
+2. Chỉ khách vào chế độ chụp ảnh chuyên nghiệp (Chụp ảnh → biểu tượng điều khiển thủ công) để tự chọn khẩu độ mong muốn thay vì để máy tự động.
+3. Hướng dẫn khách thử chụp cùng 1 chủ thể ở khẩu độ f/1.48 (hậu cảnh mờ nhiều, hợp chân dung) và f/4.0 (hậu cảnh rõ hơn, hợp phong cảnh/nhóm đông người) để thấy khác biệt trực quan.
+4. Nhắc khách chế độ Chân dung (Portrait) vẫn hoạt động độc lập với việc chỉnh khẩu độ thủ công này.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định máy bị lỗi camera/lấy nét khi khách mới thấy hậu cảnh rõ hơn hoặc mờ hơn bình thường — đây là hoạt động đúng thiết kế của khẩu độ thay đổi, cần giải thích rõ trước khi nhận định lỗi.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là tính năng camera mới của 18 Pro cho phép tự chỉnh độ mở ống kính như máy ảnh chuyên nghiệp ạ, không phải lỗi máy đâu. Để em chỉ anh/chị cách chỉnh thử để thấy sự khác biệt nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là tính năng camera mới hoạt động đúng thiết kế, chỉ cần hướng dẫn khách sử dụng.
+
+---
+
+### Khách hỏi tính năng 'Apple Reference Image'/'ảnh xác thực' trên iPhone 18 Pro là gì, dùng để làm gì, tại sao ảnh chụp không thấy tính năng này
+- **ID:** lib-a123
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Tính năng xác thực ảnh gốc mới (opt-in, chỉ hoạt động với camera chính, tạo thêm 1 bản 'âm bản số' mã hóa) — nhân viên cần hiểu đúng phạm vi để tư vấn không quá lời.
+- **Từ khóa:** apple reference image, xác thực ảnh, ảnh thật, âm bản số, chống deepfake, ảnh ai
+
+**🔍 Chẩn đoán:** Apple Reference Image là tính năng MỚI, CHỈ CÓ trên iPhone 18 Pro/Pro Max, dùng để chứng minh một bức ảnh là ảnh thật chụp bằng cảm biến camera chính của máy (không phải AI tạo ra, không bị chỉnh sửa) tại một thời điểm cụ thể. Máy lưu song song bản ảnh thường (chỉnh sửa được) và một "âm bản số" được ký mã hóa ngay lúc chụp. Đây là tính năng OPT-IN (khách phải tự bật), CHỈ hoạt động với camera chính (không áp dụng ống kính góc siêu rộng/tele). Việc xác minh ảnh thật cần gửi âm bản lên máy chủ Apple (Private Cloud Compute) để đối chiếu, không xác minh được ngay tại chỗ trên máy.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giải thích khách đây là tính năng optional, không tự động bật sẵn — cần vào Cài đặt Camera để bật trước khi chụp nếu muốn dùng.
+2. Nói rõ tính năng này CHỨNG MINH ảnh chưa bị chỉnh sửa/không phải AI tạo — KHÔNG chứng minh vật/người trong ảnh có thật hay không (ví dụ chụp lại một vật thể do AI tạo ra vẫn cho ra "ảnh thật" theo nghĩa chưa chỉnh sửa).
+3. Nếu khách hỏi vì sao ảnh cũ hoặc ảnh chụp bằng ống kính khác không có tính năng này: giải thích rõ giới hạn CHỈ áp dụng camera chính, CHỈ áp dụng ảnh chụp SAU khi đã bật tính năng.
+4. Không cần thao tác demo xác minh đầy đủ tại quầy (cần kết nối máy chủ Apple) — chỉ cần demo bước BẬT tính năng trong Cài đặt nếu khách muốn xem.
+
+**🚫 Tuyệt đối không được làm:** Không quảng cáo quá lời rằng tính năng này "chứng minh 100% ảnh không có AI" hay "xác thực được mọi bức ảnh" — dễ gây hiểu lầm, ảnh hưởng uy tín tư vấn khi khách tìm hiểu thêm sau này. Không hướng dẫn khách quy trình xác minh qua máy chủ Apple như một kỹ thuật viên — đây là tính năng phần mềm, ngoài phạm vi tư vấn tại quầy.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là tính năng mới giúp chứng minh ảnh chụp bằng camera chính chưa bị chỉnh sửa hay ghép AI ạ, mình cần bật trong Cài đặt Camera trước khi chụp thì mới áp dụng được cho ảnh đó, chứ không phải mọi ảnh trên máy đều tự động có tính năng này đâu."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là tính năng phần mềm, không liên quan phần cứng.
+
+---
+
+### Dynamic Island trên iPhone 18 Pro hiển thị cùng lúc nhiều thông báo/hoạt động (Live Activities) hơn máy cũ, khách hoặc nhân viên tưởng bị lỗi hiển thị/giật màn hình
+- **ID:** lib-a124
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Dynamic Island đã thiết kế lại, thu nhỏ cảm biến Face ID để hiển thị được tối đa 3 Live Activities cùng lúc — là tính năng mới, không phải lỗi phần mềm.
+- **Từ khóa:** dynamic island mới, live activities, hiển thị nhiều hoạt động, 18 pro dynamic island
+
+**🔍 Chẩn đoán:** Trên iPhone 18 Pro/Pro Max, Apple thu gọn cụm cảm biến Face ID trong Dynamic Island, tạo thêm không gian để hiển thị tối đa 3 Live Activities cùng lúc: một bên trái, một bên phải, và một hoạt động thứ ba trải dài qua "vùng chết" ở giữa (khu vực cảm biến). Đây là thay đổi giao diện mới, có thể khiến người mới dùng hoặc quen máy cũ (chỉ hiển thị 1 Live Activity) cảm thấy lạ hoặc nghĩ máy bị lỗi hiển thị/chồng chéo icon.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giải thích đây là thiết kế Dynamic Island mới, không phải lỗi hiển thị.
+2. Demo cho khách vài Live Activities thực tế cùng lúc (ví dụ: nhạc đang phát + hẹn giờ + điều hướng bản đồ) để thấy 3 khu vực hiển thị tách biệt rõ ràng, không chồng lấn.
+3. Nếu khách phàn nàn Dynamic Island "che khuất" nội dung ứng dụng đang mở, hướng dẫn kiểm tra app đó đã cập nhật bản mới nhất hỗ trợ đúng layout Dynamic Island mới chưa.
+4. Nếu vẫn thấy chữ/icon bị cắt xén bất thường ở vùng giữa hai bên (khác với việc hiển thị nhiều hoạt động bình thường), ghi nhận lại ứng dụng cụ thể và tình huống — có thể là lỗi hiển thị riêng của ứng dụng đó (chưa tối ưu), không phải lỗi phần cứng máy.
+
+**🚫 Tuyệt đối không được làm:** Không vội kết luận máy lỗi màn hình/phần cứng khi khách mới thấy Dynamic Island hiển thị nhiều nội dung hơn bình thường — đây là thay đổi thiết kế đã công bố chính thức.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là Dynamic Island thiết kế mới trên 18 Pro, có thể hiển thị nhiều hoạt động cùng lúc hơn máy cũ ạ, không phải lỗi hiển thị đâu, để em demo thử cho anh/chị xem nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — là thay đổi giao diện phần mềm/thiết kế mới. Chỉ xem xét TTBH nếu xác nhận rõ là lỗi hiển thị phần cứng thật (ví dụ: điểm ảnh chết, sọc màn hình) không liên quan đến Dynamic Island.
+
+---
+
+### iPhone 18 Pro/Pro Max ấm rõ rệt ở lưng máy khi quay video 4K lâu, chơi game nặng hoặc dùng Reference Image liên tục
+- **ID:** lib-a125
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Chip A20 Pro hiệu năng cao hơn kèm hệ thống tản nhiệt vapor chamber diện tích lớn hơn — máy ấm khi tải nặng là bình thường, khác với quá nhiệt bất thường.
+- **Từ khóa:** iphone 18 pro nóng, a20 pro nhiệt, vapor chamber, máy ấm khi quay video, nóng khi chơi game
+
+**🔍 Chẩn đoán:** Chip A20 Pro trên iPhone 18 Pro sản xuất tiến trình 2nm, hiệu năng CPU/GPU cao hơn đáng kể so với A19 Pro, đi kèm buồng hơi tản nhiệt (vapor chamber) diện tích tiếp xúc lớn gấp 3 lần để xử lý nhiệt tốt hơn khi chạy tác vụ nặng (quay 4K60 Dolby Vision, chơi game đồ họa cao, chụp liên tục ở chế độ Reference Image). Máy ấm hoặc hơi nóng ở mặt lưng khi làm các tác vụ này là biểu hiện BÌNH THƯỜNG của thiết kế tản nhiệt mới, khác với dấu hiệu quá nhiệt bất thường (máy tự tắt nguồn, treo máy, hiện cảnh báo nhiệt độ).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hỏi khách tình huống cụ thể máy ấm/nóng: đang làm tác vụ gì (quay video dài, chơi game, sạc + dùng cùng lúc).
+2. Nếu máy chỉ ấm/hơi nóng trong lúc dùng tác vụ nặng và trở lại bình thường sau khi ngừng vài phút — đây là hoạt động bình thường, không cần xử lý gì thêm.
+3. Nếu máy nóng bất thường ngay cả khi dùng nhẹ (lướt mạng, nhắn tin), hoặc kèm dấu hiệu như tự sập nguồn, treo máy, cảnh báo nhiệt độ trên màn hình — kiểm tra thêm ốp lưng dày/không thoáng khí, gỡ thử ốp và theo dõi lại.
+4. Cập nhật iOS mới nhất nếu chưa cập nhật (Apple có thể tối ưu quản lý nhiệt qua bản cập nhật phần mềm).
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định ngay máy lỗi phần cứng chỉ vì khách phản ánh "máy nóng" khi đang quay video/chơi game nặng — cần phân biệt rõ với dấu hiệu quá nhiệt bất thường trước khi kết luận.
+
+**💬 Kịch bản tư vấn:** "Dạ máy mới có chip mạnh hơn nên khi quay video lâu hay chơi game nặng sẽ ấm hơn một chút, đây là bình thường ạ. Nếu máy tự tắt nguồn hay báo lỗi nhiệt độ thì mình kiểm tra kỹ hơn cho anh/chị nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH nếu chỉ ấm khi tải nặng và tự hết khi nghỉ. Gửi TTBH nếu có dấu hiệu quá nhiệt bất thường thật sự (tự tắt nguồn, treo máy liên tục, báo lỗi nhiệt độ) dù đã dùng bình thường và gỡ ốp lưng.
+
+---
+
+### Khách phàn nàn pin iPhone 18 Pro/Pro Max không được như quảng cáo (24 giờ/30 giờ sử dụng thường xuyên) ngay những ngày đầu mới mua
+- **ID:** lib-a126
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Mức pin quảng cáo là thời lượng sử dụng hỗn hợp trung bình trong điều kiện lý tưởng; những ngày đầu, máy còn tối ưu hoá lại chỉ số pin, đồng bộ iCloud, cài đặt app mới — hao pin nhanh hơn bình thường là tạm thời.
+- **Từ khóa:** pin không như quảng cáo, 18 pro hao pin, pin ngày đầu, battery mới hao nhanh
+
+**🔍 Chẩn đoán:** Con số pin Apple công bố (24 giờ với 18 Pro, 30 giờ với 18 Pro Max) là thời lượng "sử dụng hỗn hợp" trung bình (video, lướt web, gọi điện xen kẽ) trong điều kiện lý tưởng, không phải mức pin cố định cho mọi kiểu dùng. Trong vài ngày đầu sau khi kích hoạt máy mới, pin thường hao nhanh hơn bình thường do: máy đang đồng bộ dữ liệu/ảnh từ iCloud, cài đặt lại các app đã tải trước đó, lập chỉ mục Spotlight tìm kiếm, và các dịch vụ nền chạy nhiều hơn bình thường trong lần đầu thiết lập.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hỏi khách máy đã dùng được bao lâu — nếu mới kích hoạt trong 1-3 ngày đầu, giải thích đây là giai đoạn máy tự tối ưu, pin sẽ ổn định hơn sau đó.
+2. Kiểm tra Cài đặt → Pin → xem ứng dụng nào đang tiêu hao pin nhiều bất thường trong 24 giờ/10 ngày qua.
+3. Xác nhận máy đã cập nhật iOS mới nhất.
+4. Nếu khách thường xuyên bật các tính năng hao pin (màn hình luôn bật/Always-On, độ sáng cao, 5G liên tục, định vị nền nhiều app), giải thích đây là các yếu tố ảnh hưởng thời lượng thực tế so với con số quảng cáo lý tưởng.
+5. Nếu sau khoảng 1 tuần sử dụng bình thường mà pin vẫn hao rất nhanh so với trải nghiệm thực tế mong đợi, kiểm tra thêm tình trạng pin tại Cài đặt → Pin → Tình trạng pin.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết chắc chắn máy sẽ đạt đúng 24/30 giờ như quảng cáo trong mọi kiểu sử dụng — đây là con số trung bình trong điều kiện thử nghiệm cụ thể của Apple, không phải cam kết cho mọi trường hợp dùng thực tế.
+
+**💬 Kịch bản tư vấn:** "Dạ những ngày đầu mới kích hoạt máy thường hao pin nhanh hơn bình thường do máy đang đồng bộ dữ liệu và tối ưu lại ạ, mình dùng thêm vài ngày thì pin sẽ ổn định hơn. Để em kiểm tra thử xem có ứng dụng nào đang ngốn pin bất thường không nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH trong những ngày đầu sử dụng. Nếu sau khoảng 1-2 tuần dùng bình thường mà % Dung lượng tối đa của pin (Cài đặt → Pin → Tình trạng pin) đã thấp bất thường so với máy mới — gửi TTBH kiểm tra.
+
+---
+
+### Màn hình chính bên trong iPhone Duo có bề mặt nhám khác thường so với iPhone thường, khách/nhân viên không biết cách lau chùi đúng cách
+- **ID:** lib-a127
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Lớp phủ nano-texture (bề mặt nhám tán sáng) được Apple dùng để che nếp gấp màn hình gập — cần vệ sinh khác với màn hình kính bóng thông thường.
+- **Từ khóa:** nano-texture, màn hình nhám, nếp gấp màn hình, iphone duo màn hình, vệ sinh màn hình gập
+
+**🔍 Chẩn đoán:** iPhone Duo dùng lớp phủ nano-texture đặc biệt phủ lên màn hình chính gập bên trong (7.6 inch) để tán xạ ánh sáng, giúp nếp gấp ở giữa màn hình khó nhìn thấy bằng mắt hơn (dù vẫn có thể cảm nhận được bằng tay khi vuốt qua). Đây là bề mặt nhám/mờ, khác hẳn cảm giác kính bóng của các iPhone thông thường — khách có thể tưởng màn hình bị trầy xước hoặc dính bẩn không lau sạch được.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giải thích với khách đây là lớp phủ đặc biệt, bề mặt nhám là thiết kế cố ý, không phải trầy xước hay lỗi.
+2. Chỉ dùng khăn microfiber mềm, khô hoặc hơi ẩm nhẹ để lau màn hình chính — đúng như khuyến nghị vệ sinh các màn hình Apple khác.
+3. Không cần (và không nên) cố lau mạnh để "làm bóng" bề mặt — lớp phủ nano-texture không đổi được về dạng bóng gương.
+4. Nhắc khách dùng miếng dán màn hình hoặc bao da chính hãng nếu có, tránh vật cứng/có cạnh sắc tiếp xúc trực tiếp màn hình gập khi gấp/mở.
+
+**🚫 Tuyệt đối không được làm:** Không dùng cồn, hóa chất tẩy rửa mạnh, hoặc khăn giấy/vải thô ráp để lau màn hình nano-texture — có thể ảnh hưởng lớp phủ đặc biệt này. Không cạy hoặc cố "làm phẳng" nếp gấp bằng vật cứng.
+
+**💬 Kịch bản tư vấn:** "Dạ màn hình chính của Duo có lớp phủ đặc biệt hơi nhám để giúp khó nhìn thấy nếp gấp ạ, đây là thiết kế cố ý chứ không phải trầy xước đâu. Mình chỉ cần lau bằng khăn mềm là được, không cần lau mạnh ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là đặc điểm thiết kế bình thường của màn hình. Chỉ gửi TTBH nếu phát hiện vết trầy/hư hại thật sự khác với cảm giác nhám tự nhiên của lớp phủ.
+
+---
+
+### Khách hỏi cách gập/mở, bảo quản bản lề iPhone Duo đúng cách, hoặc lo ngại bụi lọt vào khe bản lề
+- **ID:** lib-a128
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Bản lề máy gập là bộ phận cơ khí phức tạp nhất, dễ tích bụi/cát theo thời gian nếu không vệ sinh và sử dụng đúng cách — đây là đặc thù chung của điện thoại gập, cần tư vấn phòng ngừa ngay từ đầu.
+- **Từ khóa:** bản lề iphone duo, hinge gập, vệ sinh máy gập, bụi bản lề, gập mở hai tay
+
+**🔍 Chẩn đoán:** iPhone Duo có bản lề cơ khí cho phép gập ở nhiều góc mở khác nhau, đi kèm màn hình chính nhiều lớp (polymer, OLED, kính, khung titan) dán bằng keo dẻo linh hoạt. Máy đạt chuẩn IP68 chống nước/bụi ngay cả khi gập mở phức tạp, nhưng bản lề vẫn là bộ phận cơ khí có khe hở nhỏ, theo thời gian sử dụng có thể tích tụ bụi mịn/cát nếu khách thường xuyên để máy trong túi quần/túi xách có nhiều bụi vải, cát (đi biển, công trường).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hướng dẫn khách luôn dùng CẢ HAI TAY khi gập/mở máy (không gập bằng một tay/lực một bên) để giữ bản lề hoạt động êm, đúng như trải nghiệm demo tại quầy.
+2. Khuyến khích khách dùng bao da/ốp chính hãng có thiết kế che khe bản lề khi không dùng.
+3. Nếu đi môi trường nhiều bụi/cát (biển, công trường), khuyên khách lau khô bản lề bằng khăn mềm sau khi dùng, tránh để máy tiếp xúc trực tiếp cát/bụi mịn thời gian dài.
+4. Nếu khách nghe/cảm nhận tiếng lạo xạo nhẹ khi gập mở, hỏi rõ có phải mới xảy ra gần đây không — nếu đột ngột xuất hiện, hướng dẫn tạm ngưng gập mở nhiều và chuyển kiểm tra TTBH sớm thay vì tự ý vệ sinh sâu bản lề tại quầy.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý tháo, tra dầu, hoặc dùng vật nhọn vệ sinh sâu bên trong khe bản lề tại quầy — đây là cụm cơ khí phức tạp, chỉ TTBH có công cụ chuyên dụng mới nên can thiệp. Không gập/mở máy demo bằng một tay hoặc dùng lực mạnh đột ngột để "test độ bền" trước mặt khách.
+
+**💬 Kịch bản tư vấn:** "Dạ máy gập nên bản lề là bộ phận mình cần giữ gìn cẩn thận hơn một chút ạ, anh/chị nhớ dùng hai tay khi gập mở và lau khô máy nếu đi biển hay môi trường nhiều bụi cát nhé, máy vẫn đạt chuẩn chống nước bụi IP68 nên dùng hàng ngày bình thường không đáng lo."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH cho việc tư vấn phòng ngừa thông thường. Nếu khách phản ánh bản lề phát ra tiếng lạ, kẹt, hoặc gập mở không còn êm như ban đầu — gửi TTBH kiểm tra, không tự vệ sinh sâu tại quầy.
+
+---
+
+### Khách nhầm lẫn giữa camera màn hình ngoài (Center Stage) và camera màn hình trong khi chụp ảnh/gọi video trên iPhone Duo
+- **ID:** lib-a129
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** iPhone Duo có 2 màn hình (ngoài 5.4 inch, trong 7.6 inch) với vị trí camera selfie khác nhau — cần hướng dẫn khách chọn đúng màn hình theo nhu cầu sử dụng.
+- **Từ khóa:** iphone duo 2 màn hình, center stage, camera màn hình ngoài, gập mở camera, 2 camera selfie
+
+**🔍 Chẩn đoán:** iPhone Duo có màn hình ngoài 5.4 inch (dùng khi gập lại, thao tác nhanh) tích hợp camera Center Stage, và màn hình chính bên trong 7.6 inch (dùng khi mở ra, trải nghiệm đa nhiệm). Khách quen dùng iPhone thường (1 màn hình, 1 vị trí camera selfie cố định) dễ bối rối không biết đang dùng camera nào khi gọi video hoặc chụp ảnh selfie, đặc biệt khi chuyển từ gập sang mở giữa cuộc gọi.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Giải thích cho khách: máy gập lại → dùng màn hình ngoài + camera Center Stage cho thao tác nhanh (xem thông báo, chụp nhanh, gọi video ngắn); máy mở ra → chuyển sang trải nghiệm màn hình lớn bên trong.
+2. Demo thực tế: gập máy lại, mở app Camera, chỉ camera Center Stage trên màn hình ngoài; sau đó mở máy ra, cho khách thấy giao diện thay đổi sang camera/màn hình trong.
+3. Với cuộc gọi video: hướng dẫn khách app hỗ trợ sẽ tự chuyển đổi mượt giữa 2 màn hình khi gập/mở (Apple gọi đây là app handoff mượt giữa 2 màn hình).
+4. Nếu khách phản ánh ứng dụng cụ thể không chuyển đổi mượt giữa 2 màn hình, ghi nhận tên ứng dụng — có thể ứng dụng đó chưa cập nhật tối ưu cho máy gập.
+
+**🚫 Tuyệt đối không được làm:** Không để khách rời quầy mà chưa hiểu rõ sự khác biệt 2 camera/2 màn hình — đây là điểm khác biệt lớn nhất so với iPhone thường, dễ gây trải nghiệm xấu nếu khách tự mày mò ở nhà.
+
+**💬 Kịch bản tư vấn:** "Dạ máy mình có 2 màn hình nên sẽ có 2 vị trí camera trước tương ứng ạ, gập lại thì dùng màn hình ngoài, mở ra thì dùng màn hình trong, để em demo thử cho anh/chị thấy sự khác biệt nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là hướng dẫn sử dụng tính năng, không phải lỗi kỹ thuật.
+
+---
+
+### Khách hỏi cách dùng Apple Pencil với iPhone Duo, hoặc Pencil không ghép nối/sạc được với máy
+- **ID:** lib-a130
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** iPhone Duo là chiếc iPhone đầu tiên hỗ trợ Apple Pencil (USB-C) — tính năng hoàn toàn mới cho dòng iPhone, nhân viên cần nắm cách ghép nối cơ bản để tư vấn/xử lý.
+- **Từ khóa:** apple pencil iphone duo, pencil không ghép nối, pencil usb-c, ghép nối bút
+
+**🔍 Chẩn đoán:** iPhone Duo là mẫu iPhone đầu tiên hỗ trợ Apple Pencil (phiên bản USB-C) khi mở máy ở chế độ màn hình lớn bên trong — tính năng này KHÔNG có trên các iPhone khác. Pencil dùng để ghi chú, vẽ trên màn hình lớn tận dụng lợi thế máy gập. Sự cố ghép nối/sạc thường đến từ: Pencil chưa được sạc đủ pin ban đầu (sạc qua cổng USB-C của chính cây Pencil), Bluetooth trên iPhone Duo đang tắt, hoặc khách chưa thao tác ghép nối lần đầu đúng cách.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Apple Pencil (USB-C) đã được sạc pin trước đó (cắm sạc trực tiếp vào cổng USB-C ở đầu bút, đèn báo sạc sẽ hiện).
+2. Kiểm tra Bluetooth trên iPhone Duo đang bật (Cài đặt hoặc Control Center).
+3. Mở máy ở chế độ màn hình lớn, đưa đầu Pencil lại gần cạnh máy để kích hoạt ghép nối tự động lần đầu (giống thao tác ghép Pencil với iPad).
+4. Xác nhận thông báo ghép nối hiện trên màn hình, chạm "Ghép nối" (Pair) nếu được hỏi.
+5. Nếu không hiện thông báo ghép nối, thử khởi động lại iPhone Duo rồi thử lại.
+
+**🚫 Tuyệt đối không được làm:** Không giới thiệu tính năng Pencil hoạt động được ở màn hình ngoài (5.4 inch) khi máy gập lại — Pencil chỉ hoạt động khi máy MỞ RA dùng màn hình chính bên trong.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là chiếc iPhone đầu tiên dùng được với Apple Pencil ạ, mình cần mở máy ra dùng màn hình lớn bên trong thì Pencil mới hoạt động được, để em kiểm tra và ghép nối thử cho anh/chị xem nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH nếu chỉ là chưa ghép nối đúng thao tác/hết pin Pencil. Nếu đã sạc đủ, đã thử ghép nối đúng cách nhiều lần mà Pencil hoàn toàn không nhận — gửi TTBH kiểm tra Bluetooth/phần cứng.
+
+---
+
+### Khách e ngại/hỏi liệu iPhone Duo có chống nước không vì là máy gập, sợ vào nước hỏng ở khe gập
+- **ID:** lib-a131
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Nhiều khách mặc định máy gập (thường thấy ở các hãng khác) không chống nước tốt — trong khi iPhone Duo vẫn đạt chuẩn IP68 như các iPhone Pro khác, cần tư vấn đúng để khách tự tin sử dụng.
+- **Từ khóa:** iphone duo chống nước, ip68 máy gập, máy gập vào nước, chống nước bụi
+
+**🔍 Chẩn đoán:** Khác với ấn tượng chung về điện thoại gập (nhiều dòng máy gập trên thị trường có chuẩn chống nước thấp hơn hoặc không có), iPhone Duo đạt chuẩn IP68 chống nước và bụi (tương đương các dòng iPhone Pro khác), nhờ thiết kế bản lề và khung kín được tối ưu dù có cấu trúc gập phức tạp. Đây là điểm bán hàng đáng chú ý nhưng khách thường không biết hoặc nghi ngờ vì định kiến chung về máy gập.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận với khách: iPhone Duo đạt chuẩn IP68, chống nước/bụi tương đương các iPhone Pro khác trong cùng điều kiện thử nghiệm của Apple.
+2. Giải thích chuẩn IP68 nghĩa là chống chịu được nước ở độ sâu/thời gian nhất định theo thử nghiệm phòng lab, không đồng nghĩa dùng được thoải mái khi bơi lội, tắm, hay lặn — tránh khách hiểu nhầm thành "chống nước tuyệt đối".
+3. Nhắc khách hạn chế thao tác gập/mở máy khi tay còn ướt hoặc máy vừa tiếp xúc nước, nên lau khô trước khi gập lại để tránh đọng nước ở khe bản lề lâu ngày.
+4. Nhắc chuẩn chống nước có thể suy giảm theo thời gian sử dụng/va đập như mọi thiết bị Apple khác — không phải vĩnh viễn.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định máy "chống nước tuyệt đối, ngâm nước thoải mái" — chuẩn IP68 có giới hạn theo điều kiện thử nghiệm cụ thể, hư hỏng do nước vẫn không thuộc diện bảo hành miễn phí theo chính sách chung của Apple.
+
+**💬 Kịch bản tư vấn:** "Dạ máy gập này vẫn đạt chuẩn chống nước bụi IP68 như các dòng Pro khác ạ, dùng hàng ngày trời mưa hay rớt nước nhẹ không đáng lo, nhưng mình cũng nên lau khô trước khi gập lại và tránh ngâm nước lâu ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH cho tư vấn thông thường. Nếu máy đã vào nước và có dấu hiệu lỗi chức năng thật (âm thanh rè, màn hình mờ, không lên nguồn) — gửi TTBH, lưu ý hư hỏng do nước có thể không thuộc diện bảo hành miễn phí.
+
+---
+
+### Máy MacBook Air/Pro chip M5 bị kẹt ở màn hình 'Activate Mac' sau khi xóa dữ liệu cài lại (Erase All Content and Settings) hoặc gián đoạn Migration Assistant, không hiện danh sách Wi-Fi để kết nối
+- **ID:** lib-a132
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Lỗi phần mềm đã ghi nhận trên các máy M5 (và iPhone chip N1) khi kích hoạt lại sau factory reset — không phải lỗi phần cứng Wi-Fi, có cách khắc phục tạm qua dây mạng.
+- **Từ khóa:** activate mac kẹt, không hiện wifi cài đặt lại, m5 kích hoạt lỗi, erase all content wifi mất, migration assistant lỗi
+
+**🔍 Chẩn đoán:** Đây là lỗi phần mềm đã được ghi nhận rộng rãi trên MacBook Air/Pro dùng chip M5 (và một số iPhone dùng chip mạng N1): sau khi xóa toàn bộ dữ liệu cài đặt lại (Erase All Content and Settings) hoặc bị gián đoạn giữa chừng khi dùng Migration Assistant, máy bị kẹt ở màn hình "Activate Mac" (kích hoạt máy) — không hiện danh sách mạng Wi-Fi để chọn kết nối, không có biểu tượng Wi-Fi trên thanh menu. Đây LÀ lỗi phần mềm (Apple xác nhận), không phải hỏng phần cứng Wi-Fi — dùng dây mạng qua cổng chuyển đổi vẫn kết nối được bình thường, chứng tỏ phần cứng Wi-Fi hoạt động tốt.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận đúng tình huống: máy vừa xóa dữ liệu cài lại hoặc vừa dùng Migration Assistant bị gián đoạn, đang kẹt ở màn hình kích hoạt.
+2. Nếu cửa hàng có sẵn bộ chuyển đổi USB-C sang Ethernet (dây mạng), cắm thử để kích hoạt máy qua kết nối dây thay vì Wi-Fi.
+3. Nếu không có bộ chuyển đổi, thử khởi động lại máy (giữ nút nguồn) rồi thử lại bước kích hoạt qua Wi-Fi thêm 1-2 lần.
+4. Thông báo với khách đây là lỗi phần mềm Apple đã xác nhận, dự kiến khắc phục qua bản cập nhật macOS sắp tới — không phải máy khách bị lỗi Wi-Fi vật lý.
+5. Nếu đã thử hết cách mà máy vẫn kẹt hoàn toàn không qua được màn hình kích hoạt (kể cả qua dây mạng) — chuyển TTBH.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận ngay máy lỗi phần cứng Wi-Fi và từ chối hỗ trợ khách — đây là lỗi phần mềm đã ghi nhận, có cách khắc phục tạm thời qua dây mạng. Không tự ý cài lại phần mềm hệ thống (reinstall macOS) khi chưa thử cách kết nối qua dây trước.
+
+**💬 Kịch bản tư vấn:** "Dạ đây là một lỗi phần mềm Apple đã ghi nhận trên máy chip M5 khi cài đặt lại từ đầu ạ, không phải máy mình bị hỏng Wi-Fi đâu, mình dùng dây mạng để kích hoạt tạm trước, sau này có bản cập nhật phần mềm sẽ hết ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH nếu khắc phục được qua dây mạng — đây là lỗi phần mềm đã biết, không phải hỏng phần cứng. Chỉ gửi TTBH nếu đã thử cả kết nối dây mạng mà máy vẫn hoàn toàn không kích hoạt được.
+
+---
+
+### MacBook Pro M5 bản cơ bản (single-fan) chạy chậm hẳn hoặc giảm hiệu năng khi làm tác vụ nặng kéo dài (dựng video, render 3D), dù bản Pro/Max chip cùng dòng không bị
+- **ID:** lib-a133
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Bản M5 cơ bản (entry) chỉ có 1 quạt tản nhiệt, trong khi bản M5 Pro/M5 Max có 2 quạt — tản nhiệt không theo kịp hiệu năng chip mới khi tải nặng kéo dài, gây giảm xung nhịp để bảo vệ máy (thermal throttling).
+- **Từ khóa:** macbook pro m5 chậm, thermal throttling, 1 quạt tản nhiệt, giảm hiệu năng render, m5 nóng chậm máy
+
+**🔍 Chẩn đoán:** MacBook Pro cấu hình chip M5 cơ bản (entry-level, không phải M5 Pro/M5 Max) chỉ trang bị 1 quạt tản nhiệt, trong khi các cấu hình M5 Pro/M5 Max dùng 2 quạt. Khi chạy tác vụ nặng kéo dài (dựng video, render đồ họa 3D, tác vụ máy học), hệ thống 1 quạt không tản nhiệt kịp so với hiệu năng cao hơn của chip M5, khiến máy tự động giảm xung nhịp CPU/GPU (thermal throttling) để bảo vệ phần cứng — thể hiện ra ngoài là máy "chạy chậm hẳn" sau một thời gian dùng nặng, dù mới đầu vẫn nhanh bình thường.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hỏi khách rõ tình huống: máy chạy chậm ngay từ đầu hay chỉ chậm dần sau một thời gian dài làm tác vụ nặng liên tục (đây là dấu hiệu đặc trưng của throttling, không phải lỗi).
+2. Xác nhận đúng cấu hình máy khách đang dùng: M5 cơ bản (1 quạt) hay M5 Pro/M5 Max (2 quạt) — kiểm tra tại Giới thiệu về máy Mac (About This Mac).
+3. Nếu đúng là bản M5 cơ bản và khách thường xuyên làm tác vụ dựng video/đồ họa nặng kéo dài, tư vấn đây là giới hạn tản nhiệt của cấu hình 1 quạt, không phải lỗi máy — gợi ý dùng nơi thoáng mát, kê máy trên bề mặt cứng thoáng khí (tránh chăn/gối/đùi) khi làm việc nặng để tối ưu tản nhiệt.
+4. Nếu nhu cầu công việc thường xuyên là tác vụ nặng kéo dài, có thể tư vấn khách cân nhắc cấu hình M5 Pro/M5 Max hoặc bản 16-inch (khung máy lớn hơn, tản nhiệt tốt hơn) cho lần nâng cấp sau.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết đây là lỗi phần cứng cần đổi trả/bảo hành — thermal throttling trên bản 1 quạt là giới hạn thiết kế theo cấu hình, đã được ghi nhận rộng rãi, không phải lỗi sản xuất riêng lẻ của từng máy.
+
+**💬 Kịch bản tư vấn:** "Dạ bản M5 cơ bản này có 1 quạt tản nhiệt thôi ạ, nên nếu dùng tác vụ nặng liên tục lâu thì máy sẽ tự giảm hiệu năng một chút để bảo vệ máy, đây không phải lỗi mà là giới hạn của cấu hình. Nếu anh/chị hay làm việc nặng kéo dài thì có thể cân nhắc bản Pro/Max nhiều quạt hơn ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là đặc điểm giới hạn tản nhiệt theo cấu hình phần cứng, không phải lỗi sản xuất. Chỉ gửi TTBH nếu máy giảm hiệu năng ngay cả khi dùng nhẹ/tác vụ thông thường (bất thường so với cấu hình).
+
+---
+
+### MacBook Air/Pro M5 phát ra tiếng kêu cọt kẹt nhẹ ở bản lề hoặc vùng kê tay (palmrest) khi mở máy/gõ phím
+- **ID:** lib-a134
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Sai lệch nhỏ trong lắp ráp cơ khí ở một số máy — thường là vấn đề thẩm mỹ/âm thanh, không ảnh hưởng chức năng, Apple thường không xem đây là lỗi thuộc diện bảo hành.
+- **Từ khóa:** macbook kêu cọt kẹt, bản lề kêu, palmrest kêu, tiếng kêu bàn phím macbook
+
+**🔍 Chẩn đoán:** Một số máy MacBook Air/Pro M5 phát ra tiếng kêu cọt kẹt nhẹ khi mở/gập màn hình hoặc khi gõ phím/kê tay lên vùng palmrest, do sai lệch nhỏ trong dung sai lắp ráp cơ khí (không phải mọi máy đều gặp). Đây thường là vấn đề âm thanh/thẩm mỹ, không ảnh hưởng đến hiệu năng hay chức năng sử dụng máy.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận tiếng kêu xảy ra ở đâu cụ thể: bản lề (khi mở/gập màn hình) hay palmrest (khi gõ phím, kê tay).
+2. Kiểm tra máy có đang dùng kèm ốp/miếng dán bàn phím của bên thứ ba không — đôi khi phụ kiện lắp không khít cũng gây tiếng kêu tương tự, dễ nhầm là lỗi máy.
+3. Xác nhận với khách chức năng máy (gõ phím, cảm ứng, bản lề giữ góc màn hình) vẫn hoạt động bình thường, không bị ảnh hưởng bởi tiếng kêu.
+4. Nếu khách khó chịu vì tiếng kêu dù chức năng vẫn ổn, ghi nhận và tư vấn khách có thể mang máy đến TTBH kiểm tra — nhưng cần nói rõ trước đây thường được Apple xem là vấn đề thẩm mỹ, không chắc chắn thuộc diện bảo hành.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý tháo máy hoặc dùng lực siết/nắn phần bản lề, palmrest để "hết tiếng kêu" tại quầy. Không cam kết chắc chắn với khách rằng TTBH sẽ xử lý miễn phí — cần nói rõ đây thường được xem là vấn đề thẩm mỹ, kết quả xử lý tùy đánh giá của TTBH.
+
+**💬 Kịch bản tư vấn:** "Dạ tiếng kêu cọt kẹt nhẹ này không ảnh hưởng đến hoạt động của máy đâu ạ, đây là vấn đề khá phổ biến ở một số máy do sai lệch lắp ráp nhỏ. Nếu anh/chị khó chịu, mình có thể mang đến trung tâm bảo hành kiểm tra, nhưng thường trường hợp này được xem là vấn đề thẩm mỹ nên có thể không thuộc diện bảo hành miễn phí ạ."
+
+**📦 Lưu ý TTBH:** Có thể gửi TTBH theo yêu cầu của khách để kiểm tra/đánh giá, nhưng cần nói rõ trước: Apple thường xem tiếng kêu cọt kẹt là vấn đề thẩm mỹ, không chắc chắn được bảo hành miễn phí.
+
+---
+
+### MacBook Air/Pro M5 mới mua hao pin rất nhanh, quạt chạy nhiều hơn bình thường trong 1-2 ngày đầu sử dụng
+- **ID:** lib-a135
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** macOS đang lập chỉ mục tìm kiếm Spotlight cho toàn bộ ổ đĩa lần đầu — tác vụ nền tốn pin/CPU tạm thời, không phải lỗi pin hay phần cứng.
+- **Từ khóa:** macbook m5 hao pin ngày đầu, spotlight indexing, quạt chạy nhiều máy mới, pin macbook mới hao nhanh
+
+**🔍 Chẩn đoán:** Khi một máy Mac mới được kích hoạt hoặc vừa khôi phục dữ liệu, macOS tự động chạy Spotlight lập chỉ mục toàn bộ nội dung ổ đĩa để phục vụ tìm kiếm nhanh sau này — quá trình này chạy nền, tốn CPU và pin đáng kể, thường kéo dài 1-2 ngày tùy dung lượng dữ liệu. Đây là nguyên nhân phổ biến khiến máy mới mua có cảm giác hao pin nhanh, quạt chạy nhiều hơn bình thường trong những ngày đầu, dễ khiến khách lo lắng nhầm là lỗi pin/phần cứng.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Hỏi khách máy đã dùng được bao lâu — nếu trong 1-2 ngày đầu sau khi kích hoạt/khôi phục dữ liệu, giải thích đây là giai đoạn lập chỉ mục Spotlight.
+2. Mở Activity Monitor (Màn hình hoạt động) → tìm tiến trình "mds"/"mds_stores"/"Spotlight" đang chạy để cho khách thấy trực quan.
+3. Khuyên khách để máy cắm sạc và mở máy bình thường thêm 1-2 ngày để quá trình lập chỉ mục hoàn tất tự nhiên, không cần can thiệp.
+4. Nếu đã qua vài ngày mà pin vẫn hao bất thường/quạt vẫn chạy nhiều liên tục, kiểm tra thêm Cài đặt → Pin xem ứng dụng nào đang tiêu hao năng lượng nhiều bất thường.
+
+**🚫 Tuyệt đối không được làm:** Không kết luận ngay máy lỗi pin/phần cứng chỉ vì hao pin nhanh trong 1-2 ngày đầu mới mua — đây là hiện tượng tạm thời phổ biến trên mọi Mac mới, không riêng dòng M5.
+
+**💬 Kịch bản tư vấn:** "Dạ máy mới thường sẽ hao pin nhanh hơn bình thường trong 1-2 ngày đầu do đang tự sắp xếp lại dữ liệu để tìm kiếm nhanh hơn sau này ạ, không phải lỗi pin đâu, mình dùng thêm vài ngày là sẽ ổn định lại."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH trong giai đoạn 1-2 ngày đầu. Nếu sau đó pin vẫn hao bất thường liên tục, kiểm tra thêm theo hướng lỗi pin chung (xem mục lib-a33) trước khi cân nhắc TTBH.
+
+---
