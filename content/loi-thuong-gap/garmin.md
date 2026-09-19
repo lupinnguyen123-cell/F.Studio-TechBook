@@ -44,9 +44,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tắt các tính năng theo dõi sức khỏe của khách mà không hỏi ý kiến trước — một số khách cần theo dõi Pulse Ox/nhịp tim liên tục cho mục đích luyện tập.
 
-**💬 Kịch bản tư vấn:** "Em tắt bớt vài tính năng đo liên tục cho mình rồi ạ, mình theo dõi thêm 1-2 ngày xem pin có cải thiện không nhé."
+**💬 Kịch bản tư vấn:** "Em tắt bớt vài tính năng đo liên tục cho mình rồi ạ, mình theo dõi thêm 1-2 ngày xem pin có cải thiện không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã tắt hết tính năng ngốn pin mà vẫn hao nhanh bất thường: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra pin.
+**📦 Lưu ý TTBH:** Đã tắt hết tính năng ngốn pin mà vẫn hao nhanh bất thường: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra pin. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -66,9 +66,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng cáp sạc không chính hãng/sai chuẩn chấu tiếp điểm (dễ không nhận sạc hoặc hỏng chân sạc); không cạy nắp lưng máy để can thiệp pin tại quầy.
 
-**💬 Kịch bản tư vấn:** "Đồng hồ mình có thể chỉ cạn pin sâu thôi ạ, em đang sạc thử trước khi kết luận nhé."
+**💬 Kịch bản tư vấn:** "Đồng hồ mình có thể chỉ cạn pin sâu thôi ạ, em đang sạc thử trước khi kết luận nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Sạc lâu vẫn đen màn hình: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra mạch nguồn.
+**📦 Lưu ý TTBH:** Sạc lâu vẫn đen màn hình: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra mạch nguồn. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -88,9 +88,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định cảm biến nhịp tim "chính xác 100%" — cảm biến quang học vốn có sai số với hình xăm/da sậm màu/lông tay dày, cần giải thích rõ giới hạn này với khách.
 
-**💬 Kịch bản tư vấn:** "Em hướng dẫn mình đeo đúng vị trí và đã cập nhật phần mềm rồi ạ, thuật toán đo nhịp tim sẽ chính xác hơn sau bản vá này."
+**💬 Kịch bản tư vấn:** "Em hướng dẫn mình đeo đúng vị trí và đã cập nhật phần mềm rồi ạ, thuật toán đo nhịp tim sẽ chính xác hơn sau bản vá này. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đây thường là vấn đề cách dùng/phần mềm, hiếm khi cần gửi TTBH.
+**📦 Lưu ý TTBH:** Đây thường là vấn đề cách dùng/phần mềm, hiếm khi cần gửi TTBH. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -132,9 +132,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận máy lỗi GPS ngay khi mới thử trong nhà/khu vực nhiều vật cản — phải loại trừ yếu tố môi trường trước.
 
-**💬 Kịch bản tư vấn:** "Em đã cập nhật dữ liệu vệ tinh cho đồng hồ mình rồi ạ, lần đầu bắt sóng ngoài trời có thể mất 1-2 phút, mình đợi thêm nhé."
+**💬 Kịch bản tư vấn:** "Em đã cập nhật dữ liệu vệ tinh cho đồng hồ mình rồi ạ, lần đầu bắt sóng ngoài trời có thể mất 1-2 phút, mình đợi thêm nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Cập nhật dữ liệu và thử ngoài trời thoáng vẫn không bắt được GPS: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra module GPS.
+**📦 Lưu ý TTBH:** Cập nhật dữ liệu và thử ngoài trời thoáng vẫn không bắt được GPS: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra module GPS. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -154,9 +154,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật cứng/sắc nhọn chạm vào màn hình để "test" cảm ứng — có thể gây trầy xước hoặc hỏng thêm.
 
-**💬 Kịch bản tư vấn:** "Đồng hồ mình đang bật khóa cảm ứng nên không thao tác được ạ, em tắt lại giúp mình nhé."
+**💬 Kịch bản tư vấn:** "Đồng hồ mình đang bật khóa cảm ứng nên không thao tác được ạ, em tắt lại giúp mình nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã tắt khóa và lau khô vẫn không phản hồi: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra màn hình.
+**📦 Lưu ý TTBH:** Đã tắt khóa và lau khô vẫn không phản hồi: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra màn hình. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -199,9 +199,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không sấy nhiệt cao hoặc bấm nút liên tục để "đẩy hơi nước ra"; không tiếp tục cho khách dùng máy để bơi/lặn cho đến khi xác nhận máy đã khô hoàn toàn và hoạt động bình thường.
 
-**💬 Kịch bản tư vấn:** "Máy mình cần để khô tự nhiên trước ạ, em theo dõi cùng mình xem hơi nước có tự bay hết trong 24 giờ không."
+**💬 Kịch bản tư vấn:** "Máy mình cần để khô tự nhiên trước ạ, em theo dõi cùng mình xem hơi nước có tự bay hết trong 24 giờ không. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Hơi nước không hết sau 24 giờ hoặc máy chập chờn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra gioăng và bo mạch.
+**📦 Lưu ý TTBH:** Hơi nước không hết sau 24 giờ hoặc máy chập chờn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra gioăng và bo mạch. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -244,9 +244,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không rút cáp USB hoặc tắt máy tính giữa chừng khi Garmin Express đang cập nhật firmware — có thể làm hỏng firmware, khiến máy không khởi động được.
 
-**💬 Kịch bản tư vấn:** "Em đang cập nhật lại phần mềm cho đồng hồ mình qua máy tính ạ, cách này ổn định hơn cập nhật qua điện thoại."
+**💬 Kịch bản tư vấn:** "Em đang cập nhật lại phần mềm cho đồng hồ mình qua máy tính ạ, cách này ổn định hơn cập nhật qua điện thoại. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Cập nhật qua Garmin Express vẫn lỗi liên tục: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra bộ nhớ trong.
+**📦 Lưu ý TTBH:** Cập nhật qua Garmin Express vẫn lỗi liên tục: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra bộ nhớ trong. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -267,9 +267,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không rút sạc đột ngột hoặc tháo pin trong lúc force restart nếu máy đang hiển thị màn hình sạc; không thực hiện khôi phục cài đặt gốc ngay khi chỉ mới đơ 1 lần.
 
-**💬 Kịch bản tư vấn:** "Đồng hồ mình bị đơ tạm thời thôi ạ, em giữ nút nguồn khởi động lại cho mình, dữ liệu tập luyện đã lưu vẫn còn nguyên không mất đâu ạ."
+**💬 Kịch bản tư vấn:** "Đồng hồ mình bị đơ tạm thời thôi ạ, em giữ nút nguồn khởi động lại cho mình, dữ liệu tập luyện đã lưu vẫn còn nguyên không mất đâu ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Máy đơ lặp lại nhiều lần dù đã force restart và đã cập nhật phần mềm mới nhất: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra bộ nhớ/mạch xử lý.
+**📦 Lưu ý TTBH:** Máy đơ lặp lại nhiều lần dù đã force restart và đã cập nhật phần mềm mới nhất: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra bộ nhớ/mạch xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 

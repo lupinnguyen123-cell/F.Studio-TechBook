@@ -21,9 +21,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không reset mật khẩu khi khách chưa xác minh được là chủ sở hữu hợp lệ (đặc biệt với mật khẩu Firmware trên máy chip T2/M1-M3); không tự ý xóa dữ liệu máy nếu khách chưa đồng ý.
 
-**💬 Kịch bản tư vấn:** "Dạ máy mình có thể khôi phục lại được ạ, em cần xác minh anh/chị là chủ sở hữu qua Apple ID trước khi hỗ trợ."
+**💬 Kịch bản tư vấn:** "Dạ máy mình có thể khôi phục lại được ạ, em cần xác minh anh/chị là chủ sở hữu qua Apple ID trước khi hỗ trợ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Là mật khẩu FIRMWARE trên máy có chip T2/M1-M3 và khách không có hóa đơn chứng minh sở hữu: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) chính hãng để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Là mật khẩu FIRMWARE trên máy có chip T2/M1-M3 và khách không có hóa đơn chứng minh sở hữu: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) chính hãng để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -43,9 +43,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng bất kỳ công cụ/phần mềm bên thứ 3 nào để "bẻ khóa" Activation Lock; không nhận xử lý nếu không xác minh được nguồn gốc máy hợp pháp.
 
-**💬 Kịch bản tư vấn:** "Đây là tính năng bảo vệ máy khỏi mất cắp ạ, mình cung cấp hóa đơn mua hàng để Apple xác minh chủ sở hữu và mở khóa giúp mình nhé."
+**💬 Kịch bản tư vấn:** "Đây là tính năng bảo vệ máy khỏi mất cắp ạ, mình cung cấp hóa đơn mua hàng để Apple xác minh chủ sở hữu và mở khóa giúp mình nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Không có hóa đơn hợp lệ và khách không nhớ Apple ID: đề xuất khách nhận bảo hành kèm chứng từ mua hàng (nếu có); thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để Apple kiểm tra và xử lý, không có cách nào bỏ qua khóa này tại cửa hàng.
+**📦 Lưu ý TTBH:** Không có hóa đơn hợp lệ và khách không nhớ Apple ID: đề xuất khách nhận bảo hành kèm chứng từ mua hàng (nếu có); thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để Apple kiểm tra và xử lý, không có cách nào bỏ qua khóa này tại cửa hàng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -89,9 +89,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật kim loại/sắc nhọn để cạy/chọc vào cổng sạc; không khẳng định với khách là "chắc chắn sửa được tại chỗ" trước khi xác định rõ nguyên nhân.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh và kiểm tra cổng sạc cho mình rồi ạ, nếu vẫn chưa sạc được thì khả năng cao lỗi bên trong, em cần kiểm tra sâu hơn."
+**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh và kiểm tra cổng sạc cho mình rồi ạ, nếu vẫn chưa sạc được thì khả năng cao lỗi bên trong, em cần kiểm tra sâu hơn. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vệ sinh xong vẫn không lên nguồn, khả năng lỗi IC nguồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Vệ sinh xong vẫn không lên nguồn, khả năng lỗi IC nguồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -179,9 +179,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý tháo vỏ máy để kiểm tra pin/mạch nguồn tại cửa hàng nếu không có chuyên môn phần cứng Mac; không sạc bằng củ sạc công suất không phù hợp trong lúc chờ xử lý.
 
-**💬 Kịch bản tư vấn:** "Máy mình có thể chỉ bị cạn pin sâu thôi ạ, em đang sạc và thử khởi động lại xem có lên nguồn không nhé."
+**💬 Kịch bản tư vấn:** "Máy mình có thể chỉ bị cạn pin sâu thôi ạ, em đang sạc và thử khởi động lại xem có lên nguồn không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Sạc 30 phút vẫn không lên nguồn, khả năng lỗi mạch nguồn logic board: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Sạc 30 phút vẫn không lên nguồn, khả năng lỗi mạch nguồn logic board: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -202,9 +202,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý xóa file/ứng dụng của khách để giải phóng dung lượng khi chưa xác nhận; không tháo vỏ máy để tự vệ sinh quạt tản nhiệt nếu cửa hàng không có quy trình/dụng cụ chuyên dụng cho Mac.
 
-**💬 Kịch bản tư vấn:** "Em đang kiểm tra xem có phải do đầy ổ cứng hoặc ứng dụng chạy ngầm gây chậm máy không ạ, mình đợi em chút nhé."
+**💬 Kịch bản tư vấn:** "Em đang kiểm tra xem có phải do đầy ổ cứng hoặc ứng dụng chạy ngầm gây chậm máy không ạ, mình đợi em chút nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Quạt kêu to bất thường kể cả khi máy nhàn rỗi, có thể do tản nhiệt cần vệ sinh chuyên sâu: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Quạt kêu to bất thường kể cả khi máy nhàn rỗi, có thể do tản nhiệt cần vệ sinh chuyên sâu: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -224,9 +224,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng củ sạc không rõ nguồn gốc/công suất quá cao so với khuyến nghị để "sạc thử nhanh hơn"; không chọc vật cứng sâu vào cổng sạc.
 
-**💬 Kịch bản tư vấn:** "Dạ có thể do củ sạc chưa đủ công suất cho máy mình ạ, em thử đổi sạc đúng chuẩn xem có cải thiện không nhé."
+**💬 Kịch bản tư vấn:** "Dạ có thể do củ sạc chưa đủ công suất cho máy mình ạ, em thử đổi sạc đúng chuẩn xem có cải thiện không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã đổi sạc/cáp và vệ sinh vẫn chập chờn, khả năng chân cổng sạc cong/hỏng: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Đã đổi sạc/cáp và vệ sinh vẫn chập chờn, khả năng chân cổng sạc cong/hỏng: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -246,9 +246,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không đặt lại cài đặt mạng nhiều lần liên tục trong thời gian ngắn (có thể xóa mất cấu hình VPN/Wifi công ty của khách mà không báo trước); không kết luận lỗi phần cứng khi chưa loại trừ nguyên nhân phần mềm.
 
-**💬 Kịch bản tư vấn:** "Em đã thử đặt lại cài đặt mạng cho mình rồi ạ, đa số trường hợp là do xung đột phần mềm sau cập nhật thôi."
+**💬 Kịch bản tư vấn:** "Em đã thử đặt lại cài đặt mạng cho mình rồi ạ, đa số trường hợp là do xung đột phần mềm sau cập nhật thôi. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Máy từng rơi vỡ/vào nước và vẫn mất kết nối sau khi reset, khả năng lỗi phần cứng anten: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Máy từng rơi vỡ/vào nước và vẫn mất kết nối sau khi reset, khả năng lỗi phần cứng anten: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -269,9 +269,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không sạc hoặc bấm nguồn ngay sau khi máy vào nước; không dùng nhiệt cao (máy sấy, lò vi sóng, phơi nắng gắt) hoặc gạo để hút ẩm — đều có thể làm hỏng thêm hoặc gây cháy nổ.
 
-**💬 Kịch bản tư vấn:** "Máy mình cần để khô tự nhiên trước ạ, em khuyên mình chưa nên sạc hoặc bật máy trong 24-48 giờ tới để tránh chập mạch."
+**💬 Kịch bản tư vấn:** "Máy mình cần để khô tự nhiên trước ạ, em khuyên mình chưa nên sạc hoặc bật máy trong 24-48 giờ tới để tránh chập mạch. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Sau thời gian để khô vẫn lỗi (không lên nguồn, chập chờn): đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để vệ sinh bo mạch chuyên sâu và kiểm tra.
+**📦 Lưu ý TTBH:** Sau thời gian để khô vẫn lỗi (không lên nguồn, chập chờn): đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để vệ sinh bo mạch chuyên sâu và kiểm tra. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -291,9 +291,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tiếp tục dùng máy trong tình trạng kính vỡ có cạnh sắc mà không dán tạm bảo vệ; không tự ý thay cụm màn hình không rõ nguồn gốc mà không thông báo với khách về ảnh hưởng đến True Tone/chống nước.
 
-**💬 Kịch bản tư vấn:** "Máy mình vỡ kính ngoài nhưng cảm ứng vẫn dùng tốt ạ, em tư vấn thay cụm màn hình chính hãng để giữ đúng màu sắc và True Tone nhé."
+**💬 Kịch bản tư vấn:** "Máy mình vỡ kính ngoài nhưng cảm ứng vẫn dùng tốt ạ, em tư vấn thay cụm màn hình chính hãng để giữ đúng màu sắc và True Tone nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Có thể thay màn hình tại chỗ nếu có linh kiện; chỉ cần gửi TTBH nếu khách muốn giữ zin 100% chính hãng Apple.
+**📦 Lưu ý TTBH:** Có thể thay màn hình tại chỗ nếu có linh kiện; chỉ cần gửi TTBH nếu khách muốn giữ zin 100% chính hãng Apple. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -336,9 +336,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng đế sạc từ tính không chính hãng hoặc sai chuẩn (dễ không nhận diện, thậm chí hỏng cổng sạc); không cạy nắp lưng đồng hồ để kiểm tra pin tại quầy.
 
-**💬 Kịch bản tư vấn:** "Em đang thử sạc lại cho đồng hồ mình bằng sạc chính hãng khác ạ, có thể chỉ do đế sạc bị bẩn thôi."
+**💬 Kịch bản tư vấn:** "Em đang thử sạc lại cho đồng hồ mình bằng sạc chính hãng khác ạ, có thể chỉ do đế sạc bị bẩn thôi. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Sạc 30 phút với sạc khác vẫn không lên nguồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra mạch nguồn và có phương án xử lý.
+**📦 Lưu ý TTBH:** Sạc 30 phút với sạc khác vẫn không lên nguồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra mạch nguồn và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -403,9 +403,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật ướt hoặc chất tẩy rửa để vệ sinh lưới loa AirPods; không khẳng định chắc chắn lỗi phần cứng khi chưa thử đồng bộ lại từ đầu.
 
-**💬 Kịch bản tư vấn:** "Em đã đồng bộ lại AirPods cho mình rồi ạ, nếu 1 bên vẫn yếu hơn hẳn thì khả năng bên đó đã chai pin cần thay."
+**💬 Kịch bản tư vấn:** "Em đã đồng bộ lại AirPods cho mình rồi ạ, nếu 1 bên vẫn yếu hơn hẳn thì khả năng bên đó đã chai pin cần thay. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đồng bộ lại vẫn không cải thiện: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra/thay tai bị lỗi.
+**📦 Lưu ý TTBH:** Đồng bộ lại vẫn không cải thiện: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra/thay tai bị lỗi. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -425,9 +425,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng cồn/chất lỏng đổ trực tiếp vào hộp; không cạy mở hộp sạc để kiểm tra pin bên trong tại quầy.
 
-**💬 Kịch bản tư vấn:** "Em đã vệ sinh chấu sạc trong hộp cho mình rồi ạ, mình thử sạc lại xem đèn báo đã sáng chưa nhé."
+**💬 Kịch bản tư vấn:** "Em đã vệ sinh chấu sạc trong hộp cho mình rồi ạ, mình thử sạc lại xem đèn báo đã sáng chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vệ sinh và đổi sạc vẫn không lên đèn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra pin/mạch hộp sạc.
+**📦 Lưu ý TTBH:** Vệ sinh và đổi sạc vẫn không lên đèn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra pin/mạch hộp sạc. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -447,9 +447,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật nhọn/kim loại chọc vào lưới loa; nếu tai nghe vừa qua khu vực ẩm/mưa, không sạc ngay mà để khô tự nhiên trước.
 
-**💬 Kịch bản tư vấn:** "Em đã vệ sinh và kết nối lại AirPods cho mình rồi ạ, nếu vừa qua khu vực ẩm thì để khô tự nhiên thêm nhé."
+**💬 Kịch bản tư vấn:** "Em đã vệ sinh và kết nối lại AirPods cho mình rồi ạ, nếu vừa qua khu vực ẩm thì để khô tự nhiên thêm nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vệ sinh và kết nối lại vẫn rè, khả năng màng loa ẩm/hỏng: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý.
+**📦 Lưu ý TTBH:** Vệ sinh và kết nối lại vẫn rè, khả năng màng loa ẩm/hỏng: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra và có phương án xử lý. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -470,9 +470,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý chọn "Restore" (xóa máy) ngay từ đầu khi chưa thử "Update" trước và chưa xác nhận với khách về khả năng mất dữ liệu.
 
-**💬 Kịch bản tư vấn:** "Máy mình đang treo giữa chừng lúc cập nhật ạ, em kết nối với máy tính để cài lại bản cập nhật mà không mất dữ liệu, mình yên tâm chờ em vài phút nhé."
+**💬 Kịch bản tư vấn:** "Máy mình đang treo giữa chừng lúc cập nhật ạ, em kết nối với máy tính để cài lại bản cập nhật mà không mất dữ liệu, mình yên tâm chờ em vài phút nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Nếu bắt buộc phải Restore (xóa máy) mới hết treo, cần thông báo rõ và xác nhận với khách trước khi thao tác vì sẽ mất dữ liệu chưa sao lưu; nếu Update/Restore qua máy tính vẫn không cứu được máy: đề xuất khách nhận bảo hành, thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra phần cứng.
+**📦 Lưu ý TTBH:** Nếu bắt buộc phải Restore (xóa máy) mới hết treo, cần thông báo rõ và xác nhận với khách trước khi thao tác vì sẽ mất dữ liệu chưa sao lưu; nếu Update/Restore qua máy tính vẫn không cứu được máy: đề xuất khách nhận bảo hành, thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra phần cứng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -493,9 +493,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý đổi size đầu tai khi khách chưa xác nhận cảm thấy thoải mái; không dùng vật cứng đâm vào lưới loa/cảm biến khi vệ sinh.
 
-**💬 Kịch bản tư vấn:** "Em kiểm tra thấy đầu tai chưa khít/cần vệ sinh nên khử ồn chưa tối ưu ạ, em đổi size đầu tai và vệ sinh lại cho mình, mình đeo thử lại xem đã êm hơn chưa nhé."
+**💬 Kịch bản tư vấn:** "Em kiểm tra thấy đầu tai chưa khít/cần vệ sinh nên khử ồn chưa tối ưu ạ, em đổi size đầu tai và vệ sinh lại cho mình, mình đeo thử lại xem đã êm hơn chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã đổi đầu tai đúng size, vệ sinh và reset vẫn không cải thiện khử ồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra micro/cảm biến áp suất trên tai nghe.
+**📦 Lưu ý TTBH:** Đã đổi đầu tai đúng size, vệ sinh và reset vẫn không cải thiện khử ồn: đề xuất khách nhận bảo hành; thiết bị sẽ được gửi về Trung tâm bảo hành (TTBH) để kiểm tra micro/cảm biến áp suất trên tai nghe. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -516,9 +516,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý bẻ/cắt SIM hoặc dùng vật nhọn không đúng chuẩn để lấy khay SIM (dễ trầy khay, kẹt khay); không khẳng định máy lỗi phần cứng khi chưa thử SIM khác.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử SIM và khay SIM trước, đa phần trường hợp này do SIM tiếp xúc không tốt, xử lý được ngay ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử SIM và khay SIM trước, đa phần trường hợp này do SIM tiếp xúc không tốt, xử lý được ngay ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Nếu đã thử SIM khác vẫn báo lỗi (loại trừ do SIM/nhà mạng) và máy có "Không giới hạn SIM" nhưng vẫn không nhận bất kỳ SIM nào — khả năng lỗi khay SIM hoặc IC sóng, cần gửi TTBH kiểm tra phần cứng.
+**📦 Lưu ý TTBH:** Nếu đã thử SIM khác vẫn báo lỗi (loại trừ do SIM/nhà mạng) và máy có "Không giới hạn SIM" nhưng vẫn không nhận bất kỳ SIM nào — khả năng lỗi khay SIM hoặc IC sóng, cần gửi TTBH kiểm tra phần cứng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -540,9 +540,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận lỗi phần cứng (IC sóng, ăng-ten) ngay khi chưa loại trừ nguyên nhân sóng khu vực/nhà mạng; không yêu cầu khách đổi SIM khi chưa xác minh.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử vài bước phần mềm trước để loại trừ, nếu vẫn còn báo SOS ở khu vực sóng tốt thì mới cần kiểm tra sâu hơn ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình thử vài bước phần mềm trước để loại trừ, nếu vẫn còn báo SOS ở khu vực sóng tốt thì mới cần kiểm tra sâu hơn ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã thử tất cả bước trên, đã xác nhận khu vực có sóng tốt (SIM khác/máy khác dùng bình thường) mà máy vẫn báo SOS/Không có dịch vụ — gửi TTBH kiểm tra IC sóng/ăng-ten.
+**📦 Lưu ý TTBH:** Đã thử tất cả bước trên, đã xác nhận khu vực có sóng tốt (SIM khác/máy khác dùng bình thường) mà máy vẫn báo SOS/Không có dịch vụ — gửi TTBH kiểm tra IC sóng/ăng-ten. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -562,9 +562,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tháo máy kiểm tra pin/main khi chưa loại trừ hết các bước phần mềm; không khẳng định máy "chết nguồn" ngay khi khách vừa mang tới.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử sạc và ép khởi động lại trước, nhiều trường hợp máy hết pin sâu chỉ cần thời gian nạp lại là lên bình thường ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình thử sạc và ép khởi động lại trước, nhiều trường hợp máy hết pin sâu chỉ cần thời gian nạp lại là lên bình thường ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã sạc đủ 1 giờ, đã thử force restart và đổi cáp/củ sạc khác mà máy vẫn hoàn toàn không phản hồi (không rung, không nóng lên khi sạc) — gửi TTBH kiểm tra nguồn/main máy.
+**📦 Lưu ý TTBH:** Đã sạc đủ 1 giờ, đã thử force restart và đổi cáp/củ sạc khác mà máy vẫn hoàn toàn không phản hồi (không rung, không nóng lên khi sạc) — gửi TTBH kiểm tra nguồn/main máy. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -586,9 +586,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không vội kết luận lỗi phần cứng iPhone/iPad khi chưa thử đổi cáp/cổng/máy tính khác; không thực hiện khôi phục (restore) khi khách chưa xác nhận đã sao lưu dữ liệu.
 
-**💬 Kịch bản tư vấn:** "Dạ lỗi này thường do kết nối cáp hoặc phần mềm bên máy tính, chưa chắc do máy mình, em thử đổi cáp/cổng kết nối trước ạ."
+**💬 Kịch bản tư vấn:** "Dạ lỗi này thường do kết nối cáp hoặc phần mềm bên máy tính, chưa chắc do máy mình, em thử đổi cáp/cổng kết nối trước ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã đổi cáp, cổng, và thử trên máy tính khác vẫn báo cùng mã lỗi khi khôi phục (đặc biệt lỗi 53 thường liên quan Touch ID/Face ID hoặc bo mạch) — gửi TTBH kiểm tra phần cứng.
+**📦 Lưu ý TTBH:** Đã đổi cáp, cổng, và thử trên máy tính khác vẫn báo cùng mã lỗi khi khôi phục (đặc biệt lỗi 53 thường liên quan Touch ID/Face ID hoặc bo mạch) — gửi TTBH kiểm tra phần cứng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -632,9 +632,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý chạy "Xóa và cài lại" (Erase) trong Disk Utility khi chưa xác nhận khách đã sao lưu dữ liệu; không tháo máy khi chưa loại trừ hết các bước phần mềm.
 
-**💬 Kịch bản tư vấn:** "Dạ máy có tín hiệu hoạt động nên khả năng cao là lỗi phần mềm khởi động, mình thử vào chế độ khôi phục để sửa trước ạ."
+**💬 Kịch bản tư vấn:** "Dạ máy có tín hiệu hoạt động nên khả năng cao là lỗi phần mềm khởi động, mình thử vào chế độ khôi phục để sửa trước ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Không vào được chế độ Recovery, hoặc đã chạy First Aid/cài lại macOS mà máy vẫn khởi động lên màn hình trống — gửi TTBH kiểm tra phần cứng (ổ đĩa/bo mạch).
+**📦 Lưu ý TTBH:** Không vào được chế độ Recovery, hoặc đã chạy First Aid/cài lại macOS mà máy vẫn khởi động lên màn hình trống — gửi TTBH kiểm tra phần cứng (ổ đĩa/bo mạch). Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -655,9 +655,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý tháo phím hoặc dùng vật nhọn cạy phím khi chưa được đào tạo (dễ gãy chân phím, hỏng bàn phím); không dùng chất lỏng vệ sinh trực tiếp lên bàn phím.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử có dị vật kẹt ở phím không và thử vài bước phần mềm trước, nếu vẫn còn lỗi thì mới cần kiểm tra sâu hơn ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử có dị vật kẹt ở phím không và thử vài bước phần mềm trước, nếu vẫn còn lỗi thì mới cần kiểm tra sâu hơn ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Có tiền sử vào nước/chất lỏng, hoặc nhiều phím kẹt vật lý không xử lý được bằng khí nén, hoặc lỗi vẫn còn sau khi loại trừ nguyên nhân phần mềm — gửi TTBH kiểm tra/thay bàn phím.
+**📦 Lưu ý TTBH:** Có tiền sử vào nước/chất lỏng, hoặc nhiều phím kẹt vật lý không xử lý được bằng khí nén, hoặc lỗi vẫn còn sau khi loại trừ nguyên nhân phần mềm — gửi TTBH kiểm tra/thay bàn phím. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -680,9 +680,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định AirPods lỗi phần cứng khi chưa thử sạc đầy và reset ghép đôi lại từ đầu; không tháo/mở hộp sạc để can thiệp phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử sạc đầy và ghép đôi lại từ đầu trước, phần lớn trường hợp không hiện popup là do pin yếu hoặc cần reset kết nối ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình thử sạc đầy và ghép đôi lại từ đầu trước, phần lớn trường hợp không hiện popup là do pin yếu hoặc cần reset kết nối ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã sạc đầy, đã thử reset ghép đôi (giữ nút Setup) trên nhiều thiết bị Apple khác nhau mà vẫn không nhận/không hiện popup — gửi TTBH kiểm tra AirPods hoặc hộp sạc.
+**📦 Lưu ý TTBH:** Đã sạc đầy, đã thử reset ghép đôi (giữ nút Setup) trên nhiều thiết bị Apple khác nhau mà vẫn không nhận/không hiện popup — gửi TTBH kiểm tra AirPods hoặc hộp sạc. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -704,9 +704,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận Pencil hỏng khi chưa xác nhận đúng đời tương thích với iPad; không cạy/tháo đầu ngòi Pencil khi không được hướng dẫn.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đời Pencil có đúng với iPad không và thử ghép đôi lại trước ạ, khá nhiều trường hợp là do sai đời Pencil hoặc cần sạc lại."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đời Pencil có đúng với iPad không và thử ghép đôi lại trước ạ, khá nhiều trường hợp là do sai đời Pencil hoặc cần sạc lại. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã xác nhận đúng đời tương thích, đã thử quên thiết bị và ghép đôi lại, đã sạc đủ mà Pencil vẫn không được iPad nhận diện — gửi TTBH kiểm tra Pencil.
+**📦 Lưu ý TTBH:** Đã xác nhận đúng đời tương thích, đã thử quên thiết bị và ghép đôi lại, đã sạc đủ mà Pencil vẫn không được iPad nhận diện — gửi TTBH kiểm tra Pencil. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -728,9 +728,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không đưa ra kết luận/tư vấn y tế về tình trạng sức khỏe của khách dựa trên số đo; không khẳng định lỗi phần cứng khi khách đeo sai cách hoặc chưa vệ sinh cảm biến.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại cách đeo và vệ sinh cảm biến trước ạ, nhiều trường hợp đo không chính xác là do đeo lỏng hoặc cảm biến bị cản chứ không phải lỗi máy."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại cách đeo và vệ sinh cảm biến trước ạ, nhiều trường hợp đo không chính xác là do đeo lỏng hoặc cảm biến bị cản chứ không phải lỗi máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã đeo đúng cách, đã vệ sinh cảm biến, đã cập nhật watchOS mà nhịp tim vẫn không đo được hoặc sai lệch rõ rệt ngay cả lúc nghỉ ngơi bình thường — gửi TTBH kiểm tra cảm biến.
+**📦 Lưu ý TTBH:** Đã đeo đúng cách, đã vệ sinh cảm biến, đã cập nhật watchOS mà nhịp tim vẫn không đo được hoặc sai lệch rõ rệt ngay cả lúc nghỉ ngơi bình thường — gửi TTBH kiểm tra cảm biến. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -751,9 +751,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định "pin hỏng cần thay" chỉ dựa vào cảm nhận của khách khi chưa kiểm tra % Dung lượng tối đa và Số chu kỳ sạc thực tế; không tháo pin khi chưa loại trừ nguyên nhân phần mềm.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra tình trạng pin thực tế xem còn bao nhiêu % dung lượng gốc, rồi xem thử có ứng dụng nào đang ngốn pin bất thường không nhé."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra tình trạng pin thực tế xem còn bao nhiêu % dung lượng gốc, rồi xem thử có ứng dụng nào đang ngốn pin bất thường không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** % Dung lượng tối đa dưới 80% hoặc số chu kỳ sạc cao và khách còn trong hạn bảo hành/AppleCare — đề xuất khách nhận bảo hành kiểm tra thay pin; nếu hết bảo hành, tư vấn chi phí thay pin dịch vụ ngoài bảo hành.
+**📦 Lưu ý TTBH:** % Dung lượng tối đa dưới 80% hoặc số chu kỳ sạc cao và khách còn trong hạn bảo hành/AppleCare — đề xuất khách nhận bảo hành kiểm tra thay pin; nếu hết bảo hành, tư vấn chi phí thay pin dịch vụ ngoài bảo hành. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -794,9 +794,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý vặn/siết ốc bản lề hoặc tháo máy khi không thuộc phạm vi được đào tạo (dễ làm hỏng thêm cáp màn hình đi qua bản lề); không cố mở màn hình quá góc giới hạn khi đã phát hiện lỏng.
 
-**💬 Kịch bản tư vấn:** "Dạ đây là lỗi cơ khí ở bản lề, em không tự điều chỉnh tại quầy được vì bên trong bản lề có cả dây cáp màn hình đi qua, cần bộ phận kỹ thuật kiểm tra kỹ hơn ạ."
+**💬 Kịch bản tư vấn:** "Dạ đây là lỗi cơ khí ở bản lề, em không tự điều chỉnh tại quầy được vì bên trong bản lề có cả dây cáp màn hình đi qua, cần bộ phận kỹ thuật kiểm tra kỹ hơn ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Bản lề lỏng/kêu là lỗi cơ khí, hầu như luôn cần gửi TTBH để kiểm tra và siết/thay bản lề đúng chuẩn, không tự xử lý tại quầy để tránh ảnh hưởng cáp màn hình bên trong.
+**📦 Lưu ý TTBH:** Bản lề lỏng/kêu là lỗi cơ khí, hầu như luôn cần gửi TTBH để kiểm tra và siết/thay bản lề đúng chuẩn, không tự xử lý tại quầy để tránh ảnh hưởng cáp màn hình bên trong. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -817,9 +817,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận cổng USB-C của máy hỏng khi chưa thử với cáp/thiết bị/hub khác; không format hoặc "Xóa" ổ cứng ngoài của khách khi chưa xác nhận đã sao lưu dữ liệu quan trọng.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp và cổng khác trước ạ, phần lớn trường hợp không nhận thiết bị ngoài là do cáp/hub chứ không phải do cổng trên máy."
+**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp và cổng khác trước ạ, phần lớn trường hợp không nhận thiết bị ngoài là do cáp/hub chứ không phải do cổng trên máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã thử nhiều cáp/thiết bị/cổng khác nhau mà một cổng cụ thể trên máy luôn không nhận bất kỳ thiết bị nào (trong khi cổng khác vẫn bình thường) — gửi TTBH kiểm tra cổng/bo mạch.
+**📦 Lưu ý TTBH:** Đã thử nhiều cáp/thiết bị/cổng khác nhau mà một cổng cụ thể trên máy luôn không nhận bất kỳ thiết bị nào (trong khi cổng khác vẫn bình thường) — gửi TTBH kiểm tra cổng/bo mạch. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -840,9 +840,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định lỗi phần cứng ngay khi khách đang dùng ốp/dán màn hình không rõ nguồn gốc mà chưa thử tháo ra kiểm tra; không thực hiện khôi phục cài đặt gốc khi khách chưa xác nhận đã sao lưu dữ liệu.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử tháo ốp/dán màn hình hiện tại xem có phải nguyên nhân không trước ạ, khá nhiều trường hợp chạm sai là do phụ kiện gắn thêm chứ không phải máy."
+**💬 Kịch bản tư vấn:** "Dạ mình thử tháo ốp/dán màn hình hiện tại xem có phải nguyên nhân không trước ạ, khá nhiều trường hợp chạm sai là do phụ kiện gắn thêm chứ không phải máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã tháo ốp/dán, lau màn hình, cập nhật phần mềm mà hiện tượng chạm sai vẫn xảy ra (đặc biệt nếu cố định ở một vùng màn hình hoặc sau khi máy từng rơi/vào nước) — gửi TTBH kiểm tra cảm ứng/digitizer.
+**📦 Lưu ý TTBH:** Đã tháo ốp/dán, lau màn hình, cập nhật phần mềm mà hiện tượng chạm sai vẫn xảy ra (đặc biệt nếu cố định ở một vùng màn hình hoặc sau khi máy từng rơi/vào nước) — gửi TTBH kiểm tra cảm ứng/digitizer. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -863,9 +863,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận cổng USB-C của iPad hỏng khi chưa thử cáp/thiết bị/hub khác; không định dạng lại ổ đĩa ngoài của khách khi chưa xác nhận đã sao lưu dữ liệu.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra định dạng ổ đĩa và thử đổi cáp trước ạ, iPad có một số giới hạn định dạng khác với máy tính nên đôi khi không phải lỗi máy."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra định dạng ổ đĩa và thử đổi cáp trước ạ, iPad có một số giới hạn định dạng khác với máy tính nên đôi khi không phải lỗi máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã thử nhiều thiết bị/cáp khác nhau và xác nhận đúng định dạng hỗ trợ mà cổng USB-C trên iPad vẫn không nhận bất kỳ thiết bị nào — gửi TTBH kiểm tra cổng kết nối.
+**📦 Lưu ý TTBH:** Đã thử nhiều thiết bị/cáp khác nhau và xác nhận đúng định dạng hỗ trợ mà cổng USB-C trên iPad vẫn không nhận bất kỳ thiết bị nào — gửi TTBH kiểm tra cổng kết nối. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -886,9 +886,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận bàn phím hỏng khi chưa xác nhận đúng dòng iPad tương thích; không dùng vật kim loại/sắc nhọn cạy hoặc vệ sinh chấu tiếp xúc Smart Connector.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đúng loại bàn phím có tương thích với iPad mình không và vệ sinh thử chấu kết nối trước ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra lại đúng loại bàn phím có tương thích với iPad mình không và vệ sinh thử chấu kết nối trước ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã xác nhận đúng tương thích, đã vệ sinh chấu kết nối/thử ghép đôi lại mà vẫn không nhận — gửi TTBH kiểm tra bàn phím hoặc cổng Smart Connector trên iPad.
+**📦 Lưu ý TTBH:** Đã xác nhận đúng tương thích, đã vệ sinh chấu kết nối/thử ghép đôi lại mà vẫn không nhận — gửi TTBH kiểm tra bàn phím hoặc cổng Smart Connector trên iPad. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -908,9 +908,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định "pin hỏng cần thay" ngay khi chưa kiểm tra mục sử dụng pin theo ứng dụng; không tự ý tắt hết các tính năng nền của khách mà không giải thích lý do.
 
-**💬 Kịch bản tư vấn:** "Dạ mình xem thử ứng dụng nào đang ngốn pin nhiều bất thường trước ạ, đa phần hao pin nhanh là do phần mềm chứ chưa chắc do pin yếu."
+**💬 Kịch bản tư vấn:** "Dạ mình xem thử ứng dụng nào đang ngốn pin nhiều bất thường trước ạ, đa phần hao pin nhanh là do phần mềm chứ chưa chắc do pin yếu. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã kiểm tra và loại trừ nguyên nhân ứng dụng/cài đặt, đã cập nhật phần mềm mà pin vẫn hao bất thường ở chế độ chờ, hoặc máy đã dùng lâu năm và khách nghi ngờ pin chai — đề xuất khách nhận bảo hành kiểm tra pin nếu còn trong hạn, hoặc tư vấn chi phí thay pin dịch vụ nếu đã hết bảo hành.
+**📦 Lưu ý TTBH:** Đã kiểm tra và loại trừ nguyên nhân ứng dụng/cài đặt, đã cập nhật phần mềm mà pin vẫn hao bất thường ở chế độ chờ, hoặc máy đã dùng lâu năm và khách nghi ngờ pin chai — đề xuất khách nhận bảo hành kiểm tra pin nếu còn trong hạn, hoặc tư vấn chi phí thay pin dịch vụ nếu đã hết bảo hành. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -932,9 +932,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định pin hỏng ngay khi khách đang dùng nhiều tính năng theo dõi liên tục mà chưa kiểm tra cách sử dụng thực tế; không tháo pin khi chưa loại trừ nguyên nhân phần mềm.
 
-**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử các tính năng đang bật có tiêu hao nhiều pin không trước ạ, một số tính năng theo dõi liên tục sẽ hao pin nhanh hơn bình thường."
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra thử các tính năng đang bật có tiêu hao nhiều pin không trước ạ, một số tính năng theo dõi liên tục sẽ hao pin nhanh hơn bình thường. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Cài đặt > Pin báo "Pin cần được kiểm tra dịch vụ", hoặc đã thử hết các bước tối ưu mà pin vẫn hao bất thường ngay cả khi dùng nhẹ — đề xuất khách nhận bảo hành kiểm tra pin.
+**📦 Lưu ý TTBH:** Cài đặt > Pin báo "Pin cần được kiểm tra dịch vụ", hoặc đã thử hết các bước tối ưu mà pin vẫn hao bất thường ngay cả khi dùng nhẹ — đề xuất khách nhận bảo hành kiểm tra pin. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -954,9 +954,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không hủy ghép đôi khi khách chưa được thông báo rõ về việc cần thiết lập lại từ đầu; không rút sạc giữa chừng khi đang cập nhật.
 
-**💬 Kịch bản tư vấn:** "Dạ đồng hồ đang treo giữa chừng lúc cập nhật, em cắm sạc và để gần điện thoại để đồng hồ tự hoàn tất cập nhật, mình đợi em vài phút nhé."
+**💬 Kịch bản tư vấn:** "Dạ đồng hồ đang treo giữa chừng lúc cập nhật, em cắm sạc và để gần điện thoại để đồng hồ tự hoàn tất cập nhật, mình đợi em vài phút nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã sạc, để gần iPhone, ép khởi động lại và thử hủy ghép đôi/ghép đôi lại mà Watch vẫn treo ở logo Apple — gửi TTBH kiểm tra phần cứng.
+**📦 Lưu ý TTBH:** Đã sạc, để gần iPhone, ép khởi động lại và thử hủy ghép đôi/ghép đôi lại mà Watch vẫn treo ở logo Apple — gửi TTBH kiểm tra phần cứng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1024,9 +1024,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không cam kết chắc chắn định vị được/khôi phục được máy đã mất — Find My phụ thuộc vào việc thiết bị còn bật nguồn, còn kết nối mạng và chưa bị xóa cài đặt; không truy cập thông tin vị trí người khác khi chưa có sự đồng ý hợp lệ.
 
-**💬 Kịch bản tư vấn:** "Dạ vị trí hiện tại đang hiển thị là lần cuối máy còn online, có thể máy đang tắt nguồn hoặc mất mạng nên chưa cập nhật được vị trí mới ạ."
+**💬 Kịch bản tư vấn:** "Dạ vị trí hiện tại đang hiển thị là lần cuối máy còn online, có thể máy đang tắt nguồn hoặc mất mạng nên chưa cập nhật được vị trí mới ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đây không phải lỗi phần cứng để gửi TTBH — nếu nghi ngờ thiết bị mất/bị đánh cắp, hướng dẫn khách các bước trong Find My (Đánh dấu là đã mất, khóa máy, trình báo cơ quan chức năng nếu cần) thay vì xử lý kỹ thuật tại cửa hàng.
+**📦 Lưu ý TTBH:** Đây không phải lỗi phần cứng để gửi TTBH — nếu nghi ngờ thiết bị mất/bị đánh cắp, hướng dẫn khách các bước trong Find My (Đánh dấu là đã mất, khóa máy, trình báo cơ quan chức năng nếu cần) thay vì xử lý kỹ thuật tại cửa hàng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1070,9 +1070,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật cứng/sắc nhọn cạy hoặc lau mạnh lên ống kính; không kết luận lỗi phần cứng khi chưa loại trừ nguyên nhân ốp/dán che khuất hoặc ứng dụng bên thứ 3.
 
-**💬 Kịch bản tư vấn:** "Dạ mình lau thử ống kính và kiểm tra ốp lưng trước ạ, phần lớn trường hợp mờ là do bụi bẩn hoặc ốp che khuất chứ không phải lỗi camera."
+**💬 Kịch bản tư vấn:** "Dạ mình lau thử ống kính và kiểm tra ốp lưng trước ạ, phần lớn trường hợp mờ là do bụi bẩn hoặc ốp che khuất chứ không phải lỗi camera. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã lau ống kính, tháo ốp/dán, thử app Camera mặc định vẫn mờ/không lấy nét được, hoặc quan sát thấy ống kính có hơi nước/nứt vỡ bên trong — gửi TTBH kiểm tra cụm camera.
+**📦 Lưu ý TTBH:** Đã lau ống kính, tháo ốp/dán, thử app Camera mặc định vẫn mờ/không lấy nét được, hoặc quan sát thấy ống kính có hơi nước/nứt vỡ bên trong — gửi TTBH kiểm tra cụm camera. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1117,9 +1117,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không kết luận cổng xuất hình trên Mac hỏng khi chưa thử cáp/adapter/màn hình khác; không tháo máy khi chưa loại trừ hết nguyên nhân phụ kiện kết nối.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp/adapter và bấm dò lại màn hình trước ạ, phần lớn trường hợp không nhận màn hình ngoài là do cáp/adapter chứ không phải do máy."
+**💬 Kịch bản tư vấn:** "Dạ mình thử đổi cáp/adapter và bấm dò lại màn hình trước ạ, phần lớn trường hợp không nhận màn hình ngoài là do cáp/adapter chứ không phải do máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã thử nhiều cáp/adapter/màn hình khác nhau mà Mac vẫn không xuất được hình ảnh ra bất kỳ màn hình ngoài nào — gửi TTBH kiểm tra cổng xuất hình/card đồ họa.
+**📦 Lưu ý TTBH:** Đã thử nhiều cáp/adapter/màn hình khác nhau mà Mac vẫn không xuất được hình ảnh ra bất kỳ màn hình ngoài nào — gửi TTBH kiểm tra cổng xuất hình/card đồ họa. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1139,9 +1139,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý tháo màn hình kiểm tra dây cáp nếu không được đào tạo phần cứng; không khẳng định "chắc chắn do phần mềm" khi máy từng có va đập hoặc ép kính bên ngoài.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và loại trừ được nguyên nhân phần mềm/miếng dán rồi ạ, nếu máy vẫn còn hiện tượng chạm ảo thì khả năng cao là màn hình hoặc cáp kết nối có vấn đề, em cần kiểm tra sâu hơn."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và loại trừ được nguyên nhân phần mềm/miếng dán rồi ạ, nếu máy vẫn còn hiện tượng chạm ảo thì khả năng cao là màn hình hoặc cáp kết nối có vấn đề, em cần kiểm tra sâu hơn. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Sau khi loại trừ phần mềm/miếng dán vẫn còn ghost touch, đặc biệt trên máy chưa từng ép kính lại: đề xuất khách nhận bảo hành; gửi TTBH kiểm tra màn hình/cáp kết nối. Nếu máy từng ép kính không chính hãng, thông báo khách có thể mất bảo hành phần này.
+**📦 Lưu ý TTBH:** Sau khi loại trừ phần mềm/miếng dán vẫn còn ghost touch, đặc biệt trên máy chưa từng ép kính lại: đề xuất khách nhận bảo hành; gửi TTBH kiểm tra màn hình/cáp kết nối. Nếu máy từng ép kính không chính hãng, thông báo khách có thể mất bảo hành phần này. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1162,9 +1162,9 @@
 
 **🚫 Tuyệt đối không được làm:** Tuyệt đối không dùng vật nhọn/kim loại chọc vào khu vực pin phồng; không sạc lại máy để "kiểm tra thử"; không để máy gần nguồn nhiệt hoặc trong ngăn kéo kín; không cố gắng bẻ thẳng lại mặt lưng/màn hình bị đội phồng.
 
-**💬 Kịch bản tư vấn:** "Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ. Anh/chị vui lòng không sạc hay dùng máy nữa, em sẽ ưu tiên xử lý thay pin mới cho mình ngay hôm nay."
+**💬 Kịch bản tư vấn:** "Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ. Anh/chị vui lòng không sạc hay dùng máy nữa, em sẽ ưu tiên xử lý thay pin mới cho mình ngay hôm nay. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Pin phồng luôn cần thay thế, không sửa/ép lại được — nếu máy còn bảo hành pin chính hãng và không có dấu hiệu tác động ngoại lực, gửi TTBH xử lý theo chính sách bảo hành pin; nếu hết bảo hành, tư vấn thay pin chính hãng tại cửa hàng càng sớm càng tốt.
+**📦 Lưu ý TTBH:** Pin phồng luôn cần thay thế, không sửa/ép lại được — nếu máy còn bảo hành pin chính hãng và không có dấu hiệu tác động ngoại lực, gửi TTBH xử lý theo chính sách bảo hành pin; nếu hết bảo hành, tư vấn thay pin chính hãng tại cửa hàng càng sớm càng tốt. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1185,9 +1185,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng lực mạnh cạy nút để "thử" vì có thể làm gãy chân nút hoặc hỏng dây flex bên trong; không khẳng định thay được ngay tại chỗ khi chưa mở máy kiểm tra.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra bên ngoài, nút này khả năng cao bị lỗi cơ hoặc dây kết nối bên trong ạ, em cần mở máy kiểm tra kỹ hơn để báo chính xác chi phí và thời gian sửa cho mình."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra bên ngoài, nút này khả năng cao bị lỗi cơ hoặc dây kết nối bên trong ạ, em cần mở máy kiểm tra kỹ hơn để báo chính xác chi phí và thời gian sửa cho mình. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Nút liệt không do vào nước/rơi vỡ và máy còn bảo hành: gửi TTBH kiểm tra dây flex/cụm nút. Nếu có dấu hiệu vào nước/va đập, tư vấn sửa chữa trả phí tại cửa hàng.
+**📦 Lưu ý TTBH:** Nút liệt không do vào nước/rơi vỡ và máy còn bảo hành: gửi TTBH kiểm tra dây flex/cụm nút. Nếu có dấu hiệu vào nước/va đập, tư vấn sửa chữa trả phí tại cửa hàng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1208,9 +1208,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định ngay là hỏng phần cứng khi chưa kiểm tra hết các cài đặt phần mềm liên quan; không tháo máy kiểm tra nếu không được đào tạo phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt rung của mình rồi ạ, nếu vẫn không rung thì khả năng cao do motor rung bên trong bị lỗi, em cần mở máy kiểm tra thêm."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt rung của mình rồi ạ, nếu vẫn không rung thì khả năng cao do motor rung bên trong bị lỗi, em cần mở máy kiểm tra thêm. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân cài đặt/phần mềm, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra Taptic Engine.
+**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân cài đặt/phần mềm, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra Taptic Engine. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1343,9 +1343,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật cứng/sắc nhọn cạy hoặc chọc vào cụm cảm biến TrueDepth; không dùng dung dịch tẩy rửa mạnh lau lên khu vực camera.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera trước cho mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng cao là cụm cảm biến bên trong bị trầy hoặc hỏng, cần kiểm tra kỹ hơn."
+**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera trước cho mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng cao là cụm cảm biến bên trong bị trầy hoặc hỏng, cần kiểm tra kỹ hơn. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera trước/TrueDepth.
+**📦 Lưu ý TTBH:** Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera trước/TrueDepth. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1366,9 +1366,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định chắc chắn là lỗi phần mềm hay phần cứng khi chưa kiểm tra tình trạng pin và log sử dụng; không xóa dữ liệu máy khi khách chưa đồng ý và chưa sao lưu.
 
-**💬 Kịch bản tư vấn:** "Dạ hiện tượng này có thể do phần mềm hoặc pin yếu ạ, em đã kiểm tra tình trạng pin và cập nhật hệ điều hành cho mình, mình theo dõi thêm vài ngày xem còn tự khởi động lại không nhé."
+**💬 Kịch bản tư vấn:** "Dạ hiện tượng này có thể do phần mềm hoặc pin yếu ạ, em đã kiểm tra tình trạng pin và cập nhật hệ điều hành cho mình, mình theo dõi thêm vài ngày xem còn tự khởi động lại không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân phần mềm/pin chai, hiện tượng vẫn tiếp diễn và máy còn bảo hành: gửi TTBH kiểm tra bo mạch chủ (main).
+**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân phần mềm/pin chai, hiện tượng vẫn tiếp diễn và máy còn bảo hành: gửi TTBH kiểm tra bo mạch chủ (main). Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1389,9 +1389,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý thay hoặc hoán đổi nút Home giữa 2 máy khác nhau — Touch ID không thể hoạt động lại nếu đổi nút Home khác máy do liên kết phần cứng bảo mật; không cam kết khôi phục Touch ID nếu máy đã từng thay nút Home không chính hãng.
 
-**💬 Kịch bản tư vấn:** "Dạ Touch ID được mã hóa riêng cho từng máy nên nếu từng thay nút Home ở nơi khác thì sẽ không dùng lại được đâu ạ, mình có thể dùng mật khẩu thường thay thế hoặc thay lại đúng nút Home chính hãng của máy."
+**💬 Kịch bản tư vấn:** "Dạ Touch ID được mã hóa riêng cho từng máy nên nếu từng thay nút Home ở nơi khác thì sẽ không dùng lại được đâu ạ, mình có thể dùng mật khẩu thường thay thế hoặc thay lại đúng nút Home chính hãng của máy. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa nút Home/màn hình, còn bảo hành: gửi TTBH kiểm tra cảm biến Touch ID. Máy từng thay nút Home không chính hãng: không thể khôi phục Touch ID, tư vấn khách chuyển sang dùng mật khẩu.
+**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa nút Home/màn hình, còn bảo hành: gửi TTBH kiểm tra cảm biến Touch ID. Máy từng thay nút Home không chính hãng: không thể khôi phục Touch ID, tư vấn khách chuyển sang dùng mật khẩu. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1434,9 +1434,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý dùng vật nhọn chọc vào lỗ micro để "thông"; không cấp quyền Microphone cho ứng dụng lạ không rõ nguồn gốc khi hỗ trợ khách kiểm tra.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và cấp lại quyền micro cho ứng dụng của mình rồi ạ, mình thử gọi lại xem đối phương đã nghe được tiếng chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và cấp lại quyền micro cho ứng dụng của mình rồi ạ, mình thử gọi lại xem đối phương đã nghe được tiếng chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Nếu micro chính (ghi âm bằng Voice Memos) cũng không hoạt động ở mọi ứng dụng, không do quyền/phần mềm: gửi TTBH kiểm tra cụm micro phần cứng.
+**📦 Lưu ý TTBH:** Nếu micro chính (ghi âm bằng Voice Memos) cũng không hoạt động ở mọi ứng dụng, không do quyền/phần mềm: gửi TTBH kiểm tra cụm micro phần cứng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1480,9 +1480,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định máy lỗi phần cứng ngay khi khách đang dùng ốp có nam châm hoặc đang ở khu vực tín hiệu yếu; không tắt vĩnh viễn Dịch vụ định vị của khách mà không hỏi ý kiến.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã hướng dẫn mình hiệu chuẩn lại la bàn và kiểm tra phụ kiện gây nhiễu rồi ạ, mình thử lại ở khu vực thoáng xem định vị đã chính xác chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã hướng dẫn mình hiệu chuẩn lại la bàn và kiểm tra phụ kiện gây nhiễu rồi ạ, mình thử lại ở khu vực thoáng xem định vị đã chính xác chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân môi trường/phụ kiện nhiễu từ mà vẫn sai lệch liên tục: gửi TTBH kiểm tra cảm biến la bàn/GPS.
+**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân môi trường/phụ kiện nhiễu từ mà vẫn sai lệch liên tục: gửi TTBH kiểm tra cảm biến la bàn/GPS. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1503,9 +1503,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không yêu cầu khách cung cấp thông tin thẻ, mã OTP ngân hàng qua điện thoại/tin nhắn để "hỗ trợ kiểm tra"; không tự ý thao tác trên ứng dụng ngân hàng của khách.
 
-**💬 Kịch bản tư vấn:** "Dạ mình thử tháo ốp và mở đúng màn hình thanh toán Apple Pay trước khi chạm nhé, đa số trường hợp là do ốp dày che ăng-ten hoặc chưa mở đúng màn hình thanh toán thôi ạ."
+**💬 Kịch bản tư vấn:** "Dạ mình thử tháo ốp và mở đúng màn hình thanh toán Apple Pay trước khi chạm nhé, đa số trường hợp là do ốp dày che ăng-ten hoặc chưa mở đúng màn hình thanh toán thôi ạ. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ ốp/quy trình thao tác mà vẫn không chạm được ở nhiều máy POS khác nhau: gửi TTBH kiểm tra ăng-ten NFC.
+**📦 Lưu ý TTBH:** Đã loại trừ ốp/quy trình thao tác mà vẫn không chạm được ở nhiều máy POS khác nhau: gửi TTBH kiểm tra ăng-ten NFC. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1571,9 +1571,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định hỏng loa ngay khi chưa kiểm tra thanh cân bằng âm thanh; không tháo máy kiểm tra loa nếu không được đào tạo phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt âm thanh của máy mình rồi ạ, nếu vẫn còn rè/mất tiếng một bên thì khả năng cao là lỗi loa vật lý, em cần kiểm tra sâu hơn."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt âm thanh của máy mình rồi ạ, nếu vẫn còn rè/mất tiếng một bên thì khả năng cao là lỗi loa vật lý, em cần kiểm tra sâu hơn. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân cài đặt, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra cụm loa.
+**📦 Lưu ý TTBH:** Đã loại trừ nguyên nhân cài đặt, máy còn bảo hành và không có dấu hiệu vào nước/va đập: gửi TTBH kiểm tra cụm loa. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1594,9 +1594,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không cấp quyền Camera cho ứng dụng lạ không rõ nguồn gốc; không tháo/cạy viền màn hình để kiểm tra camera nếu không được đào tạo phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra quyền camera và thử qua Photo Booth cho mình rồi ạ, nếu vẫn còn lỗi thì khả năng cao do phần cứng camera, em cần kiểm tra thêm."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra quyền camera và thử qua Photo Booth cho mình rồi ạ, nếu vẫn còn lỗi thì khả năng cao do phần cứng camera, em cần kiểm tra thêm. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ quyền/phần mềm mà camera vẫn không hoạt động hoặc mờ nặng, máy còn bảo hành: gửi TTBH kiểm tra cụm camera.
+**📦 Lưu ý TTBH:** Đã loại trừ quyền/phần mềm mà camera vẫn không hoạt động hoặc mờ nặng, máy còn bảo hành: gửi TTBH kiểm tra cụm camera. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1617,9 +1617,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý chọc vật vào lỗ micro để "thông"; không cấp quyền Microphone cho ứng dụng lạ không rõ nguồn gốc.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và cấp lại quyền micro, chọn đúng thiết bị đầu vào cho máy mình rồi ạ, mình thử gọi lại xem đối phương nghe được chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và cấp lại quyền micro, chọn đúng thiết bị đầu vào cho máy mình rồi ạ, mình thử gọi lại xem đối phương nghe được chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Micro không hoạt động ở cả Voice Memos (test độc lập), đã loại trừ quyền/cài đặt, máy còn bảo hành: gửi TTBH kiểm tra cụm micro.
+**📦 Lưu ý TTBH:** Micro không hoạt động ở cả Voice Memos (test độc lập), đã loại trừ quyền/cài đặt, máy còn bảo hành: gửi TTBH kiểm tra cụm micro. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1640,9 +1640,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định lỗi phần cứng Wi-Fi khi chưa loại trừ nguyên nhân từ router/mạng; không thay đổi cấu hình mạng công ty/khách sạn khi chưa được phép.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã thử kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé để mình xác định rõ nguyên nhân."
+**💬 Kịch bản tư vấn:** "Dạ em đã thử kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé để mình xác định rõ nguyên nhân. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm/cấu hình, máy còn bảo hành: gửi TTBH kiểm tra card Wi-Fi/anten.
+**📦 Lưu ý TTBH:** Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm/cấu hình, máy còn bảo hành: gửi TTBH kiểm tra card Wi-Fi/anten. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1709,9 +1709,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý thay bàn phím tích hợp Touch ID giữa 2 máy khác nhau — tương tự iPhone, Touch ID gắn với Secure Enclave riêng của từng máy.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã đặt lại vân tay và khởi động lại máy cho mình rồi ạ, mình thử lại xem đã nhận diện được chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã đặt lại vân tay và khởi động lại máy cho mình rồi ạ, mình thử lại xem đã nhận diện được chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa bàn phím/Touch ID, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay bàn phím không chính hãng: khó khôi phục, tư vấn dùng mật khẩu thay thế.
+**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa bàn phím/Touch ID, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay bàn phím không chính hãng: khó khôi phục, tư vấn dùng mật khẩu thay thế. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1732,9 +1732,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý tháo pin/khui máy nếu không được đào tạo phần cứng; không khẳng định hỏng pin ngay khi chưa thử cáp/củ sạc khác.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã thử sạc bằng phụ kiện khác và reset lại hệ thống quản lý nguồn cho máy mình rồi ạ, nếu vẫn không lên pin thì em cần kiểm tra sâu hơn về mạch sạc."
+**💬 Kịch bản tư vấn:** "Dạ em đã thử sạc bằng phụ kiện khác và reset lại hệ thống quản lý nguồn cho máy mình rồi ạ, nếu vẫn không lên pin thì em cần kiểm tra sâu hơn về mạch sạc. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ cáp/củ sạc/SMC mà vẫn không sạc được, máy còn bảo hành: gửi TTBH kiểm tra mạch sạc/pin.
+**📦 Lưu ý TTBH:** Đã loại trừ cáp/củ sạc/SMC mà vẫn không sạc được, máy còn bảo hành: gửi TTBH kiểm tra mạch sạc/pin. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1823,9 +1823,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tiếp tục dùng hoặc sạc máy khi đã phát hiện mùi khét; không tự ý xịt bất kỳ dung dịch nào vào khe tản nhiệt.
 
-**💬 Kịch bản tư vấn:** "Dạ nếu máy có mùi khét thì mình cần ngừng sử dụng ngay ạ để đảm bảo an toàn, em sẽ ưu tiên kiểm tra ngay cho mình. Còn nếu chỉ quạt kêu to bình thường thì khả năng do bám bụi, em vệ sinh lại giúp mình."
+**💬 Kịch bản tư vấn:** "Dạ nếu máy có mùi khét thì mình cần ngừng sử dụng ngay ạ để đảm bảo an toàn, em sẽ ưu tiên kiểm tra ngay cho mình. Còn nếu chỉ quạt kêu to bình thường thì khả năng do bám bụi, em vệ sinh lại giúp mình. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Có mùi khét/dấu hiệu chập linh kiện: gửi TTBH khẩn ngay, không thao tác thêm tại cửa hàng. Chỉ bám bụi thông thường: vệ sinh trả phí tại cửa hàng.
+**📦 Lưu ý TTBH:** Có mùi khét/dấu hiệu chập linh kiện: gửi TTBH khẩn ngay, không thao tác thêm tại cửa hàng. Chỉ bám bụi thông thường: vệ sinh trả phí tại cửa hàng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1846,9 +1846,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không ấn mạnh nhiều lần liên tục để "test" khi nghi ngờ trackpad lỗi cơ, có thể làm nặng thêm tình trạng lỏng; không tháo trackpad nếu không được đào tạo phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và điều chỉnh lại độ nhạy trackpad cho máy mình rồi ạ, nếu vẫn còn tiếng kêu lạ hoặc rơ thì khả năng cao do cơ cấu bên trong, em cần kiểm tra thêm."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra và điều chỉnh lại độ nhạy trackpad cho máy mình rồi ạ, nếu vẫn còn tiếng kêu lạ hoặc rơ thì khả năng cao do cơ cấu bên trong, em cần kiểm tra thêm. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ cài đặt, trackpad vẫn rơ/kêu lạch cạch bất thường, máy còn bảo hành: gửi TTBH kiểm tra cụm trackpad.
+**📦 Lưu ý TTBH:** Đã loại trừ cài đặt, trackpad vẫn rơ/kêu lạch cạch bất thường, máy còn bảo hành: gửi TTBH kiểm tra cụm trackpad. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1891,9 +1891,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không ép tắt nguồn ngay lập tức khi máy chỉ mới treo vài giây (nên chờ và thử Activity Monitor trước); không xóa dữ liệu người dùng để "giải phóng dung lượng" khi chưa hỏi ý kiến.
 
-**💬 Kịch bản tư vấn:** "Dạ máy mình bị treo do xử lý tác vụ nặng hoặc gần đầy dung lượng ạ, em đã xử lý và dọn bớt giúp mình rồi, mình theo dõi thêm xem còn bị treo thường xuyên không nhé."
+**💬 Kịch bản tư vấn:** "Dạ máy mình bị treo do xử lý tác vụ nặng hoặc gần đầy dung lượng ạ, em đã xử lý và dọn bớt giúp mình rồi, mình theo dõi thêm xem còn bị treo thường xuyên không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Tình trạng lặp lại thường xuyên dù đã dọn dung lượng và cập nhật phần mềm, nghi ngờ phần cứng (ổ SSD, RAM): gửi TTBH kiểm tra.
+**📦 Lưu ý TTBH:** Tình trạng lặp lại thường xuyên dù đã dọn dung lượng và cập nhật phần mềm, nghi ngờ phần cứng (ổ SSD, RAM): gửi TTBH kiểm tra. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1937,9 +1937,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định hỏng module Bluetooth khi chưa thử thay pin và ghép đôi lại từ đầu; không xóa toàn bộ danh sách thiết bị Bluetooth khác của khách mà chưa hỏi ý kiến.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã ghép đôi lại thiết bị Bluetooth cho máy mình rồi ạ, mình thử dùng lại xem còn bị chập chờn không nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã ghép đôi lại thiết bị Bluetooth cho máy mình rồi ạ, mình thử dùng lại xem còn bị chập chờn không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ pin phụ kiện/ghép đôi lại mà vẫn chập chờn với nhiều thiết bị Bluetooth khác nhau, máy còn bảo hành: gửi TTBH kiểm tra module Bluetooth.
+**📦 Lưu ý TTBH:** Đã loại trừ pin phụ kiện/ghép đôi lại mà vẫn chập chờn với nhiều thiết bị Bluetooth khác nhau, máy còn bảo hành: gửi TTBH kiểm tra module Bluetooth. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1960,9 +1960,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không sạc bằng củ sạc công suất không rõ nguồn gốc; không tháo máy kiểm tra nếu không được đào tạo phần cứng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã thử sạc và ép khởi động lại cho máy mình rồi ạ, nếu vẫn không lên nguồn thì em cần kiểm tra sâu hơn về phần cứng."
+**💬 Kịch bản tư vấn:** "Dạ em đã thử sạc và ép khởi động lại cho máy mình rồi ạ, nếu vẫn không lên nguồn thì em cần kiểm tra sâu hơn về phần cứng. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã thử sạc đủ thời gian và ép khởi động lại không được, không có dấu hiệu vào nước/va đập, máy còn bảo hành: gửi TTBH kiểm tra.
+**📦 Lưu ý TTBH:** Đã thử sạc đủ thời gian và ép khởi động lại không được, không có dấu hiệu vào nước/va đập, máy còn bảo hành: gửi TTBH kiểm tra. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -1983,9 +1983,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không chọc vật nhọn vào lỗ loa để vệ sinh; không khẳng định hỏng loa khi chưa kiểm tra cài đặt giới hạn âm lượng.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt và vệ sinh loa cho máy mình rồi ạ, nếu vẫn còn rè ở âm lượng lớn thì khả năng do màng loa, em cần kiểm tra thêm."
+**💬 Kịch bản tư vấn:** "Dạ em đã kiểm tra cài đặt và vệ sinh loa cho máy mình rồi ạ, nếu vẫn còn rè ở âm lượng lớn thì khả năng do màng loa, em cần kiểm tra thêm. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã loại trừ cài đặt/bụi bẩn, loa vẫn rè rõ, máy còn bảo hành: gửi TTBH kiểm tra cụm loa.
+**📦 Lưu ý TTBH:** Đã loại trừ cài đặt/bụi bẩn, loa vẫn rè rõ, máy còn bảo hành: gửi TTBH kiểm tra cụm loa. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2006,9 +2006,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật cứng lau chùi camera; không đăng ký Face ID bằng khuôn mặt người khác để "test hộ" khách.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera và đăng ký lại Face ID cho máy mình rồi ạ, mình thử mở khóa lại xem đã nhận diện tốt hơn chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera và đăng ký lại Face ID cho máy mình rồi ạ, mình thử mở khóa lại xem đã nhận diện tốt hơn chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã vệ sinh và đăng ký lại vẫn không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm TrueDepth.
+**📦 Lưu ý TTBH:** Đã vệ sinh và đăng ký lại vẫn không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm TrueDepth. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2028,9 +2028,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không tự ý hoán đổi nút nguồn giữa 2 máy khác nhau — tương tự Touch ID trên iPhone/Mac, không thể hoạt động lại nếu đổi linh kiện khác máy.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã đặt lại vân tay cho máy mình rồi ạ, mình đặt trọn đầu ngón tay lên nút nguồn khi mở khóa để nhận diện tốt hơn nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã đặt lại vân tay cho máy mình rồi ạ, mình đặt trọn đầu ngón tay lên nút nguồn khi mở khóa để nhận diện tốt hơn nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa nút nguồn, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay nút nguồn không chính hãng: khó khôi phục, tư vấn dùng mật khẩu.
+**📦 Lưu ý TTBH:** Máy chưa từng sửa chữa nút nguồn, còn bảo hành: gửi TTBH kiểm tra cảm biến. Máy từng thay nút nguồn không chính hãng: khó khôi phục, tư vấn dùng mật khẩu. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2051,9 +2051,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật cứng/sắc nhọn cạy vòng camera; không dùng dung dịch tẩy rửa mạnh lau ống kính.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera cho máy mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng do ống kính trầy hoặc cụm camera bên trong có vấn đề, em cần kiểm tra thêm."
+**💬 Kịch bản tư vấn:** "Dạ em đã vệ sinh camera cho máy mình rồi ạ, nếu ảnh vẫn còn mờ thì khả năng do ống kính trầy hoặc cụm camera bên trong có vấn đề, em cần kiểm tra thêm. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera.
+**📦 Lưu ý TTBH:** Vệ sinh không cải thiện, không có dấu hiệu va đập/vào nước, máy còn bảo hành: gửi TTBH kiểm tra cụm camera. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2074,9 +2074,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định lỗi phần cứng Wi-Fi khi chưa loại trừ nguyên nhân từ mạng/router; không thay đổi cấu hình mạng công cộng khi chưa được phép.
 
-**💬 Kịch bản tư vấn:** "Dạ em đã kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé."
+**💬 Kịch bản tư vấn:** "Dạ em đã kết nối lại mạng và kiểm tra cấu hình cho máy mình rồi ạ, mình thử dùng thêm ở mạng khác xem có ổn định hơn không nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm, máy còn bảo hành: gửi TTBH kiểm tra ăng-ten Wi-Fi.
+**📦 Lưu ý TTBH:** Wifi chập chờn ở nhiều mạng khác nhau, đã loại trừ phần mềm, máy còn bảo hành: gửi TTBH kiểm tra ăng-ten Wi-Fi. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2165,9 +2165,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng bất kỳ công cụ/phần mềm bên thứ 3 nào để "bẻ khóa" Activation Lock; không nhận xử lý nếu không xác minh được nguồn gốc máy hợp pháp.
 
-**💬 Kịch bản tư vấn:** "Dạ đây là tính năng bảo vệ máy khỏi mất cắp ạ, mình cung cấp hóa đơn mua hàng hoặc liên hệ chủ tài khoản trước đó để gỡ khóa giúp mình nhé."
+**💬 Kịch bản tư vấn:** "Dạ đây là tính năng bảo vệ máy khỏi mất cắp ạ, mình cung cấp hóa đơn mua hàng hoặc liên hệ chủ tài khoản trước đó để gỡ khóa giúp mình nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Không có hóa đơn hợp lệ và khách không nhớ Apple ID: đề xuất khách nhận bảo hành kèm chứng từ mua hàng (nếu có); gửi TTBH để Apple kiểm tra và xử lý, không có cách bỏ qua khóa này tại cửa hàng.
+**📦 Lưu ý TTBH:** Không có hóa đơn hợp lệ và khách không nhớ Apple ID: đề xuất khách nhận bảo hành kèm chứng từ mua hàng (nếu có); gửi TTBH để Apple kiểm tra và xử lý, không có cách bỏ qua khóa này tại cửa hàng. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2210,9 +2210,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không khẳng định lỗi cảm biến phần cứng khi chưa kiểm tra khóa xoay màn hình trong Trung tâm Điều khiển.
 
-**💬 Kịch bản tư vấn:** "Dạ máy mình đang bật khóa xoay màn hình ạ, em đã tắt lại giúp mình rồi, mình thử xoay máy xem đã tự chuyển hướng chưa nhé."
+**💬 Kịch bản tư vấn:** "Dạ máy mình đang bật khóa xoay màn hình ạ, em đã tắt lại giúp mình rồi, mình thử xoay máy xem đã tự chuyển hướng chưa nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Đã tắt khóa xoay mà vẫn không xoay được ở nhiều ứng dụng hỗ trợ xoay: gửi TTBH kiểm tra cảm biến gia tốc.
+**📦 Lưu ý TTBH:** Đã tắt khóa xoay mà vẫn không xoay được ở nhiều ứng dụng hỗ trợ xoay: gửi TTBH kiểm tra cảm biến gia tốc. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2323,9 +2323,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không dùng vật nhọn chọc vào khu vực pin phồng; không sạc lại để "thử"; không để gần nguồn nhiệt.
 
-**💬 Kịch bản tư vấn:** "Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ, anh/chị vui lòng không sạc hay dùng máy nữa."
+**💬 Kịch bản tư vấn:** "Dạ pin máy mình đang bị phồng, đây là lỗi cần xử lý ngay vì lý do an toàn ạ, anh/chị vui lòng không sạc hay dùng máy nữa. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Pin phồng luôn cần thay thế — máy còn bảo hành và không có tác động ngoại lực: gửi TTBH; hết bảo hành: tư vấn thay pin chính hãng sớm nhất.
+**📦 Lưu ý TTBH:** Pin phồng luôn cần thay thế — máy còn bảo hành và không có tác động ngoại lực: gửi TTBH; hết bảo hành: tư vấn thay pin chính hãng sớm nhất. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
@@ -2345,9 +2345,9 @@
 
 **🚫 Tuyệt đối không được làm:** Không ấn mạnh lên màn hình để cố "xóa" vết lưu ảnh; không khẳng định ngay là lỗi phần cứng vĩnh viễn khi chưa chờ máy nghỉ đủ thời gian.
 
-**💬 Kịch bản tư vấn:** "Dạ đây là hiện tượng lưu ảnh tạm thời do hiển thị lâu một nội dung ạ, mình để máy nghỉ vài tiếng là sẽ hết, em cũng hướng dẫn mình chỉnh cài đặt để tránh bị lại nhé."
+**💬 Kịch bản tư vấn:** "Dạ đây là hiện tượng lưu ảnh tạm thời do hiển thị lâu một nội dung ạ, mình để máy nghỉ vài tiếng là sẽ hết, em cũng hướng dẫn mình chỉnh cài đặt để tránh bị lại nhé. Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ."
 
-**📦 Lưu ý TTBH:** Vết mờ không biến mất sau khi đã để máy nghỉ đủ lâu (dấu hiệu burn-in thật), máy còn bảo hành: gửi TTBH kiểm tra màn hình.
+**📦 Lưu ý TTBH:** Vết mờ không biến mất sau khi đã để máy nghỉ đủ lâu (dấu hiệu burn-in thật), máy còn bảo hành: gửi TTBH kiểm tra màn hình. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
 
 ---
 
