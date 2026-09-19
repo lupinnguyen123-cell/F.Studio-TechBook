@@ -36,6 +36,10 @@ export default function App() {
   // Nguồn của kết quả đang hiển thị theo từng hãng — dùng để ghi đúng nhãn
   // "Kết quả từ Thư viện" (đã kiểm duyệt) vs "Kết quả từ AI" (tham khảo thêm).
   const [resultSources, setResultSources] = useState<Record<string, ResultSource>>({});
+  // Thiết bị của kết quả đang xem (vd "iPhone", "Mac") — chỉ có khi kết quả lấy từ thư
+  // viện (LibraryEntry/KnowledgeItem có sẵn field device). Kết quả AI/Lịch sử không có
+  // thiết bị xác định trước nên để undefined, SolutionDisplay sẽ không hiện badge.
+  const [resultDevices, setResultDevices] = useState<Record<string, string | undefined>>({});
   // Modal kết quả để ở App (không phải signal + state trong DetailView) vì kết quả có
   // thể được mở từ 4 nơi, 3 trong số đó nằm ngoài DetailView. Xem ghi chú ở
   // handleQuickAccess về lý do chọn state điều khiển thay vì tín hiệu tăng dần.
@@ -143,6 +147,7 @@ export default function App() {
   const analysisResult = analysisResults[currentBrand?.id || ''] || null;
   const isAnalyzing = isAnalyzingMap[currentBrand?.id || ''] || false;
   const resultSource = resultSources[currentBrand?.id || ''] || 'ai';
+  const resultDevice = resultDevices[currentBrand?.id || ''];
 
   const dynamicWarnings = useMemo(() => {
     if (!currentBrand || !currentBrand.dynamicWarnings || !errorDescription) return [];
@@ -172,6 +177,7 @@ export default function App() {
     setAnalysisResults((prev) => ({ ...prev, [bid]: null }));
     setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
     setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+    setResultDevices((prev) => ({ ...prev, [bid]: undefined }));
     setIsResultModalOpen(false);
   };
 
@@ -179,6 +185,7 @@ export default function App() {
     const bid = currentBrand?.id || '';
     setAnalysisResults((prev) => ({ ...prev, [bid]: null }));
     setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
+    setResultDevices((prev) => ({ ...prev, [bid]: undefined }));
     setIsResultModalOpen(false);
   };
 
@@ -188,6 +195,9 @@ export default function App() {
     const bid = currentBrand.id;
     setIsAnalyzingMap((prev) => ({ ...prev, [bid]: true }));
     setAnalysisResults((prev) => ({ ...prev, [bid]: null }));
+    // Kết quả AI không có thiết bị xác định trước — xóa badge thiết bị cũ (nếu trước đó
+    // đang xem 1 mục thư viện) để không gắn nhầm thiết bị cũ vào câu trả lời AI.
+    setResultDevices((prev) => ({ ...prev, [bid]: undefined }));
 
     try {
       const resultText = await analyzeError(bid, errorDescription);
@@ -210,6 +220,7 @@ export default function App() {
     setActiveTab(item.brandId);
     setAnalysisResults((prev) => ({ ...prev, [item.brandId]: item.solution }));
     setResultSources((prev) => ({ ...prev, [item.brandId]: 'library' }));
+    setResultDevices((prev) => ({ ...prev, [item.brandId]: item.device }));
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.symptom }));
     setView('docs');
     setIsResultModalOpen(true);
@@ -222,10 +233,11 @@ export default function App() {
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.symptom }));
   };
 
-  const handleUseLibrarySolution = (item: { solution: string }) => {
+  const handleUseLibrarySolution = (item: { solution: string; device?: string }) => {
     if (!currentBrand) return;
     setAnalysisResults((prev) => ({ ...prev, [currentBrand.id]: item.solution }));
     setResultSources((prev) => ({ ...prev, [currentBrand.id]: 'library' }));
+    setResultDevices((prev) => ({ ...prev, [currentBrand.id]: item.device }));
     setIsResultModalOpen(true);
   };
 
@@ -241,6 +253,7 @@ export default function App() {
     setAnalysisResults((prev) => ({ ...prev, [item.brandId]: item.result }));
     // Lịch sử chỉ lưu kết quả AI (chỉ handleAnalyze mới gọi addHistoryItem).
     setResultSources((prev) => ({ ...prev, [item.brandId]: 'ai' }));
+    setResultDevices((prev) => ({ ...prev, [item.brandId]: undefined }));
     setErrorDescriptions((prev) => ({ ...prev, [item.brandId]: item.description }));
     setView('docs');
     setIsResultModalOpen(true);
@@ -307,6 +320,7 @@ export default function App() {
                   onUseLibrarySolution={handleUseLibrarySolution}
                   focusSignal={aiFocusSignal}
                   resultSource={resultSource}
+                  resultDevice={resultDevice}
                   isResultModalOpen={isResultModalOpen}
                   onOpenResultModal={() => setIsResultModalOpen(true)}
                   onCloseResultModal={() => setIsResultModalOpen(false)}

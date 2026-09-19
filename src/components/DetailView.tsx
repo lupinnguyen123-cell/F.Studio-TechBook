@@ -80,6 +80,7 @@ export function DetailView({
   onUseLibrarySolution,
   focusSignal,
   resultSource,
+  resultDevice,
   isResultModalOpen,
   onOpenResultModal,
   onCloseResultModal,
@@ -99,6 +100,7 @@ export function DetailView({
   onUseLibrarySolution: (item: KnowledgeItem) => void;
   focusSignal?: number;
   resultSource: ResultSource;
+  resultDevice?: string;
   isResultModalOpen: boolean;
   onOpenResultModal: () => void;
   onCloseResultModal: () => void;
@@ -617,7 +619,7 @@ export function DetailView({
               </div>
             </div>
             <div className="overflow-y-auto p-5">
-              <SolutionDisplay content={analysisResult} accentColor={currentBrand?.accentColor} />
+              <SolutionDisplay content={analysisResult} accentColor={currentBrand?.accentColor} device={resultDevice} />
             </div>
           </motion.div>
         </div>
