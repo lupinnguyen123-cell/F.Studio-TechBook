@@ -8,6 +8,7 @@ import fs from "fs";
 import { fileURLToPath } from "url";
 import compression from "compression";
 import { analyzeWithGemini } from "./src/server/geminiAnalysis";
+import { matchWithGemini } from "./src/server/geminiMatch";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -79,6 +80,16 @@ async function startServer() {
       return res.status(result.status).json({ error: result.error });
     }
     res.json({ result: result.result });
+  });
+
+  app.post("/api/match", async (req, res) => {
+    const { brandId, errorDescription } = req.body ?? {};
+    const result = await matchWithGemini(geminiApiKey, brandId, errorDescription);
+
+    if (!result.ok) {
+      return res.status(result.status).json({ error: result.error });
+    }
+    res.json(result.data);
   });
 
   app.get(["/api/download-zip", "/so-tay-ky-thuat.zip"], (req, res) => {
