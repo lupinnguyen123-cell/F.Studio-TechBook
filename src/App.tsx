@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { AlertCircle, Home, Library, History as HistoryIcon, Sun, Moon } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import { BRANDS } from './constants';
-import { Brand, LibraryEntry, ResultSource } from './types';
-import { analyzeError, getHealth } from './api/client';
+import { Brand, KnowledgeItem, LibraryEntry, MatchPanelState, MatchResponse, ResultSource } from './types';
+import { ApiError, analyzeError, getHealth, matchLibrary } from './api/client';
 import { useHistory, HistoryItem } from './hooks/useHistory';
 import { NavItem } from './components/NavItem';
 import { HomeView } from './components/HomeView';
@@ -40,6 +40,12 @@ export default function App() {
   // viện (LibraryEntry/KnowledgeItem có sẵn field device). Kết quả AI/Lịch sử không có
   // thiết bị xác định trước nên để undefined, SolutionDisplay sẽ không hiện badge.
   const [resultDevices, setResultDevices] = useState<Record<string, string | undefined>>({});
+  // Panel kết quả của luồng "AI chọn mục thư viện" (/api/match), tách khỏi
+  // analysisResults của luồng AI tự do (/api/analyze) để 2 luồng không đè nhau.
+  const [matchPanels, setMatchPanels] = useState<Record<string, MatchPanelState | null>>({});
+  // Cache trong phiên: hỏi lại đúng mô tả cũ thì không tốn thêm lượt gọi AI — quan
+  // trọng vì gói miễn phí giới hạn số lượt/phút cho toàn dự án (dùng chung mọi shop).
+  const matchCacheRef = useRef(new Map<string, MatchResponse>());
   // Modal kết quả để ở App (không phải signal + state trong DetailView) vì kết quả có
   // thể được mở từ 4 nơi, 3 trong số đó nằm ngoài DetailView. Xem ghi chú ở
   // handleQuickAccess về lý do chọn state điều khiển thay vì tín hiệu tăng dần.
@@ -178,6 +184,7 @@ export default function App() {
     setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
     setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
     setResultDevices((prev) => ({ ...prev, [bid]: undefined }));
+    setMatchPanels((prev) => ({ ...prev, [bid]: null }));
     setIsResultModalOpen(false);
   };
 
@@ -187,6 +194,53 @@ export default function App() {
     setResultSources((prev) => ({ ...prev, [bid]: 'ai' }));
     setResultDevices((prev) => ({ ...prev, [bid]: undefined }));
     setIsResultModalOpen(false);
+  };
+
+  /** Luồng mới: AI CHỌN mục trong thư viện đã duyệt (không tự viết nội dung xử lý).
+   *  Mọi lỗi đều tự hạ về tìm kiếm thư viện chạy trên máy — app không bao giờ để
+   *  trống màn hình, kể cả khi hết hạn mức AI. Không ghi lịch sử, không tự mở modal. */
+  const handleMatch = async () => {
+    if (!currentBrand || !errorDescription.trim() || isAnalyzing) return;
+
+    const bid = currentBrand.id;
+    const library = currentBrand.library || [];
+
+    setIsAnalyzingMap((prev) => ({ ...prev, [bid]: true }));
+    setMatchPanels((prev) => ({ ...prev, [bid]: null }));
+
+    const buildItems = (res: MatchResponse): KnowledgeItem[] =>
+      res.matches
+        .map((m) => library.find((item) => item.id === m.id))
+        .filter((item): item is KnowledgeItem => Boolean(item));
+
+    const cacheKey = `${bid}|${normalize(errorDescription.trim())}`;
+    const cached = matchCacheRef.current.get(cacheKey);
+    if (cached) {
+      setMatchPanels((prev) => ({ ...prev, [bid]: { kind: 'ai', response: cached, items: buildItems(cached) } }));
+      setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
+      return;
+    }
+
+    // AbortSignal.timeout() chưa có trên Safari/iOS cũ — nhân viên dùng iPhone nên
+    // dựng timeout thủ công bằng AbortController + setTimeout.
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 15000);
+
+    try {
+      const response = await matchLibrary(bid, errorDescription, controller.signal);
+      matchCacheRef.current.set(cacheKey, response);
+      setMatchPanels((prev) => ({ ...prev, [bid]: { kind: 'ai', response, items: buildItems(response) } }));
+    } catch (error: any) {
+      const reason: 'rate_limit' | 'unavailable' =
+        error instanceof ApiError && error.status === 429 ? 'rate_limit' : 'unavailable';
+      setMatchPanels((prev) => ({
+        ...prev,
+        [bid]: { kind: 'fallback', reason, items: findLibraryMatches(errorDescription, library, 3) },
+      }));
+    } finally {
+      clearTimeout(timer);
+      setIsAnalyzingMap((prev) => ({ ...prev, [bid]: false }));
+    }
   };
 
   const handleAnalyze = async () => {
@@ -313,8 +367,11 @@ export default function App() {
                     // trước đó) không còn khớp nữa, xóa để tránh nhân viên đọc nhầm
                     // hướng xử lý của lỗi cũ áp cho lỗi mới đang gõ.
                     setAnalysisResults((prev) => (prev[bid] ? { ...prev, [bid]: null } : prev));
+                    setMatchPanels((prev) => (prev[bid] ? { ...prev, [bid]: null } : prev));
                   }}
                   onAnalyze={handleAnalyze}
+                  onMatch={handleMatch}
+                  matchPanel={matchPanels[currentBrand?.id || ''] ?? null}
                   onResetAnalysis={resetAnalysis}
                   onClearResult={handleClearResult}
                   onUseLibrarySolution={handleUseLibrarySolution}

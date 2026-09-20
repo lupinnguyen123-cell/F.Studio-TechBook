@@ -25,11 +25,12 @@ import {
   Trash2,
 } from 'lucide-react';
 import { BRANDS } from '../constants';
-import { Brand, BrandDetail, KnowledgeItem, ResultSource } from '../types';
+import { Brand, BrandDetail, KnowledgeItem, MatchPanelState, ResultSource } from '../types';
 import { findLibraryMatches } from '../lib/searchLibrary';
 import { DemoGuideSection } from './DemoGuideSection';
 import { ScrollToTopButton } from './ScrollToTopButton';
 import { SolutionDisplay } from './SolutionDisplay';
+import { MatchResultPanel } from './MatchResultPanel';
 
 const IconMap: Record<string, any> = {
   Camera,
@@ -75,6 +76,8 @@ export function DetailView({
   onSelectTab,
   onErrorDescriptionChange,
   onAnalyze,
+  onMatch,
+  matchPanel,
   onResetAnalysis,
   onClearResult,
   onUseLibrarySolution,
@@ -95,6 +98,8 @@ export function DetailView({
   onSelectTab: (brandId: Brand) => void;
   onErrorDescriptionChange: (value: string) => void;
   onAnalyze: () => void;
+  onMatch: () => void;
+  matchPanel: MatchPanelState | null;
   onResetAnalysis: () => void;
   onClearResult: () => void;
   onUseLibrarySolution: (item: KnowledgeItem) => void;
@@ -254,13 +259,16 @@ export function DetailView({
                       className="w-full bg-[#f5f5f7] dark:bg-slate-800/50 border border-[#d2d2d7] dark:border-slate-700 rounded-lg p-4 text-sm text-[#1d1d1f] dark:text-slate-200 placeholder:text-[#6e6e73] dark:placeholder:text-slate-500 focus:ring-2 focus:border-transparent transition-all resize-none min-h-[120px]"
                       style={{ '--tw-ring-color': `${currentBrand?.accentColor}80` } as React.CSSProperties}
                     />
+                    <p className="text-[11px] text-[#6e6e73] dark:text-slate-500">
+                      Đừng nhập tên, số điện thoại, email của khách.
+                    </p>
                   </div>
 
                   {/* opacity-only, không animate height: 'auto' — animation đó cần JS đo
                       kích thước qua requestAnimationFrame, nếu bị trì hoãn (tab nền, máy
                       yếu) phần tử kẹt ở height:0 = ẩn hoàn toàn dù điều kiện render đã
                       đúng. Từng gặp đúng lỗi này khi test — sửa luôn tại đây. */}
-                  {librarySuggestions.length > 0 && (
+                  {librarySuggestions.length > 0 && matchPanel === null && (
                       <motion.div
                         ref={suggestionsRef}
                         initial={{ opacity: 0 }}
@@ -291,7 +299,7 @@ export function DetailView({
 
                   <div className="flex gap-3">
                     <button
-                      onClick={onAnalyze}
+                      onClick={onMatch}
                       disabled={isAnalyzing || !errorDescription.trim()}
                       className="flex-1 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-all shadow-lg active:scale-[0.98]"
                       style={{
@@ -321,6 +329,15 @@ export function DetailView({
                       <RotateCcw size={18} />
                     </button>
                   </div>
+
+                  {matchPanel && (
+                    <MatchResultPanel
+                      panel={matchPanel}
+                      isAnalyzing={isAnalyzing}
+                      onOpenItem={onUseLibrarySolution}
+                      onAnalyze={onAnalyze}
+                    />
+                  )}
 
                   {/* Nội dung kết quả đầy đủ nay hiển thị trong modal (không phải inline
                       như trước) — chỗ này chỉ còn 1 thẻ tóm tắt để mở lại modal sau khi
