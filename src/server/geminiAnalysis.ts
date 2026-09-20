@@ -26,6 +26,28 @@ Nội dung phản hồi (ngắn gọn, tự nhiên, chuyên nghiệp):
 ⚠️ QUY TẮC: TUYỆT ĐỐI KHÔNG dùng dấu sao (*). Dùng Emoji ✅, 📍, ⚙️. VIẾT HOA từ khóa. Ngôn ngữ tự nhiên.`;
 }
 
+/** Ánh xạ lỗi từ SDK Gemini sang { status, error } hiển thị cho nhân viên.
+ *  Dùng chung cho /api/analyze và /api/match — giữ nguyên thông báo tiếng Việt và mã
+ *  trạng thái đã dùng từ trước, đừng đổi câu chữ nếu không có lý do rõ ràng. */
+export function mapGeminiError(error: any): { ok: false; status: number; error: string } {
+  const message = String(error?.message || '');
+
+  if (message.includes('SAFETY')) {
+    return { ok: false, status: 500, error: 'Nội dung bị chặn do quy tắc an toàn. Vui lòng điều chỉnh mô tả lỗi.' };
+  }
+  if (message.includes('RESOURCE_EXHAUSTED') || message.includes('429')) {
+    return { ok: false, status: 429, error: 'Đã đạt giới hạn số lượt gọi AI (rate limit). Vui lòng đợi một chút rồi thử lại.' };
+  }
+  if (message.includes('API_KEY_INVALID') || message.includes('PERMISSION_DENIED') || message.includes('401') || message.includes('403')) {
+    return { ok: false, status: 401, error: 'API Key không hợp lệ hoặc đã bị thu hồi. Vui lòng kiểm tra lại cấu hình.' };
+  }
+  if (message.includes('UNAVAILABLE') || message.includes('503') || message.includes('DEADLINE_EXCEEDED')) {
+    return { ok: false, status: 503, error: 'Dịch vụ Gemini đang quá tải hoặc phản hồi chậm. Vui lòng thử lại sau ít phút.' };
+  }
+
+  return { ok: false, status: 500, error: 'Đã có lỗi xảy ra trong quá trình phân tích. Vui lòng thử lại sau.' };
+}
+
 export async function analyzeWithGemini(apiKey: string, brandId: unknown, errorDescription: unknown): Promise<AnalyzeResult> {
   if (typeof errorDescription !== 'string' || !errorDescription.trim()) {
     return { ok: false, status: 400, error: 'Vui lòng nhập mô tả lỗi.' };
@@ -74,21 +96,6 @@ export async function analyzeWithGemini(apiKey: string, brandId: unknown, errorD
       cause: error?.cause,
       raw: JSON.stringify(error, Object.getOwnPropertyNames(error)).slice(0, 2000),
     });
-    const message = String(error?.message || '');
-
-    if (message.includes('SAFETY')) {
-      return { ok: false, status: 500, error: 'Nội dung bị chặn do quy tắc an toàn. Vui lòng điều chỉnh mô tả lỗi.' };
-    }
-    if (message.includes('RESOURCE_EXHAUSTED') || message.includes('429')) {
-      return { ok: false, status: 429, error: 'Đã đạt giới hạn số lượt gọi AI (rate limit). Vui lòng đợi một chút rồi thử lại.' };
-    }
-    if (message.includes('API_KEY_INVALID') || message.includes('PERMISSION_DENIED') || message.includes('401') || message.includes('403')) {
-      return { ok: false, status: 401, error: 'API Key không hợp lệ hoặc đã bị thu hồi. Vui lòng kiểm tra lại cấu hình.' };
-    }
-    if (message.includes('UNAVAILABLE') || message.includes('503') || message.includes('DEADLINE_EXCEEDED')) {
-      return { ok: false, status: 503, error: 'Dịch vụ Gemini đang quá tải hoặc phản hồi chậm. Vui lòng thử lại sau ít phút.' };
-    }
-
-    return { ok: false, status: 500, error: 'Đã có lỗi xảy ra trong quá trình phân tích. Vui lòng thử lại sau.' };
+    return mapGeminiError(error);
   }
 }

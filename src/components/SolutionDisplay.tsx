@@ -16,6 +16,7 @@ import {
   Bike,
   Smartphone,
 } from 'lucide-react';
+import { SCRIPT_NOTE_MARKER, TTBH_NOTE_MARKER } from '../lib/solutionText';
 
 interface ParsedSolution {
   chanDoan: string;
@@ -35,11 +36,6 @@ const SOLUTION_REGEX =
 // "CHÁY NỔ" trong nội dung nên không cần thêm từ khóa "PIN PHỒNG".
 const SAFETY_KEYWORDS = ['AN TOÀN CẦN ƯU TIÊN', 'NGỪNG SỬ DỤNG', 'CHÁY NỔ', 'MÙI KHÉT'];
 
-// Câu đánh dấu cố định của đợt cập nhật T&C bàn giao TTBH (19/09/2026) — nếu chính
-// sách đổi và cần sửa lại câu nhắc trong dữ liệu, PHẢI đổi đúng 2 hằng số này cùng lúc,
-// nếu không phần tách khối phụ sẽ không nhận diện được câu nhắc mới.
-const SCRIPT_NOTE_MARKER = 'Anh/chị nhớ giúp em backup dữ liệu';
-const TTBH_NOTE_MARKER = 'Trước khi gửi máy: nhắc khách tự backup dữ liệu';
 
 function splitNote(text: string, marker: string): { main: string; note?: string } {
   const idx = text.indexOf(marker);
