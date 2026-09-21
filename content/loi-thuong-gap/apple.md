@@ -4020,7 +4020,7 @@
 - **Chẩn đoán ngắn:** Firmware AirPods không có tùy chọn cập nhật thủ công như iOS — tự cập nhật ngầm khi tai nghe trong hộp, cắm sạc, gần iPhone đã mở khóa, có Wi-Fi, không đang phát nhạc.
 - **Từ khóa:** cập nhật firmware AirPods, không tự cập nhật, không có nút update, firmware AirPods treo
 
-**🔍 Chẩn đoán:** Khác với iOS/iPadOS có mục cập nhật rõ ràng trong Cài đặt, firmware của AirPods KHÔNG có nút/tùy chọn cập nhật thủ công. Máy tự cập nhật ngầm khi đủ điều kiện: tai nghe đang trong hộp sạc, hộp đang cắm sạc hoặc còn đủ pin, để gần iPhone đã mở khóa, iPhone có kết nối Wi-Nternet, và không đang phát nhạc/gọi điện qua tai nghe. Nhiều trường hợp khách nghĩ "không cập nhật được" chỉ vì chưa đủ điều kiện nền để máy tự cập nhật, không phải lỗi.
+**🔍 Chẩn đoán:** Khác với iOS/iPadOS có mục cập nhật rõ ràng trong Cài đặt, firmware của AirPods KHÔNG có nút/tùy chọn cập nhật thủ công. Máy tự cập nhật ngầm khi đủ điều kiện: tai nghe đang trong hộp sạc, hộp đang cắm sạc hoặc còn đủ pin, để gần iPhone đã mở khóa, iPhone có kết nối Wi-Fi/Internet, và không đang phát nhạc/gọi điện qua tai nghe. Nhiều trường hợp khách nghĩ "không cập nhật được" chỉ vì chưa đủ điều kiện nền để máy tự cập nhật, không phải lỗi.
 
 **🛠️ Hướng dẫn xử lý:**
 1. Giải thích với khách không có cách cập nhật thủ công, chỉ có thể tạo điều kiện để máy tự cập nhật ngầm.
