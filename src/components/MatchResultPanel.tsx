@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { motion } from 'motion/react';
 import { Library, AlertTriangle, Copy, Check, MessageSquareQuote } from 'lucide-react';
 import { KnowledgeItem, MatchConfidence, MatchPanelState } from '../types';
@@ -127,7 +127,7 @@ export function MatchResultPanel({
   onOpenItem: (item: KnowledgeItem) => void;
   onAnalyze: () => void;
 }) {
-  const wrap = (children: React.ReactNode) => (
+  const wrap = (children: ReactNode) => (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
