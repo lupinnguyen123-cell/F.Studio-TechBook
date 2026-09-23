@@ -15,6 +15,7 @@ import {
   Laptop,
   Bike,
   Smartphone,
+  KeyRound,
 } from 'lucide-react';
 import { SCRIPT_NOTE_MARKER, TTBH_NOTE_MARKER } from '../lib/solutionText';
 
@@ -96,6 +97,10 @@ function ttbhTone(ttbhText: string): 'resolved' | 'send' | 'neutral' {
 function getDeviceIcon(device?: string) {
   if (!device) return null;
   const d = device.toLowerCase();
+  // Nhóm xuyên thiết bị (iCloud, Apple ID, gói đăng ký, phần mềm) — không phải một
+  // loại máy nên không có icon thiết bị nào đúng; nếu bỏ qua sẽ rơi về icon điện
+  // thoại mặc định, gây hiểu nhầm. Khớp cả 2 cách đặt tên (có/không kèm "Apple").
+  if (d.includes('tài khoản') || d.includes('dịch vụ')) return KeyRound;
   if (d.includes('watch') || d.includes('đồng hồ')) return Watch;
   if (d.includes('airpods') || d.includes('tai nghe')) return Headphones;
   if (d.includes('ipad') || d.includes('tablet')) return Tablet;
