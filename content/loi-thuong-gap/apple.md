@@ -1,6 +1,6 @@
 # Apple — Danh mục lỗi thường gặp
 
-> File này lưu dữ liệu lỗi cho dòng sản phẩm: iPhone, iPad, Mac, Watch, AirPods
+> File này lưu dữ liệu lỗi cho dòng sản phẩm: iPhone, iPad, Mac, Watch, AirPods, và nhóm Dịch vụ & Tài khoản Apple (iCloud, Apple ID, gói đăng ký, phần mềm — xuyên thiết bị)
 > Xem hướng dẫn định dạng ở README.md cùng thư mục.
 
 ---
@@ -4266,5 +4266,405 @@
 **💬 Kịch bản tư vấn:** "Siri hoạt động qua tai nghe phụ thuộc vào cài đặt trên điện thoại chứ không phải trên AirPods đâu anh/chị, để em kiểm tra lại phần Cài đặt Siri trên máy xem có bị tắt tùy chọn nghe Hey Siri không nhé."
 
 **📦 Lưu ý TTBH:** KHÔNG gửi TTBH nếu xử lý được bằng cách chỉnh cài đặt Siri trên iPhone. Gửi TTBH nếu đã xác nhận Siri hoạt động tốt trên iPhone, cài đặt đúng mà vẫn không phản hồi qua AirPods (nghi ngờ lỗi micro).
+
+---
+
+### Quick Start bị treo hoặc gián đoạn giữa chừng khi chuyển dữ liệu sang iPhone/iPad mới
+- **ID:** lib-a192
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Quick Start cần 2 máy ở gần nhau, cắm sạc, bật Bluetooth/Wi-Fi và không khóa màn hình suốt quá trình; mất kết nối hoặc khóa màn hình giữa chừng làm quá trình treo/báo lỗi. Khác lib-a57 (lỗi khôi phục TỪ BẢN SAO LƯU iCloud/máy tính).
+- **Từ khóa:** quick start treo, chuyển dữ liệu máy mới bị lỗi, thiết lập iphone mới bị đứng, chuyển dữ liệu không xong
+
+**🔍 Chẩn đoán:** Quick Start cần 2 máy ở gần nhau, đủ pin/cắm sạc, Wi-Fi và Bluetooth bật liên tục trong suốt quá trình; nếu 1 trong 2 máy khóa màn hình hoặc mất kết nối giữa chừng, quá trình treo hoặc báo lỗi. Khác với lỗi khôi phục từ bản sao lưu iCloud/máy tính (xem mục riêng) — đây là lỗi ngay ở bước chuyển TRỰC TIẾP giữa 2 máy.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra cả 2 máy đều cắm sạc, để sát cạnh nhau, không khóa màn hình trong lúc chuyển.
+2. Xác nhận Wi-Fi và Bluetooth đều bật trên cả 2 máy, máy cũ đang kết nối 1 mạng Wi-Fi ổn định.
+3. Nếu chuyển không dây liên tục lỗi: có thể chuyển có dây bằng cáp nối trực tiếp 2 máy (cáp phù hợp cổng của 2 máy) — thường ổn định hơn với dữ liệu lớn.
+4. Nếu máy thuộc diện quản lý của trường học/doanh nghiệp (Apple School Manager/Apple Business Manager): báo khách Quick Start có thể không dùng được, cần chuyển bằng bản sao lưu iCloud/máy tính.
+5. Nếu bị treo giữa chừng: khởi động lại cả 2 máy, thử lại từ đầu (máy mới đã lỡ thiết lập dở thì Xóa hết Nội dung và Cài đặt để về màn hình thiết lập).
+6. Với dữ liệu lớn (nhiều ảnh/video): báo trước cho khách quá trình có thể mất nhiều thời gian, nên để máy yên và chờ.
+
+**🚫 Tuyệt đối không được làm:** Không kết nối máy khách với máy tính/thiết bị không rõ nguồn gốc để "chuyển nhanh"; không xóa dữ liệu máy cũ khi máy mới chưa xác nhận chuyển xong đầy đủ.
+
+**💬 Kịch bản tư vấn:** "Dạ mình để 2 máy sát nhau, cắm sạc và đừng khóa màn hình trong lúc chuyển nhé, dữ liệu càng nhiều thì thời gian chuyển càng lâu ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là thao tác thiết lập máy, không phải lỗi phần cứng.
+
+---
+
+### Chuyển dữ liệu từ Android sang iPhone bằng Move to iOS bị lỗi hoặc không nhận mã xác nhận
+- **ID:** lib-a193
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Move to iOS chỉ dùng được khi iPhone đang ở màn hình thiết lập ban đầu; máy Android phải giữ kết nối với mạng Wi-Fi tạm do iPhone tạo — Android tự chuyển Wi-Fi khác hoặc sang dữ liệu di động sẽ làm quá trình lỗi.
+- **Từ khóa:** move to ios lỗi, chuyển từ android sang iphone, không nhận mã chuyển dữ liệu, chuyển dữ liệu android iphone
+
+**🔍 Chẩn đoán:** Move to iOS cần 2 máy cùng cắm sạc, ở gần nhau, và trong lúc chuyển máy Android phải giữ kết nối vào mạng Wi-Fi TẠM mà iPhone tạo ra — nếu Android tự chuyển sang Wi-Fi khác hoặc dùng dữ liệu di động, quá trình sẽ lỗi.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra iPhone mới chưa thiết lập dở — nếu đã lỡ vào màn hình Home, phải Xóa hết Nội dung và Cài đặt để về màn hình thiết lập ban đầu, vì Move to iOS chỉ dùng được khi thiết lập lần đầu.
+2. Cài/cập nhật app Move to iOS trên máy Android lên bản mới nhất trước khi bắt đầu.
+3. Trên Android: tắt tạm dữ liệu di động và tắt tính năng tự chuyển mạng (Chuyển đổi mạng thông minh/Smart Network Switch hoặc tên tương đương theo hãng) để máy không tự nhảy khỏi Wi-Fi tạm của iPhone.
+4. Không để máy Android tự khóa màn hình, nhận cuộc gọi hoặc thoát app Move to iOS giữa chừng.
+5. Kiểm tra iPhone mới còn đủ dung lượng chứa dữ liệu chuyển sang (kể cả dữ liệu trên thẻ nhớ microSD của Android).
+6. Báo trước với khách: dữ liệu bên trong app (Zalo, ngân hàng, mạng xã hội...) không tự chuyển — sau khi có iPhone khách cần tải app và đăng nhập lại.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết mọi ứng dụng/dữ liệu Android sẽ sang y hệt iPhone; không thao tác trên tài khoản Google/mật khẩu của khách.
+
+**💬 Kịch bản tư vấn:** "Dạ máy Android mình để đúng mạng Wi-Fi tạm mà iPhone tạo ra, tắt 4G trong lúc chuyển nhé, mấy app như Zalo/ngân hàng thì sau này mình tải và đăng nhập lại bình thường ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Thiết lập Chia sẻ trong gia đình (Family Sharing) bị lỗi, không mời/thêm được thành viên
+- **ID:** lib-a194
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Mỗi người chỉ thuộc 1 nhóm Gia đình tại một thời điểm và chỉ được đổi sang nhóm khác 1 lần/năm; nhóm tối đa 6 người; người tổ chức cần phương thức thanh toán hợp lệ để chia sẻ mục mua.
+- **Từ khóa:** family sharing lỗi, chia sẻ trong gia đình không thêm được, mời thành viên gia đình apple, gia đình apple id, tài khoản apple
+
+**🔍 Chẩn đoán:** Family Sharing giới hạn 1 người chỉ thuộc 1 nhóm Gia đình tại một thời điểm, chỉ được chuyển sang nhóm khác 1 lần mỗi năm, và nhóm tối đa 6 thành viên. Người tổ chức (Organizer) cần phương thức thanh toán hợp lệ để chia sẻ mục mua. Lỗi thường do người được mời đang ở nhóm khác/vừa đổi nhóm trong năm, nhóm đã đủ người, hoặc Apple ID chưa bật xác thực 2 yếu tố.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Apple ID của người tổ chức đã bật Xác thực hai yếu tố (2FA) và có phương thức thanh toán hợp lệ.
+2. Kiểm tra nhóm hiện có bao nhiêu thành viên — tối đa 6 người kể cả người tổ chức.
+3. Hỏi người được mời có đang ở một nhóm Gia đình khác không — nếu có, cần rời nhóm cũ trước; nếu họ đã đổi nhóm trong vòng 1 năm qua thì phải chờ đủ thời hạn.
+4. Gửi lời mời qua Cài đặt > Tên của bạn > Gia đình, kiểm tra người nhận đã nhận và chấp nhận lời mời chưa.
+5. Với trẻ em chưa có Apple ID riêng: tạo Tài khoản Trẻ em ngay trong mục Gia đình của người tổ chức.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý đăng nhập hoặc thao tác trên Apple ID cá nhân của khách; không hứa hẹn có thể gộp giao dịch mua cũ giữa 2 Apple ID khác nhau.
+
+**💬 Kịch bản tư vấn:** "Dạ để mời được thì Apple ID người mời phải bật xác thực 2 yếu tố, nhóm chưa đủ 6 người, còn người được mời không được đang ở nhóm gia đình khác ạ — mỗi người chỉ đổi nhóm được 1 lần mỗi năm thôi, mình kiểm tra lại giúp em nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Ask to Buy — phụ huynh không nhận được thông báo để phê duyệt khi con xin mua/tải ứng dụng
+- **ID:** lib-a195
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Yêu cầu Ask to Buy chỉ gửi tới thiết bị của phụ huynh đang đăng nhập đúng Apple ID trong mục Phương tiện & Mục mua; hay gặp nhất là phụ huynh dùng Apple ID mua hàng khác với Apple ID iCloud, hoặc tắt thông báo.
+- **Từ khóa:** ask to buy không nhận thông báo, phê duyệt mua app cho con, family sharing trẻ em, yêu cầu mua ứng dụng
+
+**🔍 Chẩn đoán:** Ask to Buy gửi yêu cầu tới người tổ chức (và phụ huynh/người giám hộ được chỉ định) — nhưng chỉ tới thiết bị đang đăng nhập đúng Apple ID đó ở mục Phương tiện & Mục mua. Nguyên nhân hay gặp: phụ huynh dùng một Apple ID cho iCloud và Apple ID KHÁC để mua hàng, tắt thông báo, hoặc tài khoản của con không phải Tài khoản Trẻ em trong nhóm.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra trên máy phụ huynh: Cài đặt > Tên > Phương tiện & Mục mua — Apple ID ở đây phải trùng với Apple ID người tổ chức/phụ huynh trong nhóm Gia đình.
+2. Kiểm tra thông báo đang bật cho App Store và phụ huynh có đang ở chế độ Tập trung/Không làm phiền chặn thông báo không.
+3. Xác nhận con dùng Tài khoản Trẻ em nằm trong nhóm Gia đình và Ask to Buy đang bật cho đúng thành viên đó (Cài đặt > Gia đình > tên con > Ask to Buy).
+4. Nhờ con gửi lại yêu cầu sau khi đã kiểm tra các bước trên; yêu cầu cũ bị bỏ lỡ có thể đã hết hạn.
+5. Nếu vẫn không nhận được: đăng xuất rồi đăng nhập lại Apple ID Phương tiện & Mục mua trên máy phụ huynh, khởi động lại máy.
+
+**🚫 Tuyệt đối không được làm:** Không hướng dẫn tắt Ask to Buy như cách "sửa lỗi" nếu phụ huynh chưa chủ động muốn tắt tính năng giám sát này.
+
+**💬 Kịch bản tư vấn:** "Dạ anh/chị kiểm tra giúp em tài khoản trong mục Phương tiện & Mục mua có đúng tài khoản phụ huynh trong nhóm gia đình không, nhiều nhà dùng 2 Apple ID khác nhau nên yêu cầu của bé không tới máy mình ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Khách bị trừ tiền dù nghĩ đã hủy, hoặc gói đăng ký (Apple Music/iCloud+/app bên thứ ba) tự động gia hạn ngoài ý muốn
+- **ID:** lib-a196
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Xóa app KHÔNG hủy gói đăng ký; hủy trong Cài đặt chỉ ngừng gia hạn từ chu kỳ tiếp theo, không hoàn tiền chu kỳ đã trả. Gói đăng ký qua web/nhà mạng không hiện trong Cài đặt, phải hủy ở nơi đã đăng ký.
+- **Từ khóa:** bị trừ tiền đăng ký, hủy gói vẫn bị trừ tiền, gia hạn ngoài ý muốn, xóa app vẫn bị trừ tiền, hủy đăng ký
+
+**🔍 Chẩn đoán:** Hiểu lầm phổ biến nhất: khách tưởng XÓA APP là hủy đăng ký — thực tế gói vẫn tiếp tục gia hạn. Ngoài ra, hủy đăng ký chỉ NGỪNG gia hạn ở chu kỳ tiếp theo, không hoàn tiền chu kỳ đã thanh toán. Nếu gói không có trong danh sách Đăng ký của Apple, khả năng khách đã đăng ký trực tiếp qua web của nhà cung cấp hoặc qua nhà mạng.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Vào Cài đặt > Tên khách > Đăng ký (Subscriptions), kiểm tra cùng khách trạng thái từng gói: còn hoạt động, đã hủy (còn dùng tới hết chu kỳ), hay đã hết hạn.
+2. Nếu khách chưa hủy: hướng dẫn khách tự bấm vào đúng gói > Hủy đăng ký. Giải thích rõ xóa app không thay thế được bước này.
+3. Giải thích: hủy có hiệu lực từ chu kỳ tiếp theo, tiền chu kỳ hiện tại đã thanh toán không tự hoàn.
+4. Nếu không thấy gói trong danh sách: kiểm tra khách có đang dùng Apple ID khác không, hoặc gói được đăng ký qua website/nhà mạng — khi đó phải hủy tại chính nơi đã đăng ký.
+5. Nếu gói do thành viên khác trong nhóm Gia đình đăng ký: chỉ người đó mới hủy được.
+6. Nếu khách muốn xin hoàn tiền: hướng dẫn khách tự gửi yêu cầu tại reportaproblem.apple.com (xem mục mua nhầm/muốn hoàn tiền) — cửa hàng không có quyền hoàn tiền các giao dịch này.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết khách chắc chắn được hoàn tiền; không thao tác hủy đăng ký hộ khách trên tài khoản của họ.
+
+**💬 Kịch bản tư vấn:** "Dạ xóa app thì gói vẫn gia hạn đó ạ, mình phải vào Cài đặt > Đăng ký để hủy. Hủy xong mình vẫn dùng được tới hết chu kỳ đã trả tiền, phần tiền này Apple không tự hoàn, muốn xin hoàn thì mình gửi yêu cầu trực tiếp cho Apple ở reportaproblem.apple.com nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là vấn đề thanh toán/đăng ký dịch vụ, không phải lỗi phần cứng.
+
+---
+
+### iCloud báo hết dung lượng lưu trữ, không backup được máy hoặc ảnh không tải lên iCloud
+- **ID:** lib-a197
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Dung lượng iCloud miễn phí chỉ 5GB, dễ đầy khi có nhiều ảnh/video hoặc backup của nhiều thiết bị dùng chung 1 Apple ID. Khác lib-a14 (bộ nhớ TRÊN MÁY đầy) và lib-a43 (iCloud không đồng bộ).
+- **Từ khóa:** icloud đầy dung lượng, không backup được icloud, ảnh không tải lên icloud, hết dung lượng icloud
+
+**🔍 Chẩn đoán:** Dung lượng iCloud miễn phí mặc định chỉ 5GB, dễ đầy khi có nhiều ảnh/video hoặc backup của nhiều thiết bị dùng chung 1 Apple ID. Lưu ý phân biệt: đây là dung lượng TRÊN iCLOUD, khác với bộ nhớ trên máy đầy (xem mục riêng) — hai loại dung lượng này độc lập nhau.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Vào Cài đặt > Tên khách > iCloud > Quản lý dung lượng tài khoản, xem cùng khách phần nào chiếm nhiều nhất (ảnh, bản sao lưu, tin nhắn, iCloud Drive...).
+2. Nếu có bản sao lưu của máy cũ không còn dùng: hướng dẫn khách tự xóa bản sao lưu thiết bị cũ (không phải máy đang dùng) để giải phóng dung lượng.
+3. Kiểm tra các ứng dụng đang sao lưu lên iCloud, tắt sao lưu cho app không cần thiết.
+4. Nếu khách muốn giữ nguyên dữ liệu: giới thiệu có thể nâng cấp gói iCloud+ ngay trong mục này (không tư vấn số tiền cụ thể).
+5. Giải thích: tùy chọn "Tối ưu hóa dung lượng iPhone" trong Ảnh chỉ tiết kiệm bộ nhớ TRÊN MÁY, không giải phóng dung lượng iCloud.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý xóa ảnh/dữ liệu của khách khi chưa xác nhận rõ đó là bản sao lưu dư thừa hay dữ liệu gốc duy nhất; không tư vấn hoặc chốt giá gói iCloud+ cụ thể.
+
+**💬 Kịch bản tư vấn:** "Dạ dung lượng iCloud miễn phí chỉ có 5GB nên dễ đầy lắm ạ, mình xem cùng em phần nào đang chiếm nhiều nhất, xóa bớt bản sao lưu máy cũ không dùng hoặc nâng cấp thêm dung lượng đều được ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Khách mua nhầm hoặc mua trùng ứng dụng/gói trong app qua App Store, muốn xin hoàn tiền
+- **ID:** lib-a198
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Hoàn tiền giao dịch App Store chỉ Apple xử lý được qua reportaproblem.apple.com, cửa hàng không có quyền can thiệp hay hoàn tiền trực tiếp.
+- **Từ khóa:** hoàn tiền app store, mua nhầm ứng dụng, report a problem apple, mua trùng gói app
+
+**🔍 Chẩn đoán:** Yêu cầu hoàn tiền giao dịch App Store/Apple chỉ Apple mới xử lý được (qua reportaproblem.apple.com); cửa hàng không có quyền can thiệp hay hoàn tiền trực tiếp. Nhiệm vụ của nhân viên là giúp khách xác định đúng giao dịch và đúng Apple ID đã mua.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác định giao dịch trên máy: Cài đặt > Tên khách > Phương tiện & Mục mua > Xem tài khoản > Lịch sử mua hàng — kiểm tra đúng Apple ID đã mua và đúng khoản bị trừ.
+2. Hướng dẫn khách vào reportaproblem.apple.com, đăng nhập đúng Apple ID đã mua, chọn yêu cầu hoàn tiền và chọn đúng giao dịch, lý do phù hợp (mua nhầm, mua trùng, không dùng được...).
+3. Giải thích: Apple xem xét và phản hồi qua email, thời gian xử lý không cố định, cửa hàng không thể thúc kết quả nhanh hơn.
+4. Nếu không thấy giao dịch trong Lịch sử mua hàng: có thể khách mua bằng Apple ID khác, hoặc khoản trừ đến từ thành viên nhóm Gia đình dùng chung phương thức thanh toán.
+
+**🚫 Tuyệt đối không được làm:** Không hứa hẹn tỷ lệ/khả năng được hoàn tiền; không thay khách gửi yêu cầu hoàn tiền bằng tài khoản của cửa hàng hay của nhân viên; không dựa vào email "hóa đơn" khách nhận được để xác minh (email giả mạo Apple rất phổ biến) — luôn kiểm tra trong Lịch sử mua hàng trên máy.
+
+**💬 Kịch bản tư vấn:** "Dạ khoản này chỉ Apple xử lý hoàn tiền được thôi ạ, mình vào trang reportaproblem.apple.com đăng nhập đúng tài khoản đã mua rồi chọn đúng giao dịch để gửi yêu cầu, Apple sẽ phản hồi qua email nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Apple ID báo "Tài khoản đã bị khóa/vô hiệu hóa vì lý do bảo mật" (locked/disabled for security reasons)
+- **ID:** lib-a199
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Thường do nhập sai mật khẩu nhiều lần liên tiếp; khách tự mở khóa được bằng cách xác minh danh tính/đặt lại mật khẩu qua iforgot.apple.com. Khác lib-a48 (mất hẳn quyền truy cập 2FA, phải khôi phục tài khoản vài ngày) và khác thông báo "tài khoản không hoạt động" (phải liên hệ Apple Support).
+- **Từ khóa:** apple id vô hiệu hóa, tài khoản bị khóa bảo mật, disabled for security reasons, apple id bị khóa, tài khoản apple bị khóa
+
+**🔍 Chẩn đoán:** Thông báo "bị khóa/vô hiệu hóa vì lý do bảo mật" thường do nhập sai mật khẩu hoặc câu hỏi bảo mật nhiều lần liên tiếp (của chính khách hoặc người khác thử đăng nhập). Đây là khóa bảo vệ — khách TỰ MỞ được bằng cách xác minh danh tính và đặt lại mật khẩu. Phân biệt 2 trường hợp khác: (1) khách không còn thiết bị tin cậy/số điện thoại để nhận mã 2FA → phải qua quy trình Khôi phục tài khoản mất vài ngày (xem mục mất quyền truy cập Apple ID); (2) thông báo "Tài khoản Apple này không hoạt động" (not active) → khách không tự mở được, cần liên hệ Apple Support.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Đọc kỹ đúng câu thông báo cùng khách để xác định thuộc trường hợp nào (bị khóa/vô hiệu hóa vì bảo mật, hay không hoạt động).
+2. Trấn an khách: khóa vì lý do bảo mật là cơ chế bảo vệ, không phải tài khoản đã mất hay bị xóa dữ liệu.
+3. Hướng dẫn khách tự vào iforgot.apple.com (hoặc làm theo nút mở khóa ngay trên thông báo) để xác minh và đặt lại mật khẩu.
+4. Nếu khách còn thiết bị Apple khác đang đăng nhập sẵn Apple ID này: có thể đổi mật khẩu trực tiếp từ thiết bị đó, nhanh hơn.
+5. Nếu khách không nhận được mã xác minh (không còn thiết bị/số điện thoại tin cậy): chuyển sang hướng dẫn quy trình Khôi phục tài khoản (mất vài ngày, cửa hàng không rút ngắn được).
+6. Nếu thông báo là "không hoạt động": hướng dẫn khách liên hệ Apple Support qua kênh chính thức.
+
+**🚫 Tuyệt đối không được làm:** Không yêu cầu khách đọc mật khẩu hoặc mã xác thực 2 yếu tố cho nhân viên; không tự ý bấm thử nhiều mật khẩu đoán trên máy khách (sẽ làm khóa lâu hơn).
+
+**💬 Kịch bản tư vấn:** "Dạ đây là khóa để bảo vệ tài khoản do nhập sai mật khẩu nhiều lần thôi ạ, không phải mất tài khoản đâu, mình vào iforgot.apple.com xác minh rồi đặt lại mật khẩu là mở lại được ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Khách nhận tin nhắn/cuộc gọi tự xưng Apple báo "Apple ID bị khóa/bị xâm phạm", yêu cầu bấm link hoặc đọc mã xác thực
+- **ID:** lib-a200
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Lừa đảo giả mạo Apple (phishing) để lấy mật khẩu/mã 2FA; Apple không bao giờ gọi điện/nhắn tin yêu cầu đọc mật khẩu hay mã xác thực.
+- **Từ khóa:** tin nhắn giả mạo apple, lừa đảo apple id, phishing apple, cuộc gọi giả danh apple
+
+**🔍 Chẩn đoán:** Đây là hình thức lừa đảo phổ biến (phishing) giả mạo thông báo Apple để lấy mật khẩu hoặc mã 2FA; Apple không bao giờ gọi điện/nhắn tin yêu cầu đọc mật khẩu hay mã xác thực. Việc cần xác định: khách đã nhập/đọc thông tin gì cho kẻ gian chưa.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Khẳng định rõ với khách: Apple KHÔNG BAO GIỜ gọi điện, nhắn tin, hay yêu cầu khách đọc mật khẩu, mã xác thực 2 yếu tố, hoặc đăng nhập vào một trang web gửi kèm.
+2. Hướng dẫn khách KHÔNG bấm vào link trong tin nhắn đó, không gọi lại số điện thoại kèm theo.
+3. Nếu khách đã lỡ bấm link nhưng CHƯA nhập thông tin gì: đóng trang ngay, không cần làm gì thêm.
+4. Nếu khách đã lỡ nhập/đọc mật khẩu hoặc mã xác thực: hướng dẫn khách đổi mật khẩu Apple ID ngay (Cài đặt > Tên > Đăng nhập & Bảo mật, hoặc iforgot.apple.com), sau đó kiểm tra danh sách thiết bị đang đăng nhập và thông tin khôi phục.
+5. Hướng dẫn khách báo cáo: với iMessage dùng nút "Báo cáo rác" ngay trong Tin nhắn; có thể gửi ảnh chụp tin nhắn tới reportphishing@apple.com.
+
+**🚫 Tuyệt đối không được làm:** Không tự ý bấm vào link trong tin nhắn khách đưa xem; không đọc hộ hoặc yêu cầu khách đọc mật khẩu/mã xác thực để nhân viên "kiểm tra giúp".
+
+**💬 Kịch bản tư vấn:** "Dạ đây là tin nhắn giả mạo Apple để lừa lấy mật khẩu thôi ạ, Apple không bao giờ gọi điện hay nhắn tin đòi đọc mật khẩu hay mã xác thực đâu, mình đừng bấm vào link đó, nếu lỡ nhập thông tin rồi thì đổi mật khẩu Apple ID ngay giúp em nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là vấn đề an toàn tài khoản/lừa đảo, không phải lỗi thiết bị.
+
+---
+
+### Khách nhận cảnh báo có thiết bị lạ vừa đăng nhập/yêu cầu đăng nhập Apple ID, lo tài khoản bị chiếm
+- **ID:** lib-a201
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Thông báo đăng nhập là tính năng bảo mật hợp lệ khi có thiết bị yêu cầu đăng nhập Apple ID; vị trí hiện kèm thường chỉ ước lượng theo mạng nên hay sai. Cần xác định có phải chính khách/người thân đăng nhập không.
+- **Từ khóa:** cảnh báo đăng nhập apple id lạ, tài khoản apple id bị xâm phạm, thiết bị lạ đăng nhập, bảo mật apple id, yêu cầu đăng nhập apple id
+
+**🔍 Chẩn đoán:** Thông báo "yêu cầu đăng nhập"/"đăng nhập mới" là tính năng bảo mật hợp lệ của Apple. Vị trí hiển thị kèm theo chỉ là ước lượng dựa trên mạng của thiết bị kia (thường lệch sang tỉnh/thành khác), nên dễ khiến khách hoảng dù thực tế là chính mình vừa đăng nhập. Cần xác định đó là khách/người thân hay người lạ thật sự.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Nếu thông báo đang hiện yêu cầu Cho phép/Không cho phép mà khách không chủ động đăng nhập: bấm "Không cho phép" và TUYỆT ĐỐI không đọc mã xác minh cho ai.
+2. Hỏi khách gần đây có tự đăng nhập Apple ID trên thiết bị mới, hoặc cho người thân dùng chung tài khoản không.
+3. Nếu KHÔNG phải khách: hướng dẫn khách đổi mật khẩu Apple ID ngay (Cài đặt > Tên > Đăng nhập & Bảo mật > Đổi mật khẩu) trên thiết bị đang tin cậy.
+4. Kiểm tra cùng khách danh sách thiết bị đang đăng nhập (cuối trang Cài đặt > Tên) và gỡ thiết bị lạ.
+5. Kiểm tra lại số điện thoại/email khôi phục có bị thay đổi không; khuyên khách bật Xác thực hai yếu tố nếu chưa có.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định chắc chắn tài khoản đã bị hack khi chưa xác nhận với khách; không thao tác đổi mật khẩu Apple ID thay khách.
+
+**💬 Kịch bản tư vấn:** "Dạ vị trí hiện trên thông báo chỉ là ước lượng nên hay bị lệch ạ, mình xác nhận lại xem có phải chính mình hoặc người thân vừa đăng nhập không nhé, nếu không phải thì bấm Không cho phép, đổi mật khẩu ngay và kiểm tra danh sách thiết bị đang đăng nhập ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH.
+
+---
+
+### Máy (iPhone/iPad/Mac) mua lại/cũ, khi cài đặt hiện màn hình "Remote Management" do một tổ chức quản lý, không thể bỏ qua để vào máy
+- **ID:** lib-a202
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Máy từng được trường học/doanh nghiệp đăng ký quản lý (MDM qua Apple Business/School Manager) và chưa được gỡ trước khi bán lại; KHÁC Activation Lock, không có cách gỡ hợp lệ tại cửa hàng — chỉ tổ chức sở hữu gỡ được.
+- **Từ khóa:** remote management, máy dính mdm, quản lý từ xa không vào được máy, máy cũ bị khóa tổ chức
+
+**🔍 Chẩn đoán:** Đây là tính năng Quản lý thiết bị từ xa (MDM) qua Apple Business Manager/Apple School Manager — máy từng được một trường học/doanh nghiệp đăng ký quản lý và CHƯA được gỡ khỏi hệ thống đó trước khi bán lại. KHÔNG liên quan đến Activation Lock (khóa Apple ID, xem mục riêng) và không có cách gỡ hợp lệ tại cửa hàng.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận đúng là màn hình "Remote Management"/máy do tổ chức quản lý (KHÔNG phải màn hình Activation Lock yêu cầu Apple ID) — hai loại khóa này khác nhau và xử lý khác nhau.
+2. Hỏi rõ nguồn gốc máy: mua ở đâu, có phải máy thanh lý từ công ty/trường học, hay máy xách tay không rõ nguồn gốc.
+3. Giải thích với khách: chỉ tổ chức đã đăng ký quản lý thiết bị mới gỡ được, cửa hàng không có quyền can thiệp.
+4. Khuyên khách liên hệ nơi bán/đơn vị từng sở hữu máy để yêu cầu gỡ thiết bị khỏi hệ thống quản lý trước khi tiếp tục sử dụng.
+5. Nếu máy được mang tới để thu cũ/đổi mới: KHÔNG nhận thu máy đang ở tình trạng này.
+
+**🚫 Tuyệt đối không được làm:** Không sử dụng bất kỳ công cụ/dịch vụ bên thứ ba nào để "bẻ khóa" hoặc gỡ Remote Management; không hướng dẫn khách bỏ qua màn hình này bằng thủ thuật.
+
+**💬 Kịch bản tư vấn:** "Dạ máy này đang bị một tổ chức (công ty/trường học) quản lý từ xa, khác với khóa Apple ID thông thường ạ, chỉ đúng tổ chức đó gỡ ra được thôi, mình liên hệ lại nơi bán để họ hỗ trợ gỡ trước khi dùng tiếp nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây không phải lỗi phần cứng và cửa hàng không có thẩm quyền xử lý, chỉ tư vấn hướng đúng cho khách.
+
+---
+
+### CarPlay không kết nối được với xe, hoặc đang dùng thì bị ngắt kết nối liên tục
+- **ID:** lib-a203
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** CarPlay cần Siri đang bật, không bị Thời gian sử dụng chặn, cáp/Bluetooth ổn định và xe hỗ trợ CarPlay; hay gặp do cáp kém chất lượng, Siri tắt hoặc xung đột kết nối cũ của xe.
+- **Từ khóa:** carplay không kết nối, carplay bị ngắt liên tục, carplay không dây lỗi, kết nối carplay xe hơi
+
+**🔍 Chẩn đoán:** CarPlay cần Siri đang bật, không bị giới hạn trong Thời gian sử dụng, cáp/Bluetooth ổn định (tùy có dây hay không dây), và xe thực sự hỗ trợ CarPlay; lỗi hay gặp do cáp kém chất lượng, Siri bị tắt, hoặc xung đột kết nối cũ của xe.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Siri đang BẬT trên iPhone (Cài đặt > Siri) — CarPlay cần Siri để hoạt động.
+2. Kiểm tra Cài đặt > Thời gian sử dụng > Bị hạn chế nội dung & quyền riêng tư > Ứng dụng được phép — CarPlay phải đang được cho phép.
+3. Với CarPlay có dây: thử đổi cáp khác (ưu tiên cáp chính hãng/MFi), thử cổng USB khác trên xe.
+4. Với CarPlay không dây: kiểm tra Wi-Fi và Bluetooth đều bật trên iPhone, xóa kết nối Bluetooth cũ của xe rồi ghép đôi lại từ đầu.
+5. Vào Cài đặt > Cài đặt chung > CarPlay, chọn xe > Quên xe này, rồi kết nối lại.
+6. Khởi động lại cả iPhone và hệ thống giải trí trên xe.
+7. Nếu vẫn lỗi: có thể hệ thống giải trí của xe cần cập nhật phần mềm của hãng xe — ngoài phạm vi xử lý của cửa hàng.
+
+**🚫 Tuyệt đối không được làm:** Không khẳng định lỗi do iPhone khi chưa loại trừ khả năng do xe/hệ thống giải trí của xe; không tháo lắp hệ thống trên xe của khách.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra giúp em Siri đã bật chưa, với thử đổi cáp hoặc quên xe rồi kết nối lại CarPlay từ đầu nhé, nếu vẫn không được thì có thể cần cập nhật phần mềm hệ thống giải trí của xe, phần đó ngoài khả năng hỗ trợ của bên em ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — nếu đã loại trừ hết nguyên nhân phía iPhone mà vẫn lỗi, hướng khách liên hệ hãng xe/đại lý kiểm tra hệ thống CarPlay trên xe.
+
+---
+
+### Điểm truy cập cá nhân (Personal Hotspot) không hiện trên thiết bị khác hoặc không phát được Wi-Fi
+- **ID:** lib-a204
+- **Thiết bị:** iPhone
+- **Chẩn đoán ngắn:** Personal Hotspot cần gói cước nhà mạng hỗ trợ chia sẻ dữ liệu và dữ liệu di động đang bật; thiết bị đời cũ/không phải Apple có thể cần bật "Tối đa hóa khả năng tương thích" trên iPhone 12 trở lên.
+- **Từ khóa:** personal hotspot không hoạt động, điểm truy cập cá nhân không hiện, phát wifi từ iphone lỗi, chia sẻ internet iphone không được
+
+**🔍 Chẩn đoán:** Personal Hotspot cần gói cước di động hỗ trợ chia sẻ dữ liệu (phụ thuộc nhà mạng), dữ liệu di động đang bật, và máy kết nối phải chọn đúng tên mạng/mật khẩu; từ iPhone 12 trở lên, thiết bị đời cũ hoặc không phải Apple có thể cần bật "Tối đa hóa khả năng tương thích" mới thấy được sóng.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Vào Cài đặt > Điểm truy cập cá nhân, xác nhận đã bật "Cho phép người khác kết nối". Nếu không thấy mục Điểm truy cập cá nhân: kiểm tra Cài đặt > Di động > Mạng dữ liệu di động, thiếu cấu hình từ nhà mạng thì liên hệ nhà mạng.
+2. Kiểm tra máy phát còn sóng, dữ liệu di động đang bật và gói cước có hỗ trợ chia sẻ kết nối.
+3. Giữ màn hình Điểm truy cập cá nhân đang mở trên iPhone trong lúc máy kia dò mạng.
+4. Trên máy cần kết nối: tắt/bật lại Wi-Fi, chọn đúng tên mạng và nhập đúng mật khẩu hiển thị trên iPhone.
+5. Với iPhone 12 trở lên: bật "Tối đa hóa khả năng tương thích" nếu máy kết nối là máy đời cũ hoặc không phải Apple.
+6. Nếu vẫn lỗi: xin phép khách Đặt lại cài đặt mạng — báo trước thao tác này xóa mật khẩu Wi-Fi đã lưu. Khởi động lại cả hai máy sau khi thử.
+
+**🚫 Tuyệt đối không được làm:** Không Đặt lại cài đặt mạng khi chưa xin phép khách; không đổ lỗi cho máy khi chưa loại trừ khả năng gói cước nhà mạng không hỗ trợ chia sẻ dữ liệu.
+
+**💬 Kịch bản tư vấn:** "Dạ mình kiểm tra giúp em đã bật điểm truy cập cá nhân và còn dữ liệu di động chưa, với thử bật tối đa hóa khả năng tương thích nếu máy kia là máy đời cũ nhé, nếu vẫn không lên thì mình xin phép đặt lại cài đặt mạng, thao tác này sẽ mất mật khẩu Wi-Fi đã lưu ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — nếu đã loại trừ hết các bước trên vẫn không được, khả năng do gói cước nhà mạng, hướng khách liên hệ tổng đài nhà mạng.
+
+---
+
+### Khách muốn xóa sạch máy (Xóa hết Nội dung và Cài đặt) trước khi bán/tặng/thu cũ, hỏi có xóa hết dữ liệu không và người mua sau có bị dính Activation Lock không
+- **ID:** lib-a205
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Xóa ngay trên máy bằng "Xóa hết Nội dung và Cài đặt" sẽ yêu cầu mật khẩu Apple ID để tắt Tìm, nên máy không còn dính khóa; rủi ro dính Activation Lock chủ yếu khi xóa qua Recovery/DFU hoặc xóa từ xa mà chưa gỡ máy khỏi tài khoản.
+- **Từ khóa:** xóa hết nội dung và cài đặt, erase all content, bán máy cũ xóa dữ liệu, activation lock sau khi xóa máy, thu cũ đổi mới xóa máy
+
+**🔍 Chẩn đoán:** "Xóa hết Nội dung và Cài đặt" thực hiện NGAY TRÊN MÁY sẽ yêu cầu mật khẩu Apple ID để tắt Tìm và đăng xuất — làm đúng thì người mua sau không bị dính khóa. Rủi ro dính Activation Lock chủ yếu xảy ra khi máy bị xóa qua Recovery/DFU hoặc xóa từ xa mà chưa gỡ máy khỏi tài khoản. Mục này là hướng dẫn PHÒNG TRÁNH; nếu máy đã dính khóa thì xem mục Activation Lock riêng, và với Mac chip M5 kẹt ở màn hình "Activate Mac" sau khi xóa thì xem mục riêng về lỗi kích hoạt.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Nhắc khách sao lưu dữ liệu cần giữ TRƯỚC khi xóa — thao tác xóa không thể hoàn tác.
+2. Nếu khách có Apple Watch ghép đôi: hủy ghép đôi Watch trước. Nhắc khách giữ lại máy cũ tới khi máy mới đã chuyển xong dữ liệu.
+3. Với iPhone/iPad: Cài đặt > Cài đặt chung > Chuyển hoặc Đặt lại iPhone > Xóa hết Nội dung và Cài đặt, khách tự nhập mật khẩu Apple ID khi được hỏi để tắt Tìm.
+4. Với Mac (macOS Ventura trở lên): Cài đặt hệ thống > Cài đặt chung > Chuyển hoặc Đặt lại > Xóa hết Nội dung và Cài đặt; nhắc khách đăng xuất Tin nhắn/iCloud trước. Máy không có tính năng này thì xóa qua Recovery SAU KHI đã đăng xuất iCloud.
+5. Nếu máy đã bị xóa trước đó mà quên tắt Tìm: hướng dẫn khách tự gỡ máy khỏi tài khoản tại iCloud.com/find hoặc ứng dụng Tìm trên thiết bị khác (Xóa khỏi tài khoản).
+6. Sau khi xóa xong, kiểm tra máy đã về màn hình thiết lập ban đầu, không còn yêu cầu Apple ID cũ.
+
+**🚫 Tuyệt đối không được làm:** Không thực hiện xóa máy khi khách CHƯA xác nhận đã sao lưu dữ liệu cần giữ; không yêu cầu khách đọc mật khẩu Apple ID để nhân viên nhập hộ — khách tự nhập.
+
+**💬 Kịch bản tư vấn:** "Dạ trước khi xóa máy mình nhớ backup dữ liệu cần giữ nhé, khi xóa máy sẽ hỏi mật khẩu Apple ID để tắt Tìm, mình tự nhập là máy sạch hoàn toàn, người mua sau không bị dính khóa kích hoạt ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là thao tác thiết lập máy do khách chủ động thực hiện.
+
+---
+
+### Mac báo lỗi hoặc không tải được khi cài lại macOS qua chế độ Recovery
+- **ID:** lib-a206
+- **Thiết bị:** Mac
+- **Chẩn đoán ngắn:** Cài lại macOS qua Recovery cần mạng ổn định để tải hệ điều hành từ Apple, và máy có Activation Lock (Apple silicon/chip T2) sẽ yêu cầu Apple ID chủ sở hữu; máy không vào được bất kỳ chế độ Recovery nào mới nghi phần cứng.
+- **Từ khóa:** cài lại macos lỗi, macos recovery không tải được, internet recovery mac, cài macos qua recovery
+
+**🔍 Chẩn đoán:** Cài lại macOS qua Recovery cần kết nối mạng ổn định để tải hệ điều hành từ máy chủ Apple. Máy Apple silicon hoặc Intel có chip T2 đã bật Tìm sẽ yêu cầu Apple ID chủ sở hữu (Activation Lock) — đây là bước bảo mật bình thường. Nếu máy không vào được BẤT KỲ chế độ Recovery nào mới nghi lỗi phần cứng/ổ lưu trữ.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Xác nhận Mac đang kết nối Wi-Fi ổn định, tránh mạng công cộng/mạng có trang đăng nhập (captive portal) chặn kết nối máy chủ Apple.
+2. Nếu máy yêu cầu Apple ID để xác minh chủ sở hữu: khách tự nhập đúng Apple ID/mật khẩu đã dùng trên máy.
+3. Nếu tải bị treo/lỗi giữa chừng: khởi động lại vào Recovery và tải lại từ đầu trên mạng ổn định.
+4. Mac Apple silicon: nếu Recovery thường lỗi, thử fallback recoveryOS (tắt máy, nhấn nút nguồn nhanh 2 lần rồi giữ). Mac Intel: có thể thử Internet Recovery (Option-Command-R khi khởi động).
+5. Nếu máy không vào được bất kỳ chế độ Recovery nào: cần DFU (khôi phục bằng một máy Mac khác) — chuyển TTBH/kỹ thuật được đào tạo xử lý.
+
+**🚫 Tuyệt đối không được làm:** Không thử nhập nhiều Apple ID/mật khẩu đoán mò khi máy yêu cầu xác minh chủ sở hữu; không cam kết chắc chắn cài lại được nếu chưa xác nhận máy vào được Recovery; không xóa ổ đĩa khi khách chưa xác nhận đã có bản sao lưu.
+
+**💬 Kịch bản tư vấn:** "Dạ để cài lại macOS mình cần Wi-Fi ổn định để tải hệ điều hành từ Apple, nếu máy hỏi Apple ID thì mình nhập đúng tài khoản đã dùng trên máy để xác minh nhé, còn nếu máy không vào được chế độ khôi phục nào cả thì khả năng liên quan phần cứng, cần chuyển trung tâm bảo hành kiểm tra thêm ạ." Anh/chị nhớ giúp em backup dữ liệu và đăng xuất hết tài khoản cá nhân trên máy (như Apple ID/iCloud, Find My...) trước khi gửi máy đi bảo hành nhé, vì bên em không chịu trách nhiệm nếu phát sinh mất dữ liệu trong quá trình xử lý ạ.
+
+**📦 Lưu ý TTBH:** Nếu máy KHÔNG vào được bất kỳ chế độ Recovery nào (nghi phần cứng/ổ lưu trữ) → đề xuất khách nhận bảo hành, gửi TTBH kiểm tra. Nếu chỉ là lỗi mạng/xác minh tài khoản → KHÔNG gửi TTBH. Trước khi gửi máy: nhắc khách tự backup dữ liệu và đăng xuất/tắt khóa tài khoản cá nhân trên máy (Apple ID/iCloud, Find My, hoặc tài khoản tương ứng theo hãng). Cửa hàng miễn trừ trách nhiệm nếu mất dữ liệu, không cam kết giữ nguyên hiện trạng máy nếu bị từ chối bảo hành, và phiếu biên nhận chỉ có giá trị 30 ngày kể từ khi có kết quả — quá hạn máy sẽ vào danh sách thanh lý.
+
+---
+
+### Không nhận thông báo từ ứng dụng bên thứ ba (Zalo, app ngân hàng, mạng xã hội...) trên iPhone/iPad dù app vẫn mở và dùng bình thường
+- **ID:** lib-a207
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Thường do cài đặt thông báo của riêng app, chế độ Tập trung, Tóm tắt theo lịch, Chế độ nguồn điện thấp hoặc cài đặt thông báo BÊN TRONG app; khác lib-a27/lib-a98 (app treo/crash) và lib-a121 (Apple Watch không rung thông báo).
+- **Từ khóa:** không nhận thông báo zalo, app ngân hàng không báo, mất thông báo ứng dụng, thông báo app bên thứ ba, không hiện thông báo iphone
+
+**🔍 Chẩn đoán:** App vẫn mở và dùng bình thường nhưng không hiện thông báo — gần như luôn do cài đặt: thông báo của riêng app bị tắt, chế độ Tập trung/Không làm phiền, Tóm tắt theo lịch gom thông báo lại, Chế độ nguồn điện thấp hạn chế làm mới nền, hoặc cài đặt thông báo BÊN TRONG app (VD app chỉ đẩy thông báo tới thiết bị đăng nhập sau cùng). Khác với trường hợp app bị treo/crash (xem mục riêng theo iPhone/iPad) và Apple Watch không rung thông báo (xem mục Apple Watch).
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra Cài đặt > Thông báo > đúng tên app: Cho phép thông báo đang bật, có chọn hiển thị ở Màn hình khóa/Trung tâm thông báo/Biểu ngữ.
+2. Kiểm tra chế độ Tập trung (Không làm phiền, Ngủ, Làm việc...) có đang bật và chặn app này không.
+3. Kiểm tra Cài đặt > Thông báo > Tóm tắt theo lịch — app có nằm trong danh sách bị gom vào bản tóm tắt không.
+4. Tắt Chế độ nguồn điện thấp nếu đang bật; bật Làm mới ứng dụng nền cho app (Cài đặt > Cài đặt chung > Làm mới ứng dụng nền).
+5. Mở cài đặt thông báo BÊN TRONG app (VD mục Cài đặt/Thông báo của Zalo, app ngân hàng) kiểm tra còn bật không; hỏi khách có đăng nhập cùng tài khoản trên máy khác không.
+6. Cập nhật app và hệ điều hành lên bản mới nhất; vẫn lỗi thì xóa và cài lại app (báo trước khách có thể phải đăng nhập lại, một số app mất dữ liệu chưa sao lưu). Chỉ riêng app này lỗi sau tất cả các bước: hướng khách liên hệ bộ phận hỗ trợ của app.
+
+**🚫 Tuyệt đối không được làm:** Không đăng nhập vào tài khoản ngân hàng/mạng xã hội của khách để "kiểm tra giúp"; không cam kết sửa được lỗi bên trong ứng dụng của bên thứ ba; không xóa app khi khách chưa xác nhận dữ liệu đã được sao lưu.
+
+**💬 Kịch bản tư vấn:** "Dạ app vẫn chạy bình thường mà không báo thì đa phần do cài đặt thông báo hoặc chế độ Tập trung thôi ạ, em kiểm tra cùng mình cả cài đặt trên máy lẫn cài đặt bên trong app nhé."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — trừ khi MỌI ứng dụng (kể cả app của Apple như Tin nhắn, Điện thoại) đều không có thông báo sau khi đã kiểm tra hết cài đặt.
+
+---
+
+### Bộ ứng dụng văn phòng (Word/Excel) hoặc Adobe trên Mac/iPad bị treo, không mở được file, khách nghi máy lỗi
+- **ID:** lib-a208
+- **Thiết bị:** Dịch vụ & Tài khoản Apple
+- **Chẩn đoán ngắn:** Thường do phiên bản ứng dụng, file bị hỏng/không tương thích hoặc tài khoản/bản quyền hết hạn — không phải lỗi phần cứng. Khác lib-a77 (app trên Mac treo "Không phản hồi" nói chung): mục này tập trung vào lỗi MỞ FILE và bản quyền.
+- **Từ khóa:** word excel bị treo trên mac, adobe không mở được file, office lỗi trên ipad, app văn phòng crash, không mở được file word
+
+**🔍 Chẩn đoán:** Đây thường là lỗi phiên bản ứng dụng, file bị hỏng/không tương thích định dạng, hoặc tài khoản/bản quyền (Microsoft 365, Adobe) hết hạn — không phải lỗi phần cứng. Khác mục app treo "Không phản hồi" nói chung trên Mac: mục này tập trung vào việc KHÔNG MỞ ĐƯỢC FILE và vấn đề bản quyền của ứng dụng văn phòng/đồ họa.
+
+**🛠️ Hướng dẫn xử lý:**
+1. Kiểm tra ứng dụng đã cập nhật bản mới nhất (App Store hoặc trình cập nhật của Microsoft/Adobe) và tương thích phiên bản macOS/iPadOS đang dùng.
+2. Thử mở một file KHÁC bằng cùng ứng dụng — nếu file khác mở bình thường, khả năng cao file gốc bị lỗi/không tương thích.
+3. Thử mở file đó bằng app khác tương thích (VD file Word mở bằng Pages, file PDF mở bằng Xem trước) để xác nhận file còn đọc được.
+4. Kiểm tra tài khoản đăng nhập trong app còn hiệu lực, không hết hạn dùng thử/bản quyền (app hết bản quyền thường chỉ cho xem, không cho sửa).
+5. Nếu file nằm trên iCloud Drive/OneDrive: kiểm tra file đã tải về máy hoàn toàn chưa.
+6. Nếu app liên tục treo dù đã cập nhật và thử file khác: hướng dẫn gỡ và cài lại ứng dụng, hoặc liên hệ hỗ trợ của Microsoft/Adobe.
+
+**🚫 Tuyệt đối không được làm:** Không cam kết khôi phục được file bị hỏng dữ liệu; không tự ý xóa file của khách khi chưa xác nhận đã có bản sao lưu; không cài phần mềm bẻ khóa bản quyền.
+
+**💬 Kịch bản tư vấn:** "Dạ mình thử mở file khác bằng app này xem có bị tương tự không nhé, nếu chỉ riêng file đó lỗi thì khả năng do file chứ không phải máy, còn nếu app cứ treo liên tục thì mình cập nhật hoặc cài lại ứng dụng, kiểm tra luôn bản quyền còn hạn không ạ."
+
+**📦 Lưu ý TTBH:** KHÔNG gửi TTBH — đây là vấn đề phần mềm ứng dụng văn phòng bên thứ ba, không phải lỗi phần cứng Apple.
 
 ---

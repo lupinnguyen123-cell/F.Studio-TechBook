@@ -2,13 +2,13 @@
 
 Đây là nơi lưu **toàn bộ nội dung** hiển thị trong mục "Thư viện kỹ thuật" và phần gợi ý tức thì (không cần AI) của app.
 
-- `apple.md` — iPhone, iPad, Mac, Watch, AirPods
+- `apple.md` — iPhone, iPad, Mac, Watch, AirPods, Dịch vụ & Tài khoản Apple
 - `garmin.md` — Fenix, Forerunner, Edge
 - `android.md` — Samsung, Xiaomi, Oppo, Vivo, Pixel...
 
 App hiển thị Thư viện theo dạng danh mục: **Hãng → Thiết bị**, mỗi thiết bị kèm số đếm để dễ quan sát đang thiếu/thừa lỗi ở đâu. Vì vậy mỗi mục **bắt buộc phải gắn đúng 1 thiết bị** trong danh sách chuẩn dưới đây — dùng đúng tên (kể cả dấu câu) để lỗi được xếp đúng nhóm, không tạo nhóm mới tùy ý:
 
-- **Apple:** `iPhone` · `iPad` · `Mac` · `Apple Watch` · `AirPods`
+- **Apple:** `iPhone` · `iPad` · `Mac` · `Apple Watch` · `AirPods` · `Dịch vụ & Tài khoản Apple` (chỉ dùng cho chủ đề xuyên thiết bị: Apple ID, iCloud, gói đăng ký, Family Sharing, phần mềm/ứng dụng — lỗi gắn với 1 loại máy thì vẫn ghi đúng tên máy)
 - **Garmin:** `Đồng hồ (Fenix/Forerunner)` · `Edge (xe đạp)`
 - **Android:** `Samsung` · `Xiaomi` · `Oppo` · `Vivo` · `Pixel` · `Chung (mọi hãng)` (dùng khi lỗi không đặc thù hãng nào)
 
